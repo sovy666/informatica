@@ -30,6 +30,236 @@
       "siteUrl": "https://www.reddit.com/r/archlinux/",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6s7pm/usb_drives/",
+          "author": null,
+          "description": "Upon connecting a USB drive with my files from an old install to my PC, the drive is not shown anywhere. File manager, lsblk, df, etc. all show nothing.\n It has been claimed that the drive is likely dead. I find that a bit ridiculous since I had used it earlier.\n    submitted by    /u/Glass_TigerYT  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6s7pm/usb_drives/",
+          "publishedOn": "2022-04-19T00:42:07.000Z",
+          "wordCount": 223,
+          "title": "USB drives",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6rn6s/startx_launches_x_session_over_ssh_without/",
+          "author": null,
+          "description": "I'm having some trouble understanding how permissions on a system differ between logging in at the console and starting an x session remotely. When I connect to my arch host via ssh and start an x session with startx, certain permissions aren't available that are when I log in at the console.\n For example, I can stream Steam games perfectly to my phone when I physically log in. However if I start an x session remotely the games don't receive gamepad input. I've tried fiddling with custom rules so that my user account can w/r to /dev/input but this doesn't make a difference. My DualShock 4 controller can still control the mouse over Steam Link when it is connected to my phone over bluetooth (even outside of games).\n I'm on kernel version 5.17.1 running X11 and the latest version of Steam.\n    submitted by    /u/ThaOtherOtherGuy  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6rn6s/startx_launches_x_session_over_ssh_without/",
+          "publishedOn": "2022-04-19T00:14:09.000Z",
+          "wordCount": 305,
+          "title": "Startx launches x session over ssh without certain permissions",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6qobd/installing_archlinux_on_wsl2_recommendations/",
+          "author": null,
+          "description": "Would like to have an instance of Archlinux on WSL2.\n From what I can tell; this requires the userspace tools and an windows installer. Please correct me if that's wrong.\n I'd like to know if anyone in the community has done this, and whether you have any recommendations for a seamless experience. Hoping to go without issue.\n If I'm not able to install Archlinux, then possibly Fedora or OpenSUSE tumbleweed.\n How would recommend I attempt to install Arch? Do you have any guides to reference?\n Thanks in advance.\n    submitted by    /u/RandomXUsr  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6qobd/installing_archlinux_on_wsl2_recommendations/",
+          "publishedOn": "2022-04-18T23:27:23.000Z",
+          "wordCount": 305,
+          "title": "Installing Archlinux on WSL2 - Recommendations",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6q9yb/dell_xps_9710_touchpad_issues/",
+          "author": null,
+          "description": "So I recently purchased an XPS 9710 but have been having issues with the touchpad.\n ​\n The touchpad works fine, stutters, then seems to have issues where clicking anywhere on the touchpad is registered as a right click. \n Googling hasn't really lead me anywhere for this so I was wondering if anyone here has experienced similar.\n ​\n Neofetch:\n OS: Arch Linux x86_64\n Host: XPS 17 9710\n Kernel: 5.15.34-1-lts\n Uptime: 23 hours, 2 mins\n Packages: 849 (pacman)\n Shell: zsh 5.8.1\n Resolution: 3840x2400\n WM: i3\n Theme: Arc-Dark [GTK2/3]\n Icons: Adwaita [GTK2/3]\n Terminal: alacritty\n CPU: 11th Gen Intel i7-11800H (16) @ 4.600GHz\n GPU: Intel TigerLake-H GT1 [UHD Graphics]\n GPU: NVIDIA GeForce RTX 3050 Mobile\n Memory: 6259MiB / 31832MiB\n    submitted by    /u/ionizedgears  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6q9yb/dell_xps_9710_touchpad_issues/",
+          "publishedOn": "2022-04-18T23:09:31.000Z",
+          "wordCount": 194,
+          "title": "Dell XPS 9710 Touchpad Issues",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6pkha/got_loads_of_errorswarnings_when/",
+          "author": null,
+          "description": "I already had python-pip installed via pacman.\n I then did pip install --user --upgrade pip.\n I then realised I may have caused conflicts so I did sudo pip uninstall pip (I think?) as non-sudo made errors and would not execute.\n I then checked pip which no longer existed so realised it probably uninstalled system python-pip\n I then reinstalled it sudo pacman -S python-pip\n It completed but loads of warnings/errors arose \n warning: could not get file information for usr/bin/pip warning: could not get file information for usr/bin/pip3 warning: could not get file information for usr/bin/pip3.10 warning: could not get file information for usr/lib/python3.10/site-packages/pip-21.0-py3.10.egg-info/ warning: could not get file information for usr/lib/python3.10/site-packages/pip-21.0-py3.10.egg-info/PKG-INFO warning: could not get file information for usr/lib/python3.10/site-packages/pip-21.0-py3.10.egg-info/SOURCES.txt warning: could not get file information for usr/lib/python3.10/site-packages/pip-21.0-py3.10.egg-info/dependency_links.txt warning: could not get file information for usr/lib/python3.10/site-packages/pip-21.0-py3.10.egg-info/entry_points.txt warning: could not get file information for usr/lib/python3.10/site-packages/pip-21.0-py3.10.egg-info/not-zip-safe warning: could not get file information for usr/lib/python3.10/site-packages/pip-21.0-py3.10.egg-info/top_level.txt warning: could not get file information for usr/lib/python3.10/site-packages/pip/ warning: could not get file information for usr/lib/python3.10/site-packages/pip/__init__.py \n So how do I clean up the mess and make sure only python-pip is active and properly installed - minus those warnings.\n    submitted by    /u/usera8787782  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6pkha/got_loads_of_errorswarnings_when/",
+          "publishedOn": "2022-04-18T22:37:13.000Z",
+          "wordCount": 326,
+          "title": "Got loads of errors/warnings when unistalled/reinstalled pip as I thought I might have 'double booked' system python-pip and py pip",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6oexo/headphones_microphone_does_not_work/",
+          "author": null,
+          "description": "Hello there, I have a laptop that has an audio port that doubles as a microphone and headphone. I also have a headphone that has built-in microphone. As for a test, I tried connecting the headphone on Windows, and the headphone, as well as its internal mic, worked perfectly fine. However, when I do the same thing on Linux the mic of the headphones does not work so I'm only getting output. I use PulseAudio.\n    submitted by    /u/flakanat  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6oexo/headphones_microphone_does_not_work/",
+          "publishedOn": "2022-04-18T21:45:26.000Z",
+          "wordCount": 191,
+          "title": "Headphones microphone does not work.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6nj04/problems_after_installation_arch_linux/",
+          "author": null,
+          "description": "Hi guys! I have a problem after installing Arch Linux.\n 1 problem. I can't adjust the brightness of the display, neither from the buttons, nor from the control panel. The slider itself supposedly changes the brightness, but nothing actually does.\n 2 problem. The touchpad works in a strange way. Clicks work, but all the gestures do not work properly. It is impossible to copy, select text, as well as to use the buttons without physically pressing the touchpad, swipes do not want to work.\n 3 problem. How to enable or add battery power mode \"maximum performance, balanced, energy efficient\"\n 4 problem. The physical power button does not work. I can't put the laptop into \"sleep\" mode when pressing it, only shutting down after a long press.\n Configuration: HP Aero 13 bc-0006ur. Ruzen 5 5600U. 2560x1600, 13.3\" 16 RAM 512 SSD\n I would appreciate a detailed answer! 😊\n    submitted by    /u/scamlord666  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6nj04/problems_after_installation_arch_linux/",
+          "publishedOn": "2022-04-18T21:04:25.000Z",
+          "wordCount": 300,
+          "title": "Problems after installation Arch Linux",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6n244/cant_find_any_solution_for_my_problem/",
+          "author": null,
+          "description": "So I wanted to get back in to Archlinux after using Windows for Gaming (EAC Games). My problem is that I can't boot Arch Liveusb. After flashing it in to my USB and restarting my Laptop, I get a error\n ACPI Bios Error (Bug) : Could not resolve symbol {\\_SB.PC10.GP17.VGR.LCDBCM.AFN71. AE_NOT_FOUND Error : Aborting method \\_SB.PC10.GP17.VGA.LCD.BCM due to previous error (AE_NOT_FOUND) \n I already found posts that's not really my fault and that's poor BIOS updates from manufacturers. But I once installed Arch and it worked fine...\n    submitted by    /u/Broxs  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6n244/cant_find_any_solution_for_my_problem/",
+          "publishedOn": "2022-04-18T20:44:23.000Z",
+          "wordCount": 340,
+          "title": "Can't find any solution for my problem",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6kh93/screen_tearing_in_arch_linux_i3_wm/",
+          "author": null,
+          "description": "Hello guys,\n Today I Insalled i3 wm and i faced minor problems and i had fixed it , but with the screen tearing problem I had no luck , can anyone help ?\n tried solution 1 :$ nvidia-settings --assign CurrentMetaMode=\"nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }\"\n output :ERROR: Error resolving target specification '' (No targets match target specification), specified in assignment\n 'CurrentMetaMode=nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }'.\n and tried solution 2: xrandr --output eDP-1 --set TearFree on\n X Error of failed request: BadName (named color or font does not exist)\n Major opcode of failed request: 140 (RANDR)\n Minor opcode of failed request: 11 (RRQueryOutputProperty)\n Serial number of failed request: 30\n gpu :nvidia mx 130\n driver version: 510\n cpu : intel i5 8250u\n    submitted by    /u/Top-Store5882  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6kh93/screen_tearing_in_arch_linux_i3_wm/",
+          "publishedOn": "2022-04-18T18:52:03.000Z",
+          "wordCount": 314,
+          "title": "Screen tearing in Arch linux i3 wm",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6jrxt/nvidiasettings_dithering/",
+          "author": null,
+          "description": "Hello! I have multiple monitors and they all don't work well with Dithering, which is automatically enabled for each monitor in nvidia-settings. I turn it off manually via the nvidia-settings control panel, but the settings don't persist after a system restart. If I restart the PC - I just need to run nvidia-settings and the settings will be applied.\n ​\n How can I enable the setting dithering: disable for system start? So far, to start the system, I have set the launch of the entire nvidia settings, but this is quite expensive ..\n https://i.imgur.com/kx4ARkd.png\n    submitted by    /u/neoHand  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6jrxt/nvidiasettings_dithering/",
+          "publishedOn": "2022-04-18T18:21:19.000Z",
+          "wordCount": 197,
+          "title": "Nvidia-settings: Dithering",
+          "imageUrl": "https://external-preview.redd.it/J8TwnUag1C8v2oL0kEtvf1fmDcC3rgVVpHi02zFXQ_4.png?auto=webp&s=76fc1291da8268410b2fe0e32f295650d1843d8c"
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6in39/cannot_figure_out_how_to_completely_remove_ruby/",
+          "author": null,
+          "description": "Found out I no longer need Ruby installed onto my system, but cannot seem to remove it:\n sh sudo pacman -R ruby checking dependencies... error: failed to prepare transaction (could not satisfy dependencies) :: removing ruby breaks dependency 'ruby' required by ruby-diff-lcs :: removing ruby breaks dependency 'ruby' required by ruby-irb :: removing ruby breaks dependency 'ruby' required by ruby-manpages :: removing ruby breaks dependency 'ruby' required by ruby-optimist :: removing ruby breaks dependency 'ruby' required by ruby-paint :: removing ruby breaks dependency 'ruby' required by ruby-psych :: removing ruby breaks dependency 'ruby' required by ruby-rainbow :: removing ruby breaks dependency 'ruby' required by ruby-rdoc :: removing ruby breaks dependency 'ruby' required by ruby-reline :: removing ruby breaks dependency 'ruby' required by ruby-rspec-support :: removing ruby breaks dependency 'ruby' required by ruby-stringio :: removing ruby breaks dependency 'ruby' required by ruby-tins :: removing ruby breaks dependency 'ruby' required by rubygems \n Ofc tried removing the dependencies first, but the same error appears. How should I proceed? I feel bamboozled.\n    submitted by    /u/_cappu  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6in39/cannot_figure_out_how_to_completely_remove_ruby/",
+          "publishedOn": "2022-04-18T17:32:45.000Z",
+          "wordCount": 384,
+          "title": "Cannot figure out how to completely remove ruby and its dependencies",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6h5cj/my_alias_is_not_working/",
+          "author": null,
+          "description": "i use zsh and i wrote this alias but it is not working\n rr=\"sudo !!\" \n i thought it will be of great use but it just says command !! not found\n    submitted by    /u/h4636oh  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6h5cj/my_alias_is_not_working/",
+          "publishedOn": "2022-04-18T16:25:42.000Z",
+          "wordCount": 211,
+          "title": "my alias is not working",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6h1uw/configuring_polybar_on_bspwm/",
+          "author": null,
+          "description": "I'm new to Linux and for the past week, I've been trying to use bspwm and polybar. I'm trying to customize the workspaces of my polybar so I can add icons to them, but I've noticed that the default polybar script from the official github page does not contain a bspwm module anymore, which means that a big part of customization is left out. What is there that I can do to still be able to customize my workspaces and add icons there? I've also followed a tutorial where this YouTuber lets you use his polybar script, but I'm also having issues with that as the fonts and icons won't load. Is there anyone who would like to help me configure a polybar? I've spent days going at this with not much success so far. Thank you in advance.\n    submitted by    /u/TotalLanky5773  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6h1uw/configuring_polybar_on_bspwm/",
+          "publishedOn": "2022-04-18T16:21:19.000Z",
+          "wordCount": 279,
+          "title": "Configuring polybar on bspwm",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6grkp/upgraded_my_lts_kernel_to_latest_and_now_i_have_a/",
+          "author": null,
+          "description": "Here is my log:\n Apr 18 10:45:33 arkiron kernel: x86/cpu: SGX disabled by BIOS. Apr 18 10:45:33 arkiron kernel: Spectre V2 : WARNING: Unprivileged eBPF is enabled with eIBRS on, data leaks possible via Spectre v2 BHB> Apr 18 10:45:33 arkiron kernel: ACPI BIOS Error (bug): Could not resolve symbol [\\_SB.PR00._CPC], AE_NOT_FOUND (20210730/psargs-330) Apr 18 10:45:33 arkiron kernel: ACPI Error: Aborting method \\_SB.PR01._CPC due to previous error (AE_NOT_FOUND) (20210730/psparse-529) Apr 18 10:45:33 arkiron kernel: ACPI BIOS Error (bug): Could not resolve symbol [\\_SB.PR00._CPC], AE_NOT_FOUND (20210730/psargs-330) Apr 18 10:45:33 arkiron kernel: ACPI Error: Aborting method \\_SB.PR02._CPC due to previous error (AE_NOT_FOUND) (20210730/psparse-529) Apr 18 10:45:33 arkiron kernel: ACPI BIOS Erro…",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6grkp/upgraded_my_lts_kernel_to_latest_and_now_i_have_a/",
+          "publishedOn": "2022-04-18T16:08:45.000Z",
+          "wordCount": 457,
+          "title": "Upgraded my LTS kernel to latest, and now I have a bunch of ACPI bug messages in my log. I believe these are mostly harmless, but does anyone know why they are there?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6glwz/black_screen_with_no_cursor_after_boot/",
+          "author": null,
+          "description": "For months I have been dual-booting Windows 10 and Arch (using rEFInd), no problem. All of a sudden, when I tried to boot Arch, by the time LightDM should appear, the screen goes black (no keyboard cursor, not even back-lighting) and the computer goes silent. As if the computer turned off, but it is still on. The only way to turn it off is to hold the power button.\n What could be the issue? I haven't seen any similar issue online. The only thing that comes to mind is something regarding hibernate mode not working properly, but that still doesn't make much sense.\n EDIT: after a couple restarts it started working normally for some reason, but I know that it's very dangerous to hold the power button, so I guess this is still relevant.\n    submitted by    /u/abstract-anxiety  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6glwz/black_screen_with_no_cursor_after_boot/",
+          "publishedOn": "2022-04-18T16:02:14.000Z",
+          "wordCount": 345,
+          "title": "Black screen with no cursor after boot",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6g46l/hdmi_audio_not_getting_detected_in_arch_on_kde/",
+          "author": null,
+          "description": "I've just recently installed arch linux on my asus vivobook intel laptop, but have been having issues with getting HDMI audio working. my headphones that I plug into it work fine, only the HDMI audio.\n info:\n sof-firmware installed, alsa-utils installed, pulseaudio installed\n i get this message when I boot:\n [3.670622] snd_hda_codec_hdmi hdaudioC0D2: Monitor plugged-in, Failed to power up codec ret=[-13] \n from this post, I tried adding snd_hda_intel.enable_silent_stream=0 to my kernel parameters, and it removed the snd_hda_codec_hdmi message, but HDMI audio still doesn't work.\n $ lspci -v 00:1f.3 Audio device: Intel Corporation Sunrise Point-LP HD Audio (rev 21) (prog-if 80) Subsystem: ASUSTeK Computer Inc. Device 11e1 Flags: bus master, fast devsel, latency 32, IRQ 129 Memory at ef128000…",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6g46l/hdmi_audio_not_getting_detected_in_arch_on_kde/",
+          "publishedOn": "2022-04-18T15:41:00.000Z",
+          "wordCount": 570,
+          "title": "HDMI audio not getting detected in arch on kde plasma",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6ffp2/lighter_alternative_to_gimp/",
+          "author": null,
+          "description": "I like Arch and am a roughly 10 year user. Title says it all. \n I recently noticed the pacman install of GIMP (some 240+MB) now brings in \"gvfs\" as a dependency. Not allowing gvfs in my system -- not sure if GIMP has brought it in a long time, but just noticed. Anyone have a good experience with a lighter editor? Thx.\n    submitted by    /u/crackpipe_clawiter  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6ffp2/lighter_alternative_to_gimp/",
+          "publishedOn": "2022-04-18T15:10:53.000Z",
+          "wordCount": 611,
+          "title": "Lighter alternative to GIMP?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6fdwp/diagnosing_a_power_problem/",
+          "author": null,
+          "description": "My laptop frequently crashes after I wake it from sleep. Since I don't get any messages, I don't know how to fix the problem. There has to be some way of determining the cause, but I don't know where to look. \n Like I said, this only happens when I open the lid of my laptop to wake it from sleep. \n Thank you.\n    submitted by    /u/jg_333  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6fdwp/diagnosing_a_power_problem/",
+          "publishedOn": "2022-04-18T15:08:48.000Z",
+          "wordCount": 286,
+          "title": "Diagnosing a power problem",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6dhy9/firefox_and_special_characters/",
+          "author": null,
+          "description": "​\n I don't know why it happens, but only happens with Arch and FF. Works fine with FF on Fedora. Probably missing some package. Any ideas?\n    submitted by    /u/AndreLuisOS  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6dhy9/firefox_and_special_characters/",
+          "publishedOn": "2022-04-18T13:43:50.000Z",
+          "wordCount": 189,
+          "title": "Firefox and special characters",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u6bsbg/aur_to_bin_or_not_to_bin/",
+          "author": null,
+          "description": "I am always using the bin version of packages from AUR, such as pandoc, ms edge, freefilesync and even paru. The obvious advantage is that these packages are much faster to install and update than the non-bin version.\n However I would like to ask the forum if there's any downside that I might not be aware of by using the bin versions of these packages?\n    submitted by    /u/jacosis  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u6bsbg/aur_to_bin_or_not_to_bin/",
+          "publishedOn": "2022-04-18T12:17:50.000Z",
+          "wordCount": 1158,
+          "title": "AUR: to bin or not to bin?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u68ydl/did_windows_10_update_corrupt_my_linux_partitions/",
+          "author": null,
+          "description": "Yesterday I ran a Windows 10 update which required a restart. My setup is Windows 10 and Archlinux dual-booted on the same SSD. Windows was installed first, so I use its esp for systemdboot, and a separate partition for XBOOTLDR. After the Windows update, my Arch loader entries no longer appear in the boot menu. Windows itself, and all my NTFS partitions, work fine.\n I checked the various common culprits, and confirmed that secure boot, fast boot, fast start, and Windows hibernation were all still disabled. My next step was to boot up the Arch live ISO to attempt repair, but I've found that I can no longer mount sda5 and sda6 to /mnt/boot and /mnt, or at all for that matter. I get an error along the lines of bad fs, bad options, or bad superblock.\n I am confused because those are my two Linux partitions (formatted to fat32 and ext4, respectively,) and neither are mounted in Windows. How could the WIndows update have messed them up? My theory is that the update resized some Windows partitions, which messed up some blocks, but I'm not a filesystem expert.\n Can fsck repair this issue, and is there a way of preventing WIndows from doing this again in the future?\n    submitted by    /u/StarTroop  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u68ydl/did_windows_10_update_corrupt_my_linux_partitions/",
+          "publishedOn": "2022-04-18T09:23:02.000Z",
+          "wordCount": 832,
+          "title": "Did Windows 10 update corrupt my Linux partitions?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u67bk7/is_it_normal_to_update_once_in_a_week/",
+          "author": null,
+          "description": "How often do you do?\n    submitted by    /u/Free_Horror_3098  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u67bk7/is_it_normal_to_update_once_in_a_week/",
+          "publishedOn": "2022-04-18T07:26:49.000Z",
+          "wordCount": 517,
+          "title": "Is it normal to update once in a week?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/u63gj8/arch_performance_with_12th_gen_alder_lake/",
+          "author": null,
+          "description": "Hello everyone, I am building a home pc/remote rendering server with the Intel i5-12600k. I was planning on running Arch as I thought it would be a fun learning experience, but I am concerned about how well arch will perform with the newer 12th gen CPUs. I wasn’t able to find much information on the subject and was hoping someone here could provide some information. Thanks!\n    submitted by    /u/RandomUser6410  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/u63gj8/arch_performance_with_12th_gen_alder_lake/",
+          "publishedOn": "2022-04-18T03:18:19.000Z",
+          "wordCount": 559,
+          "title": "Arch performance with 12th gen Alder Lake processors?",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/archlinux/comments/u5zvai/no_icons_or_file_explorers/",
           "author": null,
           "description": "Hello, First Post ever... (Kind of noobie, Pretty noob but i've used arco for the past 2 years) \n Right now i've gotten a new laptop (ZephyrusG14) and insalled arch, i use awesomeWM. \n The problem i'm having is that when a i load X11, awesome does not show any icon and if i try to launch ulauncher, \"nitrogen --restore\" or any kind of explorer window (i.e. open file on chromium) it chrashes and does nothing.\n Both ulauncher and Nitrogen give a mesage regarding PixBuff:\n Nitrogen:\n ~~~\n terminate called after throwing an instance of 'Gdk::PixbufError'\n zsh: IOT instruction (core dumped) nitrogen --restore\n ~~~\n Ulauncher:\n ~~~\n 2022-04-17 18:47:58,686 | WARNING | ulauncher.utils.image_loader: load_image() | Could not load image /usr/share/ulauncher/media/gear.svg. E: gdk-pixbuf-error-quark: …",
@@ -198,206 +428,6 @@
           "wordCount": 221,
           "title": "Java grey window in dwm",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u5n1z2/is_there_a_good_way_to_cleanup_my_arch/",
-          "author": null,
-          "description": "Hey, i would really like to know if there is a nice and easy way to cleanup my arch installation. By cleanup i mean that i want to uninstall everything that is unecassary. \n I know the commands yay -Q and pacman -Q but when i look at everything that is installed i have no clue what i can simply uninstall and what is important and should not be uninstalled.\n Also i would like to know how to cleanup my drive, for example in windows i could simply clear the temp folder - is there something similar in arch?\n    submitted by    /u/xaetlas  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u5n1z2/is_there_a_good_way_to_cleanup_my_arch/",
-          "publishedOn": "2022-04-17T13:27:56.000Z",
-          "wordCount": 594,
-          "title": "Is there a good way to cleanup my arch installation besides reinstalling arch?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u5i276/matlab_on_arch/",
-          "author": null,
-          "description": "Hello Arch community,\n ​\n I'm trying to get Matlab 2022a to run on my Arch install. I've read the wiki and managed to get the program to install and launch. However, once the program starts, there are icons but no text. It looks like everything graphically is there except for the text only. I'm not sure what information is helpful for diagnosing this, so please let me know what info to share!\n ​\n Thanks!\n    submitted by    /u/mitairlines  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u5i276/matlab_on_arch/",
-          "publishedOn": "2022-04-17T07:38:45.000Z",
-          "wordCount": 302,
-          "title": "Matlab on Arch",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u5hy47/your_favorite_file_manager/",
-          "author": null,
-          "description": "Hey!\n It became interesting to me and I decided to try one of the console file managers.\n But there are so many!\n What is your favorite file manager that you can recommend?\n I really need that file manager that I can flexibly customize and see images in my directories (Like in nautilus: https://i.imgur.com/IYj1qfD.png). \n Sorry for my Eng\n    submitted by    /u/neoHand  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u5hy47/your_favorite_file_manager/",
-          "publishedOn": "2022-04-17T07:30:27.000Z",
-          "wordCount": 571,
-          "title": "Your favorite file manager",
-          "imageUrl": "https://external-preview.redd.it/-42kBQ1W-TC2gfcitckVGnA-OcLmQaHSKgakPdpvB00.png?auto=webp&s=b051e9374e6cc0a8c30b3b4426fa710f0a6a5c75"
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u5gall/having_trouble_mounting_a_hard_drive/",
-          "author": null,
-          "description": "my secondary LDM hard drive was working fine after i had my friend help me mount it. for some reason now the mount stopped working, now it doesn't show anything. like the folder is still there, but there's nothing in it and umount tells me it's not mounted in the first place.\n ​\n mounting it gives me wrong fs type, bad option, bad superblock on /dev/sdb1, missing codepage or helper program, or other error. i fixed it once by completely shutting of my windows partition, but i didn't touch it ever since i first mounted the drive. no luck searching stuff. any help?\n ​\n tldr: LDM mount no worky anymore how fix?\n edit: Microsoft LDM Partition is the full name thought there was only one LDM :/\n    submitted by    /u/bubblesisconfused  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u5gall/having_trouble_mounting_a_hard_drive/",
-          "publishedOn": "2022-04-17T05:30:40.000Z",
-          "wordCount": 321,
-          "title": "having trouble mounting a hard drive",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u5fjbi/how_do_i_make_my_boot_time_slower/",
-          "author": null,
-          "description": "I know, I know. I'm probably one of the only people on here trying to increase my boot time, because it's stupid. I have a plymouth splash screen animation, but my computer boots before the animation can finish playing. Is there any way I can force my computer to take an extra 1-2 seconds to boot?\n This isn't a shitpost btw. I actually want to do this.\n    submitted by    /u/Gbox4  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u5fjbi/how_do_i_make_my_boot_time_slower/",
-          "publishedOn": "2022-04-17T04:41:20.000Z",
-          "wordCount": 595,
-          "title": "How do I make my boot time slower?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u5by1d/how_does_a_noob_read_the_arch_wiki/",
-          "author": null,
-          "description": "like a noob like me who wish to 'learn' arch linux .when I go to the wiki I see ton of information not that u can do it top to bottom cuz every line conitains hyperlinks and it keeps going on and on and on.After a couple of failed attempts in the vm, what are things I must learn before the arch installation and can be left for later?\n    submitted by    /u/i_hate_syntax  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u5by1d/how_does_a_noob_read_the_arch_wiki/",
-          "publishedOn": "2022-04-17T01:11:23.000Z",
-          "wordCount": 234,
-          "title": "how does a noob read the arch wiki?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u5bnbw/orgbluezerrorfailed_brconnectioncanceled_in_bluez/",
-          "author": null,
-          "description": "I've had to drop back to Fedora this past week because I can't connect my preferred Bluetooth headphones under Arch (an MPOW BH408 receiver that I'm using while I wait for a new headset). I get the following error in bluetoothctl in which it appears to try connecting three times in rapid succession and then give up:\n  Agent registered [bluetooth]# devices Device E3:28:E9:24:30:BA MPOW BH408 Device 20:19:09:37:F6:D9 U8I [bluetooth]# connect E3:28:E9:24:30:BA Attempting to connect to E3:28:E9:24:30:BA [CHG] Device E3:28:E9:24:30:BA Connected: yes Failed to connect: org.bluez.Error.Failed br-connection-canceled [CHG] Device E3:28:E9:24:30:BA Connected: no [CHG] Device E3:28:E9:24:30:BA Connected: yes [CHG] Device E3:28:E9:24:30:BA Connected: no [CHG] Device E3:28:E9:24:30:BA Connected: yes [CHG] Device E3:28:E9:24:30:BA Connected: no [bluetooth]# quit \n What's weird is that the other device listed in bluetoothctl (my backup headset) connects without an issue (just bad sound as per the usual with this model), so it appears to be related to the particular combination of the version of Bluez and the MPOW BH408. It works under the slightly older version of Bluez currently used by Fedora 35. Any idea of how I can diagnose this? Not really a big deal as my new headset arrives Monday and I can put up with poor sound quality using my backup headset for a couple days.\n    submitted by    /u/unfknpro  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u5bnbw/orgbluezerrorfailed_brconnectioncanceled_in_bluez/",
-          "publishedOn": "2022-04-17T00:55:06.000Z",
-          "wordCount": 314,
-          "title": "\"org.bluez.Error.Failed br-connection-canceled\" in Bluez 5.64-2",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u5avn0/archinstall_240rc2_bug/",
-          "author": null,
-          "description": "Anybody faced similar issues manually partitioning their install with this script+version? I have tried countless times to resolve \"bootctl --path=/boot, install exit with code [256]: b'File system \"/boot\" is not a FAT EFI System Partition (ESP) file system.\". I have partitioned and flagged my nvme drive either through this script (doesn't flag), fdisk, gdisk, and gparted without a resolution. I have partitioned /boot with all the filesystem formats but same error. I'm certain the auto partitioning scheme works perfectly well however boot and root auot partitioned sizes are to small for my 1tb preferences. Anything I maybe missing or doing wrong is greatly appreciated!\n Perferred Scheme (Recreating Error)\n {nvme0n1p1 /boot 1GB EXT4 BOOT/EFI(ESP)}\n {nvme0n1p2 / 50GB XFS Linux FS} \n {nvme0n1p3 /home 100% XFS Linux home}\n    submitted by    /u/F7YYY  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u5avn0/archinstall_240rc2_bug/",
-          "publishedOn": "2022-04-17T00:13:07.000Z",
-          "wordCount": 247,
-          "title": "archinstall 2.4.0rc2 BUG?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u58uqy/cant_open_any_graphical_app/",
-          "author": null,
-          "description": "Hi, I was normally browsing Firefox when at some point some tabs stopped working randomly. I thought nothing of it and just closed firefox but then it would not start again, just as any other graphical app I try to open (Brave, VS Code and others). The error that firefox is giving me is:\n XPCOMGlueLoad error: error for file /usr/lib/firefox/libmozgtk.so libicuuc.so.71: cannot open shared object file: No such file or directory Couldn't load XPCOM\n VS Code gives me this error:\n /opt/visual-studio-code/bin/../code: error while loading shared libraries: libicuuc.so.71: cannot open shared object file: No such file or directory\n So yeah, it looks like something screwed up the stuff needed for graphical interfaces, but I did nothing other than update my system (and I see no one else currently complaining about some similar breakage). What should I do?\n EDIT: updated my system after typing this post out, everything now works normally ¯_(ツ)_/¯\n    submitted by    /u/SupremeOwlTerrorizer  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u58uqy/cant_open_any_graphical_app/",
-          "publishedOn": "2022-04-16T22:27:46.000Z",
-          "wordCount": 335,
-          "title": "Can't open any graphical app",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u58jvl/i_had_this_issue_when_using_systemd_boot_instead/",
-          "author": null,
-          "description": "submitted by    /u/lolalaperrloca  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u58jvl/i_had_this_issue_when_using_systemd_boot_instead/",
-          "publishedOn": "2022-04-16T22:12:35.000Z",
-          "wordCount": 184,
-          "title": "I had this issue when using systemd boot instead of grub. I'm having the same issue with solus. Any idea of how to fix this?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u57yxz/finding_services_that_need_restart_after_upgrade/",
-          "author": null,
-          "description": "I've written a little script that outputs something like this:\n ✅ dbus (package: 4 days ago, service: 4 days ago) 🚨 dendrite (package: 23 minutes ago, service: 3 days ago) ✅ polkit (package: 18 days ago, service: 3 days ago) 🚨 sshd (package: 28 minutes ago, service: 4 days ago) ✅ syncthing@tombh (package: 9 days ago, service: 4 days ago) \n So basically comparing a package's last upgrade time (from pacman.log) with its systemd last start time. Have I reinvented the wheel?\n The script itself if anybody's interested:\n #!/usr/bin/env bash ago() { awk -v date=\"$1\" -v now=\"$(date +%s)\" ' BEGIN { diff = now - date; if (diff > (24*60*60)) printf \"%.0f days ago\", diff/(24*60*60); else if (diff > (60*60)) printf \"%.0f hours ago\", diff/(60*60); else if (diff > 60) printf \"%.0f minutes ago\", diff/60; else printf \"%s seconds ago\", diff; }' } # Find all relevant services services=$( systemctl list-units | grep '\\.service' | grep 'running' | cut -d '.' -f 1 ) echo \"$services\" | while read -r service; do # Find Pacman package associated with service fragment_path=$(systemctl show $service | grep FragmentPath= | cut -d '=' -f 2) package=$(pacman -Qo \"$fragment_path\" | cut -d ' ' -f 5) if [[ \"$package\" == 'systemd' ]]; then continue fi # Find when package was last updated last_upgraded_epoch=$( cat /var/log/pacman.log | grep -e \"installed $package\" -e \"upgraded $package\" | tail -n1 | awk -F'[][]' '{print $2}' | date +\"%s\" -f - ) if [ -z \"$last_upgraded_epoch\" ]; then echo \"💡 $service isn't in pacman.log\" continue fi # Find when service was last started/restarted last_start_epoch=$( systemctl show $service | grep \"ExecMainStartTimestamp=\" | cut -d '=' -f 2 | date +\"%s\" -f - ) message=\"$service (package: $(ago $last_upgraded_epoch), service: $(ago $last_start_epoch))\" if [ \"$last_upgraded_epoch\" -gt \"$last_start_epoch\" ]; then echo \"🚨 $message\" else echo \"✅ $message\" fi done \n    submitted by    /u/tombh  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u57yxz/finding_services_that_need_restart_after_upgrade/",
-          "publishedOn": "2022-04-16T21:43:33.000Z",
-          "wordCount": 646,
-          "title": "Finding services that need restart after upgrade",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u57brd/command_to_change_background_on_gnome_42/",
-          "author": null,
-          "description": "Hi, below command to change background on gnome 42 doesn't work, any solution ?\n gsettings set org.gnome.desktop.background picture-uri IMG.png\n    submitted by    /u/Spare_Prize1148  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u57brd/command_to_change_background_on_gnome_42/",
-          "publishedOn": "2022-04-16T21:11:27.000Z",
-          "wordCount": 163,
-          "title": "command to change background on gnome 42",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u56a5s/lightdm_not_allowing_de_selection_mixed_des/",
-          "author": null,
-          "description": "I just installed a fresh copy of Arch using archinstall. I selected cinnamon as the DE and it's working fine, but I would like to try out a couple different DEs, so I installed LightDM. After installing cutefish, LightDM should now offer a selection between cinnamon and cutefish, right? Well, the greeter asks for the password and then boots straight into cinnamon.\n I read all the wiki pages and I still can't get LightDM to offer the choice. I tried modifying the ~/.dmrc file and creating an ~/.xinitrc file, but they only work halfway. Some windows use cutefish, and others, like the taskbar and start menu use cinnamon. Can someone tell me what I'm missing here? Do I need to reinstall without a DE, install LightDM first, and then install any DEs/WMs?\n Here's a screenshot with the files I've made/modified, and the mixed DEs. Sorry for being a noob https://imgur.com/a/2q30lQc\n    submitted by    /u/HeyCanIBorrowThat  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u56a5s/lightdm_not_allowing_de_selection_mixed_des/",
-          "publishedOn": "2022-04-16T20:19:33.000Z",
-          "wordCount": 502,
-          "title": "LightDM not allowing DE selection. Mixed DEs?",
-          "imageUrl": "https://external-preview.redd.it/F-7-kAmZnL-q6N6gI_cYP-PwxwizP8SLsPqP2zslR1s.jpg?auto=webp&s=246cd55a66a5d6e1df8a69a33147226fe62aff70"
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u548os/pytorch_illegal_instruction_core_dumped/",
-          "author": null,
-          "description": "I have seen people post the same issue online but no answers to it on the 2 issues raised I found.\n $ py Python 3.10.4 (main, Mar 23 2022, 23:05:40) [GCC 11.2.0] on linux Type \"help\", \"copyright\", \"credits\" or \"license\" for more information. >>> import torch Illegal instruction (core dumped) \n Installed using sudo pacman -S python-pytorch. CPU is amd fx 8320.\n    submitted by    /u/usera8787782  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u548os/pytorch_illegal_instruction_core_dumped/",
-          "publishedOn": "2022-04-16T18:41:18.000Z",
-          "wordCount": 215,
-          "title": "Pytorch: Illegal instruction (core dumped)",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u53mj7/installing_arch_as_the_only_operating_system/",
-          "author": null,
-          "description": "Hey so I wanna install Arch Linux and yes it's my first time using Arch by the way but I have already used mint, Ubuntu, Kali and windows. I wanna try install it on my freshly new PC with no operating system on it and wondered if there would be anything I should know ahead in terms of the partition and stuffs like that.\n    submitted by    /u/Bug_freak5  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u53mj7/installing_arch_as_the_only_operating_system/",
-          "publishedOn": "2022-04-16T18:12:35.000Z",
-          "wordCount": 498,
-          "title": "Installing arch as the only operating system",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u53lx5/video_player_with_current_frame_count_display/",
-          "author": null,
-          "description": "Wondering if there is any player with this utility straight after instantiation or do you have to write scripts for yourself to mod mpv\n    submitted by    /u/ThivN1  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u53lx5/video_player_with_current_frame_count_display/",
-          "publishedOn": "2022-04-16T18:11:45.000Z",
-          "wordCount": 160,
-          "title": "Video Player With Current Frame Count Display",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u520wf/vm_disappeared_from_virtmanager_wont_run_from_cli/",
-          "author": null,
-          "description": "Strange because I have a second vm too and that one didn't disappear so I don't know why just this one is hidden.\n I noticed in journalctl too that it made an error on boot saying failed to connect to \"missing vm\".\n How to fix?\n Not sure what to do since the file is still there so don't know how to make it register again?\n    submitted by    /u/usera8787782  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u520wf/vm_disappeared_from_virtmanager_wont_run_from_cli/",
-          "publishedOn": "2022-04-16T16:57:06.000Z",
-          "wordCount": 214,
-          "title": "VM disappeared from virt-manager, won't run from cli since doing full system upgrade (arch) but the .xml file still exists",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u51puq/proton_7_specifically_keeps_game_minimised/",
-          "author": null,
-          "description": "Setup: \n  \nArch\n Cinnamon with Xorg (i.e. not wayland)\n Nvidia GPU\n Steam/Proton To Launch Game\n Single Monitor\n  \nUsing Proton 6.3.8, I can launch BfV and it works like normal (full screen). If I switch to Proton 7, the game launches fine but just stays minimised in the bottom panel, and whenever I click it, it opens for a split second and minimises again. I've tried running a /etc/env value of export SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS=0. I've also tried using that variable in the launcher options for the game. If I run the game in 6.3.8 and change it to boarderless full screen, and then run the game in proton 7 it works (although, for whatever reason my menu bar keeps popping up every so often). I don't understand what I actually need to check to try and work out what bit is causing the game to constantly minimise. Where to go from here?\n    submitted by    /u/sg4rb0sss  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u51puq/proton_7_specifically_keeps_game_minimised/",
-          "publishedOn": "2022-04-16T16:42:28.000Z",
-          "wordCount": 260,
-          "title": "Proton 7, specifically, keeps game minimised",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u4z5ha/accidental_yay_sy_under_root_any_harm/",
-          "author": null,
-          "description": "yay is not supposed to be run as root. When one accidentally runs that command under a root login, installation (makepkg) fails but the questions is:\n Can it do any harm to the system? (e.g. something like yay -Sy sway-git)\n    submitted by    /u/Original_Two9716  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u4z5ha/accidental_yay_sy_under_root_any_harm/",
-          "publishedOn": "2022-04-16T14:37:54.000Z",
-          "wordCount": 342,
-          "title": "Accidental yay -Sy under root, any harm?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/u4yojn/bspwm_picom_some_lags_when_resize/",
-          "author": null,
-          "description": "Hi! I use picom-ibhagwan for my bspwm and i'm have some trouble:When I resizing window - they lags (Show in video). Anyone, please tell me what I do wrong?\n My bspwm and picom configs:\n https://github.com/Danila-hub/dotfiles/blob/main/picom/picom.conf\n https://github.com/Danila-hub/dotfiles/tree/main/bspwm_sxhkd\n ​\n https://reddit.com/link/u4yojn/video/v5vyr0k8fwt81/player\n    submitted by    /u/neoHand  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/u4yojn/bspwm_picom_some_lags_when_resize/",
-          "publishedOn": "2022-04-16T14:13:38.000Z",
-          "wordCount": 458,
-          "title": "[BSPWM + Picom] Some lags when resize.",
-          "imageUrl": "https://external-preview.redd.it/c1GP002_KotP5J8zaDxS2I7hKSv2jaOyx0zRHqo2b2w.jpg?auto=webp&s=01401735613704a4e3d0ce66123f4b78b008d769"
         }
       ]
     },
@@ -419,6 +449,86 @@
       "siteUrl": "https://www.bleepingcomputer.com/",
       "articles": [
         {
+          "id": "https://www.bleepingcomputer.com/news/security/us-warns-of-lazarus-hackers-using-malicious-cryptocurrency-apps/",
+          "author": "Sergiu Gatlan",
+          "description": "CISA, the FBI, and the US Treasury Department warned today that the North Korean Lazarus hacking group is targeting organizations in the cryptocurrency and blockchain industries with trojanized cryptocurrency applications. [...]",
+          "link": "https://www.bleepingcomputer.com/news/security/us-warns-of-lazarus-hackers-using-malicious-cryptocurrency-apps/",
+          "publishedOn": "2022-04-18T21:47:22.000Z",
+          "wordCount": 1070,
+          "title": "US warns of Lazarus hackers using malicious cryptocurrency apps",
+          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2022/04/12/Ethereum_DPRK.jpg"
+        },
+        {
+          "id": "https://www.bleepingcomputer.com/news/security/free-decryptor-released-for-yanluowang-ransomware-victims/",
+          "author": "Sergiu Gatlan",
+          "description": "Kaspersky today revealed it found a vulnerability in Yanluowang ransomware's encryption algorithm, which makes it possible to recover files it encrypts. [...]",
+          "link": "https://www.bleepingcomputer.com/news/security/free-decryptor-released-for-yanluowang-ransomware-victims/",
+          "publishedOn": "2022-04-18T21:00:24.000Z",
+          "wordCount": 1044,
+          "title": "Free decryptor released for Yanluowang ransomware victims",
+          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2022/04/18/Yanluowang_ransomware.jpg"
+        },
+        {
+          "id": "https://www.bleepingcomputer.com/news/security/newly-found-zero-click-iphone-exploit-used-in-nso-spyware-attacks/",
+          "author": "Sergiu Gatlan",
+          "description": "Digital threat researchers at Citizen Lab have discovered a new zero-click iMessage exploit used to install NSO Group spyware on devices belonging to Catalan politicians, journalists, and activists. [...]",
+          "link": "https://www.bleepingcomputer.com/news/security/newly-found-zero-click-iphone-exploit-used-in-nso-spyware-attacks/",
+          "publishedOn": "2022-04-18T18:42:36.000Z",
+          "wordCount": 1129,
+          "title": "Newly found zero-click iPhone exploit used in NSO spyware attacks",
+          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2021/09/13/Apple.jpg"
+        },
+        {
+          "id": "https://www.bleepingcomputer.com/news/security/hackers-steal-655k-after-picking-metamask-seed-from-icloud-backup/",
+          "author": "Bill Toulas",
+          "description": "MetaMask has published a warning for their iOS users about the seeds of cryptocurrency wallets being stored in Apple's iCloud if app data backup is active. [...]",
+          "link": "https://www.bleepingcomputer.com/news/security/hackers-steal-655k-after-picking-metamask-seed-from-icloud-backup/",
+          "publishedOn": "2022-04-18T18:12:38.000Z",
+          "wordCount": 1231,
+          "title": "Hackers steal $655K after picking MetaMask seed from iCloud backup",
+          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2022/04/18/Metamask.jpg"
+        },
+        {
+          "id": "https://www.bleepingcomputer.com/news/security/unofficial-windows-11-upgrade-installs-info-stealing-malware/",
+          "author": "Bill Toulas",
+          "description": "Hackers are luring unsuspecting users with a fake Windows 11 upgrade that comes with malware that steals browser data and cryptocurrency wallets. [...]",
+          "link": "https://www.bleepingcomputer.com/news/security/unofficial-windows-11-upgrade-installs-info-stealing-malware/",
+          "publishedOn": "2022-04-18T17:18:13.000Z",
+          "wordCount": 1344,
+          "title": "Unofficial Windows 11 upgrade installs info-stealing malware",
+          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2022/02/09/Windows_11.jpg"
+        },
+        {
+          "id": "https://www.bleepingcomputer.com/news/microsoft/windows-10-21h2-now-in-broad-deployment-available-to-everyone/",
+          "author": "Sergiu Gatlan",
+          "description": "Microsoft says Windows 10, version 21H2 (aka the November 2021 Update) is now designated for broad deployment, making it available to everyone via Windows Update. [...]",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/windows-10-21h2-now-in-broad-deployment-available-to-everyone/",
+          "publishedOn": "2022-04-18T14:30:33.000Z",
+          "wordCount": 1013,
+          "title": "Windows 10 21H2 now in broad deployment, available to everyone",
+          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2021/04/17/windows-10-sapphire.jpg"
+        },
+        {
+          "id": "https://www.bleepingcomputer.com/news/security/beanstalk-defi-platform-loses-182-million-in-flash-load-attack/",
+          "author": "Bill Toulas",
+          "description": "The decentralized, credit-based finance system Beanstalk disclosed on Sunday that it suffered a security breach that resulted in financial losses of $182 million, the attacker stealing $80 million in crypto assets. [...]",
+          "link": "https://www.bleepingcomputer.com/news/security/beanstalk-defi-platform-loses-182-million-in-flash-load-attack/",
+          "publishedOn": "2022-04-18T14:05:06.000Z",
+          "wordCount": 1271,
+          "title": "Beanstalk DeFi platform loses $182 million in flash-load attack",
+          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2022/04/12/Ethereum.jpg"
+        },
+        {
+          "id": "https://www.bleepingcomputer.com/news/microsoft/customize-your-windows-11-experience-with-these-apps/",
+          "author": "Mayank Parmar",
+          "description": "Windows 11 is now available with a long list of limitations and missing features. The big feature update is currently available for download as an optional update and if you've already upgraded to the new operating system, you can try the third-party programs highlighted below. [...]",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/customize-your-windows-11-experience-with-these-apps/",
+          "publishedOn": "2022-04-17T21:30:10.000Z",
+          "wordCount": 1649,
+          "title": "Customize your Windows 11 experience with these apps",
+          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2021/10/21/windows-11-gradient-header.jpg"
+        },
+        {
           "id": "https://www.bleepingcomputer.com/news/microsoft/customize-windows-11-experience-with-these-apps/",
           "author": "Mayank Parmar",
           "description": "Windows 11 is now available with a long list of limitations and missing features. The big feature update is currently available for download as an optional update and if you've already upgraded to the new operating system, you can try the third-party programs highlighted below. [...]",
@@ -437,26 +547,6 @@
           "wordCount": 1091,
           "title": "Microsoft: Office 2013 will reach end of support in April 2023",
           "imageUrl": "https://www.bleepstatic.com/content/hl-images/2022/04/15/Microsoft_Office.jpg"
-        },
-        {
-          "id": "https://www.bleepingcomputer.com/news/security/new-industrial-spy-stolen-data-market-promoted-through-cracks-adware/",
-          "author": "Lawrence Abrams",
-          "description": "Threat actors have launched a new marketplace called Industrial Spy that sells stolen data from breached companies, promoting the site through adware and software cracks. [...]",
-          "link": "https://www.bleepingcomputer.com/news/security/new-industrial-spy-stolen-data-market-promoted-through-cracks-adware/",
-          "publishedOn": "2022-04-16T16:50:40.000Z",
-          "wordCount": 1121,
-          "title": "New Industrial Spy stolen data market promoted through cracks, adware",
-          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2021/04/24/travis-essinger-money-blue.jpg"
-        },
-        {
-          "id": "https://www.bleepingcomputer.com/news/security/github-suspends-accounts-of-russian-devs-at-sanctioned-companies/",
-          "author": "Bill Toulas",
-          "description": "Russian software developers are reporting that their GitHub accounts are being suspended without warning if they work for or previously worked for companies under US sanctions. [...]",
-          "link": "https://www.bleepingcomputer.com/news/security/github-suspends-accounts-of-russian-devs-at-sanctioned-companies/",
-          "publishedOn": "2022-04-16T14:04:02.000Z",
-          "wordCount": 1388,
-          "title": "GitHub suspends accounts of Russian devs at sanctioned companies",
-          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2022/04/08/GitHub___headpic.jpg"
         }
       ]
     },
@@ -466,14 +556,34 @@
       "siteUrl": "https://www.ghacks.net",
       "articles": [
         {
-          "id": "https://www.ghacks.net/?p=178063",
+          "id": "https://www.ghacks.net/?p=178071",
+          "author": "Ashwin",
+          "description": "Microsoft is reportedly working on a way to show ads in free-to-play Xbox games. A report reveals that the tech giant is working with adtech companies to build an ad network for […]\nThank you for being a Ghacks reader. The post Microsoft is planning to allow ads in free-to-play Xbox games appeared first on gHacks Technology News.",
+          "link": "https://www.ghacks.net/2022/04/18/microsoft-is-planning-to-allow-ads-in-free-to-play-xbox-games/",
+          "publishedOn": "2022-04-18T14:50:57.000Z",
+          "wordCount": 1667,
+          "title": "Microsoft is planning to allow ads in free-to-play Xbox games",
+          "imageUrl": "https://www.ghacks.net/wp-content/uploads/2022/04/Microsoft-is-planning-to-allow-ads-in-free-to-play-Xbox-games.jpg"
+        },
+        {
+          "id": "https://www.ghacks.net/?p=178074",
           "author": "Martin Brinkmann",
-          "description": "Videoconferencing solutions have seen a huge boost since 2020. Workers and students started to work or learn from home, and communicated with others using videoconferencing services. Videoconferencing relies on camera and microphone […]\nThank you for being a Ghacks reader. The post Muting videoconferencing apps may not prevent them from listening appeared first on gHacks Technology News.",
-          "link": "https://www.ghacks.net/2022/04/17/videoconferncing-muting-may-not-prevent-apps-from-listening/",
-          "publishedOn": "2022-04-17T06:32:36.000Z",
-          "wordCount": 2178,
-          "title": "Muting videoconferencing apps may not prevent them from listening",
-          "imageUrl": "https://www.ghacks.net/wp-content/uploads/2022/04/mute-microphone.png"
+          "description": "Later this year, Microsoft plans to release Windows 10 version 22H2. Right now, Windows 10 version 21H2 is the latest available version, and this version has reached broad deployment status. Microsoft confirms […]\nThank you for being a Ghacks reader. The post Microsoft says Windows 10 version 21H2 is officially \"ready for broad deployment\" appeared first on gHacks Technology News.",
+          "link": "https://www.ghacks.net/2022/04/18/microsoft-says-windows-10-version-21h2-is-officially-ready-for-broad-deployment/",
+          "publishedOn": "2022-04-18T09:39:00.000Z",
+          "wordCount": 2257,
+          "title": "Microsoft says Windows 10 version 21H2 is officially \"ready for broad deployment\"",
+          "imageUrl": "https://www.ghacks.net/wp-content/uploads/2022/04/windows-10-version-21H2-broad-deployment.png"
+        },
+        {
+          "id": "https://www.ghacks.net/?p=178068",
+          "author": "Martin Brinkmann",
+          "description": "Recent versions of the open source archiver 7-Zip have a vulnerability that has not been fixed yet. Successful exploitation of the vulnerability allows privilege escalation and the execution of commands; it appears […]\nThank you for being a Ghacks reader. The post Workaround for security issue in 7-Zip until it is fixed appeared first on gHacks Technology News.",
+          "link": "https://www.ghacks.net/2022/04/18/workaround-for-security-issue-in-7-zip-until-it-is-fixed/",
+          "publishedOn": "2022-04-18T04:58:31.000Z",
+          "wordCount": 2065,
+          "title": "Workaround for security issue in 7-Zip until it is fixed",
+          "imageUrl": "https://www.ghacks.net/wp-content/uploads/2022/04/7-zip-vulnerability-workaround.png"
         }
       ]
     },
@@ -488,6 +598,196 @@
       "feedUrl": "https://www.howtogeek.com/feed/",
       "siteUrl": "https://www.howtogeek.com",
       "articles": [
+        {
+          "id": "http://www.howtogeek.com/?p=273618",
+          "author": "Nick Lewis",
+          "description": "The default download location on our Windows systems works well enough most of the time without a problem, but what if you want or need to change the location at the system level?",
+          "link": "https://www.howtogeek.com/273618/how-do-you-change-windows-default-download-path/",
+          "publishedOn": "2022-04-18T21:00:00.000Z",
+          "wordCount": 1998,
+          "title": "How Do You Change Windows’ Default Download Path?",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/11/win11_downloads_folder_hero.jpg?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=798044",
+          "author": "Benj Edwards",
+          "description": "If you’ve accidentally turned on the flashlight on the back of your iPhone 11—that bright white LED light—it can be confusing figuring out how to turn it off. Here’s how to quickly turn it off at any time on iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max.",
+          "link": "https://www.howtogeek.com/798044/how-to-turn-off-the-flashlight-on-iphone-11/",
+          "publishedOn": "2022-04-18T20:00:05.000Z",
+          "wordCount": 1683,
+          "title": "How to Turn Off the Flashlight on iPhone 11",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/04/iphone_11_flashlight_hero_1.jpg?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=792261",
+          "author": "Mahesh Makvana",
+          "description": "If you’ve mistakenly deleted an important email, Yahoo offers you two options to recover your email. You can either find and restore your email from the “Deleted Items” or the “Trash” folder, or request Yahoo to restore your email backup. Here’s how.",
+          "link": "https://www.howtogeek.com/792261/how-to-recover-deleted-emails-from-yahoo/",
+          "publishedOn": "2022-04-18T19:00:35.000Z",
+          "wordCount": 1926,
+          "title": "How to Recover Deleted Yahoo! Emails",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/09/yahoo-website-logo.jpg?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=795509",
+          "author": "Nick Lewis",
+          "description": "Every job is easier if you have the right tools. So what exactly is plain text, and why might you want a plain text editor instead of a word processor?",
+          "link": "https://www.howtogeek.com/795509/why-you-need-a-plain-text-editor/",
+          "publishedOn": "2022-04-18T18:00:00.000Z",
+          "wordCount": 1877,
+          "title": "Why You Need a Plain Text Editor",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/04/shutterstock_245893798.png?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.reviewgeek.com/115336/new-7-zip-archiver-hack-reveals-a-long-ignored-windows-vulnerability/",
+          "author": "Andrew Heinzman",
+          "description": "The latest versions of 7-Zip contain a vulnerability (CVE-2022-29072) that lets hackers gain administrative privileges on a system. But this vulnerability, which exploits the 7-Zip help file, should alarm all Windows users, as it highlights an age-old problem on Windows systems.",
+          "link": "https://www.reviewgeek.com/115336/new-7-zip-archiver-hack-reveals-a-long-ignored-windows-vulnerability/",
+          "publishedOn": "2022-04-18T17:38:11.000Z",
+          "wordCount": 973,
+          "title": "New 7-Zip Archiver Hack Reveals a Long Ignored Windows Vulnerability",
+          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/04/9b66b3c6.png"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=794460",
+          "author": "Sandy Writtenhouse",
+          "description": "When you insert checkboxes in a spreadsheet, you may want to get a total count of those checked or unchecked. With a simple function and formula, you can tally your checkboxes in Google Sheets.",
+          "link": "https://www.howtogeek.com/794460/how-to-count-checkboxes-in-google-sheets/",
+          "publishedOn": "2022-04-18T17:00:08.000Z",
+          "wordCount": 1785,
+          "title": "How to Count Checkboxes in Google Sheets",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/05/google_sheets_her_1200x675.jpg?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.reviewgeek.com/115337/we-bet-you-cant-solve-this-periodic-table-version-of-wordle/",
+          "author": "Suzanne Humphries",
+          "description": "Apparently, no one is bored of word games yet, and that’s fine by us. We’re huge fans of Wordle and all of its clever spin-off games. The newest variant to enter the arena is Periodle, and we’re crossing our fingers we remember that semester of Chemistry we took back in freshman year.",
+          "link": "https://www.reviewgeek.com/115337/we-bet-you-cant-solve-this-periodic-table-version-of-wordle/",
+          "publishedOn": "2022-04-18T16:34:26.000Z",
+          "wordCount": 857,
+          "title": "We Bet You Can't Solve This Periodic Table Version of 'Wordle'",
+          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/04/4531abb6.png"
+        },
+        {
+          "id": "https://www.reviewgeek.com/115324/the-latest-spam-text-trend-is-unblockable-and-terrible/",
+          "author": "Cory Gunther",
+          "description": "No one likes spam texts or calls, but the latest nasty spam text trend going around is even worse. These new group messages promising a free gift to T-Mobile customers are apparently “unblockable.”",
+          "link": "https://www.reviewgeek.com/115324/the-latest-spam-text-trend-is-unblockable-and-terrible/",
+          "publishedOn": "2022-04-18T16:31:47.000Z",
+          "wordCount": 936,
+          "title": "The Latest Spam Text Trend Is Unblockable (And Terrible)",
+          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/04/338f13d3.jpg"
+        },
+        {
+          "id": "https://www.reviewgeek.com/115308/insteon-may-have-joined-the-list-of-failed-smart-home-companies/",
+          "author": "Andrew Heinzman",
+          "description": "Insteon may have gone out of business without warning its customers. The company’s smart home products haven’t worked since April 14th, its forums are offline, its phone is disconnected, and it hasn’t responded to questions from customers or the press.",
+          "link": "https://www.reviewgeek.com/115308/insteon-may-have-joined-the-list-of-failed-smart-home-companies/",
+          "publishedOn": "2022-04-18T16:01:13.000Z",
+          "wordCount": 1250,
+          "title": "Insteon May Have Joined the List of Failed Smart Home Companies",
+          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/04/742c0ec0.png"
+        },
+        {
+          "id": "https://www.lifesavvy.com/124928/how-to-use-leftover-wine-corks-in-your-garden/",
+          "author": "Shea Simmons",
+          "description": "Crafty people use wine corks to create everything from wreaths to planter boxes. As it turns out, they’re also useful in the garden.",
+          "link": "https://www.lifesavvy.com/124928/how-to-use-leftover-wine-corks-in-your-garden/",
+          "publishedOn": "2022-04-18T16:00:35.000Z",
+          "wordCount": 696,
+          "title": "How to Use Leftover Wine Corks in Your Garden",
+          "imageUrl": "https://www.lifesavvy.com/p/uploads/2022/04/536058f1.jpg"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=790674",
+          "author": "Joe Fedewa",
+          "description": "In the Android world, one app store is king—the Google Play Store. This is the “official” place to download apps and games. However, there are a few alternatives. F-Droid is one of the most interesting options out there.",
+          "link": "https://www.howtogeek.com/790674/what-is-f-droid-and-how-is-it-different-from-the-play-store/",
+          "publishedOn": "2022-04-18T16:00:21.000Z",
+          "wordCount": 2013,
+          "title": "What Is F-Droid and How Is It Different From the Play Store?",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/03/F-Droid.png?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.reviewgeek.com/115313/another-bug-pixel-6-pro-may-decline-calls-you-actually-want/",
+          "author": "Josh Hendrickson",
+          "description": "Another week, seemingly another bug. Though we had high praise for the Pixel 6 Pro when it arrived, one bug after another dampened our enthusiasm. And now new user reports suggest yet another issue—important calls that never ring the phone.",
+          "link": "https://www.reviewgeek.com/115313/another-bug-pixel-6-pro-may-decline-calls-you-actually-want/",
+          "publishedOn": "2022-04-18T15:42:08.000Z",
+          "wordCount": 720,
+          "title": "Another Bug: Pixel 6 Pro May Decline Calls You Actually Want",
+          "imageUrl": "https://www.reviewgeek.com/p/uploads/2021/10/a97bf627.jpg"
+        },
+        {
+          "id": "https://www.reviewgeek.com/115315/fix-your-unreliable-wifi-with-this-killer-mesh-router-deal/",
+          "author": "Suzanne Humphries",
+          "description": "There are very few things we love more than having a stable Wi-Fi connection everywhere we go—precisely why we’re big fans of mesh home Wi-Fi systems. If you’ve been looking to upgrade your home’s Wi-Fi setup, this mesh router deal from Linksys is hard to pass up.",
+          "link": "https://www.reviewgeek.com/115315/fix-your-unreliable-wifi-with-this-killer-mesh-router-deal/",
+          "publishedOn": "2022-04-18T15:27:26.000Z",
+          "wordCount": 755,
+          "title": "Fix Your Unreliable Wi-Fi With This Killer Mesh Router Deal",
+          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/04/6a13a32f.png"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=792559",
+          "author": "Mahesh Makvana",
+          "description": "With concatenation, you can merge two or more values from multiple cells into a single cell in your spreadsheet. Microsoft Excel offers two different ways to perform this task, and we’ll show you how to use those two methods.",
+          "link": "https://www.howtogeek.com/792559/how-to-concatenate-in-excel/",
+          "publishedOn": "2022-04-18T15:00:53.000Z",
+          "wordCount": 1786,
+          "title": "How to Concatenate in Microsoft Excel",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/05/MS-excel-logo-675.png?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=753058",
+          "author": "Tyler Colp",
+          "description": "The best gaming mouse has a specific job to do. It needs to perform under high-pressure gaming situations, both consistently and reliably. These mice are built for gaming and have the features to prove it.",
+          "link": "https://www.howtogeek.com/753058/best-gaming-mouse/",
+          "publishedOn": "2022-04-18T14:00:00.000Z",
+          "wordCount": 4435,
+          "title": "The Best Gaming Mice of 2022",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/09/Gaming-Mice-Header.jpg?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=791055",
+          "author": "Dave McKay",
+          "description": "Why do Debian-based Linux distributions have apt as well as apt-get? Did apt replace apt-get or do they have different purposes? We explain the relationship between these two commands.",
+          "link": "https://www.howtogeek.com/791055/apt-vs.-apt-get-whats-the-difference-on-linux/",
+          "publishedOn": "2022-04-18T13:00:50.000Z",
+          "wordCount": 2634,
+          "title": "apt vs. apt-get: What’s the Difference on Linux?",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/11/hero-1.png?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.lifesavvy.com/124917/heres-everything-coming-to-netflix-the-week-of-april-18-20222/",
+          "author": "Shea Simmons",
+          "description": "A new week is upon us all. That means there’s a whole new round of Netflix content coming your way. This week, it includes the return of a smash hit series.",
+          "link": "https://www.lifesavvy.com/124917/heres-everything-coming-to-netflix-the-week-of-april-18-20222/",
+          "publishedOn": "2022-04-18T12:30:48.000Z",
+          "wordCount": 750,
+          "title": "Here's Everything Coming to Netflix the Week of April 18, 2022",
+          "imageUrl": "https://www.lifesavvy.com/p/uploads/2022/04/7fffb663.jpg"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=796237",
+          "author": "Jason Fitzpatrick",
+          "description": "If your primary internet activity is streaming video it makes sense to ensure you have enough bandwidth to enjoy it. Here’s a breakdown of how much bandwidth various streaming services and resolutions require.",
+          "link": "https://www.howtogeek.com/796237/what-internet-speed-do-i-need-for-streaming-services/",
+          "publishedOn": "2022-04-18T12:00:37.000Z",
+          "wordCount": 2165,
+          "title": "What Internet Speed Do I Need for Streaming Services?",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/04/StreamingSpeed1.jpg?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=796809",
+          "author": "Benj Edwards",
+          "description": "If you buy a computer that runs Windows, it’s usually called a “PC.” But sometimes a Mac is called a PC, too. What’s going on here, and why is a PC called a “PC” anyway? We’ll explain.",
+          "link": "https://www.howtogeek.com/796809/why-is-a-pc-called-a-pc/",
+          "publishedOn": "2022-04-18T11:00:15.000Z",
+          "wordCount": 2333,
+          "title": "Why Is a PC Called a PC?",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/04/pc_question_hero_2.jpg?height=200p&trim=2,2,2,2"
+        },
         {
           "id": "https://www.howtogeek.com/?p=792265",
           "author": "Mahesh Makvana",
@@ -597,156 +897,6 @@
           "wordCount": 5600,
           "title": "The Best eReaders of 2022",
           "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/06/best-ereaders-header.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=788948",
-          "author": "Sydney Butler",
-          "description": "Right now, being angry at your computer does nothing, but what if your software could take your mood into account? Affective computing lets a computer detect and interpret your emotional state (affect) and use it as a form of input.",
-          "link": "https://www.howtogeek.com/788948/affective-computing-could-change-the-future-of-computer-interaction/",
-          "publishedOn": "2022-04-17T13:00:48.000Z",
-          "wordCount": 2207,
-          "title": "Affective Computing Could Change the Future of Computer Interaction",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/02/woman-facial-emotional-recognition.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.reviewgeek.com/113992/the-least-demanding-tech/",
-          "author": "Sarah Chaney",
-          "description": "We all have that one friend or family member that just doesn’t click with technology. You’d love to give them techy items but worry that it’ll just entangle you into a lifetime of technical support. Luckily, these gadgets are all a cinch to use and should make life easier for those who use them.",
-          "link": "https://www.reviewgeek.com/113992/the-least-demanding-tech/",
-          "publishedOn": "2022-04-17T13:00:46.000Z",
-          "wordCount": 2376,
-          "title": "The Least Demanding Tech for Your Loved Ones",
-          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/04/d8a50baf.jpg"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=786516",
-          "author": "Tim Brookes",
-          "description": "Fast charging is a convenient way of replenishing your phone’s battery, provided your device supports it and you have a charger that can output the required wattage. But does this time-saver negatively affect battery life?",
-          "link": "https://www.howtogeek.com/786516/is-fast-charging-your-smartphone-bad-for-its-battery/",
-          "publishedOn": "2022-04-17T12:00:00.000Z",
-          "wordCount": 2024,
-          "title": "Is Fast Charging Your Smartphone Bad for Its Battery?",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/02/iphone-13-pro-max-lightning-cable.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=789145",
-          "author": "Vann Vicente",
-          "description": "Has someone done you the honor of calling you an OG? It’s a sign of respect. We’ll explain what an OG is and how to use this slang term to refer to someone you admire.",
-          "link": "https://www.howtogeek.com/789145/what-does-og-mean-and-how-do-you-use-it/",
-          "publishedOn": "2022-04-17T11:00:24.000Z",
-          "wordCount": 2153,
-          "title": "What Does “OG” Mean, and How Do You Use it?",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/02/woman-salute-respect.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=797631",
-          "author": "Benj Edwards",
-          "description": "Have you ever wanted to use an app in full-screen mode on a Mac? Or maybe you’re stuck in full screen and don’t know how to get out. Luckily, switching modes is as easy as clicking a little green button. Here’s how to do it.",
-          "link": "https://www.howtogeek.com/797631/how-to-enter-and-exit-full-screen-mode-on-a-mac/",
-          "publishedOn": "2022-04-16T21:00:48.000Z",
-          "wordCount": 1783,
-          "title": "How to Enter and Exit Full Screen Mode on a Mac",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/04/mac_resize_button_hero_2.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.reviewgeek.com/115172/waffle-is-our-favorite-new-wordle-alternative/",
-          "author": "Suzanne Humphries",
-          "description": "Unless you’ve been living under a rock, you’ve likely heard of Wordle, the popular word game that’s taken the Internet by storm. And while plenty of clever Wordle alternatives have popped up in the game’s wake, this one—Waffle—is by far the tastiest of them all!",
-          "link": "https://www.reviewgeek.com/115172/waffle-is-our-favorite-new-wordle-alternative/",
-          "publishedOn": "2022-04-16T20:04:49.000Z",
-          "wordCount": 857,
-          "title": "'Waffle' is Our Favorite New 'Wordle' Alternative",
-          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/04/af730afb.png"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=791982",
-          "author": "Mahesh Makvana",
-          "description": "If you don’t wish to keep a single or an entire chat in your Facebook Messenger, the company allows you to delete individual or all your messages at once. Here’s how you go about doing that on your desktop and mobile.",
-          "link": "https://www.howtogeek.com/791982/delete-messages-facebook-messenger/",
-          "publishedOn": "2022-04-16T20:00:34.000Z",
-          "wordCount": 1915,
-          "title": "How to Delete Messages on Facebook Messenger",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/09/facebook-messenger-logo-icon-smartphone.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=797311",
-          "author": "Nick Lewis",
-          "description": "Clearing out junk can be cathartic, but sometimes, we can get a little delete-happy and accidentally delete something we didn’t intend. Not to worry — it happens to everyone. In most cases, restoring the file is easy. Here’s how to do it.",
-          "link": "https://www.howtogeek.com/797311/how-to-restore-a-deleted-file-from-recycle-bin-on-windows/",
-          "publishedOn": "2022-04-16T19:00:54.000Z",
-          "wordCount": 1999,
-          "title": "How to Restore a Deleted File From Recycle Bin on Windows",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/11/windows-11-recycle-bin.png?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=791362",
-          "author": "Mahesh Makvana",
-          "description": "Google Drive allows you to download a single, multiple, or all your files from your account to your desktop or mobile phone. You can even download your Docs, Sheets, and Slides in compatible formats on your machine. Here’s how to do that.",
-          "link": "https://www.howtogeek.com/791362/how-to-download-files-and-folders-from-google-drive/",
-          "publishedOn": "2022-04-16T18:00:58.000Z",
-          "wordCount": 2138,
-          "title": "How to Download Files and Folders From Google Drive",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/08/google_drive_hero_1200_675.png?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.reviewgeek.com/115246/googles-addicting-new-game-lets-you-build-a-quantum-computer/",
-          "author": "Andrew Heinzman",
-          "description": "In honor of World Quantum Day, which you probably didn’t celebrate, Google and Doublespeak Games just launched The Qubit Game. It’s an oddly addictive and deep browser game that lets you “build” a quantum computer, no quantum physics degree required.",
-          "link": "https://www.reviewgeek.com/115246/googles-addicting-new-game-lets-you-build-a-quantum-computer/",
-          "publishedOn": "2022-04-16T18:00:41.000Z",
-          "wordCount": 666,
-          "title": "Google's Addicting New Game Lets You Build a Quantum Computer",
-          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/04/a0c001ba.png"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=798092",
-          "author": "Benj Edwards",
-          "description": "It’s great to light up the darkness, but if you’re doing it by accident with your iPhone 13, you might wonder how to switch it off. Luckily, you can turn off your phone’s built-in flashlight with just a few taps on the iPhone 13, 13 Mini, 13 Pro, or 13 Pro Max. Here’s how.",
-          "link": "https://www.howtogeek.com/798092/how-to-turn-off-the-flashlight-on-iphone-13/",
-          "publishedOn": "2022-04-16T17:00:06.000Z",
-          "wordCount": 1724,
-          "title": "How to Turn Off the Flashlight on iPhone 13",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/04/iphone_13_flashlight_hero_1.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.reviewgeek.com/115216/the-iconic-ram-1500-pickup-truck-is-about-to-go-all-electric/",
-          "author": "Suzanne Humphries",
-          "description": "Ram recently announced that it would be revealing its first all-electric pickup truck concept at some point later this year. And even though we’ll have to wait all the way until 2024 to see the actual production model, it’s exciting to see yet another truck model enter the EV world.",
-          "link": "https://www.reviewgeek.com/115216/the-iconic-ram-1500-pickup-truck-is-about-to-go-all-electric/",
-          "publishedOn": "2022-04-16T16:34:31.000Z",
-          "wordCount": 694,
-          "title": "The Iconic Ram 1500 Pickup Truck Is About to Go All-Electric",
-          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/04/2938d46f.png"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=798215",
-          "author": "Gaurav Shukla",
-          "description": "Looking to cut down on your streaming bill? You may want to consider free streaming services like Amazon Freevee. Here’s everything you need to know about Freevee and whether it’s worth your time.",
-          "link": "https://www.howtogeek.com/798215/what-is-amazon-freevee-and-is-it-any-good/",
-          "publishedOn": "2022-04-16T16:00:22.000Z",
-          "wordCount": 2155,
-          "title": "What Is Amazon Freevee, and Is It Any Good?",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/04/freevee_logo.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=793616",
-          "author": "Mahesh Makvana",
-          "description": "If you don’t want to use an email folder in Microsoft Outlook anymore, you can delete that folder as well as all its contents at once. We’ll show you how to do that in Outlook’s desktop and web versions, as the mobile version doesn’t allow it.",
-          "link": "https://www.howtogeek.com/793616/how-to-delete-a-folder-in-microsoft-outlook/",
-          "publishedOn": "2022-04-16T15:00:45.000Z",
-          "wordCount": 1697,
-          "title": "How to Delete a Folder in Microsoft Outlook",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/03/microsoft-outlook-logo-on-a-laptop.png?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=758354",
-          "author": "Sydney Butler",
-          "description": "Apple boasts that the iPhone 13‘s screen has a Ceramic Shield coating, which is more durable than glass. But it can still crack or shatter if you drop it—and the iPhone 13’s back is still made of glass. A good case will protect your iPhone from drops, scratches, and more.",
-          "link": "https://www.howtogeek.com/758354/best-iphone-13-case/",
-          "publishedOn": "2022-04-16T14:00:00.000Z",
-          "wordCount": 4488,
-          "title": "The Best iPhone 13 Cases of 2022",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/10/shutterstock_2054116946.jpg?height=200p&trim=2,2,2,2"
         }
       ]
     },
@@ -762,6 +912,36 @@
       "siteUrl": "https://www.maketecheasier.com",
       "articles": [
         {
+          "id": "https://admin.maketecheasier.com/?p=407805",
+          "author": "Mehvish Mushtaq",
+          "description": "The Samsung keyboard, which comes pre-installed on Galaxy phones, can be customized in several ways. You can change its size, transparency, layout style, font size, modes, and much more. To top it all off, Samsung lets you change the keyboard color as well. We all know the default white-grey combination can get boring at times. You can change the color of the Samsung Keyboard in five ways to make it look exciting.\n   \n\nContent\n\n1. Using Dark Mode\n2. Using Samsung Keyboard Themes\n3. Using High Contrast Color\n4. Using Galaxy Themes\n5. Using Color Palette in One UI 4\nFrequently Asked Questions\n\n.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   \nAlso read:Gboard vs. Samsung Keyboard vs. SwiftKey: Which Is Best?\n    \n1. Using Dark Mode\n    \nOne of the simplest ways to change the color of the Samsung keyboard is to change your phone’s theme to dark mode.... Read more",
+          "link": "https://feeds.maketecheasier.com/link/12555/14574862/change-color-of-samsung-keyboard",
+          "publishedOn": "2022-04-18T21:25:00.000Z",
+          "wordCount": 127,
+          "title": "5 Ways to Change the Color of a Samsung Keyboard",
+          "imageUrl": null
+        },
+        {
+          "id": "https://admin.maketecheasier.com/?post_type=deal&p=481526",
+          "author": "Laura Tucker",
+          "description": "Get ready for a summer full of entertainment. Stream the hottest blockbusters to a large 300″ display in your backyard or even in your family room. The Dxyiitoo Wi-Fi and Bluetooth Projector is compatible with mobile, PC, game systems, TV sticks, and more. It will display your movies, or any other content, in Full HD, all for under $140.\n    \nThis home theater system supports AirPlay and screen mirroring when connected to an iOS or Android device. It also supports a data cable Lightning, Wi-Fi, and hotspot connection. The projector’s multiple ports include HDMI, USB, HDMI, and AV, and it has a 3.5mm audio jack as well. This allows it to connect to TV boxes, DVD players, smartphones, tablets, wired and wireless headsets Bluetooth speakers, and more.\n    \n\n    \nThe Dxyiitoo Wi-Fi and Bluetooth Projector has a native 1920 x 1080p resolution and is compatible with 4K. It has an image quality of 8500 lumens and a contrast ratio of 10000:1 for a clear, bright picture. A viewing area of up to 300... Read more",
+          "link": "https://feeds.maketecheasier.com/link/12555/15228930/dxyiitoo-wi-fi-and-bluetooth-projector",
+          "publishedOn": "2022-04-18T19:25:00.000Z",
+          "wordCount": 127,
+          "title": "Save $52 on a Dxyiitoo Wi-Fi and Bluetooth Projector",
+          "imageUrl": null
+        },
+        {
+          "id": "https://admin.maketecheasier.com/?post_type=pitch&p=470658",
+          "author": "Ramces Red",
+          "description": "Artix Linux is a fast and easy to use Arch Linux-based distribution. It started as a version of Arch Linux without SystemD around 2017. Since then, it has grown to be a distribution that aims to create an Arch Linux environment that promotes package simplicity and security.\n   \n\nContent\n\nWhy Use Artix Linux?\nObtaining Artix Linux\nChoosing the Init System for You\nBooting into the Artix Live Disk\nInstalling Artix Linux\nFrequently Asked Questions\n\n.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   \nAlso read:How to Build a New PC For Linux\n    \nWhy Use Artix Linux?\n    \nOne of the main selling points of Artix is that it maintains a version of Arch Linux without SystemD. Similar to Devuan, this means that Artix does not include software and kernel configurations that are associated with the SystemD init system. This, in turn, reduces the amount of programs that you... Read more",
+          "link": "https://feeds.maketecheasier.com/link/12555/15228417/what-is-artix-linux-and-installation",
+          "publishedOn": "2022-04-18T15:25:00.000Z",
+          "wordCount": 127,
+          "title": "What is Artix Linux and How to Install It",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.maketecheasier.com/?p=343138",
           "author": "Sayak Boral",
           "description": "SetupDiag is a free Microsoft utility that can be very useful for diagnosing any problems you may encounter in Windows updates. It will save you a lot of time if you run this program before migrating your Windows to a higher version: its generated log files will tell you what can possibly go wrong. Also, if you run into an unsuccessful update, SetupDiag will detect the root cause of failure for you to take corrective measures.\n   \n\nContent\n\nDownload and Prerequisites of SetupDiag\nUse SetupDiag to Diagnose Update Issues in Windows\nHow to Troubleshoot Later \nFrequently Asked Questions\n\n.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   \nAlso read:How to Fix High Memory Usage in Windows\n    \nDownload and Prerequisites of SetupDiag\n    \nDownload SetupDiag from this official link. The only prerequisites for using this software are that the destination should be Windows 11 or Windows 10, and the... Read more",
@@ -770,16 +950,6 @@
           "wordCount": 1561,
           "title": "How to Use SetupDiag to Fix Windows Update Problems",
           "imageUrl": "https://www.maketecheasier.com/assets/uploads/2022/03/Setup-Diag-Featured-Image.jpg"
-        },
-        {
-          "id": "https://www.maketecheasier.com/?p=130920",
-          "author": "Sayak Boral",
-          "description": "Do you have specific Android phone contacts whose incoming alerts you’d like to keep private? Sometimes unwanted texts and calls show up and you’d rather screen such calls and keep the user conversations a secret. The following apps will successfully hide your calls and SMS logs on Android from specific contacts. Similarly, we cover how to block the text from chosen contacts on WhatsApp. \n   \n\nContent\n\nHide Calls and SMS on Android from Specific Contacts\nHiding WhatsApp Texts on Android from Specific Contacts\nFrequently Asked Questions\n\n.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   \nAlso read:How to Hide Media in Google Photos Using Locked Folder\n    \nHide Calls and SMS on Android from Specific Contacts\n    \nThere are plenty of Android apps that hide your calls and SMS history. But if you want this feature for just a few specific contacts, we recommend Calculator Pro+,... Read more",
-          "link": "https://feeds.maketecheasier.com/link/12555/15225885/hide-calls-texts-android",
-          "publishedOn": "2022-04-16T19:25:00.000Z",
-          "wordCount": 1446,
-          "title": "How to Hide Calls and Texts from Specific Contacts on Android",
-          "imageUrl": "https://www.maketecheasier.com/assets/uploads/2022/03/hide-calls-and-texts-android-featured-image.jpg"
         }
       ]
     },
@@ -795,14 +965,24 @@
       "siteUrl": "https://www.navigaweb.net/",
       "articles": [
         {
-          "id": "https://www.navigaweb.net/2022/04/come-scaricare-film-e-serie-tv-su.html",
+          "id": "https://www.navigaweb.net/2022/04/chiudere-le-app-su-iphone-e-utile.html",
           "author": null,
-          "description": "Amazon Prime Video è diventato in poco tempo uno dei servizi di streaming più utilizzati in Italia, visto che viene offerto all'interno dell'abbonamento Amazon Prime (molto più ampio e con altri interessanti vantaggi). \r\nNonostante venga offerto \"praticamente gratis\" (anche se comunque dobbiamo pagare l'abbonamento annuale a Prime), non significa che il servizio sia scadente: sono presenti serie...\n\r\n\r\nContinua a leggere su Navigaweb.net (clicca sul titolo)",
-          "link": "https://www.navigaweb.net/2022/04/come-scaricare-film-e-serie-tv-su.html",
-          "publishedOn": "2022-04-17T12:10:00.001Z",
-          "wordCount": 1044,
-          "title": "Come scaricare film e serie TV su Amazon Prime Video",
-          "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4JEwizHr_ULhwpEBW6d3_Pjmk9dhJHKPfGrstrMV5wreCL30g1TO2HTQZJVnWLKA1Bb0rTs6puU12q6ip3232y1e8KhJNDQORbuw1ve47c9ZzDEUWi4aJqivHye2hf_Xyva8k5txP2sFkBolqa2I9JYBU3t92KD9Bs2rbCpAEI1PGGHKj_tJiS8df/w1200-h630-p-k-no-nu/Scaricare%20film%20Amazon%20Video.jpg"
+          "description": "Chi proviene dal mondo Android sa quando possa essere utile chiudere le app presenti in memoria, accedendo al gestore delle finestre aperte e trascinando le scede di lato o utilizzando il tasto di chiusura dedicato (che chiude in un colpo solo tutte le app aperte). Su iPhone questa abitudine conviene perderla, visto che non è affatto utile chiudere le app attive in background nel tentativo di...\n\r\n\r\nContinua a leggere su Navigaweb.net (clicca sul titolo)",
+          "link": "https://www.navigaweb.net/2022/04/chiudere-le-app-su-iphone-e-utile.html",
+          "publishedOn": "2022-04-18T13:56:00.000Z",
+          "wordCount": 904,
+          "title": "Chiudere le app su iPhone è utile?",
+          "imageUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEjUP0XpF0TUa2cAJ-H9377a5XDITjWzlMAnKQgBEAOXI07sPg7PY8_TDioc987EOHNZ8KFL3mF09zqGakTc05LvJRbHciD_soAxckdZ8KCDQj7J4e8EuszEpVW7ccXDHpNllNomtxsjwHS3ZBVTSdU_bJ2YlOlOxeSfV-62OGrcQqBF1JfpKZIyg17h=w1200-h630-p-k-no-nu"
+        },
+        {
+          "id": "https://www.navigaweb.net/2022/04/come-usare-le-emoji-ar-su-samsung.html",
+          "author": null,
+          "description": "Gli AR Emoji sono la risposta di Samsung ai Animoji offerti da Apple sugli iPhone. Con essi possiamo creare delle nuove emoji usando il nostro volto come modello e aggiungendo elementi decorativi come cappelli, barba, baffi, occhiali e molto altro ancora. Questo set di emoji personalizzate può essere utilizzato in tutte le chat, ma è necessario che anche il nostro interlocutore disponga di un...\n\r\n\r\nContinua a leggere su Navigaweb.net (clicca sul titolo)",
+          "link": "https://www.navigaweb.net/2022/04/come-usare-le-emoji-ar-su-samsung.html",
+          "publishedOn": "2022-04-18T10:02:00.001Z",
+          "wordCount": 1057,
+          "title": "Come usare le Emoji AR su Samsung Galaxy e ogni smartphone",
+          "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDd3C1OgKqkN_EVTHxWrl6LuIijTRntpmj8WjFkn38smhcExZHHH6cnwPCqtwMFDdEx4dDsWwqdcQ-5Y49vYfho_CdCONs-GAku9pbjD47nbdX85pe5jOI3RvGW-yrZfCjZ3pqKgRRCevUkiuKozI_SoaUcBA6or02FVODJya2QYx7MWTgcHCYw9hO/w1200-h630-p-k-no-nu/AR%20Emoji.jpg"
         }
       ]
     },
@@ -812,6 +992,96 @@
       "siteUrl": "https://www.phoronix.com/",
       "articles": [
         {
+          "id": "https://www.phoronix.com/scan.php?page=news_item&px=AMD-SMCA-Syndrome-FRU-Text",
+          "author": null,
+          "description": "This year AMD engineers working on hardware enablement for Linux have been busy with EDAC driver improvements like RDDR5 and LRDDR5 handling, AMD Scalable Machine Check Architecture (SMCA) additions for \"future\" CPUs, and the various other areas outside of the error detection and correction field. Today though is a new patch series back in that hardware error handling space with new SMCA code...",
+          "link": "https://www.phoronix.com/scan.php?page=news_item&px=AMD-SMCA-Syndrome-FRU-Text",
+          "publishedOn": "2022-04-18T23:19:13.000Z",
+          "wordCount": 904,
+          "title": "AMD Continues With MCE/SMCA Linux Driver Changes Ahead Of Zen 4 CPUs",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Sony-PS5-LLVM-Upstream-Start",
+          "author": null,
+          "description": "Similar to Sony contributing PlayStation 4 compiler support in LLVM with Clang being their preferred code compiler, Sony has now begun upstreaming PlayStation 5 (PS5) support in the open-source LLVM/Clang compiler stack...",
+          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Sony-PS5-LLVM-Upstream-Start",
+          "publishedOn": "2022-04-18T18:55:15.000Z",
+          "wordCount": 843,
+          "title": "Sony Begins Landing PlayStation 5 Support In The Upstream LLVM/Clang Compiler",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Git-2.36-Released",
+          "author": null,
+          "description": "Git 2.36 is out as the newest feature release to this widely-used, open-source distributed revision control system...",
+          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Git-2.36-Released",
+          "publishedOn": "2022-04-18T18:26:56.000Z",
+          "wordCount": 798,
+          "title": "Git 2.36 Released With --remerge-diff Option, More Control Over Fsync",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.phoronix.com/scan.php?page=news_item&px=SDL2-Reverts-Wayland-Default",
+          "author": null,
+          "description": "Back in January was the change pushed into SDL2 Git where the library prefers Wayland by default where available rather than defaulting to using X11 support. However, pushed today into SDL2 is a revert on that earlier change due to Wayland issues that the developers are more comfortable sticking to X11/XWayland by default until various Wayland problems are addressed...",
+          "link": "https://www.phoronix.com/scan.php?page=news_item&px=SDL2-Reverts-Wayland-Default",
+          "publishedOn": "2022-04-18T16:26:05.000Z",
+          "wordCount": 920,
+          "title": "SDL2 Reverts Its Wayland Preference - Goes Back To X11 Default",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Linux-515-Backport-ADL-Perf-Fix",
+          "author": null,
+          "description": "A Canonical kernel engineer is now proposing an Intel P-State performance fix for latest-generation Intel Alder Lake processors be back-ported to the Linux 5.15 LTS series. In turn this should then be picked up by Ubuntu 22.04's kernel build moving forward and others on this latest long-term support series for Linux...",
+          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Linux-515-Backport-ADL-Perf-Fix",
+          "publishedOn": "2022-04-18T11:29:17.000Z",
+          "wordCount": 1025,
+          "title": "Intel Alder Lake Performance Fix To Be Backported To Linux 5.15 LTS",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.phoronix.com/scan.php?page=news_item&px=ZoneFS-Working-Linux-5.19",
+          "author": null,
+          "description": "Back in 2019 Western Digital announced their work on ZoneFS as a new Linux file-system just designed for specialty use-cases and running on zoned block devices. There hasn't been much code churn around ZoneFS in a number of kernel releases since it was merged back in 2020 while for Linux 5.19 this summer a number of fixes/improvements have been queuing up...",
+          "link": "https://www.phoronix.com/scan.php?page=news_item&px=ZoneFS-Working-Linux-5.19",
+          "publishedOn": "2022-04-18T11:26:26.000Z",
+          "wordCount": 981,
+          "title": "ZoneFS File-System To See Some Improvements With Linux 5.19",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Fedora-Legacy-BIOS-Possible-SIG",
+          "author": null,
+          "description": "Earlier this month the change proposal was laid out for Fedora 37 looking to deprecate legacy BIOS support. That kicked the hornets nest with many Fedora users expressing their desire to see Fedora legacy BIOS support continue whether it be for running the Linux distribution on dated hardware or even just for VMs without UEFI boot. It's looking more like that responsibility of legacy BIOS support may instead be shifted to a new special interest group (SIG) to take up the work of maintaining and testing that pre-UEFI boot support...",
+          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Fedora-Legacy-BIOS-Possible-SIG",
+          "publishedOn": "2022-04-18T10:30:00.000Z",
+          "wordCount": 1081,
+          "title": "Legacy BIOS Support Remains Important For Some On Fedora, May Shift Responsibility To SIG",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Clang-Linux-RandStruct",
+          "author": null,
+          "description": "In matching behavior already provided by the GCC compiler, LLVM/Clang has landed \"RandStruct\" functionality to allow optionally randomizing the structure layout for C code...",
+          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Clang-Linux-RandStruct",
+          "publishedOn": "2022-04-18T09:49:36.000Z",
+          "wordCount": 884,
+          "title": "Clang 15 Lands Support To Randomize Structure Layout, Linux Prepares To Use It",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.phoronix.com/scan.php?page=news_item&px=VirtIO-Crypto-Speedup",
+          "author": null,
+          "description": "The \"virtio-crypto\" kernel driver for supporting the VirtIO-spec'ed virtual crypto hardware accelerator for virtual machines is about to offer significantly better performance...",
+          "link": "https://www.phoronix.com/scan.php?page=news_item&px=VirtIO-Crypto-Speedup",
+          "publishedOn": "2022-04-18T09:11:58.000Z",
+          "wordCount": 707,
+          "title": "VirtIO-Crypto Seeing A Big Performance Speedup",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.18-rc3",
           "author": null,
           "description": "Linus Torvalds just released Linux 5.18-rc3 as the Easter Sunday kernel for testing as Linux 5.18 works its way toward a stable release toward the end of May...",
@@ -819,56 +1089,6 @@
           "publishedOn": "2022-04-17T21:46:03.000Z",
           "wordCount": 926,
           "title": "Linux 5.18-rc3 Released - \"Yes, Yes, It's Also Easter Sunday, But Priorities, People!\"",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/scan.php?page=news_item&px=GNOME-42-Radeon-DRM-Fix",
-          "author": null,
-          "description": "There have been bug reports recently for those using GNOME Shell 42 whether it be the likes of Ubuntu 22.04 or Fedora (Silverblue) 36 Beta over crashes or blank screens appearing when making use of the Radeon DRM/KMS kernel driver. That older Radeon DRM driver is for pre-GCN 1.2 graphics processors (aside from those on GCN 1.0/1.1 that switch to using the AMDGPU kernel driver with optional module parameters) while now Mutter has landed a fix for this issue...",
-          "link": "https://www.phoronix.com/scan.php?page=news_item&px=GNOME-42-Radeon-DRM-Fix",
-          "publishedOn": "2022-04-17T12:05:31.000Z",
-          "wordCount": 975,
-          "title": "GNOME 42 Mutter Lands Fix For Using The Old \"Radeon\" Graphics Driver",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Intel-TSX-2022-Fixes-Linux",
-          "author": null,
-          "description": "Two Intel TSX (Transactional Synchronization Extensions) fixes were submitted today ahead of Linux 5.18-rc3 and are also marked for back-porting to existing Linux stable kernels. One of the fixes is for addressing a case where systems could still be left vulnerable to the TSX Asynchronous Abort (TAA) vulnerability and the other is where TSX may not get turned off...",
-          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Intel-TSX-2022-Fixes-Linux",
-          "publishedOn": "2022-04-17T10:30:16.000Z",
-          "wordCount": 998,
-          "title": "New Intel TSX Fixes For The Linux Kernel Queue Up, Forces Off TSX \"Development Mode\"",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Haiku-OS-March-2022",
-          "author": null,
-          "description": "Haiku as the open-source operating system continuing the great work inspired by BeOS remains very active in working to accomplish their goals...",
-          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Haiku-OS-March-2022",
-          "publishedOn": "2022-04-17T09:50:35.000Z",
-          "wordCount": 780,
-          "title": "Haiku Had A Very Busy March Improving Hardware Support & More",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Box86-0.2.6-Box64-0.1.8",
-          "author": null,
-          "description": "Box86/Box64 is out with new versions today for this open-source project getting x86/x86_64 binaries running on other architectures like Arm and possibly RISC-V and more moving forward. Exciting with Box86 v0.2.6 and Box64 v0.1.8 is getting Steam and Steam Play working for at least the basics...",
-          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Box86-0.2.6-Box64-0.1.8",
-          "publishedOn": "2022-04-16T16:47:35.000Z",
-          "wordCount": 928,
-          "title": "Box86 0.2.6 / Box64 0.1.8 Released With Working Steam & Steam Play On Non-x86 CPUs",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/scan.php?page=news_item&px=LXQt-1.1-Released",
-          "author": null,
-          "description": "In time for making your open-source Easter basket is the release of LXQt 1.1 as the newest feature release to this open-source, Qt-based desktop environment born out of the merging of the former Razor-qt and LXDE projects...",
-          "link": "https://www.phoronix.com/scan.php?page=news_item&px=LXQt-1.1-Released",
-          "publishedOn": "2022-04-16T15:57:04.000Z",
-          "wordCount": 736,
-          "title": "LXQt 1.1 Released With XDG Desktop Portal Integration, Other New Features",
           "imageUrl": null
         }
       ]
