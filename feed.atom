@@ -2,10 +2,721 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sovy666.github.io/informatica/index.html</id>
     <title>osmos::feed</title>
-    <updated>2022-05-01T02:19:33.259Z</updated>
+    <updated>2022-05-02T02:00:05.395Z</updated>
     <generator>osmosfeed 1.14.4</generator>
     <link rel="alternate" href="https://sovy666.github.io/informatica/index.html"/>
     <link rel="self" href="https://sovy666.github.io/informatica/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[ThinkPad - UEFI secure boot self-signing with sbctl?]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ugevhs/thinkpad_uefi_secure_boot_selfsigning_with_sbctl/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ugevhs/thinkpad_uefi_secure_boot_selfsigning_with_sbctl/"/>
+        <updated>2022-05-02T01:52:12.000Z</updated>
+        <summary type="html"><![CDATA[I have a ThinkPad X1 Carbon Gen 9 with an encrypted LUKS2 root partition with FIDO2 authentication. It is a dual boot setup with Windows 11, where systemd will chainload an EFIstub.
+ I want to protect against Evil Maid attacks and want to sign systemd-boot and my EFIstub with keys that will then be enrolled in Secure Boot.
+ The best way to do this seems to be to use /u/Foxboron's sbctl utility, but I'm worried about doing so because ThinkPad X1 Carbon models have had a propensity to brick when secure boot keys have been enrolled improperly: https://old.reddit.com/r/thinkpad/comments/epadb5/psa_dont_install_custom_secure_boot_keys_on_x1/
+ I'm not sure if the issue has been fixed between Gen7 and Gen9, but my Gen9 does require OpRom in the boot chain. I'm not sure what the right steps to take to properly enroll self signing in UEFI with such hardware is.
+ Could anyone confirm they've successfully done this process on an X1 Carbon Gen 9 using sbctl and that has not resulted in a brick of the laptop? If so, could you point me to some steps on how to do that?
+ Thanks in advance.
+    submitted by    /u/trashcan86  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Installing .tar.xz]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ugeldj/installing_tarxz/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ugeldj/installing_tarxz/"/>
+        <updated>2022-05-02T01:36:06.000Z</updated>
+        <summary type="html"><![CDATA[Hey guys, I was trying to install an ungoogled-chromium all codecs build that is not available in the AUR, the only way to install it is via the tar file, how can I install it? 
+ I searched a lot about it but can't seem to find the answer
+    submitted by    /u/TR0V40_  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Best practices to partially upgrade packages]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ugdibc/best_practices_to_partially_upgrade_packages/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ugdibc/best_practices_to_partially_upgrade_packages/"/>
+        <updated>2022-05-02T00:35:35.000Z</updated>
+        <summary type="html"><![CDATA[What are the best practices for partially upgrading packages? I know that this is not recommended, but it is not clear to me why it is not and it would be extremely convenient to be able to selectively choose which packages to upgrade.
+ ​
+ This came to attention when I recently tried to install imagemagick. 
+ I get an error - imagemagick-7.1.0.28-1-x86_64.pkg.tar.zst failed to download
+ I imagine that I need to upgrade my mirrors or synchronize my package database, but either way having to do `pacman -Syu would upgrade all my packages. What should I be doing instead?
+    submitted by    /u/daredevildas  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Unable to fix GPG Error when upgrading packages.]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ugcmtn/unable_to_fix_gpg_error_when_upgrading_packages/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ugcmtn/unable_to_fix_gpg_error_when_upgrading_packages/"/>
+        <updated>2022-05-01T23:47:54.000Z</updated>
+        <summary type="html"><![CDATA[When upgrading any package through pacman, I get the following error:
+  
+error: gnupg: signature from "Levente Polyak (anthraxx) levente@leventepolyak.net" is unknown trust :: File /var/cache/pacman/pkg/gnupg-2.2.35-1-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)). Do you want to delete it? [Y/n]
+  
+I noticed that a few other people have had this issue these past few days on this subreddit, but even after trying all of the fixes people reccomended in those threads I'm unable to fix the issue.
+ So far I've tried deleting all files in /var/lib/pacman/sync, clearing the cache completely with 'paccache -rk 0', running 'pacman -Syy' then 'pacman -S archlinux-keyring', to no avail.
+ Any ideas on what more I could do to fix this issue? Thanks.
+    submitted by    /u/Down200  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Help] Issues booting into GUI.]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ugckeq/help_issues_booting_into_gui/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ugckeq/help_issues_booting_into_gui/"/>
+        <updated>2022-05-01T23:44:19.000Z</updated>
+        <summary type="html"><![CDATA[Hi all,
+ I'm not able to boot into KDE, I can only move between TTY2-6 with CTRL+ALT+F*. 
+ I have both the default and hardened kernels installed, the issue is the same on both, but on the hardened session I have an error message reading
+ "libbpf: failed to find valid kernel BTF libbpf: Error loading vmlinux BTF: -3 libbpf: failed to load object 'iterators_bpf' libbpf: failed to load BPF skeleton 'iterators_bpf': -3 Failed load could be due to wrong endianness"
+ I have tried searching for fixes related to this message, unable to find anything relevant to what I'm experiencing.
+ This issue started after I installed steam, so I had run a partial upgrade by accident to add the multilib packages, then ran a full upgrade. Here I decided to shut the system down to install two other SSD's I used for storing games on my old rig. 
+ Powered everything up, grub was fine, and the error I mentioned earlier shows up during the journal recovery screen before KDE loads.
+ So far, with my TTY, I have tried reinstalling KDE and trying various methods of getting a gui session, like Ctrl+Alt+F7, and systemctl commands to start/restart kde's services.
+ I have tried the loginctl command, which only returns my current TTY session, or any others that happen to be open.
+ I should mention that I used the archinstall script during installation, but I can't imagine that would affect anything. If there's anything else I should provide I'll do my best to add it.
+ I am somewhat new to troubleshooting Arch, so I'm certain there's something I'm overlooking. Any help or ideas is much appreciated, thanks.
+    submitted by    /u/mudman639  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux 5.18-rc5 Released - "A Very Tiny Bit Larger"]]></title>
+        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=Linux-5.18-rc5-Released</id>
+        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Linux-5.18-rc5-Released"/>
+        <updated>2022-05-01T22:18:29.000Z</updated>
+        <summary type="html"><![CDATA[While Linux 5.18 had been trending on the lighter/calmer side, Linux 5.18-rc5 was just released and it comes in "a very tiny bit larger" than usual...]]></summary>
+        <author>
+            <name>Phoronix</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[JACK Setup Questions]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ugauvv/jack_setup_questions/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ugauvv/jack_setup_questions/"/>
+        <updated>2022-05-01T22:17:04.000Z</updated>
+        <summary type="html"><![CDATA[I've just tried to setup JACK so I can do some quality audio recording on my system, but it doesn't seem to be doing anything and I can't figure out why. I have both my input and output devices set up in ALSA with seemingly no issue (have tested with arecord and aplay), and I have JACK and qjackctl installed. JACK seems to be set up to use ALSA as the driver and everything is set to default, but none of the DAWs I've tried seem to be able to record any audio when I have them set up to connect to JACK (I've tried both Ardour and Reaper).
+ My speakers are connected through a Schiit Modi 2 and my microphone is through a Zoom H4n, if that information helps.
+ Happy to provide any other information, and thanks in advance for any help you can offer!
+    submitted by    /u/ApricotRembrandt  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Risolto] Avrai bisogno di una nuova app per aprire questo collegamento windowsdefender]]></title>
+        <id>3550|20220502000000</id>
+        <link href="https://turbolab.it/windows-10/risolto-avrai-bisogno-nuova-app-aprire-questo-collegamento-windowsdefender-3550"/>
+        <updated>2022-05-01T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Dopo aver eseguito l’aggiornamento da Windows 10 a Windows 11 nel mio portatile ho trovato che Microsoft Defender e tutto il centro di sicurezza non si aprivano più. L’unica cosa che si otteneva era un messaggio come quello che si vede nella foto. La risoluzione del problema è molto semplice, vediamo come farla.
+›› Leggi tutto]]></summary>
+        <author>
+            <name>info@turbolab.it (TurboLab.it)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Format an Xbox One External Hard Drive for Use with a PC]]></title>
+        <id>https://www.maketecheasier.com/?p=354738</id>
+        <link href="https://feeds.maketecheasier.com/link/12555/13766893/format-xbox-one-hard-drive-for-use-with-pc"/>
+        <updated>2022-05-01T21:25:00.000Z</updated>
+        <summary type="html"><![CDATA[The storage capacity of Microsoft’s Xbox One console can easily be upgraded with an external hard drive. However, if you no longer need the extra storage, you can’t simply just plug that drive into your computer and start using it. 
+    
+In fact, your PC won’t even recognize that the drive is plugged in. Well lucky for you this article will walk you through how to format your Xbox One external hard drive so it can be used on a PC.
+   
+
+Content
+
+Why Can't a Drive Used for Xbox One Be Used Simultaneously with a PC?
+What to Do Before You Disconnect Your External Drive from Your Xbox One
+How to Format Your Xbox One External Hard Drive
+
+.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   
+Also read:How to Use Google Assistant with Xbox One
+    
+Why Can’t a Drive Used for Xbox One Be Used Simultaneously with a... Read more]]></summary>
+        <author>
+            <name>Ryan Lynch</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[sbctl - How do I use it to with a Windows-Arch Linux dual boot with BitLocker with Secure Boot?]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ug9pu0/sbctl_how_do_i_use_it_to_with_a_windowsarch_linux/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ug9pu0/sbctl_how_do_i_use_it_to_with_a_windowsarch_linux/"/>
+        <updated>2022-05-01T21:20:51.000Z</updated>
+        <summary type="html"><![CDATA[Secure Boot is detailed in the Arch Linux wiki but not with sbctl. I've seen in several places people here mention they have successfully used sbctl but without documentation of their steps, and the official documentation by Foxboron is sparse.
+ Can anyone detail how they setup Secure Boot on a dual boot with Arch Linux and Windows that relies on BitLocker?
+    submitted by    /u/Piportrizindipro  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What Is a CDN, and Why Do Companies Use Them?]]></title>
+        <id>https://www.howtogeek.com/?p=791388</id>
+        <link href="https://www.howtogeek.com/791388/what-is-a-cdn/"/>
+        <updated>2022-05-01T21:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Services you probably use every day, from Netflix to Amazon, rely on something called a CDN, or Content Distribution (sometimes “Delivery”) Network. So what are these special computer networks for, and why are they so important?]]></summary>
+        <author>
+            <name>Sydney Butler</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Discord crashes after clicking on mako notification. No idea why.]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ug8f9l/discord_crashes_after_clicking_on_mako/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ug8f9l/discord_crashes_after_clicking_on_mako/"/>
+        <updated>2022-05-01T20:19:09.000Z</updated>
+        <summary type="html"><![CDATA[I've got community/discord 0.0.17-1 installed and running sway version 1.7. I'm just running discord via /usr/bin/discord which I believe uses XWayland (since it's using the bundled electron rather than system electron and swaymsg -t get_tree shows a null app_id). Whenever I receive a new discord message, I see the appropriate mako notification. However, when I click on the notification, discord crashes with the following:
+ ``` ../../third_party/tcmalloc/chromium/src/free_list.cc:135] Memory corruption detected.
+ Failed to get crash dump id. Report Id: 39eabcfe-e434-40 zsh: segmentation fault (core dumped) discord ```
+ Everything is up to date on my system, so not sure what's causing this. It's the only app that I've experienced this so far.
+ A bit more info about the system:
+  
+extra/wayland 1.20.0-2
+ extra/xorg-xwayland 22.1.1-1 (xorg)
+ community/sway 1:1.7-2
+ community/mako 1.6-3
+ community/wlroots 0.15.1-3
+ Linux LTS: 5.15.36-1
+ Intel i7-8650U CPU @ 1.90GHz
+ Intel Corporation UHD Graphics 620
+ 16GB Ram
+  
+Any thoughts about what could be causing this and how to go about fixing it? The arch wiki troubleshooting section doesn't mention anything about this specific issue, so that's why I'm asking here.
+    submitted by    /u/femme_inside  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tesla Recalls 48,000 EVs Over Speedometer Issue]]></title>
+        <id>https://www.reviewgeek.com/116562/tesla-recalls-48000-evs-over-speedometer-issue/</id>
+        <link href="https://www.reviewgeek.com/116562/tesla-recalls-48000-evs-over-speedometer-issue/"/>
+        <updated>2022-05-01T20:04:22.000Z</updated>
+        <summary type="html"><![CDATA[This week, Tesla has issued another recall for a software problem in over 48,000 Model 3 electric vehicles. According to the NHTSA, an issue with “track mode” prevents the display from showing the proper speed reading.]]></summary>
+        <author>
+            <name>Cory Gunther</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Use An Antivirus Boot Disc or USB Drive to Ensure Your Computer is Clean]]></title>
+        <id>http://www.howtogeek.com/?p=175234</id>
+        <link href="https://www.howtogeek.com/175234/how-to-use-an-antivirus-boot-disc-or-usb-drive-to-ensure-your-computer-is-clean/"/>
+        <updated>2022-05-01T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[If your computer is infected with malware, running an antivirus within Windows may not be enough to remove it. If your computer has a rootkit, the malware may be able to hide itself from your antivirus software.]]></summary>
+        <author>
+            <name>Chris Hoffman</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Test Your Antivirus, Firewall, Browser, and Software Security]]></title>
+        <id>http://www.howtogeek.com/?p=143263</id>
+        <link href="https://www.howtogeek.com/143263/how-to-test-your-antivirus-firewall-browser-and-software-security/"/>
+        <updated>2022-05-01T19:00:00.000Z</updated>
+        <summary type="html"><![CDATA[So you have an antivirus program guarding your system, your firewall is up, your browser is updated, and you’re not missing any security patches. But how can be sure your defenses are actually working as well as you think they are?]]></summary>
+        <author>
+            <name>Chris Hoffman</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Is there a good software that will rip multi track CDs where each track will be a separate bin file?]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ug68xr/is_there_a_good_software_that_will_rip_multi/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ug68xr/is_there_a_good_software_that_will_rip_multi/"/>
+        <updated>2022-05-01T18:35:35.000Z</updated>
+        <summary type="html"><![CDATA[I'm looking to rip some audio cd's and some ps1 games. Far as I can tell dd and cdrao all want to rip them with all tracks contained in one bin. I want them separated as multiple bins indexed with a cue file. Does linux / arch have anything that can do that?
+    submitted by    /u/kenshen  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[1 fps in gnome-software]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ug6275/1_fps_in_gnomesoftware/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ug6275/1_fps_in_gnomesoftware/"/>
+        <updated>2022-05-01T18:26:47.000Z</updated>
+        <summary type="html"><![CDATA[when i starting it from terminal it shows this error:
+ 15:54:33:0500 Gsk Failed to realize renderer of type 'GskGLRenderer' for surface 'GdkX11Toplevel': Compilation failure in shader.
+ Error Message:
+ 0(30) : error C7551: OpenGL first class arrays require #version 120
+ 0(43) : error C7551: OpenGL first class arrays require #version 120
+ 0(120) : error C7551: OpenGL first class arrays require #version 120
+ ​
+ full log - https://pastebin.com/VjXR6j3N
+ neofetch output - https://pastebin.com/ZUFQfR04
+ glxinfo output - https://pastebin.com/66urA4d9
+ gpu - nvidia 9400 gt 512 mb
+ video driver - aur/nvidia-340xx 340.108-29 (+57 0.92)
+    submitted by    /u/Gomeostaz  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[REvil ransomware returns: New malware sample confirms gang is back]]></title>
+        <id>https://www.bleepingcomputer.com/news/security/revil-ransomware-returns-new-malware-sample-confirms-gang-is-back/</id>
+        <link href="https://www.bleepingcomputer.com/news/security/revil-ransomware-returns-new-malware-sample-confirms-gang-is-back/"/>
+        <updated>2022-05-01T18:06:09.000Z</updated>
+        <summary type="html"><![CDATA[The notorious REvil ransomware operation has returned amidst rising tensions between Russia and the USA, with new infrastructure and a modified encryptor allowing for more targeted attacks. [...]]]></summary>
+        <author>
+            <name>Lawrence Abrams</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[This Hilarious Deepfake Replaces the New Batman with the 1960s Batman]]></title>
+        <id>https://www.reviewgeek.com/116590/this-hilarious-deepfake-replaces-the-new-batman-with-the-1960s-batman/</id>
+        <link href="https://www.reviewgeek.com/116590/this-hilarious-deepfake-replaces-the-new-batman-with-the-1960s-batman/"/>
+        <updated>2022-05-01T18:00:59.000Z</updated>
+        <summary type="html"><![CDATA[Maybe you left the new Batman movie thinking it was too dark and edgy. That’s understandable; we’re long overdue for a goofy Adam West or George Clooney-like Batman. And if you disagree with me, maybe this hilarious deepfake trailer will correct your flawed opinion.]]></summary>
+        <author>
+            <name>Andrew Heinzman</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Reset an Amazon Fire TV Stick Remote]]></title>
+        <id>https://www.howtogeek.com/?p=796522</id>
+        <link href="https://www.howtogeek.com/796522/how-to-reset-an-amazon-fire-tv-stick-remote/"/>
+        <updated>2022-05-01T18:00:46.000Z</updated>
+        <summary type="html"><![CDATA[If you’re experiencing issues with your Amazon Fire TV Stick remote, it’s worth resetting your remote to potentially fix those issues. The reset process differs depending on your model, and we’ll show you the processes for the most popular Fire TV Stick remotes.]]></summary>
+        <author>
+            <name>Mahesh Makvana</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Fix “Show Accent Color on Start and Taskbar” Grayed Out on Windows 11]]></title>
+        <id>https://www.howtogeek.com/?p=799656</id>
+        <link href="https://www.howtogeek.com/799656/how-to-fix-show-accent-color-on-start-and-taskbar-grayed-out-on-windows-11/"/>
+        <updated>2022-05-01T17:00:23.000Z</updated>
+        <summary type="html"><![CDATA[If you’re trying to change the color of the taskbar in Windows 11, you might find that the option to “Show accent color on Start” is grayed out in the Settings app. We’ll show you how to fix it.]]></summary>
+        <author>
+            <name>Benj Edwards</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AUR package requires -DCMAKE_BUILD_TYPE=Release]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ug3qj4/aur_package_requires_dcmake_build_typerelease/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ug3qj4/aur_package_requires_dcmake_build_typerelease/"/>
+        <updated>2022-05-01T16:37:34.000Z</updated>
+        <summary type="html"><![CDATA[Hi!
+ I have been trying to understand why the binaries of duckstation-git are not working as intended, given that when I manually build it using the instructions on the project's Git Hub, it worked flawlessly.
+ i came to realize that it was due to the "-DCMAKE_BUILD_TYPE=Release" flag. But as the CMake package guidelines on the Wiki says, it produces undesired behavior on PKGBUILDs, as it uses the -O3 compiler optimization flag, while the default default Arch Linux flag which currently is -O2.
+ Building the PKGBUILD with "-DCMAKE_BUILD_TYPE=None" as the Wiki suggests makes the binaries doesn't work at all.
+ Does anyone know if there is any cmake flag or build option to make it work?
+    submitted by    /u/italoghost  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MIT Researchers Created "Wallpaper Thin" Speakers]]></title>
+        <id>https://www.reviewgeek.com/116576/mit-researchers-created-wallpaper-thin-speakers/</id>
+        <link href="https://www.reviewgeek.com/116576/mit-researchers-created-wallpaper-thin-speakers/"/>
+        <updated>2022-05-01T16:34:27.000Z</updated>
+        <summary type="html"><![CDATA[Imagine if you could turn all the walls in your home office or garage into speakers. Well, researchers at MIT have developed a new speaker that’s as thin as a piece of paper and so lightweight it can go almost anywhere.]]></summary>
+        <author>
+            <name>Cory Gunther</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Should I replace SDL for sdl12-compat??]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ug30q6/should_i_replace_sdl_for_sdl12compat/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ug30q6/should_i_replace_sdl_for_sdl12compat/"/>
+        <updated>2022-05-01T16:03:44.000Z</updated>
+        <summary type="html"><![CDATA[The answer is YES and you know why? because SDL 1.2 development ended long ago, with SDL 2.0 replacing it. However, many older games still use SDL 1.2 and cannot change to SDL 2.0. In order to help move SDL 1.2 games into the modern world, so SDL 1.2 is replaced with sdl12-compat, which uses SDL 2.0.
+    submitted by    /u/Bonz-Eye  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Reveal a Public Wi-Fi Login Page]]></title>
+        <id>https://www.howtogeek.com/?p=794698</id>
+        <link href="https://www.howtogeek.com/794698/how-to-reveal-a-public-wi-fi-login-page/"/>
+        <updated>2022-05-01T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Sometimes a public wireless network will require you to validate your details locally before you can access the internet. This normally takes place via means of a pop-up window, but sometimes the login form never shows up.]]></summary>
+        <author>
+            <name>Tim Brookes</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Open source 'Package Analysis' tool finds malicious npm, PyPI packages]]></title>
+        <id>https://www.bleepingcomputer.com/news/security/open-source-package-analysis-tool-finds-malicious-npm-pypi-packages/</id>
+        <link href="https://www.bleepingcomputer.com/news/security/open-source-package-analysis-tool-finds-malicious-npm-pypi-packages/"/>
+        <updated>2022-05-01T15:42:21.000Z</updated>
+        <summary type="html"><![CDATA[The Open Source Security Foundation (OpenSSF), a Linux Foundation-backed initiative has released its first prototype version of the 'Package Analysis' tool that aims to catch and counter malicious attacks on open source registries. the open source tool released on GitHub was able to identify over 200 malicious npm and PyPI packages. [...]]]></summary>
+        <author>
+            <name>Ax Sharma</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Compositor rendering issue?]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ug2irw/compositor_rendering_issue/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ug2irw/compositor_rendering_issue/"/>
+        <updated>2022-05-01T15:40:22.000Z</updated>
+        <summary type="html"><![CDATA[Hi all, I’ve been setting up my compositor picom-jonaburg. I have noticed this weird visual issue. It’s as though it’s in limbo between both lines and wants to represent them both. Here’s an example: https://imgur.com/a/cxTLwj0
+ As of now, it’s only present in urxvt/vim. It doesn’t occur at the start of the file. It’s also not occurring symmetrically. In an 89 line file, it only starts at line 47 consistently. If I put my cursor on line 46 it stops, back to 47 it continues. This pattern of movement doesn’t stop it from happening from lines 47 to the bottom.
+ Any ideas of where to start looking? Picom? Xresources ?
+    submitted by    /u/East-Okra-7749  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[12 of the Best Google Maps Alternatives You Should Try]]></title>
+        <id>https://www.maketecheasier.com/?p=138394</id>
+        <link href="https://feeds.maketecheasier.com/link/12555/6265209/google-map-alternatives"/>
+        <updated>2022-05-01T15:25:00.000Z</updated>
+        <summary type="html"><![CDATA[Google Maps is popular and robust enough to have more or less brought on the death of the paper map, and with features like a speed limit checker it feels like it’s getting more and more accessible by the day. But there are still reasons why you wouldn’t want to, or can’t, use Google Maps. Some countries, like China, run a pretty tight ship when it comes to regulation, making Google Maps as good as useless. 
+    
+Or maybe you just don’t want Google algorithms profiting off your data. Whatever your reasons, we won’t pry and instead treat you to the best Google maps alternatives that work similarly well as Google Maps.
+   
+
+Content
+
+1. InRoute
+2. OpenStreetMap
+3. Apple Maps
+4. Pocket Earth
+5. OsmAnd
+6. Citymapper
+7. Maps.me
+8. Bing Maps
+9. HERE WeGo
+10. BackCountry Navigator
+11. Waze
+12. MapQuest
+
+.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   
+Also read:Read more]]></summary>
+        <author>
+            <name>Robert Zak</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Russian hackers compromise embassy emails to target governments]]></title>
+        <id>https://www.bleepingcomputer.com/news/security/russian-hackers-compromise-embassy-emails-to-target-governments/</id>
+        <link href="https://www.bleepingcomputer.com/news/security/russian-hackers-compromise-embassy-emails-to-target-governments/"/>
+        <updated>2022-05-01T15:06:12.000Z</updated>
+        <summary type="html"><![CDATA[Security analysts have uncovered a recent phishing campaign from Russian hackers known as APT29 (Cozy Bear or Nobelium) targeting diplomats and government entities. [...]]]></summary>
+        <author>
+            <name>Bill Toulas</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Change Line Spacing in Google Docs]]></title>
+        <id>https://www.howtogeek.com/?p=797900</id>
+        <link href="https://www.howtogeek.com/797900/google-docs-change-line-spacing/"/>
+        <updated>2022-05-01T15:00:24.000Z</updated>
+        <summary type="html"><![CDATA[Using the correct spacing between the lines of your document (sometimes called “enter spacing”) is not only important but could be required. You have various line spacing options in Google Docs in addition to a custom setting to create your own.]]></summary>
+        <author>
+            <name>Sandy Writtenhouse</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[systemd-nspawn unprivileged mode]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ug1fwy/systemdnspawn_unprivileged_mode/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ug1fwy/systemdnspawn_unprivileged_mode/"/>
+        <updated>2022-05-01T14:48:16.000Z</updated>
+        <summary type="html"><![CDATA[My question is simple:
+ ```bash $ zgrep USER_NS /proc/config.gz CONFIG_USER_NS=y CONFIG_USER_NS_UNPRIVILEGED=y
+ $ sysctl kernel.unprivileged_userns_clone kernel.unprivileged_userns_clone = 1
+ $ systemd-nspawn -bUD ./machine Need to be root. ```
+ What else should one do to allow an unprivileged systemd-nspawn container on the current Arch? (say, linux or linux-zen kernels). Thank you.
+    submitted by    /u/Original_Two9716  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Lutris update made wine games launch with integrated gpu??????]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ug0y61/lutris_update_made_wine_games_launch_with/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ug0y61/lutris_update_made_wine_games_launch_with/"/>
+        <updated>2022-05-01T14:23:12.000Z</updated>
+        <summary type="html"><![CDATA[So I updated lutris today and aside from a few pgp errors (Which i solved) everything was fine. then I go to launch EGS from lutris and I get like 2 fps in game. normally i get flawless graphics and fps but something changed. I haven't changed any settings or anything and in nvtop it shows nothing while in game. it used to show the exetuables running in nvtop.
+ ​
+ Any ideas on what the issue might be?
+ Thanks
+    submitted by    /u/DiamondDanMan12  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A YouTuber is promoting DDoS attacks on Russia — how legal is this?]]></title>
+        <id>https://www.bleepingcomputer.com/news/security/a-youtuber-is-promoting-ddos-attacks-on-russia-how-legal-is-this/</id>
+        <link href="https://www.bleepingcomputer.com/news/security/a-youtuber-is-promoting-ddos-attacks-on-russia-how-legal-is-this/"/>
+        <updated>2022-05-01T14:11:16.000Z</updated>
+        <summary type="html"><![CDATA[A YouTube influencer with hundreds of thousands of subscribers is encouraging everyone to conduct cyber warfare against Russia. How risky is it and can you get in trouble? [...]]]></summary>
+        <author>
+            <name>Ax Sharma</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Google fights doxxing with updated personal info removal policy]]></title>
+        <id>https://www.bleepingcomputer.com/news/google/google-fights-doxxing-with-updated-personal-info-removal-policy/</id>
+        <link href="https://www.bleepingcomputer.com/news/google/google-fights-doxxing-with-updated-personal-info-removal-policy/"/>
+        <updated>2022-05-01T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Google has expanded its policies to allow doxxing victims to remove more of their personally identifiable information (PII) from search engine results starting earlier this week. [...]]]></summary>
+        <author>
+            <name>Sergiu Gatlan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What Is a Faraday Bag, and Should You Use One?]]></title>
+        <id>https://www.howtogeek.com/?p=791386</id>
+        <link href="https://www.howtogeek.com/791386/what-is-a-faraday-bag-and-should-you-use-one/"/>
+        <updated>2022-05-01T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Faraday bags use the same principles as a Faraday cage to prevent wireless signals from leaving or reaching your devices. So what are the reasons to use one, and how is it different from turning the device off or using airplane mode?]]></summary>
+        <author>
+            <name>Sydney Butler</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[paru -Qua instead of checkupdates+aur]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ug0ae3/paru_qua_instead_of_checkupdatesaur/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ug0ae3/paru_qua_instead_of_checkupdatesaur/"/>
+        <updated>2022-05-01T13:49:01.000Z</updated>
+        <summary type="html"><![CDATA[Is it safe to check arch repo and aur updates using paru -Qua instead of checkupdates+aur which is broken (not work with aur anymore) ?
+    submitted by    /u/Spare_Prize1148  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Laptop goes dead since recent update]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ufzhag/laptop_goes_dead_since_recent_update/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ufzhag/laptop_goes_dead_since_recent_update/"/>
+        <updated>2022-05-01T13:04:20.000Z</updated>
+        <summary type="html"><![CDATA[submitted by    /u/zim0369  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[This Month in Tech History: May]]></title>
+        <id>https://www.reviewgeek.com/115414/this-month-in-tech-history-may/</id>
+        <link href="https://www.reviewgeek.com/115414/this-month-in-tech-history-may/"/>
+        <updated>2022-05-01T13:00:53.000Z</updated>
+        <summary type="html"><![CDATA[The month of May contains several milestones in the history of technology. From the revival of Apple’s desktop line to a landmark lawsuit against Microsoft, the birth of telecommunication as we know it, and the release of two of the most influential video games ever. Read on for the details.]]></summary>
+        <author>
+            <name>Danny Chadwick</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[When to Replace Your Old Charging Cable]]></title>
+        <id>https://www.howtogeek.com/?p=796500</id>
+        <link href="https://www.howtogeek.com/796500/when-to-replace-your-old-charging-cable/"/>
+        <updated>2022-05-01T13:00:20.000Z</updated>
+        <summary type="html"><![CDATA[Have you been using the same charging cable for years? It’s easy to get emotionally attached, but you may not realize that your devices charge much slower than they should. Here are some clear signs that might call for a replacement.]]></summary>
+        <author>
+            <name>Andy Nguyen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Best software to sync files and folders between hard drives?]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ufz0rx/best_software_to_sync_files_and_folders_between/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ufz0rx/best_software_to_sync_files_and_folders_between/"/>
+        <updated>2022-05-01T12:38:23.000Z</updated>
+        <summary type="html"><![CDATA[Hey y'all, 
+ I'm looking for a program that automatically syncs files and folders from one drive to another. I am dual-booting Windows (don't judge me need it for work) so I have some games and programs that are installed on both Arch and Windows and files I wish to have on both systems (e.g. save files, mods, pictures et cetera). 
+ What would be your choice of software for that? 
+ Thanks in advance!
+    submitted by    /u/daveedmee  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux 5.19 To Help With Reporting A Connected Device's Physical Location]]></title>
+        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=Linux-5.19-Physical-Location</id>
+        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Linux-5.19-Physical-Location"/>
+        <updated>2022-05-01T12:06:58.000Z</updated>
+        <summary type="html"><![CDATA[Being added to the Linux kernel's driver core code is sysfs support for reporting a physical location of a device on the connected system/server. In particular for large systems and servers with many connected devices and where there may be multiple devices of the same type/model, this physical relative location reporting to user-space should make it easier to distinguish...]]></summary>
+        <author>
+            <name>Phoronix</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Turn On Camera Flash on iPhone]]></title>
+        <id>https://www.howtogeek.com/?p=799038</id>
+        <link href="https://www.howtogeek.com/799038/how-to-turn-on-camera-flash-on-iphone/"/>
+        <updated>2022-05-01T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[If you’re taking a photo with your iPhone in a dark area and would like to shed some light on a subject, it’s easy to turn on your phone’s built-in flash in the Camera app. The process varies slightly in different iPhone models. Here’s how to do it.]]></summary>
+        <author>
+            <name>Benj Edwards</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[dependency cycle detected when upgrading]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ufy7rk/dependency_cycle_detected_when_upgrading/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ufy7rk/dependency_cycle_detected_when_upgrading/"/>
+        <updated>2022-05-01T11:48:44.000Z</updated>
+        <summary type="html"><![CDATA[Hi, I got below dependency cycle detected problem when launching an upgrade, how to resolve it ? ``` warning: python-slugify: local (5.0.2-3) is newer than community (v6.1.2-1) resolving dependencies... looking for conflicting packages... warning: dependency cycle detected: warning: smbclient will be installed before its cifs-utils dependency warning: dependency cycle detected: warning: harfbuzz will be installed before its freetype2 dependency
+ ```
+    submitted by    /u/Spare_Prize1148  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux NTFS, Ryzen 7 5800X3D, Mesa 22.1 & Other April Open-Source Excitement]]></title>
+        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=April-2022-Highlights</id>
+        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=April-2022-Highlights"/>
+        <updated>2022-05-01T11:30:58.000Z</updated>
+        <summary type="html"><![CDATA[It was an exciting April in the open-source world from AMD continuing work on bringing up next-gen GPU and Zen 4 CPU support under Linux, some portions of NVIDIA kernel driver code being published on the Tegra side, Intel continuing DG2/Alchemist Arc Graphics preparations, Mesa 22.1 nearing release, the release of Ubuntu 22.04 LTS, and much more...]]></summary>
+        <author>
+            <name>Phoronix</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Migliori Bot Telegram automatici e multifunzione]]></title>
+        <id>https://www.navigaweb.net/2016/12/23-migliori-bot-telegram-automatici-e.html</id>
+        <link href="https://www.navigaweb.net/2016/12/23-migliori-bot-telegram-automatici-e.html"/>
+        <updated>2022-05-01T11:25:00.000Z</updated>
+        <summary type="html"><![CDATA[Quando si vuole ottenere una nuova funzione per il proprio smartphone Android o per iPhone, l'abitudine è quella di cercare nuove applicazioni nei rispettivi store e vedere se ce n'è una adatta allo scopo. Molte cose, però, possono essere fatte con lo smartphone utilizzando l'app di messaggistica Telegram e i suoi Telegram Bot, che sono fondamentalmente dei risponditori automatici multifunzione...
+
+
+Continua a leggere su Navigaweb.net (clicca sul titolo)]]></summary>
+        <author>
+            <name>Navigaweb.net</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What is happening?]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ufxlid/what_is_happening/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ufxlid/what_is_happening/"/>
+        <updated>2022-05-01T11:06:28.000Z</updated>
+        <summary type="html"><![CDATA[submitted by    /u/TheWidrolo  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What Does “ISTG” Mean, and How Do You Use It?]]></title>
+        <id>https://www.howtogeek.com/?p=789092</id>
+        <link href="https://www.howtogeek.com/789092/what-does-istg-mean/"/>
+        <updated>2022-05-01T11:00:20.000Z</updated>
+        <summary type="html"><![CDATA[One of the hottest internet acronyms among today’s teenagers is ISTG. Here’s what this versatile slang term means and how you can use it in your messages and social media posts.]]></summary>
+        <author>
+            <name>Vann Vicente</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Google Hangouts Meet Speakermic Getting A Linux Driver To Address Mute Button Quirk]]></title>
+        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=Hangouts-Meet-Speakermic-HID</id>
+        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Hangouts-Meet-Speakermic-HID"/>
+        <updated>2022-05-01T10:23:33.000Z</updated>
+        <summary type="html"><![CDATA[The Google Hangouts Meet Speakermic is a device manufactured by ASUS that allows for 360 degree sound input/output designed for Google Hangout usage and allows daisy-chaining up to five of these speakermics together for use in large conference rooms. A Linux driver is on the way for the device just to address a mute button issue...]]></summary>
+        <author>
+            <name>Phoronix</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to wipe fs signature after lvremove is done?]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ufwu70/how_to_wipe_fs_signature_after_lvremove_is_done/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ufwu70/how_to_wipe_fs_signature_after_lvremove_is_done/"/>
+        <updated>2022-05-01T10:11:50.000Z</updated>
+        <summary type="html"><![CDATA[I would like to find any fs signatures of lvm partitions were created before and then removed without wipefs?
+ lvs, blkid, lsblk do not show any of them.
+ But when I execute lvcreate -L 25G -n debian vg0 the system is asking: WARNING: ext4 signature detected on /dev/vg0/debian at offset 1080. Wipe it? [y/n]:
+ Of course, if only I remember all of the lvm partitions I had removed during the year it was not a problem to lvcreate them, wipefs the devices, and lvremove again.
+    submitted by    /u/armodim  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[10 Best (Free and Paid) Support Ticketing Systems]]></title>
+        <id>https://www.hongkiat.com/blog/?p=19061</id>
+        <link href="https://www.hongkiat.com/blog/top-support-ticket-systems/"/>
+        <updated>2022-05-01T10:01:23.000Z</updated>
+        <summary type="html"><![CDATA[Customer service has been greatly enhanced with technology and online services, particularly when it comes to handling customer satisfaction. When]]></summary>
+        <author>
+            <name>Ashutosh KS</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GCC 12's Shiny New C++ Features - More Of C++23 Implemented]]></title>
+        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=GCC-12-CPP-Features</id>
+        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=GCC-12-CPP-Features"/>
+        <updated>2022-05-01T09:31:19.000Z</updated>
+        <summary type="html"><![CDATA[With GCC 12.1 due for release in roughly the next week or so, Red Hat's Marek Polacek penned a new blog post this week outlining many of the C++ language improvements to be found in this major GNU Compiler Collection update...]]></summary>
+        <author>
+            <name>Phoronix</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sculpt OS 22.04 Brings New Drivers, Service-Level Sandboxing]]></title>
+        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=Genode-Sculpt-OS-22.04</id>
+        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Genode-Sculpt-OS-22.04"/>
+        <updated>2022-05-01T09:04:11.000Z</updated>
+        <summary type="html"><![CDATA[Building off the recent release of Genode OS 22.02 as the open-source operating system framework, Sculpt OS 22.04 was released this week as the project's effort around producing a general purpose operating system...]]></summary>
+        <author>
+            <name>Phoronix</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[new Archinstall script]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ufvsif/new_archinstall_script/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ufvsif/new_archinstall_script/"/>
+        <updated>2022-05-01T08:52:45.000Z</updated>
+        <summary type="html"><![CDATA[hey new Archinstall script is really comfortable to use... i didn't notice earlier. thank man 👌🙏🙏
+    submitted by    /u/SyeedAhmed  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[See list of all optional dependencies]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/ufsv2e/see_list_of_all_optional_dependencies/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/ufsv2e/see_list_of_all_optional_dependencies/"/>
+        <updated>2022-05-01T05:25:40.000Z</updated>
+        <summary type="html"><![CDATA[Say that I have 2 packages foo1 and foo2 and they have optional dependencies. Now say that instead of foo{1,2} I have a lot of packages, and each of those have optional dependencies. How do I list them all? (With no duplicates)
+ And it would be nice if they had [installed] or [not installed] next to them too.
+    submitted by    /u/EmbarrassedActive4  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to disable media keys support in Google Chrome]]></title>
+        <id>https://www.ghacks.net/?p=178329</id>
+        <link href="https://www.ghacks.net/2022/05/01/how-to-disable-media-keys-support-in-google-chrome/"/>
+        <updated>2022-05-01T05:01:39.000Z</updated>
+        <summary type="html"><![CDATA[Google Chrome supports media keys on some operating systems; this enables users to press hardware media keys, usually on the device's keyboard, to control media playback in the Chrome browser. Chrome users […]
+Thank you for being a Ghacks reader. The post How to disable media keys support in Google Chrome appeared first on gHacks Technology News.]]></summary>
+        <author>
+            <name>Martin Brinkmann</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Laptop overheating after installing Arch Linux]]></title>
         <id>https://www.reddit.com/r/archlinux/comments/ufptbl/laptop_overheating_after_installing_arch_linux/</id>
@@ -84,6 +795,15 @@ Content
 13. Empty Recycle... Read more]]></summary>
         <author>
             <name>Robert Zak</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2022.05.01]]></title>
+        <id>tag:archlinux.org,2022-05-01:/releng/releases/2022.05.01/</id>
+        <link href="https://archlinux.org/releng/releases/2022.05.01/"/>
+        <updated>2022-05-01T00:00:00.000Z</updated>
+        <author>
+            <name>Arch Linux: Releases</name>
         </author>
     </entry>
     <entry>
@@ -420,673 +1140,6 @@ Thank you for being a Ghacks reader. The post First look at NordVPN's Threat Pro
         <summary type="html"><![CDATA[If you’re buying a new amplifier or speakers, paying attention to the impedance of each is important. Why? Because a mismatch can seriously damage either of them. Let’s take a look at how to avoid that.]]></summary>
         <author>
             <name>Kris Wouk</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Google Titan Security Key & LUKS2?]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/ufbfx9/google_titan_security_key_luks2/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/ufbfx9/google_titan_security_key_luks2/"/>
-        <updated>2022-04-30T13:47:45.000Z</updated>
-        <summary type="html"><![CDATA[Can the Titan key be used to unlock LUKS2 at bootup? Anybody doing it?
-    submitted by    /u/bit_ronin  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Atlassian doubles the number of orgs affected by two week outage]]></title>
-        <id>https://www.bleepingcomputer.com/news/technology/atlassian-doubles-the-number-of-orgs-affected-by-two-week-outage/</id>
-        <link href="https://www.bleepingcomputer.com/news/technology/atlassian-doubles-the-number-of-orgs-affected-by-two-week-outage/"/>
-        <updated>2022-04-30T13:16:00.000Z</updated>
-        <summary type="html"><![CDATA[Atlassian says that this month's two-week-long cloud outage has impacted almost double the number of customers it initially estimated after learning of the incident. [...]]]></summary>
-        <author>
-            <name>Sergiu Gatlan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What are Hearables?]]></title>
-        <id>https://www.reviewgeek.com/114421/what-are-hearables/</id>
-        <link href="https://www.reviewgeek.com/114421/what-are-hearables/"/>
-        <updated>2022-04-30T13:00:12.000Z</updated>
-        <summary type="html"><![CDATA[Odds are, you’ve heard of wearables—think fitness trackers, smart clothing, smartwatches, and display glasses. But what about hearables? We have all the info on what they are, who should use them, how they can help you, and where you can get them.]]></summary>
-        <author>
-            <name>Suzanne Humphries</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Add Text to a Picture on a PC, Smartphone, or Tablet]]></title>
-        <id>https://www.howtogeek.com/?p=793309</id>
-        <link href="https://www.howtogeek.com/793309/how-to-add-text-to-a-picture/"/>
-        <updated>2022-04-30T13:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Thanks to the built-in apps, adding text to your photos on a Windows, Mac, iPhone, and iPad is extremely easy. On Android, the Google Photos app allows you to write text on your pictures. We’ll show you how to do that on all your devices.]]></summary>
-        <author>
-            <name>Mahesh Makvana</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[help with data partitions]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/uf9zsn/help_with_data_partitions/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/uf9zsn/help_with_data_partitions/"/>
-        <updated>2022-04-30T12:22:15.000Z</updated>
-        <summary type="html"><![CDATA[I recently installed arch Linux on the same drive with windows. I had a friend help me and because I wasn't sure I would fully commit he set it to be 100 gigs. Since then I have gotten everything to work and full moved. I also got rid of the windows Installation and now have 300 and something gigs that are free yet I can't increase the size of the root partition. I am using disks to do it and until now it has worked great. I am unsure on how to connect both my Linux install and the extra space. Is there a way to do it without losing all of my data or having to transfer it
-    submitted by    /u/liav6  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How do I ensure all the keys on my keyboard work?]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/uf9yf4/how_do_i_ensure_all_the_keys_on_my_keyboard_work/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/uf9yf4/how_do_i_ensure_all_the_keys_on_my_keyboard_work/"/>
-        <updated>2022-04-30T12:19:49.000Z</updated>
-        <summary type="html"><![CDATA[Hi there! My older sister (F17) threw a glass of water at me (M13) and my laptop for reasons I won't discuss now.
- Display works, USB-A and USB-C ports work, charging works, SD slot works, and HDMI works. 
- Now how do I ensure all the keys on my laptop's keyboard works
-    submitted by    /u/QuickQuokkaThrowaway  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How Heavy Should Your Gaming Mouse Be?]]></title>
-        <id>https://www.howtogeek.com/?p=794965</id>
-        <link href="https://www.howtogeek.com/794965/how-heavy-should-your-gaming-mouse-be/"/>
-        <updated>2022-04-30T12:00:53.000Z</updated>
-        <summary type="html"><![CDATA[The weight of your gaming mouse could affect your accuracy and how fast you turn in a game. Let’s talk about how and when it influences your gameplay and what to do if your mouse is too heavy or light.]]></summary>
-        <author>
-            <name>Andy Nguyen</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Migliori giochi VR gratuiti da provare su PC]]></title>
-        <id>https://www.navigaweb.net/2022/04/migliori-giochi-vr-gratuiti-da-provare.html</id>
-        <link href="https://www.navigaweb.net/2022/04/migliori-giochi-vr-gratuiti-da-provare.html"/>
-        <updated>2022-04-30T11:36:00.004Z</updated>
-        <summary type="html"><![CDATA[I videogiochi a realtà virtuale stanno diventando sempre più accessibili al grande pubblico, anche grazie alla diffusione di visori VR a prezzi simili a quelli delle console e compatibili con qualsiasi tipo di computer (senza obbligare i gamer occasionali all'acquisto di un computer super potente). 
-Se vogliamo divertirci con i giochi a realtà virtuale nella guida che segue vi mostreremo i...
-
-
-Continua a leggere su Navigaweb.net (clicca sul titolo)]]></summary>
-        <author>
-            <name>Navigaweb.net</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AMD Sends Out New Linux Patches For RDNA3 "GFX11"]]></title>
-        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=AMD-GFX11-Patches</id>
-        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=AMD-GFX11-Patches"/>
-        <updated>2022-04-30T11:31:33.000Z</updated>
-        <summary type="html"><![CDATA[AMD continues working on their open-source Linux driver support for next-gen GPUs... The latest patches posted on Friday are for "GFX11", pointing to the major new graphics IP version with RDNA3 graphics processors due out later this year...]]></summary>
-        <author>
-            <name>Phoronix</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Why You Should Stop Watching Netflix in Google Chrome]]></title>
-        <id>https://www.howtogeek.com/?p=798819</id>
-        <link href="https://www.howtogeek.com/798819/why-you-should-stop-watching-netflix-in-google-chrome/"/>
-        <updated>2022-04-30T11:00:30.000Z</updated>
-        <summary type="html"><![CDATA[If you’re using Chrome or Firefox to stream Netflix on Windows or macOS, you are probably missing out on higher-quality streams and HDR content. Here’s why Netflix limits the quality of video on these browsers and what to use instead.]]></summary>
-        <author>
-            <name>Tim Brookes</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Nouveau Switches Over To NIR Backend By Default]]></title>
-        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=Nouveau-NIR-Default</id>
-        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Nouveau-NIR-Default"/>
-        <updated>2022-04-30T10:48:57.000Z</updated>
-        <summary type="html"><![CDATA[As part of Mesa preparing to drop its old GLSL to TGSI code path and routing more Mesa drivers through using the NIR intermediate representation, the Nouveau Gallium3D driver code has switched to using this modern IR by default...]]></summary>
-        <author>
-            <name>Phoronix</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fedora Looks At Tightening Its Crypto Policies Next Year]]></title>
-        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=Fedora-Tightening-Crypto-Policy</id>
-        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Fedora-Tightening-Crypto-Policy"/>
-        <updated>2022-04-30T10:09:16.000Z</updated>
-        <summary type="html"><![CDATA[Fedora Linux is looking at tightening up its cryptographic policies with next year's Fedora 38/39 releases but for Fedora 37 later this year they will likely begin warning users around the planned changes...]]></summary>
-        <author>
-            <name>Phoronix</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Use the Who Command in Linux]]></title>
-        <id>https://www.hongkiat.com/blog/?p=59118</id>
-        <link href="https://www.hongkiat.com/blog/linux-command-who/"/>
-        <updated>2022-04-30T10:01:50.000Z</updated>
-        <summary type="html"><![CDATA[The "who" reveals users who is currently logged in the system. It shows some information such as the username, the timestamp, and the IP address. General]]></summary>
-        <author>
-            <name>Hongkiat.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[LoongArch Patches Posted Again For Trying To Get This Chinese MIPS-Derived CPU In Linux]]></title>
-        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=LoongArch-v9-Linux</id>
-        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=LoongArch-v9-Linux"/>
-        <updated>2022-04-30T09:53:07.000Z</updated>
-        <summary type="html"><![CDATA[Loongson engineers continue working on aiming to upstream their LoongArch CPU architecture support in the Linux kernel...]]></summary>
-        <author>
-            <name>Phoronix</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[KDE Ends Out April Porting More Software To Qt Quick]]></title>
-        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=KDE-More-Qt-Quick</id>
-        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=KDE-More-Qt-Quick"/>
-        <updated>2022-04-30T09:38:48.000Z</updated>
-        <summary type="html"><![CDATA[KDE this week saw more components converted to using Qt Quick, among other features and improvements to the KDE Plasma desktop...]]></summary>
-        <author>
-            <name>Phoronix</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft is giving Windows 11 admins more control in latest Insider update]]></title>
-        <id>https://www.ghacks.net/?p=178319</id>
-        <link href="https://www.ghacks.net/2022/04/30/microsoft-is-giving-windows-11-admins-more-control-in-latest-insider-update/"/>
-        <updated>2022-04-30T06:03:31.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft released a new Insider build for its Windows 11 operating system. Windows 11 Insider Preview build 22610 introduces new group policies for IT administrators, that modify the default functionality of the […]
-Thank you for being a Ghacks reader. The post Microsoft is giving Windows 11 admins more control in latest Insider update appeared first on gHacks Technology News.]]></summary>
-        <author>
-            <name>Martin Brinkmann</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Unlock iPhone and Mac with an Apple Watch]]></title>
-        <id>https://admin.maketecheasier.com/?p=481192</id>
-        <link href="https://feeds.maketecheasier.com/link/12555/15260583/unlock-iphone-mac-with-apple-watch"/>
-        <updated>2022-04-30T05:25:00.000Z</updated>
-        <summary type="html"><![CDATA[Your Apple Watch can do more than mirror notifications from your phone or track your activities. It can also be the key to unlocking both your iPhone and your Mac.
-    
-The feature comes in handy especially when you’re wearing sunglasses or part of your face is covered up and so using Face ID will be tricky. Additionally, in the case of your Mac, you won’t have to enter your password after every wake-up anymore. Let us show you how you can unlock your iPhone and Mac with an Apple Watch.
-   
-
-Content
-
-How to Unlock iPhone with Apple Watch
-How to Unlock Your Mac with Apple Watch
-Frequently Asked Questions
-
-.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   
-Also read:Fitbit vs. Apple Watch: Which Is the Better Fitness Tracker Smartwatch?
-    
-How to Unlock iPhone with Apple Watch
-    
-Face ID doesn’t... Read more]]></summary>
-        <author>
-            <name>Ratnesh Kumar</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Keyboard Issue]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/uf3o34/keyboard_issue/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/uf3o34/keyboard_issue/"/>
-        <updated>2022-04-30T04:34:28.000Z</updated>
-        <summary type="html"><![CDATA[So, it has been around two months since I encounter this issue. Whenever I long pressed a certain key (in my case D key), it keeps typing out Ds even though I stopped pressing it. It keeps doing that until a certain time (more than 5s, can't ascertain how long actually) or it got interrupted. Even after interrupted, it refuse to typed D when I pressed the key until a certain time.
- I'm using KDE Plasma, and as a workaround, I just change the repeat key into do nothing when pressed in the settings. Also, I've tried a different keyboard in case it's the keyboard that is the problem, but same problem just on different keys.
- As for the keyboards that I used, it's Lenovo LXH-EKB-10YA and JeteX KBX2
- ​
-    submitted by    /u/zephyroths  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[dual booting with windows 10]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/uf17bn/dual_booting_with_windows_10/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/uf17bn/dual_booting_with_windows_10/"/>
-        <updated>2022-04-30T02:06:58.000Z</updated>
-        <summary type="html"><![CDATA[The windows EFI is only 100M, will old kernels fill this up after updating? Will i have to manually uninstall old images every time i update? I read that the recommended EFI partition is 260-512M
-    submitted by    /u/Lanky_Log6472  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Linux Zen doesn't boot]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/uf04k2/linux_zen_doesnt_boot/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/uf04k2/linux_zen_doesnt_boot/"/>
-        <updated>2022-04-30T01:05:21.000Z</updated>
-        <summary type="html"><![CDATA[I tried installing linux-zen, but for some reason won't boot.
- I use nvidia and I also installed nvidia-dkms.
- Does anyone know why it doesnt work? Idk if i can provide a log.
- Edit: it works now for some weird reason. After rebooting it somehow managed to work? I have no idea why but I guess it magically fixed itself?
-    submitted by    /u/DenisVsDoge  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Package management tip: use meta packages for optional dependencies]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/uezxq0/package_management_tip_use_meta_packages_for/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/uezxq0/package_management_tip_use_meta_packages_for/"/>
-        <updated>2022-04-30T00:55:10.000Z</updated>
-        <summary type="html"><![CDATA[Hi /r/archlinux. I discovered a simple but really great helper package today that I never saw mentioned anywhere, and thought I'd share: makepkg-meta.
- It allows you to easily create and update meta packages, i.e. packages whose sole job it is to pull in other dependencies. My use case is cleaner management of optional dependencies. 
- With those, the question is always whether you install them --asdeps or --asexplicit. In the former case, they may get removed accidentally, in the latter case I often forget to remove them when uninstalling the depending package, so they just clutter the system ("Hmm, do I still need that? Better leave it alone.").
- Instead, create a meta package that depends on the package and all your chosen optional dependencies.
- E.g. to install zim with optional gnuplot and xdot, run
- makepkg-meta zim-meta -a zim -a gnuplot -a xdot 
- which will create and install (*) a meta package zim-meta with the specified dependencies. All packages will be kept installed as long as it's there, and if you run pacman -Rsc zim, it gets removed automatically, taking the optional deps with it if needed.
- Adding more dependencies later can be done by a similar call (-a -> add). To remove a dependency, use
- makepkg-meta zim-meta -r xdot 
- This will update the meta package, making xdot obsolete. Then, uninstall it via pacman -Rsc xdot or even
- pacman -Qdttq | sudo pacman -Rsc - 
- to remove all orphan packages (since they're all really obsolete now that you know this trick).
- (*): AUR packages need to be installed (--asdeps) first, the tool uses pacman internally, so it can't resolve them. Or patch the script to use your AUR helper of choice.
-    submitted by    /u/axaxaxasmloe  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How Much Bandwidth Does Video Calling Use?]]></title>
-        <id>https://www.maketecheasier.com/?p=349105</id>
-        <link href="https://feeds.maketecheasier.com/link/12555/13606678/how-much-bandwidth-does-video-calling-use"/>
-        <updated>2022-04-30T00:25:00.000Z</updated>
-        <summary type="html"><![CDATA[If you have a fast, unlimited Internet connection, you probably don’t think twice about firing up an HD video call. When you run into slower connections or data caps, though, you probably start wondering just how much bandwidth video calls use and whether you really want to trade a few hours of browsing for a Zoom meeting. Bandwidth usage can vary dramatically depending on the app, quality, and participants, but it’s still possible to get a general estimate of how much you’ll use, especially if you change the quality settings of your video chat app so that they stay low.
-   
-
-Content
-
-How Much Bandwidth Do You Use with Video Calling?
-How Bandwidth Is Measured
-Factors in Video Call Data Usage
-Bottom Line: Video Calls Use Bandwidth
-Frequently Asked Questions
-
-.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   
-Also read:9 of the Best Video Call Apps for Mobile Users
-  ... Read more]]></summary>
-        <author>
-            <name>Megan Glosson</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Jami vs Element vs Speek vs GTK messenger]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/uez9yg/jami_vs_element_vs_speek_vs_gtk_messenger/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/uez9yg/jami_vs_element_vs_speek_vs_gtk_messenger/"/>
-        <updated>2022-04-30T00:16:32.000Z</updated>
-        <summary type="html"><![CDATA[submitted by    /u/VrednayaReddiska  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Can't boot into windows or arch]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/uexfxl/cant_boot_into_windows_or_arch/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/uexfxl/cant_boot_into_windows_or_arch/"/>
-        <updated>2022-04-29T22:37:52.000Z</updated>
-        <summary type="html"><![CDATA[So i was messing around with my partition tables to give more space to my arch installation. I shrunk my windows volume by 200GB, deleted my ubuntu partition completely, and made two partitions that i didnt get the chance to mount yet of around 250GB each. I rebooted, now i can't access my system. Arch goes into some sort of recovery mode. I can see that my files are in /home/ at least.
- windows gives me the error cannot mount boot disk.
-    submitted by    /u/CypherPsycho69  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Week in Ransomware - April 29th 2022 - New operations emerge]]></title>
-        <id>https://www.bleepingcomputer.com/news/security/the-week-in-ransomware-april-29th-2022-new-operations-emerge/</id>
-        <link href="https://www.bleepingcomputer.com/news/security/the-week-in-ransomware-april-29th-2022-new-operations-emerge/"/>
-        <updated>2022-04-29T22:29:52.000Z</updated>
-        <summary type="html"><![CDATA[This week we have discovered numerous new ransomware operations that have begun operating, with one appearing to be a rebrand of previous operations. [...]]]></summary>
-        <author>
-            <name>Lawrence Abrams</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Questa settimana su TLI (30 aprile 2022)]]></title>
-        <id>3562|20220430000001</id>
-        <link href="https://turbolab.it/newsletter-turbolab.it-1349/questa-settimana-tli-30-aprile-2022-3562"/>
-        <updated>2022-04-29T22:00:01.000Z</updated>
-        <summary type="html"><![CDATA[Non hai tempo di leggerci tutti i giorni? nessun problema! ecco a te il riepilogo di quanto proposto da TurboLab.it nel corso della settimana in conclusione.
-›› Leggi tutto]]></summary>
-        <author>
-            <name>info@turbolab.it (TurboLab.it)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[18 Best Fixes for iPhone Not Ringing for Calls]]></title>
-        <id>https://admin.maketecheasier.com/?post_type=pitch&amp;p=472532</id>
-        <link href="https://feeds.maketecheasier.com/link/12555/15260165/best-fixes-iphone-not-ringing-calls"/>
-        <updated>2022-04-29T21:25:00.000Z</updated>
-        <summary type="html"><![CDATA[If your iPhone does not ring when an incoming call comes in or if you do not receive calls at all, it could be due to various settings such as do not disturb or airplane mode, silence unknown callers, and so on. Don’t worry, you won’t have to track down the setting that could be affecting your iPhone’s ringtones. We have covered all of the fixes that will help you in resolving the iPhone not ringing when an incoming call comes in issue.
-   
-
-Content
-
-1. Restart iPhone
-2. Check the Ring/Silent Switch
-3. Increase Ringtone Volume
-4. Check App Notifications
-5. Turn off Focus Modes (or Do Not Disturb)
-6. Check the Default Ringtone
-7. Check Ringtone for Selected Contacts
-8. Turn off Airplane Mode
-9. Check Connected Bluetooth Devices
-10. Check iPhone Isn’t Stuck in Headphone Mode
-11. Check Blocked Numbers
-12. Turn off Silence Unknown Callers
-13. Turn off Call Forwarding
-14. Check Third-party Call Blockers
-15. Update Software
-16. Other Potential Fixes
-17. Reset Network Settings
-18. Reset All Settings
-Bonus: Text Message Sound Not Working on iPhone
-
-.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}} ... Read more]]></summary>
-        <author>
-            <name>Mehvish Mushtaq</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Is a Wired or Wireless Mouse Better for Gaming?]]></title>
-        <id>https://www.howtogeek.com/?p=794879</id>
-        <link href="https://www.howtogeek.com/794879/wired-vs-wireless-mouse/"/>
-        <updated>2022-04-29T21:00:21.000Z</updated>
-        <summary type="html"><![CDATA[You’ll see professional gamers use both wired and wireless gaming mice, so how do you know which you should use? Let’s take a look at the key differences between the two to determine which is better for gaming.]]></summary>
-        <author>
-            <name>Andy Nguyen</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Chromecast with Google TV Hasn't Received an Update Since December]]></title>
-        <id>https://www.reviewgeek.com/116557/the-chromecast-with-google-tv-hasnt-received-an-update-since-december/</id>
-        <link href="https://www.reviewgeek.com/116557/the-chromecast-with-google-tv-hasnt-received-an-update-since-december/"/>
-        <updated>2022-04-29T20:06:30.000Z</updated>
-        <summary type="html"><![CDATA[Immediately after it launched, the Chromecast with Google TV garnered critical acclaim for its low price, snappy performance, and unique features. But it feels like Google has forgotten about its streaming stick. Despite outdated software and mounting performance issues, the Chromecast hasn’t received an update in nearly six months, and customers have noticed.]]></summary>
-        <author>
-            <name>Andrew Heinzman</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Unlink PayPal From Discord]]></title>
-        <id>https://www.howtogeek.com/?p=799262</id>
-        <link href="https://www.howtogeek.com/799262/how-to-unlink-paypal-from-discord/"/>
-        <updated>2022-04-29T20:00:33.000Z</updated>
-        <summary type="html"><![CDATA[PayPal is one of Discord’s supported payment methods. If you don’t wish to use PayPal to pay for Discord purchases like Nitro, it’s easy to unlink both your accounts. We’ll show you how to do that using two different ways.]]></summary>
-        <author>
-            <name>Mahesh Makvana</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What things you need to do or better to do during the installation that you will not be able to do later? For example, encrypting a disk.]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/uetvpi/what_things_you_need_to_do_or_better_to_do_during/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/uetvpi/what_things_you_need_to_do_or_better_to_do_during/"/>
-        <updated>2022-04-29T19:44:42.000Z</updated>
-        <summary type="html"><![CDATA[Title.
-    submitted by    /u/Due-Independence7607  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Save $41 on SAMSUNG Galaxy Buds 2]]></title>
-        <id>https://admin.maketecheasier.com/?post_type=deal&amp;p=484707</id>
-        <link href="https://feeds.maketecheasier.com/link/12555/15259974/samsung-galaxy-buds-2"/>
-        <updated>2022-04-29T19:25:00.000Z</updated>
-        <summary type="html"><![CDATA[Enjoying your SAMSUNG Galaxy Smartphone? A set of matching earbuds could be the perfect way to enjoy your phone. The SAMSUNG Galaxy Buds 2 have Active Noise Cancelling, Ambient Sound, and Comfort Fit Touch. Buy now and save 30%.
-    
-You’ll feel like you’re at a concert listening to your favorite music with these earbuds. With Active Noise Cancellation, you won’t hear anything else but your music. Alternately, use the Ambient Sound mode to hear a little of what’s going on around you, such as traffic when you’re out and about.
-    
-
-    
-The SAMSUNG Galaxy Buds 2 will feel comfortable in your ears, being 10% smaller and lighter than the Galaxy Buds Plus. You may even forget you’re wearing them. They also have three microphones and noise reduction technology so that whoever you’re speaking with on the other end will be able to hear you clearly.
-    
-Don’t worry about interruptions in your conference call, as the long-lasting battery will keep the earbuds going. Control your calls, as well as your... Read more]]></summary>
-        <author>
-            <name>Laura Tucker</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What is a Smart Grill and Should You Buy One?]]></title>
-        <id>https://www.reviewgeek.com/116515/what-is-a-smart-grill-and-should-you-buy-one/</id>
-        <link href="https://www.reviewgeek.com/116515/what-is-a-smart-grill-and-should-you-buy-one/"/>
-        <updated>2022-04-29T19:08:35.000Z</updated>
-        <summary type="html"><![CDATA[Everything’s smart these days, including cooking appliances. And although we don’t really see the point in a smart microwave, the benefits of a smart grill are quite clear. Those long cook times are suddenly a lot more tolerable when you have a computer monitoring your food and sending alerts to your phone.]]></summary>
-        <author>
-            <name>Andrew Heinzman</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 11 gets new group policies to tweak the Start Menu]]></title>
-        <id>https://www.bleepingcomputer.com/news/microsoft/windows-11-gets-new-group-policies-to-tweak-the-start-menu/</id>
-        <link href="https://www.bleepingcomputer.com/news/microsoft/windows-11-gets-new-group-policies-to-tweak-the-start-menu/"/>
-        <updated>2022-04-29T19:06:42.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft has released a new Windows 11 build to the Dev and Beta Channels that introduces multiple group policies that IT administrators can use to tweak the Start menu, the taskbar, and the system tray. [...]]]></summary>
-        <author>
-            <name>Sergiu Gatlan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Pair an Amazon Fire TV Stick Remote]]></title>
-        <id>https://www.howtogeek.com/?p=796545</id>
-        <link href="https://www.howtogeek.com/796545/how-to-pair-firestick-remote/"/>
-        <updated>2022-04-29T19:00:23.000Z</updated>
-        <summary type="html"><![CDATA[Pairing a primary or a secondary remote with your Amazon Fire TV Stick is extremely easy. You basically hold down a button on your remote and your remote connects to your Stick. We’ll show you how to do just that.]]></summary>
-        <author>
-            <name>Mahesh Makvana</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Online library app Onleihe faces issues after cyberattack on provider]]></title>
-        <id>https://www.bleepingcomputer.com/news/security/online-library-app-onleihe-faces-issues-after-cyberattack-on-provider/</id>
-        <link href="https://www.bleepingcomputer.com/news/security/online-library-app-onleihe-faces-issues-after-cyberattack-on-provider/"/>
-        <updated>2022-04-29T18:01:34.000Z</updated>
-        <summary type="html"><![CDATA[Library lending app Onleihe announced problems lending several media formats offered on the platform, like audio, video, and e-book files, after a cyberattack targeted their vendor. [...]]]></summary>
-        <author>
-            <name>Bill Toulas</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Turn Off Automatic Live Captions in Google Chrome]]></title>
-        <id>https://www.howtogeek.com/?p=797116</id>
-        <link href="https://www.howtogeek.com/797116/turn-off-live-captions-chrome/"/>
-        <updated>2022-04-29T18:00:28.000Z</updated>
-        <summary type="html"><![CDATA[Are you not a big fan of Google Chrome’s Live Captions, which displays the text version of your media files? If so, it’s easy to turn this feature off both temporarily and permanently. We’ll show you how to do just that.]]></summary>
-        <author>
-            <name>Mahesh Makvana</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Google gives 50% bonus to Android 13 Beta bug bounty hunters]]></title>
-        <id>https://www.bleepingcomputer.com/news/security/google-gives-50-percent-bonus-to-android-13-beta-bug-bounty-hunters/</id>
-        <link href="https://www.bleepingcomputer.com/news/security/google-gives-50-percent-bonus-to-android-13-beta-bug-bounty-hunters/"/>
-        <updated>2022-04-29T17:48:03.000Z</updated>
-        <summary type="html"><![CDATA[Google has announced that all security researchers who report Android 13 Beta vulnerabilities through its Vulnerability Rewards Program (VRP) will get a 50% bonus on top of the standard reward until May 26th, 2022.  [...]]]></summary>
-        <author>
-            <name>Sergiu Gatlan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft Explains the Windows 11 Start Menu No One Wanted]]></title>
-        <id>https://www.reviewgeek.com/116520/microsoft-explains-the-windows-11-start-menu-no-one-wanted/</id>
-        <link href="https://www.reviewgeek.com/116520/microsoft-explains-the-windows-11-start-menu-no-one-wanted/"/>
-        <updated>2022-04-29T17:41:36.000Z</updated>
-        <summary type="html"><![CDATA[The redesigned Start menu on Windows 11 is something that you either love or hate. While it’s simpler than ever before, it’s highly controversial with users and has been since the first insider preview builds arrived.]]></summary>
-        <author>
-            <name>Cory Gunther</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Enter Task Manager as Admin on Windows 10 and 11]]></title>
-        <id>https://www.howtogeek.com/?p=798244</id>
-        <link href="https://www.howtogeek.com/798244/enter-task-manager-as-admin-on-windows-10-and-11/"/>
-        <updated>2022-04-29T17:00:42.000Z</updated>
-        <summary type="html"><![CDATA[To perform certain tasks that require admin privileges, you can enter Task Manager as admin using a graphical option, a command-line option, as well as by creating a desktop shortcut. We’ll show you how to do that on both Windows 10 and 11.]]></summary>
-        <author>
-            <name>Mahesh Makvana</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Controlla la TV con lo smartphone Android e le app telecomando]]></title>
-        <id>https://www.navigaweb.net/2015/07/controlla-la-tv-con-il-cellulare.html</id>
-        <link href="https://www.navigaweb.net/2015/07/controlla-la-tv-con-il-cellulare.html"/>
-        <updated>2022-04-29T16:56:00.000Z</updated>
-        <summary type="html"><![CDATA[Una moderna Smart TV può essere controllata direttamente dallo smartphone Android, senza che quest'ultimo abbia un sensore ad infrarossi: utilizzando la connessione Wi-Fi di casa è possibile configurare i comandi remoti direttamente dal telefono, che diventa a tutti gli effetti un telecomando per controllare il volume, cambiare canale o avviare le app multimediali senza dover utilizzare il...
-
-
-Continua a leggere su Navigaweb.net (clicca sul titolo)]]></summary>
-        <author>
-            <name>Navigaweb.net</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Attenzione ai dati personali caricati sui servizi di scansione antimalware: tanti documenti sono visibili a tutti]]></title>
-        <id>https://www.ilsoftware.it/articoli.asp?tag=Attenzione-ai-dati-personali-caricati-sui-servizi-di-scansione-antimalware-tanti-documenti-sono-visibili-a-tutti_24454</id>
-        <link href="https://www.ilsoftware.it/articoli.asp?tag=Attenzione-ai-dati-personali-caricati-sui-servizi-di-scansione-antimalware-tanti-documenti-sono-visibili-a-tutti_24454"/>
-        <updated>2022-04-29T16:40:00.000Z</updated>
-        <summary type="html"><![CDATA[Strumenti come VirusTotal e Hybrid Analysis sono universalmente apprezzati e si rivelano eccellenti alleati nella lotta contro i malware, compresi quelli di nuova concezione.I due servizi online utilizzano un approccio diverso: come abbiamo spiegato nella guida su VirusTotal questo strumento si occupa di sottoporre contemporaneamente a scansione antimalware uno stesso file usando decine di motori di produttori differenti.Hybrid Analysis, invece, esegue o apre il file in una macchina virtuale, un po’ come farebbe l'utente: in questo modo è possibile saggiare il comportamento di qualsiasi file e ottenere un riscontro sulle modifiche applicate al sistema.Questo strumento di analisi è particolarmente sicuro perché tutte le modifiche sono effettuate su un sistema virtuale eseguito sull'infrastruttura cloud di CrowdStrike (mentre VirusTotal è di proprietà di Google).]]></summary>
-        <author>
-            <name>IlSoftware.it</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Sennheiser's New Earbuds Tune Their ANC to Your Environment]]></title>
-        <id>https://www.reviewgeek.com/116518/sennheisers-new-earbuds-tune-their-anc-to-your-environment/</id>
-        <link href="https://www.reviewgeek.com/116518/sennheisers-new-earbuds-tune-their-anc-to-your-environment/"/>
-        <updated>2022-04-29T16:26:25.000Z</updated>
-        <summary type="html"><![CDATA[Sennheiser is one of our favorite premium audio brands, so naturally we’re elated to hear that it just released the latest version of its Momentum line—the True Wireless 3 earbuds. The company’s previous version of the buds are still a popular pick, so we’re excited to see what these can do.]]></summary>
-        <author>
-            <name>Suzanne Humphries</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[power-profile-daemon not working properly under Haswell]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/uep68p/powerprofiledaemon_not_working_properly_under/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/uep68p/powerprofiledaemon_not_working_properly_under/"/>
-        <updated>2022-04-29T16:02:14.000Z</updated>
-        <summary type="html"><![CDATA[I tried getting it to work on KDE neon (Based on Ubuntu 20.04) using the Ubuntu 21.04 package and it worked once then I couldn't get it working again (KDE applet no longer showed up).
- CPU: Intel® Core™ i7-4610M
- Also tested on linux 5.17.5.arch1-1 with the same results.
- GNOME applet shows the balanced & power saver profiles but they seem to not do anything
-  $ uname -a Linux user 5.15.36-1-lts #1 SMP Wed, 27 Apr 2022 13:34:20 +0000 x86_64 GNU/Linux $ pacman -Q plasma-desktop plasma-desktop 5.24.4-1 $ pacman -Q power-profiles-daemon power-profiles-daemon 0.10.1-2 $ pacman -Q powerdevil powerdevil 5.24.4-1 $ cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_driver intel_pstate intel_pstate intel_pstate intel_pstate $ cpupower frequency-info analyzing CPU 0: driver: intel_pstate CPUs which run at the same hardware frequency: 0 CPUs which need to have their frequency coordinated by software: 0 maximum transition latency: Cannot determine or is not supported. hardware limits: 800 MHz - 3.70 GHz available cpufreq governors: performance powersave current policy: frequency should be within 800 MHz and 3.70 GHz. The governor "powersave" may decide which speed to use within this range. current CPU frequency: Unable to call hardware current CPU frequency: 1.59 GHz (asserted by call to kernel) boost state support: Supported: yes Active: yes $ powerprofilesctl * balanced: Driver: placeholder power-saver: Driver: placeholder 
-    submitted by    /u/albaraagamer  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What Is Kindle Unlimited, and Is It Worth It?]]></title>
-        <id>https://www.howtogeek.com/?p=799922</id>
-        <link href="https://www.howtogeek.com/799922/what-is-kindle-unlimited-and-is-it-worth-it/"/>
-        <updated>2022-04-29T16:00:15.000Z</updated>
-        <summary type="html"><![CDATA[There are plenty of services that will let you consume as many TV shows, movies, and music as you want for a monthly fee. But what about books? Is there a streaming service for books? Meet “Kindle Unlimited.”]]></summary>
-        <author>
-            <name>Joe Fedewa</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Working From Home? Boost Your Productivity With Setapp for Mac]]></title>
-        <id>https://www.howtogeek.com/?p=798968</id>
-        <link href="https://www.howtogeek.com/798968/working-from-home-boost-your-productivity-with-setapp-for-mac/"/>
-        <updated>2022-04-29T15:55:10.000Z</updated>
-        <summary type="html"><![CDATA[Working from home has become wildly popular over the past few years, but it has also introduced us to challenges we hadn’t considered. Pets, projects around the house, random distractions on the internet — all serve to deter focus and hamper productivity. Can a suite of work-focused apps help you get back on track? We’ll discuss how to stay productive while working from home with Setapp, a popular subscription service with more than 200 incredible apps for Mac.]]></summary>
-        <author>
-            <name>Sponsored</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Best Cross-Platform LaTeX Editors]]></title>
-        <id>https://www.maketecheasier.com/?post_type=post-ideas&amp;p=179621</id>
-        <link href="https://feeds.maketecheasier.com/link/12555/5691393/best-cross-platform-latex-editors"/>
-        <updated>2022-04-29T15:25:00.000Z</updated>
-        <summary type="html"><![CDATA[LaTeX is one of the most popular markup languages for academic and professional use. Chances are, you are reading a LaTeX document whenever you come across either a textbook or a journal article. This is because LaTeX is a highly flexible language that can easily adapt to any situation — the logic that your document is based on stays the same across formats.
-    
-If you want to take advantage of these features of LaTeX to create documents yourself, take a look at some of the best cross-platform LaTex editors below.
-   
-
-Content
-
-Why Use a LaTeX Editor?
-1. Texmaker
-2. TeXstudio
-3. LyX
-4. Kile
-5. Overleaf
-Frequently Asked Questions
-
-.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   
-Also read:7 of the Best LaTeX Editors for Linux
-    
-Why Use a LaTeX Editor?
-    
-You can easily create a LaTeX document with nothing but a text editor and... Read more]]></summary>
-        <author>
-            <name>Ramces Red</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Amazon Prime Day 2022 Kicks off This July]]></title>
-        <id>https://www.reviewgeek.com/116511/amazon-prime-day-2022-kicks-off-this-july/</id>
-        <link href="https://www.reviewgeek.com/116511/amazon-prime-day-2022-kicks-off-this-july/"/>
-        <updated>2022-04-29T15:15:21.000Z</updated>
-        <summary type="html"><![CDATA[One of the biggest shopping events of the year will take place this July, and that’s Amazon Prime Day 2022. Similar to Black Friday, this is a massive event where Prime subscribers can score some epic deals.]]></summary>
-        <author>
-            <name>Cory Gunther</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Android 13 May Help You Exit Apps Faster Using Predictive AI]]></title>
-        <id>https://www.reviewgeek.com/116501/android-13-may-help-you-exit-apps-faster-using-predictive-ai/</id>
-        <link href="https://www.reviewgeek.com/116501/android-13-may-help-you-exit-apps-faster-using-predictive-ai/"/>
-        <updated>2022-04-29T15:14:02.000Z</updated>
-        <summary type="html"><![CDATA[Gesture navigation arrived for Android in 2019, and at first, it was pretty confusing. Old-fashioned “back” and “home” buttons are simply more intuitive than swiping between apps. But Google has slowly improved gesture navigation, and in Android 13, it could use AI to help you quickly swipe out of apps.]]></summary>
-        <author>
-            <name>Andrew Heinzman</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[India to require cybersecurity incident reporting within six hours]]></title>
-        <id>https://www.bleepingcomputer.com/news/security/india-to-require-cybersecurity-incident-reporting-within-six-hours/</id>
-        <link href="https://www.bleepingcomputer.com/news/security/india-to-require-cybersecurity-incident-reporting-within-six-hours/"/>
-        <updated>2022-04-29T15:07:11.000Z</updated>
-        <summary type="html"><![CDATA[The Indian government has issued new directives requiring organizations to report cybersecurity incidents to CERT-IN within six hours, even if those incidents are port or vulnerability scans of computer systems. [...]]]></summary>
-        <author>
-            <name>Bill Toulas</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Animate Parts of a Chart in Microsoft PowerPoint]]></title>
-        <id>https://www.howtogeek.com/?p=796778</id>
-        <link href="https://www.howtogeek.com/796778/how-to-animate-parts-of-a-chart-in-microsoft-powerpoint/"/>
-        <updated>2022-04-29T15:00:16.000Z</updated>
-        <summary type="html"><![CDATA[Animations in Microsoft PowerPoint can add pizzazz to your presentation. So, if you include a chart in your slideshow, consider animating it as well. With flexible options, you can animate parts of a chart instead of the whole thing.]]></summary>
-        <author>
-            <name>Sandy Writtenhouse</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Russian hacktivists launch DDoS attacks on Romanian govt sites]]></title>
-        <id>https://www.bleepingcomputer.com/news/security/russian-hacktivists-launch-ddos-attacks-on-romanian-govt-sites/</id>
-        <link href="https://www.bleepingcomputer.com/news/security/russian-hacktivists-launch-ddos-attacks-on-romanian-govt-sites/"/>
-        <updated>2022-04-29T14:47:12.000Z</updated>
-        <summary type="html"><![CDATA[The Romanian national cyber security and incident response team, DNSC, has issued a statement about a series of distributed denial-of-service (DDoS) attacks targeting several public websites managed by the state entities. [...]]]></summary>
-        <author>
-            <name>Bill Toulas</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Amazon Echo sa tutto di voi: una nuova ricerca chiede maggiore trasparenza]]></title>
-        <id>https://www.ilsoftware.it/articoli.asp?tag=Amazon-Echo-sa-tutto-di-voi-una-nuova-ricerca-chiede-maggiore-trasparenza_24453</id>
-        <link href="https://www.ilsoftware.it/articoli.asp?tag=Amazon-Echo-sa-tutto-di-voi-una-nuova-ricerca-chiede-maggiore-trasparenza_24453"/>
-        <updated>2022-04-29T14:31:00.000Z</updated>
-        <summary type="html"><![CDATA[Un gruppo di ricercatori accademici delle Università di Washington, Università della California (Davis/Irvine) e Northeastern University hanno fatto presente che Amazon utilizzerebbe i dati vocali dei comandi impartiti dagli utenti per servire annunci personalizzati sugli interessi dei consumatori, sia sulle proprie piattaforme che sul Web. Lo studio in questione dal titolo Your Echos are Heard è consultabile a questo indirizzo.Sia la società di Jeff Bezos che ben 41 partner pubblicitari utilizzerebbero i dati raccolti dai dispositivi Amazon Echo per creare profili degli utenti e servire annunci 'ad hoc'. Gli autori della ricerca osservano che questo tipo di dati è molto richiesto tanto che gli inserzionisti sono indotti a versare importi fino a 30 volte più elevati rispetto alla media.I 10 ricercatori che hanno elaborato il resoconto spiegano che vi è 'una forte evidenza che le interazioni con gli speaker intelligenti di Amazon siano utilizzate per il targeting degli annunci e che ciò implica una significativa condivisione dei dati tra più parti'.Amazon conferma di usare i dati vocali derivanti dalle interazioni con l'assistente digitale Alexa per esporre messaggi in linea con gli interessi e le aspettative di ogni singolo utente.]]></summary>
-        <author>
-            <name>IlSoftware.it</name>
         </author>
     </entry>
 </feed>
