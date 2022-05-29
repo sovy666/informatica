@@ -30,6 +30,216 @@
       "siteUrl": "https://www.reddit.com/r/archlinux/",
       "articles": [
         {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzz4cp/a_nice_way_to_share_a_disk_between_users/",
+          "author": null,
+          "description": "Hello,\n I've 2 disks on my PC:\n  \n1 SSD for /root and /home (ext4)\n 1 HDD for backups (etx4)\n 1 HDD for data and storage (NTFS) (Its legacy from when i had dual boot with windows. Wanting to reformat as ext4 or XFS).\n  \nAnd i also have 2 active users on the PC, me and my wife.\n Is there a fancy way to have que Storage HDD mounted as, let's say /home/shared? with full read/write access to both users if i formated as ext4 or XFS?\n Nowadays, being NTFS both users has full access to all files inside. But if I reformated as XFS or ext4 won't permissions, user and group create conflicts between files from one user and another? I need both users to have full permissions on all disks contents.\n PS: Also, for storage like documents, music, videos, etc in that storage disk should i use XFS, ext4? or its the same any of them?\n    submitted by    /u/thalskarth_  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzz4cp/a_nice_way_to_share_a_disk_between_users/",
+          "publishedOn": "2022-05-28T23:46:46.000Z",
+          "wordCount": 302,
+          "title": "A nice way to share a disk between users?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzvx1i/software_raid_drive_missing_in_518/",
+          "author": null,
+          "description": "5.18 just dropped and it isn't booting right for me. I narrowed it down to a mirrored array in my fstab that I use as a non-boot drive. It loads fine if I downgrade to 5.17. Not sure what the issue is but if I boot 5.18 with it commented out of fstab I find that /proc/mdstat doesn't even exist and I have manually load the module. Even if I do, an mdadm --detail --scan never finds it.\n So far I have tried the following:\n  \nAdding/removing mdadm and mdadm_udev from my HOOKS in mkinitcpio (neither were needed in the past as it's a non-boot drive)\n Adding/removing mdmon to BINARIES in mkinitcpio (again, never needed in the past)\n  \nHeads up for anyone running a RAID and any thoughts as to what the issue might be?\n    submitted by    /u/SecretAgentKen  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzvx1i/software_raid_drive_missing_in_518/",
+          "publishedOn": "2022-05-28T20:53:05.000Z",
+          "wordCount": 232,
+          "title": "Software RAID drive missing in 5.18",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzv682/will_a_clean_install_of_arch_proper_help_with/",
+          "author": null,
+          "description": "I am not asking for support for my current not-quite-Arch setup, I'm asking how much a clean install of Arch proper is going to help with general stability.\n I've been using an Arch derivative (EndeavourOS) for about a year now on my main PC, and I'm finding I'm really struggling with stability. This was the first Linux distro I really learned (aside from a brief stint with Kubuntu), so there's been a lot of experimentation, mistakes, and reconfiguration done that I've lost track of. There's a lot I really love about using an Arch-based distro, and I'm wondering if a clean install of Arch proper might help without having to look to another distro family.\n My main issue with this system is stability. It's really not good. Something minor breaks twice a week. Something major breaks twice a m…",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzv682/will_a_clean_install_of_arch_proper_help_with/",
+          "publishedOn": "2022-05-28T20:11:54.000Z",
+          "wordCount": 1114,
+          "title": "Will a clean install of Arch proper help with instability issues I'm having with a derivative?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzu9l3/wifi_card_gone_after_arch_install/",
+          "author": null,
+          "description": "After installing using archinstall for a test. My wlan0 wifi card is gone, it was there in the live iso. Help would be appreciated\n    submitted by    /u/Alecccs  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzu9l3/wifi_card_gone_after_arch_install/",
+          "publishedOn": "2022-05-28T19:23:38.000Z",
+          "wordCount": 229,
+          "title": "Wifi card gone after arch install.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uztp75/the_annoying_beep_bug_is_systemctl_susped/",
+          "author": null,
+          "description": "I was trying to bypass the annoying problem of the bell ringing when the PC goes into suspension. The best way would be to add --no-wall to the systemctl call but I can't find any configuration file that allows to change the command (neither in powerdevil nor in solid), while for sddm it exists... any ideas?\n    submitted by    /u/guiodic76  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uztp75/the_annoying_beep_bug_is_systemctl_susped/",
+          "publishedOn": "2022-05-28T18:54:33.000Z",
+          "wordCount": 197,
+          "title": "the annoying beep bug: is systemctl susped hardcoded in plasma?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzt58j/with_kernel_5180arch11s_drop_today_freesync_is/",
+          "author": null,
+          "description": "I just tested this as in the past, I've always had to have Option \"VariableRefresh\" \"true\" in my .conf file (bspwm on X11). I just removed that line after updated and found that it is, in fact, enabled by default.\n    submitted by    /u/peak-shidder  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzt58j/with_kernel_5180arch11s_drop_today_freesync_is/",
+          "publishedOn": "2022-05-28T18:25:19.000Z",
+          "wordCount": 253,
+          "title": "with kernel 5.18.0-arch1-1's drop today, FreeSync is now enabled by default.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzsz51/freesync_amdgpu_and_linux_518/",
+          "author": null,
+          "description": "The changenotes say that Freesync would be enabled by default in Linux 5.18. I thought this meant that you didn't have to set VariableRefresh in X11 amdgpu.conf file? It doesn't seem to be the case on my system. Am I mis-understanding what that change is referring to?\n EDIT:\n  \nFreeSync Video Mode is enabled by default in 5.18, not FreeSync as a whole.\n  \nThanks!\n    submitted by    /u/Xyklone  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzsz51/freesync_amdgpu_and_linux_518/",
+          "publishedOn": "2022-05-28T18:16:27.000Z",
+          "wordCount": 230,
+          "title": "Freesync, amdgpu and linux 5.18",
+          "imageUrl": "https://external-preview.redd.it/Z2YN41Lvyr2whRZbxsSyCIXWKNtCAAJR2nVGylCWquY.jpg?auto=webp&s=a515b9e42528826d4a4567ec327ef48399930d7b"
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzsg5u/cannot_launch_virtualbox_results_in_ns_error/",
+          "author": null,
+          "description": "Hello, so I am trying to run virtualbox (not a VM, just the base app) and I am getting this error: NS_ERROR_SOCKET_FAIL\n I have tried everything i could, researched about this error in other forums/subreddits, still no anwser. Also deleted everything in /tmp/ folder... Here's an screenshot: https://ibb.co/qsDW7P7\n ​\n Does anyone got the same issue or is it just me? If so, can someone help me?\n    submitted by    /u/DominiCzech  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzsg5u/cannot_launch_virtualbox_results_in_ns_error/",
+          "publishedOn": "2022-05-28T17:49:11.000Z",
+          "wordCount": 224,
+          "title": "Cannot launch VirtualBox, results in NS_ERROR_SOCKET_FAIL",
+          "imageUrl": "https://external-preview.redd.it/y0MDdTbpMsBwNVoRkUCz45N-XlQnfYYNMPdE871uABo.jpg?auto=webp&s=ef780426647cfef74bafc9603d48ec1fd14c4b13"
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzsc2g/pls_help_so_weird/",
+          "author": null,
+          "description": "ey guys, yesterday I left my computer on to watch a movie. After I was tired so went to sleep, but before I was going to shut down but the os wasn't responding so I pressed the button 5 sec and went to sleep. Today, no login screen was showing and I tried a few things. \n nomodeset and the other 2 didn't do anything Ctrl alt f1 to f3 let me login but didn't accept any command Runlevel3 gave me root console, but no command works, it doesn't go past the 1st line. \n Also, sometimes changing from f2 to f1 the login screen appears but after login just stays black and after awhile asks for login again\n What can I do? \n https://imgur.com/a/h41ry64\n    submitted by    /u/Asdrubalpraias  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzsc2g/pls_help_so_weird/",
+          "publishedOn": "2022-05-28T17:43:07.000Z",
+          "wordCount": 272,
+          "title": "pls help, so weird",
+          "imageUrl": "https://external-preview.redd.it/qvmHDku3IYYgV91nDiuAx4rgUcmCLjOrrhdmsznO2N4.jpg?auto=webp&s=d33cdf39484b0c6b068a6ad2cb3c868854ac0261"
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzrrpx/minecraft_launcher_wont_launch/",
+          "author": null,
+          "description": "I'm new to Arch. I have a small amount of experience with Ubuntu, but other than that, I'm still trying to figure things out. \n I was trying to install minecraft, but when I run the launcher from both terminal and desktop, nothing happens. \n I got the launcher from https://aur.archlinux.org/packages/minecraft-launcher. I found multiple articles and videos that instructed me to run makepkg, and then run the package. I did all that, and now I'm lost as to why it isn't running. \n Terminal seems to recognize 'minecraft-launcher' as a command, as it doesn't throw any errors, but when I run 'ps -au | grep minecraft', the only process running is my command. When I run it from the desktop, I get the spinning cursor (which I imagine means it's doing something), but then it just disappears and nothing happens.\n If someone could point me in the right direction that would be greatly appreciated.\n Thank you.\n    submitted by    /u/SignificantCredit529  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzrrpx/minecraft_launcher_wont_launch/",
+          "publishedOn": "2022-05-28T17:14:51.000Z",
+          "wordCount": 569,
+          "title": "Minecraft Launcher Won't Launch",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzrqp3/i_dont_have_muhc_money_to_donate_to_arch_so_i/",
+          "author": null,
+          "description": "Thank you for making such a minimalistic Distro!\n    submitted by    /u/SchwarzeFlagge  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzrqp3/i_dont_have_muhc_money_to_donate_to_arch_so_i/",
+          "publishedOn": "2022-05-28T17:13:30.000Z",
+          "wordCount": 497,
+          "title": "I don't have muhc money to donate to Arch. So i decided to seed the Arch Iso 24/7 on my server!",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzql0q/archinstall_hard_drives_doesnt_show_any/",
+          "author": null,
+          "description": "It juat gives me an error: I/O error, dev sr0, sector 24512 op 0x0:(READ) flags 0x80700 phys_seg 1 prio class 0\n    submitted by    /u/Eetu13  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzql0q/archinstall_hard_drives_doesnt_show_any/",
+          "publishedOn": "2022-05-28T16:15:24.000Z",
+          "wordCount": 199,
+          "title": "Archinstall hard drives doesn't show any.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzoiuf/arch_random_freeze_but_audio_keeps_playing/",
+          "author": null,
+          "description": "Problem:\n Arch randomly freezes after a while (1 hour or so of use). Temps are stable (CPU around 35c, GPU around 60c). When it freezes, my music keeps playing. next song also queues up and continues. However, my mouse stops moving. I cannot use numlock/cap (the light doesn't go on or off), and the mouse randomly starts moving after a while but then when i am moving it stops after few seconds. I am unable to click anything or do anything. It is as if the whole PC is frozen and the only thing thats working is audio. Only solution if i hard reset my PC, which obviously i do not like to do.\n ​\n Attempt:\n While scouting the net, i found something about Nvidia and PowerMizer. Mine was set to Auto/Adaptive. However, i saw something about putting it in Maximum Performance mode. I believe this to be the fix.\n ​\n Issue:\n My issue is, going to nvidia-settings and putting it on Maximum Performance does not stick. As soon as i reboot, its back to auto. Is there a way to make the setting stick even after a reboot?\n ​\n PC Info:\n CPU: I7 8700K\n RAM: 16GB\n GPU: RTX 2070 Super\n OS + Kernal: Arch Linux - 5.17.9-arch1-1\n DE/WM: KDE Plasma 5\n ​\n Thank you to all in advance for the help <3\n ​\n ​\n EDIT: Possible solution? Not quite sure yet. Will report back later. PC has been on for 1 hour now without a freeze.\n What i did: On KDE autostart, i added the following line: nvidia-settings -a \"[gpu:0]/GpuPowerMizerMode=1\"\n After rebooting, going to nvidia-settings seems to have made it stick. Thank you all for the help! I will report back here in a few hours in case nothing happens (or if something happens)\n    submitted by    /u/fatalrein  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzoiuf/arch_random_freeze_but_audio_keeps_playing/",
+          "publishedOn": "2022-05-28T14:31:41.000Z",
+          "wordCount": 703,
+          "title": "Arch random freeze but audio keeps playing.",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzo3tn/using_multiple_different_repositories_testing/",
+          "author": null,
+          "description": "I used to use the testing repositories and now switched to using the ALHP repos. And I was wondering if it's generally advised to use only one of the two, or whether it's fine, to have both in my pacman.conf.\n The idea behind it is that if one package is maybe not included in one repo pacman would then retrieve the package from the next best repo, considering all repos are in a correct order in the config file. Or does this introduce incompatibilities?\n Or doesn't it even matter, because all packages in the ALHP repos are also in the testing repos, so packages are always retrieved from the ALHP repos and never from the testing repos?\n For example I only had AHLP and default repos (core, extra, community, multilib) active and my system up-to-date and when I also activated the testing repos (kde-unstable, testing, community-testing, multilib-testing) I get updates for a few packages.\n    submitted by    /u/Arjab  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzo3tn/using_multiple_different_repositories_testing/",
+          "publishedOn": "2022-05-28T14:09:09.000Z",
+          "wordCount": 443,
+          "title": "Using multiple different repositories (testing and/or ALHP)?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzo2nk/how_can_i_use_igpu_on_arch_vmpassthru/",
+          "author": null,
+          "description": "Arch Host Win10 Guest\n So I've managed to get PCI passthrough working for my dGPU by creating libvirt hooks that toggle me out of X before and after launching/destroying VM. This is, however, less than ideal as I wanted to use my iGPU to keep the Arch session running. No matter what I tried, it seems I am unable to use my UHD 630 (running i915) to be seen as the primary GPU for the host. I can pass through the iGPU no problem, but I cannot seem to get Arch to latch to it and reserve the dGPU for passthrough.\n dGPU is AMD. MB is MSI Gaming Pro Z390. Starting to think it's impossible simply because my firmware forces me to boot using AMD card (cannot boot with just \"IGD\" if card is installed).\n    submitted by    /u/profile_this  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzo2nk/how_can_i_use_igpu_on_arch_vmpassthru/",
+          "publishedOn": "2022-05-28T14:07:19.000Z",
+          "wordCount": 441,
+          "title": "How can I use iGPU on Arch (VM/Passthru)?",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uznznl/how_to_remove_grub_in_legacy/",
+          "author": null,
+          "description": "I have arch and windows7 dual boot with grub on bare metal. I want to unistall grub from my device but grub doesn't have a specific partition in bios devices so when I uninstall a linux distro grub shows me errors. I want to experiment more with arch and install grub on my usb stick but I can't uninstall grub\n    submitted by    /u/MoodFew956  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uznznl/how_to_remove_grub_in_legacy/",
+          "publishedOn": "2022-05-28T14:03:00.000Z",
+          "wordCount": 267,
+          "title": "how to remove grub in legacy",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzm62x/gcc12_include_errors_in_cmake_cuda_project/",
+          "author": null,
+          "description": "Hi,\n Latest Cuda (11.6) is not well compatible with gcc-12, which is now default in Arch Linux. I got errors when building cmake project, while trying to include GRPC and other libraries, which works in .cpp gcc, but not in .cu file.\n I figured out, that this is related to gcc-12. I installed gcc-11 from official repo, but compiling with cmake still points to */usr/include/c++/12.1.0/* but not to */usr/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include/*I am using vscode, I changed my kit to gcc-11, but that doesn't effect on building .cu files with cmake, while it effects only building .cpp files.\n Where could problem be? What workaround could be made?\n Thanks in advance\n [build] /usr/include/c++/12.1.0/bits/stl_map.h:593:29: error: parameter packs not expanded with ‘...’: \n it is related to this https://github.com/open-mmlab/mmcv/issues/1967\n    submitted by    /u/KestM  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzm62x/gcc12_include_errors_in_cmake_cuda_project/",
+          "publishedOn": "2022-05-28T12:19:13.000Z",
+          "wordCount": 270,
+          "title": "gcc-12 include errors in cmake, CUDA project",
+          "imageUrl": "https://external-preview.redd.it/ebuMUe4Vpk4o7taF_wbulAfqA1foTC-S3Dl2bCXfwOw.jpg?auto=webp&s=df0b61c8232f6083ea6276f2c3ae595c9aefba39"
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzja6f/eclipse_ide_for_java/",
+          "author": null,
+          "description": "Hey, I am trying to install the Eclipse package and get \"error: target not found: eclipse-java\".\n The community mirrorlist is enabled in the config file and I have also made a system update, still nothing.\n I have also tried to install the tar.gz file from the official website but after extracting I can't see a makefile to compile the application.\n Preferably I'd install it from the AUR, thanks for any answers!\n    submitted by    /u/KeksMember  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzja6f/eclipse_ide_for_java/",
+          "publishedOn": "2022-05-28T08:49:33.000Z",
+          "wordCount": 199,
+          "title": "Eclipse IDE for Java",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzgiiw/move_arch_hard_drive_from_one_pc_to_another/",
+          "author": null,
+          "description": "I just installed Arch on an old hp elitedesk with a brand new ssd in it. Only to realize it only has a display port and no hdmi port. \n I think I may have an hdmi to dp cable in the shed. I'm going to look tomorrow. But if I don't, I have a different micro pc I could use. I have no gui installed on this. I'm just going to use tty with it for now. Could I pull the drive out of the hp and put it in the other micro pc and not have to worry about reinstalling Arch or should I just move that drive and reinstall Arch on that unit?\n EDIT: I did find the hdmi to dp cable so that's one less hoop I need to jump through today.\n Thanks for all the pointers guys. I appreciate it.\n    submitted by    /u/Phydoux  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzgiiw/move_arch_hard_drive_from_one_pc_to_another/",
+          "publishedOn": "2022-05-28T05:22:30.000Z",
+          "wordCount": 562,
+          "title": "Move Arch hard drive from one pc to another",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzgb36/creating_pkgbuild_for_rust_applications/",
+          "author": null,
+          "description": "Hi!\n I am new to arch linux packages, and I want to add my package built with Rust (which contains a CLI command and a service) to AUR. I saw different posts and youtube videos but it seems confusing. \n So, can you all give a sample of the PKGBUILD for my usage or list down important links that can lead my the way.\n    submitted by    /u/0xsapphir3  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzgb36/creating_pkgbuild_for_rust_applications/",
+          "publishedOn": "2022-05-28T05:08:34.000Z",
+          "wordCount": 227,
+          "title": "Creating PKGBUILD for Rust Applications",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.reddit.com/r/archlinux/comments/uzdpgx/system76_fan_going_berserk_nonresponsive_when/",
+          "author": null,
+          "description": "I'm really at a loss for this issue.\n I'm running Arch on a System76 Lemur Pro. This issue started about a month ago.\n Sometimes, when I close the laptop, shortly after closing it, the fan goes on full blast like a helicopter trying to take off. I open the computer, and it's nonresponsive to input - touchpad or keyboard - and the screen is black. The only way to make it stop is to force power down. If I just ignore it, it will continue until it runs out of battery. It seems to be happening with increasing frequency, or maybe I'm just closing my computer more often nowadays.\n It doesn't matter which apps I do or don't have open.\n Here is the end of the output of journalctl -xb -1 | tail after this happened yesterday. I closed the computer at 14:36:05.\n $ journalctl -xb -1 | tail Hint: You are currently not seeing messages from other users and the system. Users in groups 'adm', 'systemd-journal', 'wheel' can see all messages. Pass -q to turn off this notice. May 27 14:09:18 lemur2 /usr/lib/gdm-x-session[46304]: [{\"success\":true}] May 27 14:09:24 lemur2 /usr/lib/gdm-x-session[46306]: [{\"success\":true}] May 27 14:09:26 lemur2 /usr/lib/gdm-x-session[46307]: [{\"success\":true}] May 27 14:36:05 lemur2 wireplumber[2649]: 0x56127c06d3f8: error 24 May 27 14:36:05 lemur2 obexd[2877]: disconnected: Transport got disconnected May 27 14:36:05 lemur2 /usr/lib/gdm-x-session[2670]: (II) event26 - Bose QuietComfort 35 (AVRCP): device removed May 27 14:36:05 lemur2 /usr/lib/gdm-x-session[2670]: (II) config/udev: removing device Bose QuietComfort 35 (AVRCP) May 27 14:36:05 lemur2 /usr/lib/gdm-x-session[2670]: (**) Option \"fd\" \"57\" May 27 14:36:05 lemur2 /usr/lib/gdm-x-session[2670]: (II) UnloadModule: \"libinput\" May 27 14:36:05 lemur2 /usr/lib/gdm-x-session[2670]: (II) systemd-logind: releasing fd for 13:90 \n I would appreciate any advice.\n    submitted by    /u/epoxyfoxy  \n [link]   [comments]",
+          "link": "https://www.reddit.com/r/archlinux/comments/uzdpgx/system76_fan_going_berserk_nonresponsive_when/",
+          "publishedOn": "2022-05-28T02:22:29.000Z",
+          "wordCount": 533,
+          "title": "System76 fan going berserk + nonresponsive when suspended",
+          "imageUrl": null
+        },
+        {
           "id": "https://www.reddit.com/r/archlinux/comments/uzbm6l/the_yogurt_that_wasnt_book_i/",
           "author": null,
           "description": "I’ve been trying to learn more about using and manipulating Linux since getting a Steam Deck. So before trying this I had practically no knowledge of Linux usage except what sudo meant. My first challenge to myself was to get GBStudio v.3.0.3 to run on the deck so I can create on the go. \n From the itch.io link, I can get an Ubuntu/Debian package, or a Fedora/Red Hat package. I went with the .deb package because I saw more info online for it.\n I decided the easiest way to do all this was with AUR (Arch User Repository). And then using YAY (Yet Another Yogurt). Which is a Pacman wrapper and AUR helper.\n This would supposedly allow me to wrap the .deb package into something more palatable for the Steam Deck to install.\n Starting by allowing the Decks read only to be written. I’m iffy on that…",
@@ -218,176 +428,6 @@
           "wordCount": 332,
           "title": "Should I always use --batchinstall with yay?",
           "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uyyird/finally_got_through_my_first_successful_manual/",
-          "author": null,
-          "description": "I must say, it feels pretty damn good that after a few days of failed attempts, I finally managed to successfully install Arch using just the terminal.\n I got myself most of the way through with the wiki. It seems to involve a lot of clicking links to read referencing articles towards the end. Google led me to a few articles that were really helpful and some that weren't. Either they skimed over the parts I needed further clarification on or they just didnt cover it at all.\n The part I really struggled on was installing a bootloader. I tried grub my first few tries and had forgot to mount the boot partition to /boot/EFI (I'm installing as practice for my bare metal PC, which uses UEFI). I had only mounted it to /boot. So I kept getting errors I just couldn't figure out.\n I switched over and tried installing systemd-boot. I think I might've been making the same mistake again as I just couldn't seem to get systemd-boot to work either. I tried with systemd-boot twice before I gave up. \n I woke up this morning and read this super handy how-to from It's FOSS (https://itsfoss.com/install-arch-linux/) that walked me through the grub install. I felt like I understood where I went wrong so I booted up a VM and started another attempt. I got to the bootloader part, followed the article to the letter, exit chroot and reboot. I swear I did a little prayer as it was rebooting. The second I saw that grub menu, I almost jumped!\n Anyway, sorry for the long and pretty pointless post 😂🤣 Just celebrating a moment!\n    submitted by    /u/kantoking0206  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/uyyird/finally_got_through_my_first_successful_manual/",
-          "publishedOn": "2022-05-27T13:43:04.000Z",
-          "wordCount": 929,
-          "title": "Finally Got Through My First Successful Manual Arch Install",
-          "imageUrl": "https://external-preview.redd.it/Wgu9XpmGYATIHxt2og7qHgSEKGbbFPeBYg5B55Zj8IE.jpg?auto=webp&s=4e5b244bdb7ed9f730b41b340ef82000bf72942e"
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uyw37j/kernels_xanmod_vs_tkg_vs_lqx_vs_zen_vs_hardened/",
-          "author": null,
-          "description": "I read a lot about each of these kernels individually, so I know what they each do in detail, but how do they actually compare in the real world? \n In my case, I'm using sway (Wayland) on an Intel system and don't do any gaming - just browsing and some productivity in the form of coding. I've actually been using the hardened kernel currently. I always felt like my system was a little... sluggish, laggy-ish... hard to put into words, as such I stumbled on things like different kernels and the ALHP repos.\n So my questions are:\n  \n1) Will I get a noticeable difference in performance (not necessarily raw numbers, but responsiveness and such) by using either one of these kernels for what I do with my system?\n \n2) Between xanmod, tkg, lqx and zen -- which one would probably be the best one for me to use, considering what I use my system for?\n \n I also plan on using the ALHP repos in addition to a new kernel:\n  \n3) Is there anything for me to consider in regards to my kernel choice considering I want to use the AHLP repos? They should just work, right?\n  \nI'm currently using the hardenend kernel, as such I wonder:\n  \n4) I know how hardened compares to the regular kernel, but how do any of these other kernels compare to the hardened one in terms of security? Are they generally less or more secure than the regular kernel?\n  \n   submitted by    /u/r4t3d  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/uyw37j/kernels_xanmod_vs_tkg_vs_lqx_vs_zen_vs_hardened/",
-          "publishedOn": "2022-05-27T11:24:21.000Z",
-          "wordCount": 659,
-          "title": "Kernels: xanmod vs tkg vs lqx vs zen vs hardened",
-          "imageUrl": "https://external-preview.redd.it/EMH06yPU1NmRSm7r9RA864Gs_dzB5m_YcZfVLuS3OFY.jpg?auto=webp&s=963000c4cbffcdd885b4af4b5112216473905989"
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uytay0/bluetooth_has_anyone_here_managed_to_get_their/",
-          "author": null,
-          "description": "I am on a Arch KDE installation, and am trying to get the tap controls of my AirPods working reliably throughout the OS. It has been iffy at best. It works sometimes, and doesn’t other times. Sometimes, only one of the AirPods’ tap controls work. For example, I have my left AirPod to be the PlayPause control and my right AirPod to be skip to the next in the list. Sometimes, only the pause function of the left AirPod works. The Play function rarely ever works. The next function sometimes works in VLC but doesn’t in other players. Same with the left AirPod’s control. I have them mapped to their appropriate functions in KDE shortcuts.\n So I was wondering if anyone has gotten their AirPods’ tap controls working reliably throughout the operating system?\n    submitted by    /u/TheAndroBoy  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/uytay0/bluetooth_has_anyone_here_managed_to_get_their/",
-          "publishedOn": "2022-05-27T08:05:47.000Z",
-          "wordCount": 329,
-          "title": "Bluetooth - Has anyone here managed to get their AirPods’ Tap Controls working reliably?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uysxhr/im_thinking_of_switching_to_arch_from_windows_do/",
-          "author": null,
-          "description": "I have been using Windows 7 and 10 for most of my life. I have been seeing a lot of YouTube videos and a lot of reddit posts (this is my first time actually making a reddit account) about Arch lately and it really peaks my interest due to the heavy customisation. I'm not entirely new to Linux based systems as I have used stuff like Ubuntu and I am fairly familiar with the basic terminal commands like cd, mkdir, rmdir, nano and stuff. Do you think I am ready for it and if I am how should I go about getting it up and running?\n Edit: Thanks for all the replies! I will make an attempt tomorrow once I fix a battery issue. I will keep everyone here updated by editing this post. \n    submitted by    /u/ThatWeirdUserLmao  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/uysxhr/im_thinking_of_switching_to_arch_from_windows_do/",
-          "publishedOn": "2022-05-27T07:38:31.000Z",
-          "wordCount": 1060,
-          "title": "I'm thinking of switching to Arch from Windows, do you think I am ready?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uynws6/ia_arch_right_for_me/",
-          "author": null,
-          "description": "im only looking for a private distro with good software support, but im a noob who dont know about linux. I know to do some bash commands that's it.\n I need a general purpose os that's private and secure that i can install painlessly software i need.\n i would pick fedora which seems nice. But i was already disappointed that i had to use rpmfusion to get vlc.\n With arch it seems natural to use the Aur and its not an afterthought.\n But that would be it. I dont think i could totally debug linux, i can look at errors and then install missing libraries.\n But i dont know how everything works. Im looking for a good host os with nice privacy though and lots of software, arch seems like the best out of the linux world.\n Opinions?\n    submitted by    /u/Emotional-Refuse-647  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/uynws6/ia_arch_right_for_me/",
-          "publishedOn": "2022-05-27T02:27:09.000Z",
-          "wordCount": 1427,
-          "title": "ia arch right for me",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uyjz03/appimagelauncher_process_error_logs_are_clogging/",
-          "author": null,
-          "description": "my desktop crashed and only the mouse was moving. after a reboot I used the journalctl and find a lot of critical errors like:\n mai 26 19:52:10 user systemd-coredump[4780]: [] Process 4749 (appimagelaunche) of user 1000 dumped core. \n Module linux-vdso.so.1 with build-id... etc * 100 lines in red\n .. and those logs are repeating every 40 seconds\n I looked at the directory /var/lib/systemd/coredump and found there are almost 2000 files (1.5GB) like \"core.plasmashell.1000.f1c6564b5...53427553000000.zst\" and growing\n    submitted by    /u/GadSneke  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/uyjz03/appimagelauncher_process_error_logs_are_clogging/",
-          "publishedOn": "2022-05-26T23:01:45.000Z",
-          "wordCount": 182,
-          "title": "appimagelauncher process error logs are 'clogging' the /var/lib/systemd/coredump directory",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uyj1y0/does_udev_rules_actually_fully_power_down/",
-          "author": null,
-          "description": "Device: HP Envy 14 (2021)\n CPU: i5-1135G7\n GPU(s): Iris Xe, GTX 1650 Ti Max-Q (Turing)\n Distro: Fedora Silverblue/Kinoite 36 (please hear me out, as my doubt is regarding the methods in Arch Wiki)\n I have an HP Envy 14 with i5 113G7 & Nvidia 1650 Ti Max-Q graphics. I recently installed Fedora and wanted to fully disable the Nvidia GPU, so that it would give me extra battery life. I think that the Iris Xe gpu will be enough for my light usage such as libre office, planner, internet browsing and so on...\n So, I wanted to disable the Nvidia GPU for extra battery life. But since, I don't have the option to disable it in BIOS, I looked up on the internet, I found this UDEV rules method from Arch Wiki.\n I also implemented PCI-Express Runtime D3 (RTD3) Power Management from this Arch Wiki page_Po…",
-          "link": "https://www.reddit.com/r/archlinux/comments/uyj1y0/does_udev_rules_actually_fully_power_down/",
-          "publishedOn": "2022-05-26T22:17:28.000Z",
-          "wordCount": 622,
-          "title": "Does UDEV rules actually Fully power down discrete Nvidia GPU or not?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uyiaei/error_in_the_etcprofile_config_file_if_command/",
-          "author": null,
-          "description": "I took from the wiki this section of code to help sort the path to my home directory's \"bin\" directory:\n # Append the ~/bin directory to any user's path so that local files and applications can run correctly # Tell bash what to do if the ~$USER/.local/bin directory exists and where to find it if [[ $UID -ge 1000 && -d $HOME/.local/bin && -z $(echo $PATH | grep -o $HOME/.local/bin) ]] then export PATH=\"${PATH}:$HOME/.local/bin\" fi \n The problem is that when I log into the console (NOT a terminal) I get the error:\n -bash: if: command not found. Unexpected syntax error near token 'then' \n I'm not well-versed in scripting but it seems to me that the 'if' command and 'then' statement are standard bash commands used in many scripts. I use the Fish shell and that runs just fine but I'm puzzled about this silly error. Any ideas?\n    submitted by    /u/raineling  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/uyiaei/error_in_the_etcprofile_config_file_if_command/",
-          "publishedOn": "2022-05-26T21:42:13.000Z",
-          "wordCount": 274,
-          "title": "Error in the /etc/profile config file: if command not found (see post for more info)",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uyi9u8/cant_get_steam_or_discord_to_launch_on_wayland/",
-          "author": null,
-          "description": "As the title says, I'm attempting to move over to Wayland finally. Most things are working well on my laptop (Intel 4th gen with iGPU graphics) so far, except for Steam and Discord. My compositor is dwl, hopefully that isn't the issue.\n  \nSteam\n I know Steam isn't Wayland-native, and needs to run through Xwayland. When I try to start the application, it gives this error message: ``` Check your DISPLAY environment variable and make sure that you have enabled X. If you are running remotely, make sure that you have a remote connection which will allow an X connection.\n For more information visit https://support.steampowered.com/kb_article.php?ref=4050-WOJB-0608 ```\n I've also tried to run it in the command line, setting DISPLAY=:0, but that doesn't make a difference. Xwayland is installed, of course.\n  \nDiscord\n As far as I've been able to figure out, Discord should run using these flags: discord --enable-features=UseOzonePlatform --ozone-platform=wayland\n However, it simply crashes with this error message: ``` Discord 0.0.17 interface 'wl_output' has no event 4 tcmalloc: large alloc 1073741824 bytes == 0x21611af76000 @ 0x5635a7118d65 0x7f658edbb20f\n Failed to get crash dump id. Report Id: 1c94989d-fb11-45\n Failed to get crash dump id. Report Id: 9d605c7d-0ff2-40 zsh: illegal hardware instruction (core dumped) discord --enable-features=UseOzonePlatform --ozone-platform=wayland\n ```\n As far as Xwayland goes, I can't seem to get anything to run with it. Not even xclock.\n I figure I must be doing something wrong, but I'm not sure what. I haven't been able to find anything helpful in the Wiki either, unfortunately.\n    submitted by    /u/BrofessionalRetard  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/uyi9u8/cant_get_steam_or_discord_to_launch_on_wayland/",
-          "publishedOn": "2022-05-26T21:41:30.000Z",
-          "wordCount": 470,
-          "title": "Can't get Steam or Discord to launch on Wayland",
-          "imageUrl": "https://external-preview.redd.it/tlZpQmD0sNgwFIBJzJnqTtFTJ_c0EXCXfHf3LxCXfDA.jpg?auto=webp&s=40baf9c430dfff83c736098fbfb186ca49e9973b"
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uyhjzr/steam_proton_no_longer_works/",
-          "author": null,
-          "description": "Problem:\n Windows games on my system no longer work. All my games on protondb are gold and platinum but only Gary’s Mod actually runs. Whenever I click to play a game, it just just says “launching” then “running” like it normally did but now it just crashes before even starting. Also every Linux game still runs normally.\n PC: \n •Host: Razor Blade 15\n •Nvidia GPU\n •Intel GPU (Unused)\n •Intel CPU\n •FS System: ext4\n Things I’ve tried:\n •Rebooting \n •Uninstalling and Reinstalling Steam (Runtime)\n •Uninstalling and Reinstalling all my Steam Games\n •Reading through the Arch Manuels (nothing worked)\n •Updating and retrying\n •Running every proton version\n •Running steam games through terminal (steam.sh all normal but didn’t show anything related to the game)\n    submitted by    /u/regimain  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/uyhjzr/steam_proton_no_longer_works/",
-          "publishedOn": "2022-05-26T21:07:14.000Z",
-          "wordCount": 350,
-          "title": "Steam: Proton No longer works",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uyg2f0/can_you_make_the_dwm_bar_totally_translucent_with/",
-          "author": null,
-          "description": "Here's what I mean: https://i.imgur.com/0ygNqIj.png\n I want it to be completely blended with the background, and only the text overlay shows, without the transparent white background\n As previously mentioned, I'm using picom, mostly with default settings and the alpha patch for dwm\n    submitted by    /u/BraveWinner  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/uyg2f0/can_you_make_the_dwm_bar_totally_translucent_with/",
-          "publishedOn": "2022-05-26T19:57:50.000Z",
-          "wordCount": 178,
-          "title": "Can you make the dwm bar totally translucent with picom and the alpha patch? Without the \"white\" background",
-          "imageUrl": "https://external-preview.redd.it/bNi1X32VS1Nbqcn8Hf_S1G3mnPYZTzIzlfwsoXcI0pk.png?auto=webp&s=3c0ba8ab20e331c07e906db9e6aba0a1045d673e"
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uyg1bl/where_is_the_new_kernel/",
-          "author": null,
-          "description": "Has anyone gotten the 5.18 kernel yet, could it be that I have a problem with My updates ?\n    submitted by    /u/poor_doc_pure  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/uyg1bl/where_is_the_new_kernel/",
-          "publishedOn": "2022-05-26T19:56:21.000Z",
-          "wordCount": 212,
-          "title": "where is the new kernel ?",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uyfwxb/clamav_in_right_way_freshclam_error/",
-          "author": null,
-          "description": "Hi! I would want to use ClamAV in a total manual mode (update signatures on demand and only stand-alone scanner).\n I think in my case no enabled services are needed (both clamav-freshclam and clamav-daemon), but I can't completely follow the wiki (\"With clamav-freshclam service enabled the virus definition are kept recent). \n If I don't enable the freshclam service I get this error during the update: WARNING: Clamd was NOT notified: Can't connect to clamd through /run/clamav/clamd.ctl: No such file or directory. With this service disable it seems that no errors appear, but I assume that an automatic check for updates is activated.\n Please help me to better understand. Thanks.\n    submitted by    /u/theNerdDreamer  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/uyfwxb/clamav_in_right_way_freshclam_error/",
-          "publishedOn": "2022-05-26T19:50:49.000Z",
-          "wordCount": 208,
-          "title": "ClamAV in right way (freshclam error)",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uyevfk/keyboard_lighting_on_arch_linux_installed_on_a_usb/",
-          "author": null,
-          "description": "Hi,\n I tried installing Arch Linux, on a USB with Qtile, since I wanted to try it out and tested it on my Laptop (ASUS TUF DASH F15 FX51PC). I noticed that the keyboard lighting works out of the box (I haven't even mapped those keys to anything in my qtile config), so will this behaviour be replicated, if I install Arch Linux on the actual hardware? Also, I have windows installed on my Laptop, is this happening because of that? I wanted to ask this, because I have seen many people talk about how backlit keyboards don't work very well out of the box on Arch Linux, and some software like OpenRGB needs to be installed for them to work properly. So could someone please clarify this for me?\n Thanks\n    submitted by    /u/Clock_Suspicious  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/uyevfk/keyboard_lighting_on_arch_linux_installed_on_a_usb/",
-          "publishedOn": "2022-05-26T19:03:35.000Z",
-          "wordCount": 265,
-          "title": "Keyboard Lighting on Arch Linux (installed on a USB)",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uycyep/configuring_multi_monitor_setup_with_xorg_config/",
-          "author": null,
-          "description": "I have a multi monitor setup that I'd like to configure.\n I can do that perfectly fine through a shell script and executing that from my .xinitrc:\n #!/bin/sh # Configures monitors. xrandr --output \"DP-4\" --mode 1920x1080 --rate 144.00 --right-of \"HDMI-0\" --primary xrandr --output \"HDMI-0\" --mode 1920x1080 --rate 74.97 --left-of \"DP-4\" \n However, from what I can see from the Arch Wiki, this is not the proper way of configuring things.\n Thus, I'm trying to make the two files /etc/X11/xorg.conf.d/10-monitor.conf and /etc/X11/xorg.conf.d/20-nvidia.conf as instructed, but they just don't work and I'm left straching my head as to why. They are as follows:\n 10-monitor.conf:\n Section \"Monitor\" Identifier \"DP-4\" Modeline \"1920x1080_144.00\" 452.50 1920 2088 2296 2672 1080 1083 1088 1177 -hsync +vsync Option \"Primary\" \"true\" Option \"PreferredMode\" \"1920x1080_144.0\" EndSection Section \"Monitor\" Identifier \"HDMI-0\" Modeline \"1920x1080_75.00\" 220.75 1920 2064 2264 2608 1080 1083 1088 1130 -hsync +vsync Option \"LeftOf\" \"DP-4\" Option \"PreferredMode\" \"1920x1080_74.97\" EndSection \n 20-nvidia.conf:\n Section \"Device\" Identifier \"Device0\" Driver \"nvidia\" VendorName \"NVIDIA Corporation\" Option \"monitor-HDMI-1\" \"HDMI-1\" Option \"monitor-DisplayPort-4\" \"DP-4\" EndSection \n I also have tried renaming 20-nvidia.conf to 05-device.conf as instructed in this article of the Arch Wiki, that also didn't help.\n Any help would be appreciated. Thanks.\n    submitted by    /u/wetpot  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/uycyep/configuring_multi_monitor_setup_with_xorg_config/",
-          "publishedOn": "2022-05-26T17:35:28.000Z",
-          "wordCount": 360,
-          "title": "Configuring multi monitor setup with xorg config files",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uycryn/gnome_wired_network_settings_hangs_on_cancel/",
-          "author": null,
-          "description": "I am running the latest using gnome desktop and network manager. Does any one else have this problem:\n  \nSettings ->Network.\n Select a wired network and edit it using the cog icon.\n Don't change anything and select cancel in the top left.\n Gnome hangs, until you get an option to kill the task\n  \n   submitted by    /u/carpa5  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/uycryn/gnome_wired_network_settings_hangs_on_cancel/",
-          "publishedOn": "2022-05-26T17:27:14.000Z",
-          "wordCount": 161,
-          "title": "Gnome wired network settings Hangs on \"Cancel\"",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.reddit.com/r/archlinux/comments/uy9pw6/archpipewire_is_hijacking_bluetooth_audio_device/",
-          "author": null,
-          "description": "Device is BT 5.0 audio speakers, has the capability of connecting to multiple devices, how it works with other devices:\n  \nPhone and Macbook connects to speakers\n Phone plays an audio, speakers plays the audio.\n Phone stop playing audio, speaker is silent.\n Macbook plays an audio, speakers plays the audio.\n Macbook stop playing audio, speaker is silent.\n Phone plays an audio, speakers plays the audio.\n  \nThen if I do the same with my personal notebook with Arch and PipeWire with PulseAudio support if I do:\n  \nPhone and Macbook connects to speakers\n Phone plays an audio, speakers plays the audio.\n Phone stop playing audio, speaker is silent.\n Arch plays an audio, speakers plays the audio.\n Arch stop playing audio, speaker is silent.\n Phone plays an audio, speakers is silent.\n Arch plays an audio, speakers plays the audio.\n  \nIs like Arch/PipeWire keeps the speaker \"busy\" as if an audio is being played and not letting other devices stream to it.\n Anyone has any idea what can cause this?\n    submitted by    /u/pablo1107  \n [link]   [comments]",
-          "link": "https://www.reddit.com/r/archlinux/comments/uy9pw6/archpipewire_is_hijacking_bluetooth_audio_device/",
-          "publishedOn": "2022-05-26T15:07:27.000Z",
-          "wordCount": 285,
-          "title": "Arch/PipeWire is hijacking bluetooth audio device",
-          "imageUrl": null
         }
       ]
     },
@@ -408,6 +448,36 @@
       "feedUrl": "https://www.bleepingcomputer.com/feed/",
       "siteUrl": "https://www.bleepingcomputer.com/",
       "articles": [
+        {
+          "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-the-new-windows-11-features-from-build-2022/",
+          "author": "Mayank Parmar",
+          "description": "During the Build 2022 developer conference, Microsoft announced a number of new features for Windows 11, including an improved Windows Subsystem for Android (WSA) and more. [...]",
+          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-the-new-windows-11-features-from-build-2022/",
+          "publishedOn": "2022-05-28T19:53:15.000Z",
+          "wordCount": 876,
+          "title": "Microsoft: The new Windows 11 features from Build 2022",
+          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2022/03/14/windows-11.jpg"
+        },
+        {
+          "id": "https://www.bleepingcomputer.com/news/security/clop-ransomware-gang-is-back-hits-21-victims-in-a-single-month/",
+          "author": "Sergiu Gatlan",
+          "description": "After effectively shutting down their entire operation for several months, between November and February, the Clop ransomware is now back according to NCC Group researchers. [...]",
+          "link": "https://www.bleepingcomputer.com/news/security/clop-ransomware-gang-is-back-hits-21-victims-in-a-single-month/",
+          "publishedOn": "2022-05-28T15:10:00.000Z",
+          "wordCount": 1159,
+          "title": "Clop ransomware gang is back, hits 21 victims in a single month",
+          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2020/11/06/Ransomware-headpic.jpg"
+        },
+        {
+          "id": "https://www.bleepingcomputer.com/news/security/new-windows-subsystem-for-linux-malware-steals-browser-auth-cookies/",
+          "author": "Ionut Ilascu",
+          "description": "Hackers are showing an increased interest in the Windows Subsystem for Linux (WSL) as an attack surface as they build new malware, the more advanced samples being suitable for espionage and downloading additional malicious modules. [...]",
+          "link": "https://www.bleepingcomputer.com/news/security/new-windows-subsystem-for-linux-malware-steals-browser-auth-cookies/",
+          "publishedOn": "2022-05-28T14:01:33.000Z",
+          "wordCount": 1277,
+          "title": "New Windows Subsystem for Linux malware steals browser auth cookies",
+          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2021/09/16/WindowsSubsystemLinux.jpg"
+        },
         {
           "id": "https://www.bleepingcomputer.com/news/security/fbi-warns-of-hackers-selling-credentials-for-us-college-networks/",
           "author": "Ionut Ilascu",
@@ -447,86 +517,6 @@
           "wordCount": 1048,
           "title": "Microsoft to force better security defaults for all Azure AD tenants",
           "imageUrl": "https://www.bleepstatic.com/content/hl-images/2021/09/05/Microsoft.jpg"
-        },
-        {
-          "id": "https://www.bleepingcomputer.com/news/security/blackcat-alphv-ransomware-asks-5-million-to-unlock-austrian-state/",
-          "author": "Bill Toulas",
-          "description": "Austrian federal state Carinthia has been hit by the BlackCat ransomware gang, also known as ALPHV, who demanded a $5 million to unlock the encrypted computer systems. [...]",
-          "link": "https://www.bleepingcomputer.com/news/security/blackcat-alphv-ransomware-asks-5-million-to-unlock-austrian-state/",
-          "publishedOn": "2022-05-27T13:23:18.000Z",
-          "wordCount": 1007,
-          "title": "BlackCat/ALPHV ransomware asks $5 million to unlock Austrian state",
-          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2021/12/09/blackcat-alphv.jpg"
-        },
-        {
-          "id": "https://www.bleepingcomputer.com/news/security/intuit-warns-of-quickbooks-phishing-threatening-to-suspend-accounts/",
-          "author": "Sergiu Gatlan",
-          "description": "Tax software vendor Intuit has warned that QuickBooks customers are being targeted in an ongoing series of phishing attacks impersonating the company and trying to lure them with fake account suspension warnings. [...]",
-          "link": "https://www.bleepingcomputer.com/news/security/intuit-warns-of-quickbooks-phishing-threatening-to-suspend-accounts/",
-          "publishedOn": "2022-05-26T21:21:44.000Z",
-          "wordCount": 993,
-          "title": "Intuit warns of QuickBooks phishing threatening to suspend accounts",
-          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2022/02/03/Intuit__headpic.jpg"
-        },
-        {
-          "id": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-22h2-has-reached-rtm-with-build-22621/",
-          "author": "Lawrence Abrams",
-          "description": "Microsoft's Windows Hardware Compatibility Program has confirmed that Windows 11 22H2 build 22621 is the Released to Manufacturing (RTM) build, meaning that the development of Window's 11 next feature update is ready for release. [...]",
-          "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-22h2-has-reached-rtm-with-build-22621/",
-          "publishedOn": "2022-05-26T20:14:52.000Z",
-          "wordCount": 889,
-          "title": "Microsoft: Windows 11 22H2 has reached RTM with build 22621",
-          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2021/10/21/windows-11-gradient-header.jpg"
-        },
-        {
-          "id": "https://www.bleepingcomputer.com/news/security/windows-11-kb5014019-breaks-trend-micro-ransomware-protection/",
-          "author": "Sergiu Gatlan",
-          "description": "This week's Windows optional cumulative update previews have introduced a compatibility issue with some of Trend Micro's security products that breaks some of their capabilities, including the ransomware protection feature. [...]",
-          "link": "https://www.bleepingcomputer.com/news/security/windows-11-kb5014019-breaks-trend-micro-ransomware-protection/",
-          "publishedOn": "2022-05-26T19:44:58.000Z",
-          "wordCount": 939,
-          "title": "Windows 11 KB5014019 breaks Trend Micro ransomware protection",
-          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2022/04/01/Trend_Micro__headpic.jpg"
-        },
-        {
-          "id": "https://www.bleepingcomputer.com/news/security/oas-platform-vulnerable-to-critical-rce-and-api-access-flaws/",
-          "author": "Bill Toulas",
-          "description": "Threat analysts have disclosed vulnerabilities affecting the Open Automation Software (OAS) platform, leading to device access, denial of service, and remote code execution. [...]",
-          "link": "https://www.bleepingcomputer.com/news/security/oas-platform-vulnerable-to-critical-rce-and-api-access-flaws/",
-          "publishedOn": "2022-05-26T19:11:03.000Z",
-          "wordCount": 1215,
-          "title": "OAS platform vulnerable to critical RCE and API access flaws",
-          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2022/05/26/plc.jpg"
-        },
-        {
-          "id": "https://www.bleepingcomputer.com/news/security/exploit-released-for-critical-vmware-auth-bypass-bug-patch-now/",
-          "author": "Sergiu Gatlan",
-          "description": "Proof-of-concept exploit code is now available online for a critical authentication bypass vulnerability in multiple VMware products that allows attackers to gain admin privileges. [...]",
-          "link": "https://www.bleepingcomputer.com/news/security/exploit-released-for-critical-vmware-auth-bypass-bug-patch-now/",
-          "publishedOn": "2022-05-26T18:21:33.000Z",
-          "wordCount": 988,
-          "title": "Exploit released for critical VMware auth bypass bug, patch now",
-          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2021/09/22/VMware-headpic.jpg"
-        },
-        {
-          "id": "https://www.bleepingcomputer.com/news/security/microsoft-shares-mitigation-for-windows-krbrelayup-lpe-attacks/",
-          "author": "Sergiu Gatlan",
-          "description": "Microsoft has shared guidance to help admins defend their Windows enterprise environments against KrbRelayUp attacks that enable attackers to gain SYSTEM privileges on Windows systems with default configurations. [...]",
-          "link": "https://www.bleepingcomputer.com/news/security/microsoft-shares-mitigation-for-windows-krbrelayup-lpe-attacks/",
-          "publishedOn": "2022-05-26T15:46:14.000Z",
-          "wordCount": 1112,
-          "title": "Microsoft shares mitigation for Windows KrbRelayUp LPE attacks",
-          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2021/07/23/Windows-attack.jpg"
-        },
-        {
-          "id": "https://www.bleepingcomputer.com/news/security/zyxel-warns-of-flaws-impacting-firewalls-aps-and-controllers/",
-          "author": "Bill Toulas",
-          "description": "Zyxel has published a security advisory to warn admins about multiple vulnerabilities affecting a wide range of firewall, AP, and AP controller products. [...]",
-          "link": "https://www.bleepingcomputer.com/news/security/zyxel-warns-of-flaws-impacting-firewalls-aps-and-controllers/",
-          "publishedOn": "2022-05-26T14:06:03.000Z",
-          "wordCount": 978,
-          "title": "Zyxel warns of flaws impacting firewalls, APs, and controllers",
-          "imageUrl": "https://www.bleepstatic.com/content/hl-images/2022/05/15/Zyxel-USG-Flex.jpg"
         }
       ]
     },
@@ -536,6 +526,26 @@
       "siteUrl": "https://www.ghacks.net",
       "articles": [
         {
+          "id": "https://www.ghacks.net/?p=178832",
+          "author": "Martin Brinkmann",
+          "description": "During Build 2022, Microsoft highlighted some of the improvements that it plans to roll out to the virtual Microsoft Store. The Store, which the company introduced in Windows 8 and refined in […]\nThank you for being a Ghacks reader. The post Microsoft Store is getting a much needed boost (and ads) appeared first on gHacks Technology News.",
+          "link": "https://www.ghacks.net/2022/05/28/microsoft-store-is-getting-a-much-needed-boost-and-ads/",
+          "publishedOn": "2022-05-28T14:54:10.000Z",
+          "wordCount": 1813,
+          "title": "Microsoft Store is getting a much needed boost (and ads)",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.ghacks.net/?p=178824",
+          "author": "Martin Brinkmann",
+          "description": "WifiDiagnosticsView is a portable program for Microsoft Windows devices that provides users with wireless connectivity information. Created by Nirsoft, it has the same traits as other Nirsoft applications, including that it is […]\nThank you for being a Ghacks reader. The post WifiDiagnosticsView: diagnose wireless connectivity issues on Windows PCs appeared first on gHacks Technology News.",
+          "link": "https://www.ghacks.net/2022/05/28/wifidiagnosticsview-diagnose-wireless-connectivity-issues-on-windows-pcs/",
+          "publishedOn": "2022-05-28T07:09:15.000Z",
+          "wordCount": 1198,
+          "title": "WifiDiagnosticsView: diagnose wireless connectivity issues on Windows PCs",
+          "imageUrl": "https://www.ghacks.net/wp-content/uploads/2022/05/wireless-view.png"
+        },
+        {
           "id": "https://www.ghacks.net/?p=178818",
           "author": "Martin Brinkmann",
           "description": "Microsoft is working on integrating support for placing stickers on the Windows 11 desktop. Users who run a recent Windows 11 version 22H2 Insider build can enable the functionality to test it […]\nThank you for being a Ghacks reader. The post Do you want some Stickers on your Windows desktop? appeared first on gHacks Technology News.",
@@ -544,46 +554,6 @@
           "wordCount": 1549,
           "title": "Do you want some Stickers on your Windows desktop?",
           "imageUrl": "https://www.ghacks.net/wp-content/uploads/2022/05/windows-11-stickers.png"
-        },
-        {
-          "id": "https://www.ghacks.net/?p=178812",
-          "author": "Ashwin",
-          "description": "Amazon has decided not to allow some old Kindle e-readers to access its eBook store beyond this August. The company has sent out emails to owners of affected devices, informing them about […]\nThank you for being a Ghacks reader. The post Some old Kindle e-readers won't be able to access the Store after August 17th appeared first on gHacks Technology News.",
-          "link": "https://www.ghacks.net/2022/05/27/some-old-kindle-e-readers-wont-be-able-to-access-the-store-after-august-17th/",
-          "publishedOn": "2022-05-27T11:02:54.000Z",
-          "wordCount": 1595,
-          "title": "Some old Kindle e-readers won't be able to access the Store after August 17th",
-          "imageUrl": "https://www.ghacks.net/wp-content/uploads/2022/05/Some-old-Kindle-e-readers-wont-be-able-to-access-the-Store-after-August-17th-scaled.jpg"
-        },
-        {
-          "id": "https://www.ghacks.net/?p=178809",
-          "author": "Martin Brinkmann",
-          "description": "Firefox users may receive a prompt on startup of the web browser that gives them an option to enable the browser's Total Cookie Protection feature. Total Cookie Protection separates cookies in the […]\nThank you for being a Ghacks reader. The post Mozilla is rolling out Total Cookie Protection to more Firefox users appeared first on gHacks Technology News.",
-          "link": "https://www.ghacks.net/2022/05/27/mozilla-is-rolling-out-total-cookie-protection-to-more-firefox-users/",
-          "publishedOn": "2022-05-27T05:15:56.000Z",
-          "wordCount": 2281,
-          "title": "Mozilla is rolling out Total Cookie Protection to more Firefox users",
-          "imageUrl": "https://www.ghacks.net/wp-content/uploads/2022/05/firefox-total-cookie-protection.png"
-        },
-        {
-          "id": "https://www.ghacks.net/?p=178798",
-          "author": "Ashwin",
-          "description": "Proton AG has updated its services under a unified design. The logos for all the company's services have been updated with a modern design. The icons look very similar to Google's style. […]\nThank you for being a Ghacks reader. The post Proton has updated its logos and plan prices for Mail and VPN appeared first on gHacks Technology News.",
-          "link": "https://www.ghacks.net/2022/05/26/proton-mail-plus-unlimited-plan-prices-comparison/",
-          "publishedOn": "2022-05-26T15:02:28.000Z",
-          "wordCount": 1874,
-          "title": "Proton has updated its logos and plan prices for Mail and VPN",
-          "imageUrl": "https://www.ghacks.net/wp-content/uploads/2022/05/Proton-updates-its-logos.png"
-        },
-        {
-          "id": "https://www.ghacks.net/?p=178792",
-          "author": "Martin Brinkmann",
-          "description": "Skip Silence is an open source extension for Chromium-based web browsers such as Google Chrome and for Mozilla's Firefox web browser. The extension's main purpose is to skip silent parts of audio […]\nThank you for being a Ghacks reader. The post Skip Silence: Automatically skip silent parts of video and audio streams appeared first on gHacks Technology News.",
-          "link": "https://www.ghacks.net/2022/05/26/skip-silence-automatically-skip-silent-parts-of-video-and-audio-streams/",
-          "publishedOn": "2022-05-26T15:01:22.000Z",
-          "wordCount": 1592,
-          "title": "Skip Silence: Automatically skip silent parts of video and audio streams",
-          "imageUrl": "https://www.ghacks.net/wp-content/uploads/2022/05/skip-silence.png"
         }
       ]
     },
@@ -593,24 +563,24 @@
       "siteUrl": "https://www.hongkiat.com/blog",
       "articles": [
         {
-          "id": "https://www.hongkiat.com/blog/?p=59924",
-          "author": "Nikita",
-          "description": "There are many different cryptocurrencies on the network that are using Proof-of-Work (PoW) or Proof-of-Stake (PoS) algorithms. But have you heard of a",
-          "link": "https://www.hongkiat.com/blog/how-to-mine-verus/",
-          "publishedOn": "2022-05-27T10:01:12.000Z",
-          "wordCount": 731,
-          "title": "How to Mine Verus Coins with Your CPU",
-          "imageUrl": "https://assets.hongkiat.com/uploads/how-to-mine-verus/1-mine-verus-coin.jpg"
+          "id": "https://www.hongkiat.com/blog/?p=26472",
+          "author": "Victor Balasa",
+          "description": "In the beginning, there was you, and your laptop. As entrepreneurs, we've all been there: nurturing a larger-than-life vision of what our app/product",
+          "link": "https://www.hongkiat.com/blog/design-tools-for-startup/",
+          "publishedOn": "2022-05-28T10:01:21.000Z",
+          "wordCount": 3692,
+          "title": "20 Design Tools for Startups on Budget",
+          "imageUrl": "https://assets.hongkiat.com/uploads/design-tools-for-startup/wix-editorx.jpg"
         },
         {
-          "id": "https://www.hongkiat.com/blog/?p=22064",
-          "author": "Fahad Khan",
-          "description": "We are living in a digital era where gadgets from computers and smartphones to tablets have become an essential part of our lives. Even kids these days",
-          "link": "https://www.hongkiat.com/blog/programming-tools-kids/",
-          "publishedOn": "2022-05-26T15:01:08.000Z",
-          "wordCount": 1132,
-          "title": "10 Tools to Teach Kids Basics of Programming",
-          "imageUrl": "https://assets.hongkiat.com/uploads/programming-tools-kids/codeSpark-Academy.jpg"
+          "id": "https://www.hongkiat.com/blog/?p=19250",
+          "author": "Addison Duvall",
+          "description": "A lot of freelance designers find themselves stuck in the same place, year after year, serving the same types of clients despite their desire to move on",
+          "link": "https://www.hongkiat.com/blog/what-design-clients-want/",
+          "publishedOn": "2022-05-27T15:01:40.000Z",
+          "wordCount": 1135,
+          "title": "What Do Freelance Clients Actually Care About?",
+          "imageUrl": "https://assets.hongkiat.com/uploads/what-design-clients-want/freelance-services.jpg"
         }
       ]
     },
@@ -619,6 +589,166 @@
       "feedUrl": "https://www.howtogeek.com/feed/",
       "siteUrl": "https://www.howtogeek.com",
       "articles": [
+        {
+          "id": "https://www.howtogeek.com/?p=772783",
+          "author": "Benj Edwards",
+          "description": "If you’re tired of your Windows 10 or 11 PC’s screen automatically getting brighter or dimmer, it’s easy to turn off. All it takes is a quick trip to Settings. Here’s how to do it.",
+          "link": "https://www.howtogeek.com/772783/how-to-turn-off-auto-brightness-on-windows-10-or-11/",
+          "publishedOn": "2022-05-28T21:00:00.000Z",
+          "wordCount": 2020,
+          "title": "How to Turn Off Auto Brightness on Windows 10 or 11",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/08/win11_brightness_hero.jpg?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.reviewgeek.com/118935/what-were-watching-primitive-technology-gets-back-to-basics/",
+          "author": "Suzanne Humphries",
+          "description": "What if all of our modern technology was somehow rendered useless tomorrow? Most of us are dependent on electricity, supermarkets, clothing stores, and other modern conveniences, but YouTube’s Primitive Technology channel shows us how we can survive (at least in a basic way) without all of that.",
+          "link": "https://www.reviewgeek.com/118935/what-were-watching-primitive-technology-gets-back-to-basics/",
+          "publishedOn": "2022-05-28T20:04:35.000Z",
+          "wordCount": 2823,
+          "title": "What We're Watching: 'Primitive Technology' Gets Back to Basics",
+          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/05/2c7e34ca.png"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=764636",
+          "author": "Tim Brookes",
+          "description": "Apple added the Shortcuts app to macOS Monterey in 2021, making it easy to build workflows using visual coding blocks just like you can on iPhone and iPad. While the feature still lacks the power of Automator or AppleScript, it’s still pretty useful.",
+          "link": "https://www.howtogeek.com/764636/mac-shortcuts-actions-youll-actually-use/",
+          "publishedOn": "2022-05-28T20:00:00.000Z",
+          "wordCount": 2806,
+          "title": "8 Mac Shortcuts Actions You’ll Actually Use",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/12/macos_shortcuts_featured.jpg?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=807319",
+          "author": "Benj Edwards",
+          "description": "If you’re having trouble with your MacBook Air, it’s easy to restart. A restart will completely reboot and reload the macOS operating system, clearing the system’s working memory for a fresh start. None of your data will be affected. Here are several ways to do it.",
+          "link": "https://www.howtogeek.com/807319/how-to-restart-a-macbook-air/",
+          "publishedOn": "2022-05-28T19:00:56.000Z",
+          "wordCount": 2013,
+          "title": "How to Restart a MacBook Air",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/05/mac_restart_1.jpg?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=802099",
+          "author": "RJ Fulton",
+          "description": "Using Uniswap with your MetaMask wallet is one of the easiest ways to “swap” your favorite Ethereum-based tokens in a matter of minutes. Here’s how to do it on your iPhone or Android phone.",
+          "link": "https://www.howtogeek.com/802099/how-to-use-uniswap-with-the-metamask-app-on-iphone-or-android/",
+          "publishedOn": "2022-05-28T18:00:28.000Z",
+          "wordCount": 2239,
+          "title": "How to Use Uniswap With MetaMask on iPhone or Android",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/05/shutterstock_1829740115.jpg?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.reviewgeek.com/118977/google-maps-street-view-can-now-take-your-phone-back-in-time/",
+          "author": "Andrew Heinzman",
+          "description": "Can you believe it’s been 15 years since Google Street view launched? To celebrate the anniversary, Google will now let you travel back in time when using Street View in the Google Maps app. All you need to do is tap a location in Street View, select “see more dates,” and enjoy the feeling of growing old.",
+          "link": "https://www.reviewgeek.com/118977/google-maps-street-view-can-now-take-your-phone-back-in-time/",
+          "publishedOn": "2022-05-28T18:00:17.000Z",
+          "wordCount": 2400,
+          "title": "Google Maps' Street View Can Now Take Your Phone Back In Time",
+          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/05/55ee7a85.png"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=796494",
+          "author": "Andy Nguyen",
+          "description": "While it’s easy to get attached to tech you’ve used for years, a run-down monitor with poor image quality and hardware issues keeps you from experiencing the best in productivity and entertainment. Here’s how to know it’s time to upgrade.",
+          "link": "https://www.howtogeek.com/796494/when-to-replace-your-monitor/",
+          "publishedOn": "2022-05-28T17:00:00.000Z",
+          "wordCount": 2590,
+          "title": "When to Replace Your Old Monitor",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/04/old-crt-computer-monitor.jpg?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.reviewgeek.com/119409/rivian-releases-soft-sand-mode-update-just-in-time-for-summer/",
+          "author": "Cory Gunther",
+          "description": "You now have one more reason to be excited if you’re the proud owner of the Rivian R1T electric truck or are waiting for the new R1S all-electric SUV. Rivian has finally released its “soft sand” driving mode software update.",
+          "link": "https://www.reviewgeek.com/119409/rivian-releases-soft-sand-mode-update-just-in-time-for-summer/",
+          "publishedOn": "2022-05-28T16:34:01.000Z",
+          "wordCount": 2591,
+          "title": "Rivian Releases 'Soft Sand Mode' Update Just in Time For Summer",
+          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/05/233fa29c.jpg"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=684233",
+          "author": "Joe Fedewa",
+          "description": "Samsung Galaxy smartwatches are a great option for people with Android phones, but some of them don’t have Google Assistant. We’ll show you how to get Assistant up and running on your Samsung wearable with Wear OS or Tizen.",
+          "link": "https://www.howtogeek.com/684233/how-to-install-google-assistant-on-samsung-galaxy-smartwatches/",
+          "publishedOn": "2022-05-28T16:00:00.000Z",
+          "wordCount": 2421,
+          "title": "How to Install Google Assistant on Samsung Galaxy Smartwatches",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2020/08/samsung-watch-google-assistant.jpg?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.reviewgeek.com/119131/asus-reveals-an-unnecessarily-cool-500hz-gaming-monitor/",
+          "author": "Andrew Heinzman",
+          "description": "Everyone knows that a higher refresh rate makes you a better gamer. That’s why ASUS and NVIDIA teamed up to build the ROG Swift 500Hz gaming monitor, something that will “benefit every game and every gamer.”",
+          "link": "https://www.reviewgeek.com/119131/asus-reveals-an-unnecessarily-cool-500hz-gaming-monitor/",
+          "publishedOn": "2022-05-28T15:23:00.000Z",
+          "wordCount": 2383,
+          "title": "ASUS Reveals an Unnecessarily Cool 500Hz Gaming Monitor",
+          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/05/7bd56eda.png"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=805821",
+          "author": "Mahesh Makvana",
+          "description": "With Google Docs’ editing tools, you can edit your PDF to add and remove text, images, charts, and more. It then gives you the resulting file back as a PDF. We’ll show you how to use this service for PDF editing.",
+          "link": "https://www.howtogeek.com/805821/edit-pdf-in-google-docs/",
+          "publishedOn": "2022-05-28T15:00:23.000Z",
+          "wordCount": 2014,
+          "title": "How to Edit a PDF in Google Docs",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/11/adobe_pdf_hero_1200_675.png?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=754502",
+          "author": "Jeff Butts",
+          "description": "4K TVs are more affordable now than ever before, but which model should you buy? Whether you want a set for gaming, movie watching, or just a good all-rounder, we have some recommendations to eliminate the guesswork.",
+          "link": "https://www.howtogeek.com/754502/best-4k-tv/",
+          "publishedOn": "2022-05-28T14:00:00.000Z",
+          "wordCount": 4222,
+          "title": "The Best 4K TVs of 2022",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/09/best_4k_TVs.jpg?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=806352",
+          "author": "Benj Edwards",
+          "description": "Sure, you’ve heard a lot about iPhones being water resistant, but what about iPads? Can you dunk them in the drink without any damage? Let’s take a look—and see what you can do about it.",
+          "link": "https://www.howtogeek.com/806352/are-ipads-waterproof/",
+          "publishedOn": "2022-05-28T13:00:54.000Z",
+          "wordCount": 2140,
+          "title": "Are iPads Waterproof?",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/05/ipad_water_hero_1.jpg?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.reviewgeek.com/116413/what-do-the-different-vinyl-condition-grades-mean/",
+          "author": "Suzanne Humphries",
+          "description": "You’ve probably heard the term “mint condition” when talking about comic books or baseball cards, but it can also apply to vinyl records. There are other condition grades you might stumble upon while buying used vinyl, and it’s worth learning what each grade means.",
+          "link": "https://www.reviewgeek.com/116413/what-do-the-different-vinyl-condition-grades-mean/",
+          "publishedOn": "2022-05-28T13:00:53.000Z",
+          "wordCount": 3762,
+          "title": "What Do the Different Vinyl Condition Grades Mean?",
+          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/04/e2ae6b64.png"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=802194",
+          "author": "Fergus O'Sullivan",
+          "description": "Virtual private networks let you access different regions’ streaming libraries. Unsurprisingly, Netflix, Hulu, and other streaming services aren’t too enthusiastic about VPN users unlocking all this extra content and have put up countermeasures. How effective are they, though?",
+          "link": "https://www.howtogeek.com/802194/can-you-still-stream-netflix-or-other-services-with-a-vpn/",
+          "publishedOn": "2022-05-28T12:00:40.000Z",
+          "wordCount": 2699,
+          "title": "Can You Still Stream With a VPN in 2022?",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/04/shutterstock_1272527956.png?height=200p&trim=2,2,2,2"
+        },
+        {
+          "id": "https://www.howtogeek.com/?p=804442",
+          "author": "Joe Fedewa",
+          "description": "For nearly as long as smartphones have existed, people have been putting them in rice after dropping them in water. This often-repeated “trick” to save a water-logged phone has gone too far. Allow us to explain.",
+          "link": "https://www.howtogeek.com/804442/stop-putting-your-phone-in-rice/",
+          "publishedOn": "2022-05-28T11:00:24.000Z",
+          "wordCount": 2273,
+          "title": "Stop Putting Your Phone in Rice",
+          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/05/Phone-in-rice.png?height=200p&trim=2,2,2,2"
+        },
         {
           "id": "https://www.howtogeek.com/?p=763250",
           "author": "Marshall Gunnell",
@@ -798,276 +928,6 @@
           "wordCount": 1900,
           "title": "Google Drive Now Has Keyboard Shortcuts for Copy and Paste (in 2022)",
           "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/08/Google-Drive-logo.png?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=797223",
-          "author": "Andy Nguyen",
-          "description": "Gaming SSDs need to be fast, high capacity, and able to run the latest games without any hiccups. Having trouble finding the perfect one for you? We can help.",
-          "link": "https://www.howtogeek.com/797223/best-ssd-for-gaming/",
-          "publishedOn": "2022-05-27T14:00:43.000Z",
-          "wordCount": 4428,
-          "title": "The Best SSDs for Gaming in 2022",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/04/samsung-980-pro-header.png?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=791146",
-          "author": "Mohammed Abubakar",
-          "description": "If you want to learn to use the Linux terminal, a great way to start is by installing and playing some games. These games aren’t just fun—they also require no compatibility layer or expensive graphics cards.",
-          "link": "https://www.howtogeek.com/791146/linux-terminal-games/",
-          "publishedOn": "2022-05-27T13:30:00.000Z",
-          "wordCount": 2814,
-          "title": "10 Fun Games to Play in the Linux Terminal",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/03/shutterstock_321627716.png?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=807194",
-          "author": "Josh Bell",
-          "description": "Starting with one blockbuster movie about genetically engineered dinosaurs in the modern world, Jurassic Park has become one of the most lucrative pop-culture properties of the last three decades. Here’s how to stream the Jurassic Park franchise.",
-          "link": "https://www.howtogeek.com/807194/where-to-stream-jurassic-park/",
-          "publishedOn": "2022-05-27T13:00:50.000Z",
-          "wordCount": 2519,
-          "title": "Where to Stream the ‘Jurassic Park’ Franchise in 2022",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/05/jurrasic-park-gateway.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.lifesavvy.com/130070/the-six-most-effective-post-workout-stretches/",
-          "author": "Karla Tafra",
-          "description": "After a good workout, there’s nothing more beneficial than stretching. It’s the best thing you can do for your hard-working muscles because it helps them stay flexible and strong. It can also increase your mobility and range of motion, and improve your recovery time.",
-          "link": "https://www.lifesavvy.com/130070/the-six-most-effective-post-workout-stretches/",
-          "publishedOn": "2022-05-27T13:00:22.000Z",
-          "wordCount": 1687,
-          "title": "The 6 Most Effective Post-Workout Stretches",
-          "imageUrl": "https://www.lifesavvy.com/p/uploads/2022/05/65d40a80.jpg"
-        },
-        {
-          "id": "https://www.reviewgeek.com/115868/campfire-audio-solstice-in-ear-monitors-review-pricey-and-worth-every-penny/",
-          "author": "Ted Needleman",
-          "description": "At first glance, you might mistake Campfire Audio’s Solstice In-Ear Monitors for earbuds. They’re not. In-Ear Monitors (IEM) are what earbuds want to be when they grow up. And if you can swallow the high price, the Solstice puts every other earbud to shame.",
-          "link": "https://www.reviewgeek.com/115868/campfire-audio-solstice-in-ear-monitors-review-pricey-and-worth-every-penny/",
-          "publishedOn": "2022-05-27T13:00:11.000Z",
-          "wordCount": 3657,
-          "title": "Campfire Audio Solstice In-Ear Monitors Review: Pricey and Worth Every Penny",
-          "imageUrl": "https://www.reviewgeek.com/p-badge/119241/6566565e93fdcf8f93df80bfff8a667b.png"
-        },
-        {
-          "id": "https://www.lifesavvy.com/130801/need-to-keep-drinks-cool-grab-a-pack-of-balloons/",
-          "author": "Shea Simmons",
-          "description": "Memorial Day weekend is here, and summer has its unofficial kickoff. With the warm weather comes outdoor entertaining, and if you’re looking for a clever way to keep drinks cold, you might want to grab some balloons.",
-          "link": "https://www.lifesavvy.com/130801/need-to-keep-drinks-cool-grab-a-pack-of-balloons/",
-          "publishedOn": "2022-05-27T12:30:41.000Z",
-          "wordCount": 688,
-          "title": "Need to Keep Drinks Cool? Grab a Pack of Balloons",
-          "imageUrl": "https://www.lifesavvy.com/p/uploads/2022/05/1e36d5a8.jpg"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=804821",
-          "author": "Joe Fedewa",
-          "description": "Notifications are a huge part of the smartphone experience and Android and the iPhone have vastly different approaches to them. Apple has made big improvements over the years, but Android notifications are still superior. I’ll show you why.",
-          "link": "https://www.howtogeek.com/804821/android-notifications-are-still-miles-ahead-of-the-iphone/",
-          "publishedOn": "2022-05-27T12:00:20.000Z",
-          "wordCount": 2874,
-          "title": "Android Notifications Are Still Miles Ahead of the iPhone",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/05/iPhone-notifications.png?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=802757",
-          "author": "Tim Brookes",
-          "description": "Gold-plated connectors on stereo jacks, HDMI cables, and Ethernet connectors might look nice, but do they serve any purpose? Or can you save some money on your next cable purchase?",
-          "link": "https://www.howtogeek.com/802757/do-i-need-gold-plating-on-my-cables/",
-          "publishedOn": "2022-05-27T11:00:34.000Z",
-          "wordCount": 2622,
-          "title": "Do I Need Gold Plating on My Cables?",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/05/various-cable-connectors-gold-plating.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=754424",
-          "author": "Chris Hoffman",
-          "description": "When resetting your Windows 10 or Windows 11 PC, you’ll be asked whether you want to do a “Cloud Download” or “Local Reinstall.” These options work a little differently, and each has its upsides and downsides. Here’s the difference between the two.",
-          "link": "https://www.howtogeek.com/754424/should-you-use-cloud-download-or-local-reinstall-on-windows/",
-          "publishedOn": "2022-05-26T21:00:00.000Z",
-          "wordCount": 2422,
-          "title": "Should You Use Cloud Download or Local Reinstall on Windows?",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/09/shutterstock_1992673865.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.reviewgeek.com/119311/microsofts-xbox-streaming-stick-takes-a-confusing-turn/",
-          "author": "Andrew Heinzman",
-          "description": "It’s been nearly a full year since Microsoft announced its plan to bring Xbox Cloud Gaming to smart TVs. And while I thought it’d be exciting to learn about the Xbox streaming stick, a new statement from Microsoft just leaves me confused. It’s like I’ve forgotten how to read.",
-          "link": "https://www.reviewgeek.com/119311/microsofts-xbox-streaming-stick-takes-a-confusing-turn/",
-          "publishedOn": "2022-05-26T20:37:34.000Z",
-          "wordCount": 2653,
-          "title": "Microsoft's Xbox Streaming Stick Takes a Confusing Turn",
-          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/05/eac90027.png"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=763255",
-          "author": "Tim Brookes",
-          "description": "TV manufacturers have rushed to improve their latest models with fast HDMI 2.1 ports capable of supporting 4K gaming at 120Hz in glorious HDR. Unfortunately, most of the same models still use outdated 100Mb Ethernet ports. Fortunately, we have a workaround.",
-          "link": "https://www.howtogeek.com/763255/how-to-add-gigabit-ethernet-to-a-tv-without-it/",
-          "publishedOn": "2022-05-26T20:00:00.000Z",
-          "wordCount": 2363,
-          "title": "How to Add Gigabit Ethernet to a TV Without It",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/10/fingers-connecting-ethernet-cable-tv.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=807973",
-          "author": "Corbin Davenport",
-          "description": "Amazon’s Kindle lineup might be one of the best eReaders around, but Barnes & Noble is still keeping the Nook alive as a competitor. Now there’s a brand new model.",
-          "link": "https://www.howtogeek.com/807973/barnes-noble-has-a-new-nook-to-fight-amazons-kindle/",
-          "publishedOn": "2022-05-26T19:01:54.000Z",
-          "wordCount": 2046,
-          "title": "Barnes & Noble Has A New Nook To Fight Amazon’s Kindle",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/05/Nook-GlowLight-4e-featured-image.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=803510",
-          "author": "Nick Lewis",
-          "description": "Formatting a solid-state drive (SSD) only takes a few seconds through File Explorer. But how exactly do you do it, and what file system should you choose? Here’s what you need to know.",
-          "link": "https://www.howtogeek.com/803510/how-to-format-an-ssd-on-windows-10/",
-          "publishedOn": "2022-05-26T19:00:19.000Z",
-          "wordCount": 2671,
-          "title": "How to Format an SSD on Windows 10",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/04/ssd-drives-laptop.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=806547",
-          "author": "Sandy Writtenhouse",
-          "description": "A Roku device, like other gadgets on your network, has an IP address. While this isn’t something you need on a regular basis, you might if you’re troubleshooting an issue. Here are a few ways to find your Roku’s IP address.",
-          "link": "https://www.howtogeek.com/806547/how-to-find-roku-ip-address/",
-          "publishedOn": "2022-05-26T18:00:33.000Z",
-          "wordCount": 2009,
-          "title": "How to Find Your Roku’s IP Address",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/05/roku-remote-tv-screen.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.reviewgeek.com/119266/volkswagens-id-4-goes-higher-than-an-evs-ever-gone-before/",
-          "author": "Cory Gunther",
-          "description": "The Volkswagen ID.4 electric sedan is already a big hit when it comes to new electric vehicles, but now the car has gone where no other EV has gone before. Where exactly? To a height of over 19,000 feet up the side of a volcano, setting a Guinness World Record along the way.",
-          "link": "https://www.reviewgeek.com/119266/volkswagens-id-4-goes-higher-than-an-evs-ever-gone-before/",
-          "publishedOn": "2022-05-26T17:38:02.000Z",
-          "wordCount": 2466,
-          "title": "Volkswagen's ID.4 Goes Higher Than an EV's Ever Gone Before",
-          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/05/c1cb40cc.jpg"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=803839",
-          "author": "Dave McKay",
-          "description": "Virtual machines try really hard to convince their operating systems that they’re running on physical hardware. So can you tell from the Linux command line if the computer is physical or virtual?",
-          "link": "https://www.howtogeek.com/803839/how-to-let-linux-scripts-detect-theyre-running-in-virtual-machines/",
-          "publishedOn": "2022-05-26T17:00:43.000Z",
-          "wordCount": 3118,
-          "title": "How to Let Linux Scripts Detect They’re Running in Virtual Machines",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/05/shutterstock_1164968740.png?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=807919",
-          "author": "Corbin Davenport",
-          "description": "Google’s main business is still online advertising, and much of that can be found in Google’s own services. Now the company is working on new ad formats in Google Search and YouTube.",
-          "link": "https://www.howtogeek.com/807919/get-ready-for-more-ads-in-google-search-and-youtube/",
-          "publishedOn": "2022-05-26T16:43:37.000Z",
-          "wordCount": 1924,
-          "title": "Get Ready for More Ads in Google Search and YouTube",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/08/YouTube-logo-hero-1.png?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.reviewgeek.com/119239/linking-oculus-quest-2-with-a-windows-11-pc-just-got-less-awful/",
-          "author": "Andrew Heinzman",
-          "description": "Linking your Meta Quest 2 (formerly Oculus Quest 2) headset to a PC unlocks a world of powerful games and applications. But for whatever reason, the Quest 2 flashes a ton of nauseating screen effects when linked with a Windows 11 PC. That changes today, thanks to an update in the Public Test Channel.",
-          "link": "https://www.reviewgeek.com/119239/linking-oculus-quest-2-with-a-windows-11-pc-just-got-less-awful/",
-          "publishedOn": "2022-05-26T16:13:53.000Z",
-          "wordCount": 2452,
-          "title": "Linking Oculus Quest 2 with a Windows 11 PC Just Got Less Awful",
-          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/05/812749e1.png"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=805043",
-          "author": "Jason Fitzpatrick",
-          "description": "The nodes of many mesh systems sport multiple Ethernet ports even though all those Ethernet ports aren’t strictly necessary for setting up and using the mesh system. So why are they there, and what can you do with them?",
-          "link": "https://www.howtogeek.com/805043/what-are-the-ethernet-ports-on-my-mesh-wi-fi-system-for/",
-          "publishedOn": "2022-05-26T16:00:41.000Z",
-          "wordCount": 3332,
-          "title": "What Are the Ethernet Ports on My Mesh Wi-Fi System For?",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/05/MeshEthernet3.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.lifesavvy.com/130714/heres-why-diet-coke-tastes-different-at-mcdonalds/",
-          "author": "Shea Simmons",
-          "description": "If you’ve ever had an ice-cold Diet Coke from McDonald’s, you know how satisfying that first sip is. It’s what leads many people to the drive-thru in the first place. But why does it taste so much better than your Diet Coke at home?",
-          "link": "https://www.lifesavvy.com/130714/heres-why-diet-coke-tastes-different-at-mcdonalds/",
-          "publishedOn": "2022-05-26T16:00:34.000Z",
-          "wordCount": 735,
-          "title": "Here's Why Diet Coke Tastes Different at McDonald's",
-          "imageUrl": "https://www.lifesavvy.com/p/uploads/2022/05/36484b4c.jpg"
-        },
-        {
-          "id": "https://www.reviewgeek.com/119233/gboard-might-get-a-split-keyboard-for-larger-devices/",
-          "author": "Suzanne Humphries",
-          "description": "We use software keyboards on our smartphones all the time without giving it much thought, but they don’t always work well on larger devices. Google may soon be adding a split keyboard to Gboard, though, in an attempt to better optimize it for tablets and foldables.",
-          "link": "https://www.reviewgeek.com/119233/gboard-might-get-a-split-keyboard-for-larger-devices/",
-          "publishedOn": "2022-05-26T15:59:42.000Z",
-          "wordCount": 2476,
-          "title": "Gboard Might Get a Split Keyboard For Larger Devices",
-          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/05/ad581520.png"
-        },
-        {
-          "id": "https://www.reviewgeek.com/119240/joby-aviations-electric-air-taxi-receives-approval-for-flights/",
-          "author": "Cory Gunther",
-          "description": "With electrification on the rise, several new vehicles and aircraft with bold ambitions are underway. Joby Aviation, an electric aviation company that completed several 150-mile test flights earlier this year, just received its first FAA certification to operate its electric air taxi.",
-          "link": "https://www.reviewgeek.com/119240/joby-aviations-electric-air-taxi-receives-approval-for-flights/",
-          "publishedOn": "2022-05-26T15:54:31.000Z",
-          "wordCount": 2473,
-          "title": "Joby Aviation's Electric Air Taxi Receives Approval for Flights",
-          "imageUrl": "https://www.reviewgeek.com/p/uploads/2021/07/5d998c3c.png"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=800546",
-          "author": "Sandy Writtenhouse",
-          "description": "When you need to compare values in a spreadsheet, Google Sheets gives you the standard operators to do so. You can use functions if you prefer, but if the regular symbols are for you, here’s how to use them.",
-          "link": "https://www.howtogeek.com/800546/google-sheets-comparison-operators/",
-          "publishedOn": "2022-05-26T15:00:54.000Z",
-          "wordCount": 2210,
-          "title": "How to Use Comparison Operators in Google Sheets",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/05/google_sheets_her_1200x675.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.reviewgeek.com/119232/plex-finally-launches-a-dedicated-htpc-client/",
-          "author": "Andrew Heinzman",
-          "description": "Back in 2019, Plex gleefully announced the death of Plex Media Player, a clunky and outdated app for Macs and PCs. But customers went ballistic. The old Plex Media Player allowed people to build HPTC setups—home theater systems where a PC or Mac is connected directly to a TV or projector. So, Plex began work on a replacement.",
-          "link": "https://www.reviewgeek.com/119232/plex-finally-launches-a-dedicated-htpc-client/",
-          "publishedOn": "2022-05-26T14:57:57.000Z",
-          "wordCount": 2393,
-          "title": "Plex Finally Launches a Dedicated HTPC Client",
-          "imageUrl": "https://www.reviewgeek.com/p/uploads/2022/05/be13c1c7.png"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=807837",
-          "author": "Corbin Davenport",
-          "description": "Plex is a popular service for hosting your own server of media content (or using someone else’s) and streaming it to all your devices. Plex got its start on HTPCs, and now it’s returning to them with a brand new app.",
-          "link": "https://www.howtogeek.com/807837/htpcs-are-back-plex-revives-its-app-for-home-theater-pcs/",
-          "publishedOn": "2022-05-26T14:43:36.000Z",
-          "wordCount": 1914,
-          "title": "HTPCs Are Back: Plex Revives Its App For Home Theater PCs",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2022/05/Plex-logo-featured-image.jpg?height=200p&trim=2,2,2,2"
-        },
-        {
-          "id": "https://www.reviewgeek.com/119145/satechi-type-c-monitor-stand-hub-review/",
-          "author": "Justin Duino",
-          "description": "Staring at your monitor all day can be tiresome and painful if your screen’s height isn’t positioned ergonomically. Most monitors come with adjustable stands, but not all of Apple’s iMacs and Studio Displays do. Satechi’s Type-C Monitor Stand Hub helps resolve that problem.",
-          "link": "https://www.reviewgeek.com/119145/satechi-type-c-monitor-stand-hub-review/",
-          "publishedOn": "2022-05-26T14:24:26.000Z",
-          "wordCount": 3327,
-          "title": "Satechi Type-C Monitor Stand Hub Review: The Perfect Height and Port Selection",
-          "imageUrl": "https://www.reviewgeek.com/p-badge/119161/965c81f90f71d4f17abd08006a208b8b.png"
-        },
-        {
-          "id": "https://www.howtogeek.com/?p=738071",
-          "author": "Fergus O'Sullivan",
-          "description": "It can be tricky to decide which VPN is the best service for you and your needs. We’ve used our considerable experience with these tools to create this list of the best VPN services out there.",
-          "link": "https://www.howtogeek.com/738071/best-vpn-services/",
-          "publishedOn": "2022-05-26T14:00:00.000Z",
-          "wordCount": 6000,
-          "title": "The Best VPN Services of 2022",
-          "imageUrl": "https://www.howtogeek.com/wp-content/uploads/2021/07/Best-VPNs-header.jpg?height=200p&trim=2,2,2,2"
         }
       ]
     },
@@ -1119,83 +979,6 @@
           "title": "Giochi Google nascosti: come e dove trovarli",
           "itunes": {},
           "imageUrl": null
-        },
-        {
-          "id": "https://www.ilsoftware.it/articoli.asp?tag=Windows-11-22H2-le-principali-novita_24317",
-          "author": null,
-          "description": "Il primo e unico aggiornamento dell'anno destinato alla più recente versione del sistema operativo Microsoft si chiama Windows 11 22H2 (Sun Valley 2).Oggi sappiamo che con il rilascio della build 22621, nuova versione di anteprima di Windows 11, Microsoft ha completato il percorso per la distribuzione della release RTM.Si chiama RTM (Release to Manufacturing) la versione di qualunque sistema operativo candidata alla distribuzione pubblica: Microsoft si riserva di correggere eventuali bug che dovessero emergere nel corso delle prossime settimane ma Windows 11 build 2261 è di fatto la versione RTM di Windows 11 22H2.Al momento non c'è ancora una data fissata per la distribuzione di Windows 11 22H2 in versione finale ma si parla di ottobre prossimo.Per evitare i bug della prima versione di Windows 11 rilasciata il 5 ottobre 2021 in molti hanno preferito ritardare l'aggiornamento e come spesso accade il rilascio del primo feature update: in questo caso Windows 11 22H2 sarà per molti un'occasione per iniziare a valutare la migrazione da Windows 10.Windows 11 22H2, tra l'altro, pur non essendo un semplice Service Pack sarà un aggiornamento che introdurrà un numero limitato di nuove caratteristiche concentrandosi piuttosto sul miglioramento della stabilità del sistema.\nLe principali novità di Windows 11 21H2\n Concentriamoci sulle novità più importanti che Microsoft si accinge a introdurre con Windows 11 21H2 e che gli interessati possono provare in anteprima installando l'ultima versione di Windows 11 sui sistemi che non si usano per scopi produttivi.Le funzionalità che si trovano nella build 22621 sono infatti esattamente quelle che si troveranno in Windows 11 22H2.1) Miglioramenti sul menu Start.",
-          "link": "https://www.ilsoftware.it/articoli.asp?tag=Windows-11-22H2-le-principali-novita_24317",
-          "publishedOn": "2022-05-27T11:53:00.000Z",
-          "wordCount": null,
-          "title": "Windows 11 22H2: le principali novità",
-          "itunes": {},
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.ilsoftware.it/articoli.asp?tag=eMMC-UFS-e-SSD-quali-sono-le-differenze_24573",
-          "author": null,
-          "description": "Quando si parla di dispositivi mobili come smartphone e tablet, tra le specifiche si leggono sempre le sigle eMMC e UFS con riferimento alla memoria interna del dispositivo. Quali sono le differenze tra queste tipologie di memoria e le unità SSD?\nCosa sono eMMC e UFS\n Le memorie eMMC (Embedded MultiMediaCard) e UFS (Universal Flash Storage) hanno diverse cose in comune con gli SSD: in tutti i casi vengono utilizzati chip di memoria flash NAND che non richiedono alimentazione per conservare i dati.Nel caso delle memorie eMMC l'aggettivo embedded si riferisce al fatto che la memoria è saldata direttamente sul circuito integrato presente all'interno del dispositivo, ad esempio sulla scheda madre.Lo storage eMMC veniva principalmente utilizzato negli smartphone così come su alcuni tablet e convertibili economici. È utilizzato ancora oggi sui prodotti a più basso costo perché in quelli più performanti si utilizzano memorie UFS, decisamente più performanti.Sia eMMC che UFS sono standard che sono maturati nel corso del tempo tanto che ne sono state via via rilasciate più versioni.",
-          "link": "https://www.ilsoftware.it/articoli.asp?tag=eMMC-UFS-e-SSD-quali-sono-le-differenze_24573",
-          "publishedOn": "2022-05-27T10:46:00.000Z",
-          "wordCount": null,
-          "title": "eMMC, UFS e SSD: quali sono le differenze",
-          "itunes": {},
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.ilsoftware.it/articoli.asp?tag=Honor-Magic-4-Pro-smartphone-top-che-eccelle-per-prestazioni-fotografia-e-multimedia_24572",
-          "author": null,
-          "description": "Con lo slogan 'The Power of Magic' ieri sera Honor ha tenuto una bella presentazione milanese per svelare ufficialmente il suo nuovo smartphone top di gamma. Si tratta di Honor Magic 4 Pro, un dispositivo che segna il ritorno in grande stile del marchio cinese.Le mire di Honor si capiscono subito prendendo in esame il design del nuovo Magic 4 Pro: si tratta di un telefono realizzato per intero in acciaio e vetro, materiali premium che ne esaltano l'estetica e l'appeal; è curvo su tutti i lati.Già acquistabile sullo store dell'azienda, lo smartphone spicca per la qualità del pannello: il display da 6,81 pollici AMOLED LTPO supporta risoluzione FHD+ (460 ppi) con una frequenza di refresh variabile che può arrivare fino a 120 Hz.\n\n'Sotto la scocca' cuore pulsante del dispositivo è un SoC Snapdragon 8 Gen 1 con GPU Adreno 730 al quale sono affiancati 8 GB di memoria RAM e 256 GB di storage interno UFS 3.1.Per quanto riguarda la connettività il nuovo Honor Magic 4 Pro assicura supporto 5G, WiFi 6 e integra ovviamente un chip NFC per gestire i pagamenti contactless o per altre esigenze.",
-          "link": "https://www.ilsoftware.it/articoli.asp?tag=Honor-Magic-4-Pro-smartphone-top-che-eccelle-per-prestazioni-fotografia-e-multimedia_24572",
-          "publishedOn": "2022-05-27T08:39:00.000Z",
-          "wordCount": null,
-          "title": "Honor Magic 4 Pro: smartphone top che eccelle per prestazioni, fotografia e multimedia",
-          "itunes": {},
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.ilsoftware.it/articoli.asp?tag=Streaming-HDMI-con-Microsoft-Keystone-cos-e-e-come-funziona_24571",
-          "author": null,
-          "description": "Da tempo si rincorrono le voci circa il lancio da parte di Microsoft di un dispositivo per lo streaming multimediale da collegare con qualunque TV dotato di porta HDMI.Le indiscrezioni trovano oggi conferma: l'azienda di Redmond sta concludendo lo sviluppo di Keystone, un dispositivo che potrebbe somigliare a Google Chromecast e che permetterà non solo di riprodurre contenuti dai dispositivi collegati in rete locali ma anche di collegarsi con i servizi Xbox.Non conosciamo molti dettagli su Keystone perché Microsoft ha preferito non rilasciare troppi commenti. Sappiamo che lo sviluppo del dispositivo potrebbe essere cominciato già un paio di anni fa, che utilizza - come accennato nell'introduzione - l'interfaccia HDMI e che può essere quindi collegato a qualunque monitor e televisore. Gli appassionati di gaming potranno utilizzare i loro videogiochi preferiti senza bisogno di una console.Keystone potrebbe utilizzare un sistema operativo Windows o Xbox ridotto: il nome Keystone è infatti comparso in un elenco di piattaforme Microsoft non basate sull'utilizzo di Android.L'adozione di un sistema basato su Windows anziché su Android consentirebbe a Microsoft di offrire le proprie app per lo streaming multimediale come 'Film e TV' anche se la scelta del robottino verde sarebbe forse più ovvia e naturale.",
-          "link": "https://www.ilsoftware.it/articoli.asp?tag=Streaming-HDMI-con-Microsoft-Keystone-cos-e-e-come-funziona_24571",
-          "publishedOn": "2022-05-27T07:52:00.000Z",
-          "wordCount": null,
-          "title": "Streaming HDMI con Microsoft Keystone: cos'è e come funziona",
-          "itunes": {},
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.ilsoftware.it/articoli.asp?tag=KrbRelayUp-l-attacco-permette-di-acquisire-privilegi-SYSTEM-sui-sistemi-Windows-collegati-a-un-dominio_24570",
-          "author": null,
-          "description": "A fine aprile 2022 il ricercatore Mor Davidovich ha individuato un metodo per acquisire privilegi SYSTEM su qualunque sistema Windows collegato a un dominio.Davidovich ha spiegato di aver 'assemblato' il codice proveniente da diversi tool preesistenti per sviluppare un'applicazione (KrbRelayUp), pubblicata su GitHub, che conente a un utente di acquistare privilegi che non gli competono.In un altro articolo abbiamo visto le differenze tra i privilegi SYSTEM e i diritti di amministratore in Windows.L'aspetto più rilevante della ricerca condotta da Davidovich è che l'acquisizione dei privilegi SYSTEM sui sistemi utilizzati in ambito aziendale funziona anche con la configurazione predefinita del dominio. L'esperto in un primo tempo ha fatto presente che l'attacco KrbRelayUp non andava in porto nel caso in cui l'amministratore di sistema avesse attivato la firma LDAP su Windows Server.Lunedì scorso Davidovich ha rilasciato una nuova versione del suo tool KrbRelayUp che porta all'ottenimento dei privilegi più elevati anche con firma LDAP abilitata.Pur confermando l'esistenza della problematica, Microsoft si è affrettata a precisare che l'attacco in questione non interessa i clienti che usano istanze di Azure Active Directory.KrbRelayUp può comunque aiutare eventuali aggressori a compromettere macchine virtuali Azure in ambienti Active Directory ibridi in cui i controller di dominio sono sincronizzati con Azure Active Directory.In una pagina di supporto appena pubblicata, Microsoft ha condiviso le metodologie per proteggersi dall'attacco KrbRelayUp.In generale, i tecnici dell'azienda di Redmond suggeriscono di attivare la firma LDAP, Extended Protection for Authentication (EPA) e impostare a 0 l'attributo MS-DS-Machine-Account-Quota.Una dimostrazione dell'attacco è stata pubblicata in questo post su Twitter..",
-          "link": "https://www.ilsoftware.it/articoli.asp?tag=KrbRelayUp-l-attacco-permette-di-acquisire-privilegi-SYSTEM-sui-sistemi-Windows-collegati-a-un-dominio_24570",
-          "publishedOn": "2022-05-26T17:31:00.000Z",
-          "wordCount": null,
-          "title": "KrbRelayUp, l'attacco permette di acquisire privilegi SYSTEM sui sistemi Windows collegati a un dominio",
-          "itunes": {},
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.ilsoftware.it/articoli.asp?tag=Android-System-WebView-cos-e-e-a-che-cosa-serve_24569",
-          "author": null,
-          "description": "Aggiornando le app installate su Android nell'elenco che compare selezionando l'icona Play Store quindi Aggiornamenti disponibili, vi sarà spesso capitato di veder comparire Android System WebView.Quando questo componente viene aggiornato molte app Android in esecuzione si chiudono automaticamente e per riutilizzarle è necessario avviarle di nuovo in modo manuale. Inoltre a cosa serve Android System WebView se non è un'app avviabile dall'utente?\nCos'è Android System WebView: una cosa da sviluppatori, prima di tutto\n Android System WebView è un componente di sistema che può essere considerato come una versione ridotta del browser Chrome.Gli sviluppatori che nelle loro app hanno la necessità di inserire funzioni per la navigazione sul Web possono integrare l'utilizzo di Android System WebVie…",
-          "link": "https://www.ilsoftware.it/articoli.asp?tag=Android-System-WebView-cos-e-e-a-che-cosa-serve_24569",
-          "publishedOn": "2022-05-26T17:02:00.000Z",
-          "wordCount": null,
-          "title": "Android System WebView: cos'è e a che cosa serve",
-          "itunes": {},
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.ilsoftware.it/articoli.asp?tag=NVidia-utilizzera-interconnessioni-ottiche-per-le-sue-schede-ecco-perche_24568",
-          "author": null,
-          "description": "La tendenza tra i produttori di processori è quella di utilizzare sempre di più i chiplet: essi permettono di realizzare sistemi di elaborazione più piccoli ed economici che hanno il vantaggio di garantire una maggiore efficienza energetica.I chiplet, racchiusi in un unico pacchetto (package), consentono anche di utilizzare processi costruttivi diversi consentendo di scalare la potenza di elaborazione in modo molto efficace.Parlando della storia dei processori AMD Ryzen abbiamo visto come l'abbandono del tradizionale approccio monolitico per abbracciare la filosofia MCM (multi-chip module) abbia di fatto decretato il rinnovato successo della società di Sunnyvale.Nel caso di NVidia in tanti ipotizzavano che l'architettura Hopper avrebbe utilizzato un design basato su chiplet. Così non è stato ed è altamente probabile che anche l'azienda di Jen Hsun Huang si metta, essa stessa, sulla scia di AMD.L'utilizzo di interconnessioni performanti tra chiplet è e resterà una sfida cruciale per il futuro.",
-          "link": "https://www.ilsoftware.it/articoli.asp?tag=NVidia-utilizzera-interconnessioni-ottiche-per-le-sue-schede-ecco-perche_24568",
-          "publishedOn": "2022-05-26T14:03:00.000Z",
-          "wordCount": null,
-          "title": "NVidia utilizzerà interconnessioni ottiche per le sue schede: ecco perché",
-          "itunes": {},
-          "imageUrl": null
         }
       ]
     },
@@ -1204,6 +987,36 @@
       "feedUrl": "https://feeds.maketecheasier.com/MakeTechEasier",
       "siteUrl": "https://www.maketecheasier.com",
       "articles": [
+        {
+          "id": "https://admin.maketecheasier.com/?p=447212",
+          "author": "Megan Glosson",
+          "description": "Social media has become a key part of the marketing strategy for most companies and influencers. However, not everyone has the graphic design chops to make amazing social media graphics on their own. Luckily, there are several great online tools that can help you design graphics for your social media accounts, and many of these tools offer free versions.\n   \n\nContent\n\n1. Desygner\n2. Canva\n3. Piktochart\n4. PicMonkey\n5. Snappa\n6. QuotesCover\n7. Adobe Creative Cloud Express\n8. Pablo\nFrequently Asked Questions\n\n.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   \nAlso read:6 of the Best Photo-Editing Apps for iOS\n    \n1. Desygner\n    \nPrice: Free, subscription starts at $9.95\n    \nDesygner (Web | Android | iOS) is one of the more elegant tools for creating eye-catching social media images with relatively little effort (though if you want to dive into more detail and spend... Read more",
+          "link": "https://feeds.maketecheasier.com/link/12555/15040022/design-apps-social-media-graphics",
+          "publishedOn": "2022-05-28T21:25:00.000Z",
+          "wordCount": 2983,
+          "title": "8 Tools for Designing Amazing Social Media Graphics",
+          "imageUrl": "https://www.maketecheasier.com/assets/uploads/2021/12/Social-Media-Graphics-Feature-Image.jpg"
+        },
+        {
+          "id": "https://www.maketecheasier.com/?post_type=post-ideas&p=354429",
+          "author": "Miguel Leiva-Gomez",
+          "description": "When you have your PlayStation next to a monitor or TV, it’s convenient to hook up your console to your setup for quick and easy gaming. However, if you own something like a Mac or a laptop, you may need to do a little more legwork to play games on your screen. Let’s take a look at how you can connect PS4 or PS5 to your laptop or Mac.\n   \n\nContent\n\nThe Problem With Using a PlayStation's HDMI Cable on a Laptop or Mac\nHow to Play PS4/PS5 Games on a Laptop or Mac\nHow to Turn Off PS4/PS5 Controller\nFrequently Asked Questions\n\n.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   \nAlso read:How to Check for Controller Deadzones in Windows\n    \nThe Problem With Using a PlayStation’s HDMI Cable on a Laptop or Mac\n    \nIf you use a traditional computer and monitor setup that uses HDMI connections, plugging in a... Read more",
+          "link": "https://feeds.maketecheasier.com/link/12555/13730542/connect-ps4-to-laptop-mac",
+          "publishedOn": "2022-05-28T15:25:26.000Z",
+          "wordCount": 1501,
+          "title": "How to Connect Your PS4/PS5 to a Laptop or Mac",
+          "imageUrl": "https://www.maketecheasier.com/assets/uploads/2022/01/playstationlaptop-controller.jpg"
+        },
+        {
+          "id": "https://admin.maketecheasier.com/?post_type=pitch&p=474144",
+          "author": "Mehvish Mushtaq",
+          "description": "With the help of the Google Play Store you can download Android apps on your Chromebook. You don’t need to use any workaround to use Google Play Store as it is officially available from Google. However, many users often experience issues with the Play Store on Chromebook. For instance, users can’t download apps from the Google Play Store app or the Play Store randomly stops functioning. Some even get error codes 7, 8, or downloading pending, etc., while using the Store. If you are experiencing a similar issue with the Play Store, try the following solutions to fix this problem on your Chromebook.\n   \n\nContent\n\n1. Check Compatibility With Your Chromebook\n2. Restart Your Chromebook\n3. Check Internet Connection\n4. Enable Play Store on Your Chromebook\n5. Sign Out of Guest Accounts\n6. Create a New User Profile\n7. Clear Cache for Google Play Store\n8. Run Chromebook Diagnostics\n9. Check Date and Time\n10. Uninstall Third-Party Apps or Extensions\n11. Update Chrome OS\n12. Update Play Store on Chromebook\n13. Remove Google Play Store\n14. Factory Reset Chromebook\nFrequently Asked Questions\n\n.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}... Read more",
+          "link": "https://feeds.maketecheasier.com/link/12555/15334827/fix-google-play-store-not-working-chromebook",
+          "publishedOn": "2022-05-28T05:25:00.000Z",
+          "wordCount": 2203,
+          "title": "How to Fix Google Play Store Not Working on Chromebook",
+          "imageUrl": "https://www.maketecheasier.com/assets/uploads/2022/03/Chromebook-Play-Store-Not-Working.jpg"
+        },
         {
           "id": "https://www.maketecheasier.com/?p=369436",
           "author": "Phil South",
@@ -1243,66 +1056,6 @@
           "wordCount": 1835,
           "title": "8 of the Best Linux Distros for Windows Users",
           "imageUrl": "https://www.maketecheasier.com/assets/uploads/2022/03/best-linux-distros-for-windows-users-featured.jpg"
-        },
-        {
-          "id": "https://admin.maketecheasier.com/?p=493506",
-          "author": "Laura Tucker",
-          "description": "The blame is being put on the governments who hastily put this plan in action that led to remote learning apps harvesting children’s data during the pandemic. Everyone can agree it was a difficult time, and it appears that many third-party companies were profiting from the students’ data.\n   \nAlso read:How Kids Are Getting Around Parental Controls\n    \nThe Hasty Remote Learning Plans\n    \nIf you go back two years to the beginning of the pandemic, everyone was stressed, and no one knew what to do. Schools were empty, but children couldn’t be kept out of school indefinitely. Governments quickly set up plans to teach students remotely. Children would learn on their home computers, and teachers would educate in the same manner.\n    \nImage source: Unsplash\n    \nBut as these plans were hastily put together, care wasn’t taken to ensure... Read more",
-          "link": "https://feeds.maketecheasier.com/link/12555/15333650/remote-learning-apps-harvested-kids-data",
-          "publishedOn": "2022-05-27T10:25:00.000Z",
-          "wordCount": 1003,
-          "title": "Remote Learning Apps Harvested Kids’ Data During Pandemic",
-          "imageUrl": "https://www.maketecheasier.com/assets/uploads/2022/05/Remote-Learning-Apps-Harvesting-Data-Featured.jpg"
-        },
-        {
-          "id": "https://admin.maketecheasier.com/?post_type=pitch&p=487644",
-          "author": "Sydney Butler",
-          "description": "If you’ve been a long (or even lifelong) user of macOS and now find yourself in the wonderful world of Windows, things are very different! In a broad sense, Windows and macOS aren’t that different. Most things work more or less the same and are intuitive. However, there are a few things to know about being a daily Windows user that can make the transition a lot smoother, as we shall see below.\n   \n\nContent\n\n1. Pay Special Attention to Cyber Security\n2. Do Your Homework Before Installing Updates\n3. When in Doubt, Right-click\n4. Virtual Desktops Span All Screens\n5. Splitting Your Screen Uses Gestures\n6. You Need to Uninstall Apps Not Delete Them\n7. Menus Are Attached to Apps\n8. Windows Key Shortcuts Are Worth Learning\n9. The Task Bar is (Sort Of) Your Dock\n10. There's No Time Machine Equivalent Built In\n11. Always Write Down Blue Screen Error Codes (And Don't Panic)\n\n.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   \nAlso read:Read more",
-          "link": "https://feeds.maketecheasier.com/link/12555/15333012/essential-tips-macos-users-switching-windows",
-          "publishedOn": "2022-05-27T05:25:03.000Z",
-          "wordCount": 1962,
-          "title": "11 Essential Tips for macOS Users Coming to Windows",
-          "imageUrl": "https://www.maketecheasier.com/assets/uploads/2022/05/Windows-macOS-Tips.jpg"
-        },
-        {
-          "id": "https://www.maketecheasier.com/?p=142418",
-          "author": "Mehvish Mushtaq",
-          "description": "Google’s services are often the best free offering in their market segment. You probably have at least one Google account yourself, and likely use it daily for various tasks, both personal and professional. With so much sensitive data involved in the process, it’s important to secure your Google account against unauthorized use. The following changes are a good place to begin.\n   \n\nContent\n\n1. Check Google’s Security Checkup Tool\n2. Set a Strong Password\n3. Use Two-Factor Authentication (2FA)\n4. Add or Update Recovery Email and Phone Number\n5. Unlink Third-Party Apps You No Longer Use\n6. Unlink Suspicious and Inactive Devices\n7. Turn on Enhanced Safe Browsing\n8. Encrypt Your Synced Chrome Data\nFrequently Asked Questions\n\n.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   \nAlso read:4 Ways Google Tracks You and How to Stop it\n    \n1. Check Google’s Security Checkup Tool\n    \nGoogle provides a... Read more",
-          "link": "https://feeds.maketecheasier.com/link/12555/2538552/secure-google-account",
-          "publishedOn": "2022-05-27T00:25:00.000Z",
-          "wordCount": 2265,
-          "title": "8 Essential Settings to Secure Your Google Account",
-          "imageUrl": "https://www.maketecheasier.com/assets/uploads/2022/04/Google-Account-Secure-Settings.jpg"
-        },
-        {
-          "id": "https://admin.maketecheasier.com/?post_type=pitch&p=487065",
-          "author": "Sayak Boral",
-          "description": "Are you experiencing system crashes due to a mysterious “Unexpected Store Exception” error? It is a blue screen error caused by internal corruptions in the Windows kernel memory. Currently, there is one main approach to fix the “Unexpected Store Exception” error in Windows 10 and 11, as also acknowledged by Microsoft. We’ll also share some extra troubleshooting tips.\n    \nNote: “Unexpected Store Exception” has no relation to Microsoft Store.\n   \n\nContent\n\nWhat is the \"Unexpected Store Exception\" Error in Windows\n1. Debug with WinDbg\n2. Perform System Restore Based on Update History\n3. Use Windows Memory Diagnostic\n4. Look for Exclamation Point in Device Manager Hardware\n5. Perform System File Checker and ChkDsk\n\n.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   \nAlso read:How to Fix “Windows Modules Installer Worker” High CPU Usage\n    \nWhat is the “Unexpected Store Exception” Error in Windows\n    \nThe “Unexpected... Read more",
-          "link": "https://feeds.maketecheasier.com/link/12555/15332281/fix-unexpected-store-exception-error-windows",
-          "publishedOn": "2022-05-26T21:25:00.000Z",
-          "wordCount": 2286,
-          "title": "How to Fix “Unexpected Store Exception” Error in Windows",
-          "imageUrl": "https://www.maketecheasier.com/assets/uploads/2022/05/Unexpected-Store-Error-Message.png"
-        },
-        {
-          "id": "https://admin.maketecheasier.com/?post_type=deal&p=493226",
-          "author": "Laura Tucker",
-          "description": "You’ve probably been amassing accessories to build up your gaming experience for some time. Now is the time to get that curved monitor you’ve been considering. You can get an LG Curved UltraWide Monitor for more than $100 off and enjoy a three-sided virtually borderless display with adjustable tilt and height.\n    \nThe 34″ monitor has a 21:9 screen ratio to provide accurate color, contrast, clarity, and detail, even when displaying wide angles. While it’s an obvious choice for gaming, it would also be great for streaming blockbuster movies and your favorite TV shows, editing videos, and just overall creation.\n    \n\n    \nYou’ll get a panoramic view to see everything with a great perspective. With that 3440 x 1440 space on the QYD VA display, you’ll get 33% more space than your standard 1920 x 1080 display. If you’re handling both home life and work, all from one monitor, you’ll have plenty of space to do all that multitasking.\n    \nBut nothing will beat the experience you’ll get when gaming on the... Read more",
-          "link": "https://feeds.maketecheasier.com/link/12555/15332111/lg-curved-ultrawide-monitor",
-          "publishedOn": "2022-05-26T19:25:00.000Z",
-          "wordCount": 586,
-          "title": "Save $103 on an LG Curved UltraWide Monitor",
-          "imageUrl": "https://www.maketecheasier.com/assets/uploads/2022/05/LG-Curved-Ultrawide-Monitor-Featured.jpg"
-        },
-        {
-          "id": "http://www.maketecheasier.com/?p=111758",
-          "author": "Ramces Red",
-          "description": "For those who are familiar with the Unix system, you will also be familiar with the cron application that allows you to schedule and automate tasks to run on their own. We even have tutorials that show you how to get started with cron and crontabs. However, cron is not perfect, as it requires your system to be running 24 hours a day. If you have a habit of turning off your computer at night, and a cron job is scheduled in the sleeping hours, the task won’t be executed. Luckily, there are several cron alternatives that can do a better job than cron. Let’s check them out.\n   \n\nContent\n\n1. Anacron\n2. Cronie\n3. fcron\n4. bcron\n5. Hcron\n6. Jobber\n7. mcron\nFrequently Asked Questions\n\n.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   \nAlso read:How to Easily Create Cron jobs... Read more",
-          "link": "https://feeds.maketecheasier.com/link/12555/15331684/cron-alternatives-linux",
-          "publishedOn": "2022-05-26T15:25:00.000Z",
-          "wordCount": 2220,
-          "title": "7 Useful Cron Alternatives For Linux",
-          "imageUrl": "https://www.maketecheasier.com/assets/uploads/2022/04/cron-alternatives-00-featured-image.jpg"
         }
       ]
     },
@@ -1317,6 +1070,16 @@
       "feedUrl": "https://feeds.feedburner.com/navigaweb/",
       "siteUrl": "https://www.navigaweb.net/",
       "articles": [
+        {
+          "id": "https://www.navigaweb.net/2018/01/digitale-terrestre-come-trovare-i.html",
+          "author": null,
+          "description": "Il digitale terrestre ha rivoluzionato il modo di vedere i canali TV, con una qualità del segnale decisamente migliore rispetto al segnale analogico, un numero davvero infinito di canali e minore interferenza.\r\n\r\n Dal passaggio definitivo al digitale terrestre sono passati anni, ma molti utenti non riescono ancora a capire come funzionano correttamente i canali, dove trovare i canali che si vedono...\n\r\n\r\nContinua a leggere su Navigaweb.net (clicca sul titolo)",
+          "link": "https://www.navigaweb.net/2018/01/digitale-terrestre-come-trovare-i.html",
+          "publishedOn": "2022-05-28T11:07:00.000Z",
+          "wordCount": 1174,
+          "title": "Come trovare i canali HD sul Digitale terrestre",
+          "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6uXheSUDkD7aR8HHp8fqRlVCQ2sucJRr_lo_iMAcScBPjOABHQHithRh7R0xlokjvcBtNj-Z8a3w4ccF0ADn3kxuU5Hwk6cRhTjVScdBY9b6WwLrWAFnsPvw9G5YoBUL37KyAl8kZwy9HCnm2cLRl2RvL-eB37_X-SawVFyGofqDthqdJCvGrNxvK/w1200-h630-p-k-no-nu/Canali%20HD%20digitale%20terrestre.jpg"
+        },
         {
           "id": "https://www.navigaweb.net/2018/03/come-sapere-dove-si-trova-una-persona.html",
           "author": null,
@@ -1336,46 +1099,6 @@
           "wordCount": 1101,
           "title": "Come tagliare, dividere e unire video su Android",
           "imageUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEizRGh6QNy2igyiAKQmmDTHKbz1mkLp8w_R44eZ_noozAeKAic7abg5Hz739WwpT21RahTFzOJEhS3ZOmB3t86l7ta3adB7BSxx3Gl5-ld4KltKSjo7cKFZ_vPEE-8aGzkrC6mBVBrmAeZ-QBfv8sel4arpZuyY2q3Pcp_5u6-lYmWjtbkgzY8Yl0K9=w1200-h630-p-k-no-nu"
-        },
-        {
-          "id": "https://www.navigaweb.net/2016/12/programmi-per-migliorare-le-foto.html",
-          "author": null,
-          "description": "Per rendere migliori le foto scattate con il telefono o con una macchina fotografica professionale il programma di riferimento è senza ombra di dubbio Photoshop; questo programma però non è affatto gratis e non è facile da usare, specie per gli utenti alle prime armi con il fotoritocco.\r\n\r\n Per migliorare facilmente le foto possiamo utilizzare delle app gratuite di fotoritocco che funzionano un po'...\n\r\n\r\nContinua a leggere su Navigaweb.net (clicca sul titolo)",
-          "link": "https://www.navigaweb.net/2016/12/programmi-per-migliorare-le-foto.html",
-          "publishedOn": "2022-05-27T11:44:00.000Z",
-          "wordCount": 1095,
-          "title": "Programmi per migliorare le foto, gratis e facili da usare",
-          "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEzbOE37HdIWHQoxBNtmLfYjhw6pBn6wE8MQCr524P6nrkVPC4YRRDfW5WwxUHmHuSTrvDIKefABvxavQLQLVuLIehrps28eXVFCvSM9ocjbnMVuMeMgI8JDn5LQeBUHkfGtl9M5H8mxmNzo6eCnLJgYz31LkmRWB1tefKQJ48olp5rZz1dMNPvfuI/w1200-h630-p-k-no-nu/Programmi%20per%20migliorare%20foto.jpg"
-        },
-        {
-          "id": "https://www.navigaweb.net/2021/02/come-trasferire-le-chat-di-whatsapp-su.html",
-          "author": null,
-          "description": "WhatsApp resta una delle app più utilizzate per chattare ma i sempre più frequenti problemi di privacy e i down imprevisti hanno portato molti utenti a cercare una valida alternativa. \r\nTra le migliori App per messaggiare diverse da WhatsApp troviamo Telegram, un servizio che funziona decisamente meglio, è sicuro e non va praticamente mai in down (se non in rarissimi casi). \r\nPer facilitare il...\n\r\n\r\nContinua a leggere su Navigaweb.net (clicca sul titolo)",
-          "link": "https://www.navigaweb.net/2021/02/come-trasferire-le-chat-di-whatsapp-su.html",
-          "publishedOn": "2022-05-26T17:19:00.000Z",
-          "wordCount": 895,
-          "title": "Come passare da WhatsApp a Telegram senza perdere nulla",
-          "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh256k3Wxhyv9nONPLWqiVlRkuiShiG0dQXsbe1k7wgQ6Zv-mAiwpxJpEqZxaYNE_47KTISBNjhwCDatG-4TiTGvd8xQKphalriA_ntuG6tGNgWnGd5-kL4AwRKy4G5W2B09MKMyxGqj86tyJ_ywpHMZKhW4DaZIQERXLJIlcXe6x_rFcgIRLrjgllg/w1200-h630-p-k-no-nu/Passare%20da%20WhatsApp%20a%20Telegram.jpg"
-        },
-        {
-          "id": "https://www.navigaweb.net/2022/05/come-scaricare-isee-online-senza-caf.html",
-          "author": null,
-          "description": "L'attestazione ISEE (sigla che significa Indicatore della Situazione Economica Equivalente) è un documento molto importante per certificare il livello economico complessivo di un nucleo familiare. Per valori ISEE bassi (prestabiliti dallo Stato) è possibile accedere ad incentivi economici di ogni tipo. Normalmente quest'attestazione viene ottenuta recandosi al CAF, al patronato, alla sede...\n\r\n\r\nContinua a leggere su Navigaweb.net (clicca sul titolo)",
-          "link": "https://www.navigaweb.net/2022/05/come-scaricare-isee-online-senza-caf.html",
-          "publishedOn": "2022-05-26T15:54:00.005Z",
-          "wordCount": 951,
-          "title": "Come scaricare ISEE online senza CAF",
-          "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZs2q0KmJXxipq6Hr5sEhsxlHa09i0boKmaXSIqwywOR-CmgPNcESCJ0t2F5z2P_g9wAc5Smu-UfrDrD8vFlU_AFmaJt1FE3NOnQeiPWr7kcjSCE8w7AMYUlqi2iEU-KwpZmGpEAWmnl9iwuzEmMwsPQ973H2eeBn8h5DogpTUKZkQAiL9S5oZf46v/w1200-h630-p-k-no-nu/Scaricare%20ISEE%20online.jpg"
-        },
-        {
-          "id": "https://www.navigaweb.net/2016/10/come-usare-la-chat-segreta-in-facebook.html",
-          "author": null,
-          "description": "Per chi non lo sapesse anche le conversazioni in Facebook Messenger possono essere nascoste agli occhi indiscreti grazie al supporto della crittografia end-to-end, con la quale è possibile attivare la funzione chat segreta ed inviare messaggi segreti (non rintracciabili o intercettabili) agli amici presenti su Facebook.\r\n\r\n Abbiamo già parlato di cosa significa crittografia end-to-end per WhatsApp...\n\r\n\r\nContinua a leggere su Navigaweb.net (clicca sul titolo)",
-          "link": "https://www.navigaweb.net/2016/10/come-usare-la-chat-segreta-in-facebook.html",
-          "publishedOn": "2022-05-26T13:53:00.000Z",
-          "wordCount": 933,
-          "title": "Come usare la chat segreta (protetta) in Facebook Messenger",
-          "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHa-6RgB8qmFS9N0LYZ8rnT7ipGYZOM-eZ59xyjHGFNP3wUCvh4SIiqc3Ly24crA9P30NbBWW4z8WUkNxzOArCdfZ-Xy442-M5wkhFb-e1wAy4cHkcONuD-ZYZbx51nd728vDD5ecE3hmqAdOD6FsE97kT1-s3AUs7yzQkdF6lZ3g1o9JJJBTs0-AT/w1200-h630-p-k-no-nu/Chat%20segreta%20Messenger.jpg"
         }
       ]
     },
@@ -1384,6 +1107,76 @@
       "feedUrl": "https://www.phoronix.com/rss.php",
       "siteUrl": "https://www.phoronix.com/",
       "articles": [
+        {
+          "id": "https://www.phoronix.com/scan.php?page=news_item&px=PulseAudio-16.0",
+          "author": null,
+          "description": "While PipeWire continues gaining traction for fulfilling the audio management roles long handled by PulseAudio, the PulseAudio project itself continues progressing and successfully evolving its mature code-base. Out this weekend is PulseAudio 16.0...",
+          "link": "https://www.phoronix.com/scan.php?page=news_item&px=PulseAudio-16.0",
+          "publishedOn": "2022-05-28T23:25:42.000Z",
+          "wordCount": 815,
+          "title": "PulseAudio 16.0 Released With A Variety Of Improvements",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Chrome-103-Beta",
+          "author": null,
+          "description": "Following this week's release of Chrome 102, Google has promoted Chrome 103 to beta for their cross-platform web browser...",
+          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Chrome-103-Beta",
+          "publishedOn": "2022-05-28T12:00:00.000Z",
+          "wordCount": 736,
+          "title": "Chrome 103 Beta Adds Local Font Access, Deflate-Raw Compression Format",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.19-MM",
+          "author": null,
+          "description": "Andrew Morton with his recent shift to a Git-based workflow rather than maintaining long patch series has sent in all of the memory management \"mm\" changes for the Linux 5.19 merge window...",
+          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.19-MM",
+          "publishedOn": "2022-05-28T11:30:00.000Z",
+          "wordCount": 900,
+          "title": "Numerous \"MM\" Improvements Land In Linux 5.19",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Intel-oneVPL-2022.1",
+          "author": null,
+          "description": "While for years Intel has traditionally devoted all their video acceleration attention on Linux to VA-API (and the Media SDK albeit less popular with Linux enthusiasts), with the modern oneAPI world for Intel hardware their oneVPL library is quickly becoming a viable contender and a primary focus for their open-source video accelerator efforts. On Friday the oneVPL 2022.1 release was made available...",
+          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Intel-oneVPL-2022.1",
+          "publishedOn": "2022-05-28T10:00:00.000Z",
+          "wordCount": 857,
+          "title": "Intel oneVPL 2022.1 Brings Support For Arc A Series, Rocky Linux, Better Multi-GPU",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.phoronix.com/scan.php?page=news_item&px=FAT-File-Creation-Birth-5.19",
+          "author": null,
+          "description": "Finally for FAT file-systems with the in-development Linux 5.19 kernel is support via the statx() system call for reporting a file's birth/creation time...",
+          "link": "https://www.phoronix.com/scan.php?page=news_item&px=FAT-File-Creation-Birth-5.19",
+          "publishedOn": "2022-05-28T09:21:44.000Z",
+          "wordCount": 790,
+          "title": "FAT32 File Creation/Birth Time Reporting Finally Comes To Linux",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.phoronix.com/scan.php?page=news_item&px=KDE-Plasma-5.25-More-Fixes",
+          "author": null,
+          "description": "Ahead of next month's big Plasma 5.25 release, KDE developers are wrapping up May with more bug fixes for polishing up this open-source desktop...",
+          "link": "https://www.phoronix.com/scan.php?page=news_item&px=KDE-Plasma-5.25-More-Fixes",
+          "publishedOn": "2022-05-28T09:03:05.000Z",
+          "wordCount": 873,
+          "title": "KDE Developers Land More Bug Fixes Ahead Of Plasma 5.25",
+          "imageUrl": null
+        },
+        {
+          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.19-CXL",
+          "author": null,
+          "description": "Intel has been working heavily on getting the Compute Express Link (CXL) subsystem in place so that when next-generation servers appear with this new high-speed interconnect industry standard, open-source operating systems will be ready...",
+          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.19-CXL",
+          "publishedOn": "2022-05-28T08:43:05.000Z",
+          "wordCount": 866,
+          "title": "CXL Support Continues To Be Refined In Linux 5.19 Ahead Of Next-Gen Servers",
+          "imageUrl": null
+        },
         {
           "id": "https://www.phoronix.com/scan.php?page=news_item&px=Lavapipe-Vulkan-1.2-Conformant",
           "author": null,
@@ -1402,126 +1195,6 @@
           "publishedOn": "2022-05-27T17:33:14.000Z",
           "wordCount": 947,
           "title": "Improvements For Wacom Driver, AMD SFH, ThinkPoint Keyboard II Land In Linux 5.19",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/scan.php?page=news_item&px=AMDGPU-Another-Beige-Goby",
-          "author": null,
-          "description": "It looks like AMD is preparing for another low-end/entry-level Radeon RDNA2 graphics card, given their latest open-source Linux graphics driver code...",
-          "link": "https://www.phoronix.com/scan.php?page=news_item&px=AMDGPU-Another-Beige-Goby",
-          "publishedOn": "2022-05-27T12:36:00.000Z",
-          "wordCount": 981,
-          "title": "AMD Readies Linux Driver For Another Entry-Level RDNA2 \"Beige Goby\" Card",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Fwupd-1.8.1-Released",
-          "author": null,
-          "description": "Mario Limonciello just released a new version of fwupd, the open-source firmware updating utility that integrates with the Linux Vendor Firmware Service (LVFS) for making it easy to update system firmware/BIOS on Linux as well as firmware for various peripheral devices...",
-          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Fwupd-1.8.1-Released",
-          "publishedOn": "2022-05-27T11:36:30.000Z",
-          "wordCount": 824,
-          "title": "Fwupd 1.8.1 Released With Firmware Updating For More HP, Corsair, PixArt, Lenovo Devices",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.19-ARM-Changes",
-          "author": null,
-          "description": "The various ARM SoC and machine/platform updates have landed in the Linux 5.19 kernel with a number of notable additions...",
-          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.19-ARM-Changes",
-          "publishedOn": "2022-05-27T10:40:00.000Z",
-          "wordCount": 948,
-          "title": "Linux 5.19 ARM Excites With Apple M1 NVMe, 12 Year Old Multi-Platform Achievement",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.19-Sound",
-          "author": null,
-          "description": "The sound subsystem updates for the Linux 5.19 kernel include the initial Intel \"AVS\" sound driver code...",
-          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.19-Sound",
-          "publishedOn": "2022-05-27T09:46:47.000Z",
-          "wordCount": 1106,
-          "title": "Intel's Rewritten Audio Driver \"AVS\" Begins Landing In Linux 5.19",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Wayland-1.21-Alpha",
-          "author": null,
-          "description": "Two years after the merge request was originally opened, the upcoming Wayland 1.21 release is adding high resolution scroll wheel support for mice to match the work carried out for X.Org and within the Linux kernel drivers...",
-          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Wayland-1.21-Alpha",
-          "publishedOn": "2022-05-27T09:30:00.000Z",
-          "wordCount": 861,
-          "title": "Wayland 1.21 Alpha Finally Introduces High-Resolution Scroll Wheel Support",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/scan.php?page=news_item&px=GCC-9.5-Released",
-          "author": null,
-          "description": "For those still on the GNU Compiler Collection 9 series for that compiler introduced in 2019, GCC 9.5 was released today as the last planned point release to that compiler...",
-          "link": "https://www.phoronix.com/scan.php?page=news_item&px=GCC-9.5-Released",
-          "publishedOn": "2022-05-27T09:09:14.000Z",
-          "wordCount": 808,
-          "title": "GCC 9.5 Released As A Last Hoorah For The GCC9 Compiler",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.19-Media-Updates",
-          "author": null,
-          "description": "The media subsystem updates have landed this week for the ongoing Linux 5.19 merge window for this collection of video encode/decode drivers...",
-          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.19-Media-Updates",
-          "publishedOn": "2022-05-27T08:54:00.000Z",
-          "wordCount": 741,
-          "title": "MediaTek Vcodec Driver Adds Stateless VP8/VP9 Support In Linux 5.19",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/scan.php?page=news_item&px=SteamOS-3.2-Released",
-          "author": null,
-          "description": "Valve this evening published SteamOS 3.2 as the newest version of their Arch Linux based operating system for the Steam Deck and currently running unofficially by passionate Linux gamers on other hardware too...",
-          "link": "https://www.phoronix.com/scan.php?page=news_item&px=SteamOS-3.2-Released",
-          "publishedOn": "2022-05-26T23:15:21.000Z",
-          "wordCount": 902,
-          "title": "SteamOS 3.2 Released With More Improvements For The Steam Deck",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/vr.php?view=31151",
-          "author": null,
-          "description": "Earlier this week AWS announced general availability on their new Arm Neoverse-V1 based processors, Graviton3. Right after that I posted some initial Graviton3 benchmarks against prior-generation Graviton2 for showing the very sizable generational improvement with Amazon's new in-house Arm server processors. Since then I have been carrying out a more robust set of around 100 benchmarks across the original Graviton instance, Graviton2, Graviton3, and then up again Intel Xeon and AMD EPYC competing instances. Here is that much larger collection of Graviton3 performance benchmarks carried out on Ubuntu 22.04 LTS.",
-          "link": "https://www.phoronix.com/vr.php?view=31151",
-          "publishedOn": "2022-05-26T18:46:40.000Z",
-          "wordCount": 1020,
-          "title": "Amazon Graviton3 vs. Intel Xeon vs. AMD EPYC Performance",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.19-Dropping-h8300",
-          "author": null,
-          "description": "The Renesas (originally Hitachi Semiconductor) H8/300 \"h8300\" CPU architecture support is set to be removed again once more from the Linux kernel. It was previously retired years ago before being restored only to once again fail to be maintained...",
-          "link": "https://www.phoronix.com/scan.php?page=news_item&px=Linux-5.19-Dropping-h8300",
-          "publishedOn": "2022-05-26T17:30:37.000Z",
-          "wordCount": 914,
-          "title": "Renesas H8/300 CPU Architecture Support To Be Dropped In Linux 5.19",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/scan.php?page=news_item&px=AmpereOne",
-          "author": null,
-          "description": "Last year Ampere Computing announced they were designing their own in-house AArch64 server/cloud processor cores to succeed their current Ampere Altra / Ampere Altra Max processors leveraging Arm Neoverse N1 cores. The company announced today that their first in-house cloud native processor core designs will be marketed under the AmpereOne branding...",
-          "link": "https://www.phoronix.com/scan.php?page=news_item&px=AmpereOne",
-          "publishedOn": "2022-05-26T16:20:01.000Z",
-          "wordCount": 823,
-          "title": "AmpereOne Announced As Ampere's In-House AArch64 Cloud Native Processor Design",
-          "imageUrl": null
-        },
-        {
-          "id": "https://www.phoronix.com/scan.php?page=news_item&px=AlmaLinux-9.0-Released",
-          "author": null,
-          "description": "AlmaLinux has been one of the distributions born out of CentOS Linux (non-Stream) going end-of-life and has made a name for itself already in the industry with companies like AMD backing it for those looking at a no-cost/community alternative to Red Hat Enterprise Linux. Just one week after RHEL 9.0 went GA, AlmaLinux 9.0 is being officially released today...",
-          "link": "https://www.phoronix.com/scan.php?page=news_item&px=AlmaLinux-9.0-Released",
-          "publishedOn": "2022-05-26T16:00:00.000Z",
-          "wordCount": 873,
-          "title": "AlmaLinux 9.0 Released As Community, Free Alternative To Red Hat Enterprise Linux 9.0",
           "imageUrl": null
         }
       ]
