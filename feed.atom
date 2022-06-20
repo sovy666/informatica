@@ -2,10 +2,613 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sovy666.github.io/informatica/index.html</id>
     <title>osmos::feed</title>
-    <updated>2022-06-19T02:10:18.660Z</updated>
+    <updated>2022-06-20T01:58:59.066Z</updated>
     <generator>osmosfeed 1.15.0</generator>
     <link rel="alternate" href="https://sovy666.github.io/informatica/index.html"/>
     <link rel="self" href="https://sovy666.github.io/informatica/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Failed to start Load Kernel Modules and Failed to start Wireless Service]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vg9x9s/failed_to_start_load_kernel_modules_and_failed_to/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vg9x9s/failed_to_start_load_kernel_modules_and_failed_to/"/>
+        <updated>2022-06-20T01:39:08.000Z</updated>
+        <summary type="html"><![CDATA[I recently installed Arch, but I noticed that I was unable to see any wireless access points with iwctl. Someone suggested that I may need linux-firmware, so I used my installation medium and arch-chroot to grab it. I also did a pacman -Syu. Now, when I try to boot into the OS after decrypting my partition, I see [FAILED] Failed to start Load Kernel Modules. and several instances of [FAILED] Failed to start Wireless services. before proceeding to the login screen. I can still login, but when I tried to launch iwctl, I got stuck on "waiting for IWD to respond," so clearly I broke something.
+ I did some googling, and it seems that this can be caused by an unmounted /boot, but if I am understanding the output of lsblk -f correctly, then mine is mounted. I could also see /boot in my fstab (I should maybe mention, however, that it is on a different partition).
+ My googling also revealed that not having mounted boot while in chroot and then updating the system may have caused the issue. I tried reinstalling linux after making sure to mount boot while in chroot but that didn't help. I also tried running mkinitcpio -p linux in arch-chroot, but that didn't help either unfortunately.
+ Any idea what I can try next?
+    submitted by    /u/networks_dumbass  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Creating an Arch Linux ARM QEMU VM on a Mac M1]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vg8n8c/creating_an_arch_linux_arm_qemu_vm_on_a_mac_m1/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vg8n8c/creating_an_arch_linux_arm_qemu_vm_on_a_mac_m1/"/>
+        <updated>2022-06-20T00:27:14.000Z</updated>
+        <summary type="html"><![CDATA[I created a simple self-contained script that does the following basic steps:
+  
+Download an EFI BIOS
+ Download an Arch Linux ARM bootable ISO image
+ Create a raw data image with a FAT filesystem that contains some scripts to use on first boot, and an empty raw Linux image
+ Boot up ISO image
+ User runs a command to mount and execute a setup script
+ Setup script partitions the empty raw Linux image, downloads and extracts a base Arch Linux ARM image into it, and shuts down
+ Host script converts the raw Linux image into a compressed sparse qcow2 image
+ Creates an ArchLinux.app bundle that can be double clicked in the Finder or added to the Dock to run the VM
+  
+There were a few bits that were a little tricky to figure out:
+  
+Due to differences between x86 and arm boot processes, a bootable …]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to update the standard repos and AUR with one command and once entering sudo password?]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vg8az2/how_to_update_the_standard_repos_and_aur_with_one/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vg8az2/how_to_update_the_standard_repos_and_aur_with_one/"/>
+        <updated>2022-06-20T00:07:27.000Z</updated>
+        <summary type="html"><![CDATA[I wrote this little thing to update. The only problem is that I have few AUR packages installed that have to be built from source and that takes time. So when paru asks me for my sudo password, it updates the standard packages and then the AUR and asks for a sudo password again. And usually I let the update run on my computer and leave the room and do something else and come back to it seeing it did compile the AUR packages, but didn't install them because the sudo password prompt timed out.
+ I thought sudo suing to the root user and then running paru, but paru prevents installing AUR packages as root.
+ Any ideas?
+ #!/bin/bash source /home/spikeyamk/git-repos/scripts/sel_cpu_gov.sh function update() { if [ "$(whereis emerge)" != "emerge:" ] then ( echo 3; ) | gov sudo emerge --sync sudo emerge --ask -uDU --keep-going --with-bdeps=y @world elif [ "$(whereis paru)" != "paru:" ] then paru -Syyu --noconfirm --skipreview elif [ "$(whereis apt)" != "apt:" ] then sudo apt update sudo apt upgrade fi if [ "$(whereis flatpak)" != "flatpak:" ] then flatpak update fi } 
+    submitted by    /u/Empty_Issue_3569  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linus Torvalds Releases Linux 5.19-rc3 Father's Day Kernel]]></title>
+        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=Linux-5.19-rc3</id>
+        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Linux-5.19-rc3"/>
+        <updated>2022-06-19T22:03:19.000Z</updated>
+        <summary type="html"><![CDATA[Linus Torvalds spent some of Father's Day today merging last minute pull requests for the week and issuing Linux 5.19-rc3 as the newest weekly test kernel...]]></summary>
+        <author>
+            <name>Phoronix</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Arch Linux on an old MacBook - Legacy BIOS or UEFI?]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vg5tbi/arch_linux_on_an_old_macbook_legacy_bios_or_uefi/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vg5tbi/arch_linux_on_an_old_macbook_legacy_bios_or_uefi/"/>
+        <updated>2022-06-19T22:00:50.000Z</updated>
+        <summary type="html"><![CDATA[I’m preparing to install Arch on my old MacBook from 2008 (Core 2 Duo and NVIDIA 9600M GT) because the newest OS X it supports is super outdated, and windows 10 runs like ass, but I’m not sure which install mode to use. I know that Windows won’t even install in UEFI mode and it defaults to a “hybrid MBR”, but OS X runs in UEFI mode so I’m not sure what the right choice is. Do I install in BIOS mode (i386-pc) or UEFI mode (x86_64-efi)?
+    submitted by    /u/FF13_IS_BEST  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Come togliere gli articoli consigliati dal menu start di Windows 11]]></title>
+        <id>3594|20220620000000</id>
+        <link href="https://turbolab.it/windows-10/come-togliere-articoli-consigliati-menu-start-windows-11-3594"/>
+        <updated>2022-06-19T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Una delle parti che meno comprendo nel menu Start di Windows 11 sono gli Articoli Consigliati, una lista di elementi aperti di recente che si può svuotare ma non eliminare così da recuperare lo spazio per avere un menu Start più ampio.
+›› Leggi tutto]]></summary>
+        <author>
+            <name>info@turbolab.it (TurboLab.it)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Samsung’s Android Browser Is Great, Actually]]></title>
+        <id>https://www.howtogeek.com/?p=790140</id>
+        <link href="https://www.howtogeek.com/790140/samsungs-android-browser-is-great-actually/"/>
+        <updated>2022-06-19T21:00:00.000Z</updated>
+        <summary type="html"><![CDATA[There’s a stigma attached to apps from phone manufacturers. They tend to feel like unnecessary bloatware. However, Samsung Internet—the company’s blandly named browser—is an exception. It’s actually quite good, and it’s not only for Samsung Galaxy phones.]]></summary>
+        <author>
+            <name>Joe Fedewa</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[iwd being weird? I type iwctl, and it says "NetworkConfigurationEnabled: Disabled"]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vg4h09/iwd_being_weird_i_type_iwctl_and_it_says/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vg4h09/iwd_being_weird_i_type_iwctl_and_it_says/"/>
+        <updated>2022-06-19T20:56:47.000Z</updated>
+        <summary type="html"><![CDATA[I also tried to connect to my wifi, and it brought up the prompt to put in the password, and seemingly let me connect, but then when I tried to ping it didn't work.
+ Edit: I rebooted, and now it just is doing the thing where it doesn't start.
+ Edit2: I'm too tired for this, I'll deal with this in the morning. 
+    submitted by    /u/DqrkAngel42  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[FDA Approves Parkinson's Symptom Tracker for Apple Watch]]></title>
+        <id>https://www.reviewgeek.com/121244/fda-approves-parkinsons-symptom-tracker-for-apple-watch/</id>
+        <link href="https://www.reviewgeek.com/121244/fda-approves-parkinsons-symptom-tracker-for-apple-watch/"/>
+        <updated>2022-06-19T20:04:16.000Z</updated>
+        <summary type="html"><![CDATA[The United States Food and Drug Administration just cleared StrivePD, an app that tracks and detects Parkinson’s symptoms using Apple’s Movement Disorder API. Rune Labs, the company behind this app, hopes that it will accelerate Parkinson’s research and improve the lives of patients.]]></summary>
+        <author>
+            <name>Andrew Heinzman</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Change Mouse Sensitivity on Windows 10 or 11]]></title>
+        <id>https://www.howtogeek.com/?p=786909</id>
+        <link href="https://www.howtogeek.com/786909/how-to-change-mouse-sensitivity-on-windows-10-or-11/"/>
+        <updated>2022-06-19T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Bad sensitivity settings can be frustrating — a mouse that is not sensitive enough might require you to pick it up repeatedly just to get across the screen. A mouse that is too sensitive might make it difficult to click accurately. Here’s how to change it.]]></summary>
+        <author>
+            <name>Nick Lewis</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Disk decryption screen on boot]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vg2msv/disk_decryption_screen_on_boot/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vg2msv/disk_decryption_screen_on_boot/"/>
+        <updated>2022-06-19T19:29:04.000Z</updated>
+        <summary type="html"><![CDATA[I know its possible but I dont know how to do it. I have arch laptop with full screen encryption. I want to have GUI screen for decrypting screen on boot. Like this for grub.
+    submitted by    /u/LinuxHeki  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Set a Timer on Your iPhone Camera]]></title>
+        <id>https://admin.maketecheasier.com/?p=416435</id>
+        <link href="https://feeds.maketecheasier.com/link/12555/14670063/set-timer-on-iphone-camera"/>
+        <updated>2022-06-19T19:25:00.000Z</updated>
+        <summary type="html"><![CDATA[With each new year, Apple’s iPhone receives photography updates in the form of either software or hardware enhancements. A couple of years ago, that was the ability to use a timer, perfect for taking photos and videos hands-free. While this feature exists in the Apple Camera app, it is somewhat hidden. Follow these steps to find and use your iPhone’s camera timer.
+   
+Also read:How to Crop or Trim a Video on Android and iPhone
+    
+How to Access and Use iPhone’s Camera Timer 
+    
+The timer feature in the iPhone’s Camera app not only lets you set a countdown to take pictures but it also enables Burst mode automatically. So whenever you set a timer, Burst mode is activated and it captures 10 photos instead of one. You can keep all the 10 photos or select the best of them and delete the rest. Sadly, there is no way to stop iPhone... Read more]]></summary>
+        <author>
+            <name>Mehvish Mushtaq</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Add a YouTube Video to Google Slides]]></title>
+        <id>https://www.howtogeek.com/?p=808493</id>
+        <link href="https://www.howtogeek.com/808493/how-to-add-a-youtube-video-to-google-slides/"/>
+        <updated>2022-06-19T19:00:38.000Z</updated>
+        <summary type="html"><![CDATA[Want to spice up your Google Slides presentation by including a YouTube video in it? If so, use Slides’ built-in feature to embed your YouTube videos with customizable options. We’ll show you how to do just that.]]></summary>
+        <author>
+            <name>Mahesh Makvana</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Harley-Davidson Announced an Actual Electric Mountain Bike This Time]]></title>
+        <id>https://www.reviewgeek.com/121238/harley-davidson-announced-an-actual-electric-mountain-bike-this-time/</id>
+        <link href="https://www.reviewgeek.com/121238/harley-davidson-announced-an-actual-electric-mountain-bike-this-time/"/>
+        <updated>2022-06-19T18:00:21.000Z</updated>
+        <summary type="html"><![CDATA[Harley-Davidson’s Serial 1 brand recently unveiled its second mountain e-bike, and this time it actually has suspension. The brand’s first electric mountain bike didn’t, which was rather odd.]]></summary>
+        <author>
+            <name>Cory Gunther</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Restart Discord]]></title>
+        <id>https://www.howtogeek.com/?p=807611</id>
+        <link href="https://www.howtogeek.com/807611/how-to-restart-discord/"/>
+        <updated>2022-06-19T18:00:20.000Z</updated>
+        <summary type="html"><![CDATA[Restarting Discord isn’t as straightforward as restarting any other app. This is because Discord continues to run in the background even if you’ve closed it. In this guide, we’ll show you how to properly restart Discord on your Windows, Mac, iPhone, iPad, and Android devices.]]></summary>
+        <author>
+            <name>Mahesh Makvana</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Google Chrome extensions can be fingerprinted to track you online]]></title>
+        <id>https://www.bleepingcomputer.com/news/security/google-chrome-extensions-can-be-fingerprinted-to-track-you-online/</id>
+        <link href="https://www.bleepingcomputer.com/news/security/google-chrome-extensions-can-be-fingerprinted-to-track-you-online/"/>
+        <updated>2022-06-19T17:59:10.000Z</updated>
+        <summary type="html"><![CDATA[A researcher has discovered how to use your installed Google Chrome extensions to generate a fingerprint of your device that can be used to track you online. [...]]]></summary>
+        <author>
+            <name>Lawrence Abrams</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Qt5 regression prevents KDE plasma from launching]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vfzsth/qt5_regression_prevents_kde_plasma_from_launching/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vfzsth/qt5_regression_prevents_kde_plasma_from_launching/"/>
+        <updated>2022-06-19T17:12:52.000Z</updated>
+        <summary type="html"><![CDATA[For reference I use the alhp repos, so it might be unique to them. I launch plasma from tty with the command startplasma-wayland. Today after an upgrade I tried to launch plasma and it hung for a few seconds then crashed. A quick look at recently installed packages led me to the line upgraded qt5-base (5.15.4+kde+r168-1.1 -> 5.15.5+kde+r162-1.1). Downloading and installing qt5-base-5.15.4+kde+r168-1-x86_64.pkg.tar.zst got plasma working again. Hope this helps people.
+    submitted by    /u/TheGingerLinuxNut  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Update Apps on Your Amazon Fire TV Stick]]></title>
+        <id>https://www.howtogeek.com/?p=806591</id>
+        <link href="https://www.howtogeek.com/806591/how-to-update-apps-on-firestick/"/>
+        <updated>2022-06-19T17:00:42.000Z</updated>
+        <summary type="html"><![CDATA[When you update your official and sideloaded apps on your Amazon Fire TV Stick, you get access to the latest features and bug fixes for those apps. It’s easy to update both kinds of apps, and we’ll show you how.]]></summary>
+        <author>
+            <name>Mahesh Makvana</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Photoshop Can Instantly Make Your Old Family Photos Look New Again]]></title>
+        <id>https://www.reviewgeek.com/121222/photoshop-can-instantly-make-your-old-family-photos-look-new-again/</id>
+        <link href="https://www.reviewgeek.com/121222/photoshop-can-instantly-make-your-old-family-photos-look-new-again/"/>
+        <updated>2022-06-19T16:34:14.000Z</updated>
+        <summary type="html"><![CDATA[If you have a bunch of old family photos that have been marred by the ravages of time, fixing them in photoshop probably sounds like an ideal solution. But while it’s doable, the process is tedious and difficult. That is until Photoshop’s new neural filter arrives that does the job in a single click.]]></summary>
+        <author>
+            <name>Josh Hendrickson</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[System76_power AUR, renders laptop screen useless]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vfypvf/system76_power_aur_renders_laptop_screen_useless/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vfypvf/system76_power_aur_renders_laptop_screen_useless/"/>
+        <updated>2022-06-19T16:20:17.000Z</updated>
+        <summary type="html"><![CDATA[I started using Linux around 2 weeks ago, I am trying distros different DE to know which one I like. Right now I installed Arch with KDE using archinstall. I liked the Pop!_Os switch between integrated and dedicated GPU, so searching I got https://wiki.archlinux.org/title/Hybrid_graphics and I installed the System76_power using paru and ran sudo system76-power graphics nvidia, it told me to reboot and I did and then my laptop boots but the screen doesn't turn on or renders anything for login screen(SDDM) where I input my password, I know my laptop is working because I can type my password and login, the splash screen appears, with no spinning animation and I am thrown into desktop with a black screen. Pressed ctrl+alt+tab and ran the command sudo system76-power graphics integrated, and then waiting a little while and rebooted and the screen work. Is there something I can do about this?
+ Thanks for any help in advance.
+    submitted by    /u/MConanE  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Dual-Drive Boot Menu]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vfyn1m/dualdrive_boot_menu/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vfyn1m/dualdrive_boot_menu/"/>
+        <updated>2022-06-19T16:16:31.000Z</updated>
+        <summary type="html"><![CDATA[I have Windows on one drive and am going to install archlinux on the second one, can I make it so I dont have to go through the F8 BIOS boot menu and pick from the 2 drives from GRUB?
+    submitted by    /u/Apollo672  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Headset Microphones vs. Standalone: Which Is Better?]]></title>
+        <id>https://www.howtogeek.com/?p=804075</id>
+        <link href="https://www.howtogeek.com/804075/headset-microphone-vs-standalone/"/>
+        <updated>2022-06-19T16:00:49.000Z</updated>
+        <summary type="html"><![CDATA[Looking for a new microphone that actually sounds good? You can either go with a headset or a standalone mic, but which is better? Let’s compare the two to see which you might prefer more.]]></summary>
+        <author>
+            <name>Andy Nguyen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I did a full upgrade like usual and suddenly I have a ZSTD error, ELF header missing. It does not boot.]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vfxzrk/i_did_a_full_upgrade_like_usual_and_suddenly_i/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vfxzrk/i_did_a_full_upgrade_like_usual_and_suddenly_i/"/>
+        <updated>2022-06-19T15:46:13.000Z</updated>
+        <summary type="html"><![CDATA[I guess I'll have to chroot it and try to fix it... but the question is... how did this happen??? I did nothing weird.
+    submitted by    /u/anotheruser123123  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I'm running Arch with Gnome 42.2 on a Microsoft Surface Go 3, and am encountering a device in power settings that's constantly showing 0-1% battery. I'm trying to figure out how to disable it/stop showing me power warnings, but am not having any luck]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vfxskk/im_running_arch_with_gnome_422_on_a_microsoft/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vfxskk/im_running_arch_with_gnome_422_on_a_microsoft/"/>
+        <updated>2022-06-19T15:36:36.000Z</updated>
+        <summary type="html"><![CDATA[the device
+ And this is its upower entry:
+ Device: /org/freedesktop/UPower/devices/battery_hid_0018o04F3o2A1Cx0009_battery native-path: hid-0018:04F3:2A1C.0009-battery model: ELAN9038:00 04F3:2A1C power supply: no updated: Sun Jun 18 07:34:33 2022 (21 seconds ago) has history: yes has statistics: yes keyboard present: yes rechargeable: yes state: discharging warning-level: critical percentage: 1% icon-name: 'battery-caution-symbolic' 
+ Have any of you happened to encounter this issue before?
+    submitted by    /u/Memekip  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GhostBSD 22.06.15 Brings Improved NVIDIA Driver Handling, Better Broadcom WiFi Detection]]></title>
+        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=GhostBSD-22.06.15-Released</id>
+        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=GhostBSD-22.06.15-Released"/>
+        <updated>2022-06-19T15:32:39.000Z</updated>
+        <summary type="html"><![CDATA[Out this weekend is a new version of GhostBSD, the desktop-focused operating system built atop a FreeBSD base and catering to the MATE desktop environment...]]></summary>
+        <author>
+            <name>Phoronix</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Do You Need a Senior Cell Phone Plan for Your Loved One?]]></title>
+        <id>https://www.howtogeek.com/?p=804471</id>
+        <link href="https://www.howtogeek.com/804471/do-you-need-a-senior-cell-phone-plan-for-your-loved-one/"/>
+        <updated>2022-06-19T15:00:34.000Z</updated>
+        <summary type="html"><![CDATA[Cell phone plans come in all shapes and sizes nowadays, and there’s a surprisingly robust selection that caters directly to seniors. Here’s everything you need to know about senior cell phone plans before signing up.]]></summary>
+        <author>
+            <name>Jon Bitner</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Can't find bootable usb stick in filesystem]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vfw4gc/cant_find_bootable_usb_stick_in_filesystem/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vfw4gc/cant_find_bootable_usb_stick_in_filesystem/"/>
+        <updated>2022-06-19T14:15:35.000Z</updated>
+        <summary type="html"><![CDATA[I have a bootable usb stick with an old arch iso installed and I'm trying to wipe all the data and install the newer one. The problem is that every os that I've tried (linux and windows) doesn't recognize the usb stick as a memory device. Any idea how can I fix that?
+ (I've tried to run lsblk or fdisk -l but the usb stick doesn't show up)
+    submitted by    /u/ArturoIlPaguro  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Android-wiping BRATA malware is evolving into a persistent threat]]></title>
+        <id>https://www.bleepingcomputer.com/news/security/android-wiping-brata-malware-is-evolving-into-a-persistent-threat/</id>
+        <link href="https://www.bleepingcomputer.com/news/security/android-wiping-brata-malware-is-evolving-into-a-persistent-threat/"/>
+        <updated>2022-06-19T14:15:23.000Z</updated>
+        <summary type="html"><![CDATA[The threat actors operating the BRATA banking trojan have evolved their tactics and incorporated new information-stealing features into their malware. [...]]]></summary>
+        <author>
+            <name>Bill Toulas</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Best iPads of 2022]]></title>
+        <id>https://www.howtogeek.com/?p=734086</id>
+        <link href="https://www.howtogeek.com/734086/best-ipads-2/"/>
+        <updated>2022-06-19T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Buying an iPad was a lot easier when Apple only made one tablet, but now you have many options. Fortunately, with our recommendations, you can get the features you want without spending more than you need to.]]></summary>
+        <author>
+            <name>Tim Brookes</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Apple Watch Stuck on the Apple Logo? Try These Fixes]]></title>
+        <id>https://www.howtogeek.com/?p=810851</id>
+        <link href="https://www.howtogeek.com/810851/apple-watch-stuck-on-apple-logo/"/>
+        <updated>2022-06-19T13:00:48.000Z</updated>
+        <summary type="html"><![CDATA[If your Apple Watch won’t show anything but the Apple logo, it’s probably stuck in a boot loop and can’t start up properly. Though we can’t guarantee success, there are a few things you can try to rescue your Apple Watch when you’re in this situation.]]></summary>
+        <author>
+            <name>Tim Brookes</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Is there a way to prevent an application from inhibiting the screensaver?]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vfunkr/is_there_a_way_to_prevent_an_application_from/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vfunkr/is_there_a_way_to_prevent_an_application_from/"/>
+        <updated>2022-06-19T12:58:37.000Z</updated>
+        <summary type="html"><![CDATA[For a couple of weeks now, chrome has been preventing my screensaver from triggering. No video or audio playing (AFAICT). Is there a general solution for controlling what an application can do wrt the screensaver?
+ I'm using i3, xss-lock, no DE...basically just terminals and X
+    submitted by    /u/whereiat  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mount dm-crypt crypted drive on another machine]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vfu6x7/mount_dmcrypt_crypted_drive_on_another_machine/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vfu6x7/mount_dmcrypt_crypted_drive_on_another_machine/"/>
+        <updated>2022-06-19T12:32:13.000Z</updated>
+        <summary type="html"><![CDATA[hello guys,
+ I've got a brand new laptop and would like to move there with a very new installation of arch. I have only one issue, that I can't handle:
+ In my current setup I have an SSD drive for the OS related partitions, and an internal HDD for private data which is mounted on boot under my home folder. This is encrypted and store all my private data. I've used dm-crypt to encrypt the drive, and I've chosen to manually write the passphrase on every boot instead of the private key solution. Of course I'd like to move this HDD to my new laptop too.
+ My question is that is there any documentation where can I find about how can I migrate an encrypted HDD to another setup? the dm-crypt documentation is not containing this topic on the arch wiki.
+ Thanks a lot in advance
+    submitted by    /u/montyx99  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gli Smartphone con fotocamera migliore del momento]]></title>
+        <id>https://www.navigaweb.net/2017/12/smartphone-con-fotocamera-migliore.html</id>
+        <link href="https://www.navigaweb.net/2017/12/smartphone-con-fotocamera-migliore.html"/>
+        <updated>2022-06-19T12:15:00.000Z</updated>
+        <summary type="html"><![CDATA[Il metodo più utilizzato per scattare foto ai giorni nostri è sicuramente lo smartphone, anche grazie alla semplicità d'uso, alla facilità con cui è possibile condividere le foto scattate sui social e ai numerosi filtri ed effetti disponibili per rendere ogni scatto unico nel suo genere.
+
+ Però scattare foto con un qualsiasi smartphone in commercio è ben diverso dallo scattare foto con uno...
+
+
+Continua a leggere su Navigaweb.net (clicca sul titolo)]]></summary>
+        <author>
+            <name>Navigaweb.net</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What Is mAh, and How Does It Affect Batteries and Chargers?]]></title>
+        <id>https://www.howtogeek.com/?p=804692</id>
+        <link href="https://www.howtogeek.com/804692/what-is-mah/"/>
+        <updated>2022-06-19T12:00:31.000Z</updated>
+        <summary type="html"><![CDATA[When you’re shopping for a phone or a portable charger, you’re sure to run into the term milliamp hours or the abbreviation mAh. Unsure of what this means? It’s a simple concept, and figuring out what you need is relatively easy.]]></summary>
+        <author>
+            <name>Kris Wouk</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Running Arch as a headless remote desktop]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vft3ys/running_arch_as_a_headless_remote_desktop/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vft3ys/running_arch_as_a_headless_remote_desktop/"/>
+        <updated>2022-06-19T11:25:29.000Z</updated>
+        <summary type="html"><![CDATA[So I'm trying to setup use my system as a VNC server so I can access it through the internet. I tried setting up tigervnc as per the Arch Wiki and cannot get it to work. I know I can access the system because I can connect to it via ssh. I've tried using ssh tunneling (with and without the localhost variable in .vnc/config) and directly through a VNC specific port which I checked with ss is listening. I've also enabled vncserver@:port.service with systemd
+ When I try to connect from another system the error I get is "unable to connect to the socket: Connection refused (111)"
+ Am I missing some obvious configuration? Do you guys use another solution/program?
+ Any advice would be greatly appreciated :)
+    submitted by    /u/jtavizon  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What Does “Bop” Mean on the Internet?]]></title>
+        <id>https://www.howtogeek.com/?p=808117</id>
+        <link href="https://www.howtogeek.com/808117/what-does-bop-mean/"/>
+        <updated>2022-06-19T11:00:42.000Z</updated>
+        <summary type="html"><![CDATA[Has someone on the internet asked you to recommend a good bop? Get your playlists ready! Here’s what this fun, music-related slang term means and how to use it online.]]></summary>
+        <author>
+            <name>Vann Vicente</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[EPEL Statistics Show Recent Surge In Rocky Linux Usage Past AlmaLinux, CentOS Stream]]></title>
+        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=EPEL-Stats-Rocky-Linux-Surge</id>
+        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=EPEL-Stats-Rocky-Linux-Surge"/>
+        <updated>2022-06-19T10:48:14.000Z</updated>
+        <summary type="html"><![CDATA[Statistics published by Fedora for the Extra Packages for Enterprise Linux (EPEL) usage point to a recent surge in Rocky Linux usage -- at least for those with EPEL enabled -- and at least recently appears to surpass the usage for the likes of CentOS Stream, AlmaLinux, and even the RHEL usage with EPEL enabled...]]></summary>
+        <author>
+            <name>Phoronix</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Italia paese di pirati informatici? Si, ma di improvvisati]]></title>
+        <id>3600|20220619121954</id>
+        <link href="https://turbolab.it/servizi-web-24/italia-paese-pirati-informatici-si-improvvisati-3600"/>
+        <updated>2022-06-19T10:19:54.000Z</updated>
+        <summary type="html"><![CDATA[Un sondaggio di time2play.com condotto su 1.120 italiani di età compresa tra i 18 e i 33 anni rivela che il 63% degli intervistati abbia ammesso di aver visto serie tv e film in maniera illegale. Un danno per l'industria dei contenuti o forse si tratta di forme di ripiego? Vediamo assieme perchè.
+›› Leggi tutto]]></summary>
+        <author>
+            <name>info@turbolab.it (TurboLab.it)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Rapid7 research reveals which data ransomware groups seek and use for leverage]]></title>
+        <id>https://www.ghacks.net/?p=179242</id>
+        <link href="https://www.ghacks.net/2022/06/19/rapid7-research-reveals-which-data-ransomware-groups-seek-and-use-for-leverage/"/>
+        <updated>2022-06-19T10:00:27.000Z</updated>
+        <summary type="html"><![CDATA[When it comes to ransomware attacks, some data is more precious to ransomware groups as others. A new research study by Rapid7, Pain Points: Ransomware Data Disclosure Trends, provides insight on the […]
+Thank you for being a Ghacks reader. The post Rapid7 research reveals which data ransomware groups seek and use for leverage appeared first on gHacks Technology News.]]></summary>
+        <author>
+            <name>Martin Brinkmann</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[EXT4 Has A Nice One-Line Performance Fix For Cases When Delayed Allocation Is Disabled]]></title>
+        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=EXT4-No-Delalloc-Perf-Fix</id>
+        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=EXT4-No-Delalloc-Perf-Fix"/>
+        <updated>2022-06-19T10:00:03.000Z</updated>
+        <summary type="html"><![CDATA[When an EXT4 file-system is running low on free space (or when toggled via the "nodelalloc" mount option), EXT4's delayed allocation mode can be disabled. This can result in a significant performance hit but now a patch is pending for what should land in Linux 5.20 with recovering that performance when delayed allocation is disabled...]]></summary>
+        <author>
+            <name>Phoronix</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Looking for - Bluetooth Dongle - That works]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vfrrss/looking_for_bluetooth_dongle_that_works/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vfrrss/looking_for_bluetooth_dongle_that_works/"/>
+        <updated>2022-06-19T09:53:02.000Z</updated>
+        <summary type="html"><![CDATA[Hey, 
+ anyone have a bluetooth dongle that works with the newest Kernel?
+ If you could also comment the drivers that would be much appreciated <3
+    submitted by    /u/SomeGirlWhoIsABoy  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Git 2.37-rc1 Released With "git -v" & "git -h" Convenient Options]]></title>
+        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=Git-2.37-rc1-Released</id>
+        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Git-2.37-rc1-Released"/>
+        <updated>2022-06-19T09:42:46.000Z</updated>
+        <summary type="html"><![CDATA[Following an initial rc0 tag earlier in the week, Git 2.37-rc1 was released on Friday for helping to facilitate testing for the next version of this leading, open-source distributed revision control system...]]></summary>
+        <author>
+            <name>Phoronix</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Lightdm won't start after installing Nvidia Drivers]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vfrfxu/lightdm_wont_start_after_installing_nvidia_drivers/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vfrfxu/lightdm_wont_start_after_installing_nvidia_drivers/"/>
+        <updated>2022-06-19T09:27:28.000Z</updated>
+        <summary type="html"><![CDATA[I finished setting up my system and wanted to install the nvidia drivers. Now after rebooting lightdm will not start and Im stuck on the tty. Tried with systemctl start lightdm and just lightdm but none work.
+ Using an rtx 3070ti with bspwm
+    submitted by    /u/Mike11207  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux KMS setup]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vfqz4l/linux_kms_setup/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vfqz4l/linux_kms_setup/"/>
+        <updated>2022-06-19T08:52:21.000Z</updated>
+        <summary type="html"><![CDATA[Hi everyone. I just installed Arch on a x86_64 CPU board, which has a LVDS display flat connector output (that i don't use).
+ I connected it to my monitor using HDMI connector output, and it works fine, except for the boot sequence.
+ When the system boots, i can see grub loader screen on hdmi (because it uses uefi frame buffers i guess) and then, when it switches to KMS (Intel graphics driver requires this) i cannot se any plymouth screen, and after boot, it shows a completely gray screen. It keeps showing that forever, and i have to press 'enter' key (blindly) to login and see the desktop environment. I use GNOME, and in the settings, it's like the flat LVDS connector is plugged in (i see a second monitor connected). Once logged in, X loads the right screen configuration and everything works like it should. I believe that everything works just fine, except for the fact that it shows the login (and plymouth graphics) on thr LVDS panel. I have no LVDS to prove this, but i am 85% sure about that.
+ I installed intel graphics driver, mesa and lib32-mesa libraries. I early-loaded i915 driver putting MODULES=(i915) in the /etc/mkinitcpio.conf file and rebuilding initramfs images. I tried to switch off LVDS in bios but the bios is very minimal and i don't see any setting for that.
+ It seems to be a KMS setting or graphic driver setting.
+ Is anyone here more experienced with intel drivers? Where may i find drivers parameters that i can use to disconnect that unused display?
+ Thanks!
+    submitted by    /u/nemis16  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[laptop mode tools]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vfqsbk/laptop_mode_tools/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vfqsbk/laptop_mode_tools/"/>
+        <updated>2022-06-19T08:38:25.000Z</updated>
+        <summary type="html"><![CDATA[Hi:)
+ I have recently installed laptop mode tools, But I don't understand what it actually do. I have read arch wiki.
+ Is it something like tlp or power-profile-deamon ? If yes which one should i use?
+ does it have any conflicts with them?
+ And also can it cause any physical damage to hardware? For example spinning down hdd so much or ... .
+ Thanks :)
+    submitted by    /u/Sepehr_TH  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Arch Linux on a 2012 iMac, xorg won't work]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vfqkv9/arch_linux_on_a_2012_imac_xorg_wont_work/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vfqkv9/arch_linux_on_a_2012_imac_xorg_wont_work/"/>
+        <updated>2022-06-19T08:22:56.000Z</updated>
+        <summary type="html"><![CDATA[I just got a iMac to use as a small TV / Media center, and wanted to install Arch on it. The installer booted to a black screen. i read online that I can fix it with the "radeon.modeset=0" kernel parameter. Did that, successfully installed arch, booted and got in my DM. (i use LY Wich runs in text mode) after i logged in to my XFCE session the "xorg didn't start because it didn't find an screen" 
+ i know that the kernel parameter i set is most likely the problem. I need it because without it the display output will be the DisplayPort port on the iMac. How do I get xorg working? 
+ sorry for my terrible English.
+    submitted by    /u/thecraftguy_  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fresh install with KDE won't let me log in to the wayland session]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vfok7v/fresh_install_with_kde_wont_let_me_log_in_to_the/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vfok7v/fresh_install_with_kde_wont_let_me_log_in_to_the/"/>
+        <updated>2022-06-19T05:59:18.000Z</updated>
+        <summary type="html"><![CDATA[I've been running endeavour OS on a second drive for some time now and wanted to put arch on my primary ssd.
+ archinstall went well, Desktop Profile and KDE, Nvidia Proprietary drivers. X11 Session works as expected, Wayland throws me back to sddm though. Endeavour works fine on the same machine with the same Plasma Version.
+ Where can i look to find out what the issue is here?
+    submitted by    /u/domsch1988  
+ [link]   [comments]]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Your installed browser extension may be used to fingerprint you]]></title>
+        <id>https://www.ghacks.net/?p=179239</id>
+        <link href="https://www.ghacks.net/2022/06/19/your-installed-browser-extension-may-be-used-to-fingerprint-you/"/>
+        <updated>2022-06-19T05:53:08.000Z</updated>
+        <summary type="html"><![CDATA[Extensions installed in web browsers may be used for tracking purposes. Some extensions use resources that are accessible by sites that are loaded in the browser; the information may be used to […]
+Thank you for being a Ghacks reader. The post Your installed browser extension may be used to fingerprint you appeared first on gHacks Technology News.]]></summary>
+        <author>
+            <name>Martin Brinkmann</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Arch Linux kernel reports "tainted" due to kernel warning (W) for a module that shows not tainted]]></title>
+        <id>https://www.reddit.com/r/archlinux/comments/vfl7tq/arch_linux_kernel_reports_tainted_due_to_kernel/</id>
+        <link href="https://www.reddit.com/r/archlinux/comments/vfl7tq/arch_linux_kernel_reports_tainted_due_to_kernel/"/>
+        <updated>2022-06-19T02:27:11.000Z</updated>
+        <summary type="html"><![CDATA[Can anyone help me understand why Linux reports my kernel is tainted? It seems to have happened after updating kernel and wayland on system with secure boot. 
+  cat /proc/sys/kernel/tainted 512 
+ Then running query on dmesg shows this:
+ sudo dmesg | grep -i 'taint' [ 14.376299] CPU: 2 PID: 783 Comm: kwin_wayland Not tainted 5.18.5-arch1-1 #1 e9787f6018c114f5ea5c49a220d7535dfd3a932e 
+ Is there a way to clear it? I tried by reinstalling linux kernel but it had no effect. I use self-generated keys to sign my kernels and bootloader.
+ ​
+ Host Security ID: HSI:2! (v1.8.1) HSI-1 ✔ CSME manufacturing mode: Locked ✔ CSME override: Locked ✔ CSME v0:15.0.35.2039: Valid ✔ Platform Debugging: Disabled ✔ SPI BIOS region: Locked ✔ SPI lock: Enabled ✔ SPI write: Disabled ✔ Supported CPU: Valid ✔ TPM empty…]]></summary>
+        <author>
+            <name>Arch Linux</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Airpods output working but not input (KDE plasma DE)]]></title>
         <id>https://www.reddit.com/r/archlinux/comments/vfkmtj/airpods_output_working_but_not_input_kde_plasma_de/</id>
@@ -241,6 +844,16 @@ Read more]]></summary>
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[QNAP NAS devices targeted by surge of eCh0raix ransomware attacks]]></title>
+        <id>https://www.bleepingcomputer.com/news/security/qnap-nas-devices-targeted-by-surge-of-ech0raix-ransomware-attacks/</id>
+        <link href="https://www.bleepingcomputer.com/news/security/qnap-nas-devices-targeted-by-surge-of-ech0raix-ransomware-attacks/"/>
+        <updated>2022-06-18T17:06:03.000Z</updated>
+        <summary type="html"><![CDATA[This week a new series of ech0raix ransomware has started targeting vulnerable QNAP Network Attached Storage (NAS) devices according to user reports and sample submissions on the ID-Ransomware platform. [...]]]></summary>
+        <author>
+            <name>Sergiu Gatlan</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[What Does “BFD” Mean, and How Do You Use It?]]></title>
         <id>https://www.howtogeek.com/?p=752721</id>
         <link href="https://www.howtogeek.com/752721/what-does-bfd-mean-and-how-do-you-use-it/"/>
@@ -293,6 +906,16 @@ but I'd like to not have to type the flags every time. I tried putting the flags
         </author>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Chrome browser extension lets you remove specific sites from search results]]></title>
+        <id>https://www.bleepingcomputer.com/news/technology/chrome-browser-extension-lets-you-remove-specific-sites-from-search-results/</id>
+        <link href="https://www.bleepingcomputer.com/news/technology/chrome-browser-extension-lets-you-remove-specific-sites-from-search-results/"/>
+        <updated>2022-06-18T15:50:22.000Z</updated>
+        <summary type="html"><![CDATA[The uBlackList browser extension lets you clean up search results by removing specific sites when searching on Google, DuckDuckGo, Bing, and other search engines. [...]]]></summary>
+        <author>
+            <name>Lawrence Abrams</name>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Browser extension lets you remove specific sites from search results]]></title>
         <id>https://www.bleepingcomputer.com/news/technology/browser-extension-lets-you-remove-specific-sites-from-search-results/</id>
         <link href="https://www.bleepingcomputer.com/news/technology/browser-extension-lets-you-remove-specific-sites-from-search-results/"/>
@@ -337,9 +960,9 @@ but I'd like to not have to type the flags every time. I tried putting the flags
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Wave of 'Matanbuchus' spam is infecting devices with Cobalt Strike]]></title>
-        <id>https://www.bleepingcomputer.com/news/security/wave-of-matanbuchus-spam-is-infecting-devices-with-cobalt-strike/</id>
-        <link href="https://www.bleepingcomputer.com/news/security/wave-of-matanbuchus-spam-is-infecting-devices-with-cobalt-strike/"/>
+        <title type="html"><![CDATA[New phishing attack infects devices with Cobalt Strike]]></title>
+        <id>https://www.bleepingcomputer.com/news/security/new-phishing-attack-infects-devices-with-cobalt-strike/</id>
+        <link href="https://www.bleepingcomputer.com/news/security/new-phishing-attack-infects-devices-with-cobalt-strike/"/>
         <updated>2022-06-18T14:06:03.000Z</updated>
         <summary type="html"><![CDATA[Security researchers have noticed a new malicious spam campaign that delivers the 'Matanbuchus' malware to drop Cobalt Strike beacons on compromised machines. [...]]]></summary>
         <author>
@@ -347,1027 +970,11 @@ but I'd like to not have to type the flags every time. I tried putting the flags
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[how do i connect to internet from the tty1 screen?]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vf6qhi/how_do_i_connect_to_internet_from_the_tty1_screen/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vf6qhi/how_do_i_connect_to_internet_from_the_tty1_screen/"/>
-        <updated>2022-06-18T13:54:06.000Z</updated>
-        <summary type="html"><![CDATA[( i want to boot into a GUI/DE but im stuck in tty1)
-    submitted by    /u/AnimeAndFruitIsGood  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[drawing tablet stops working after moving the pen]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vf6jn5/drawing_tablet_stops_working_after_moving_the_pen/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vf6jn5/drawing_tablet_stops_working_after_moving_the_pen/"/>
-        <updated>2022-06-18T13:43:53.000Z</updated>
-        <summary type="html"><![CDATA[i have a gaomon s620 drawing tablet it was working fine but now i have to disconnect and reconnect it every time i put the pen down to do something else the buttons still work but the cursor does not i checked xinput it recognizes the tablet and the pen but when i start using the pen it adds a second pen but it keeps working until i put the pen down
-    submitted by    /u/polarchicken5  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Discover on Arch KDE]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vf5tos/discover_on_arch_kde/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vf5tos/discover_on_arch_kde/"/>
-        <updated>2022-06-18T13:04:01.000Z</updated>
-        <summary type="html"><![CDATA[Today I managed to install Arch on my laptop through the updated archinstall script (yay) I configured everything in the installer properly and after install I was greeted with the new KDE 5.25 desktop but I noticed the discover application doesn't have any application repositories like flatpak or snaps and it seems that I cannot add any. I am using the AUR and snaps using the command line. (I also noticed appimages aren't working)
- Is this a bug or is this something that usually happens on Vanilla Arch?
- (I am new to Arch, so please forgive me if I am missing something).
-    submitted by    /u/Remarkable_Error4044  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Your Phone Can Double as a PC]]></title>
-        <id>https://www.reviewgeek.com/120555/your-phone-can-double-as-a-pc/</id>
-        <link href="https://www.reviewgeek.com/120555/your-phone-can-double-as-a-pc/"/>
-        <updated>2022-06-18T13:00:18.000Z</updated>
-        <summary type="html"><![CDATA[Phones have become increasingly more powerful over the years. Nowadays, even a low-end smartphone has more power than a standard PC or laptop from a decade ago. So why can’t you use your phone in place of a computer?]]></summary>
-        <author>
-            <name>Dave McQuilling</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Tell If a Costco Item Is on Sale]]></title>
-        <id>https://www.lifesavvy.com/133335/how-to-tell-if-a-costco-item-is-on-sale/</id>
-        <link href="https://www.lifesavvy.com/133335/how-to-tell-if-a-costco-item-is-on-sale/"/>
-        <updated>2022-06-18T13:00:00.000Z</updated>
-        <summary type="html"><![CDATA[There’s a lot to take in at Costco. From bulk quantities of grocery items to couches to the food court, navigating the store gets tricky. If you’re looking for deals, though, there’s an easy way to find them.]]></summary>
-        <author>
-            <name>Shea Simmons</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Best Horror Movies on Netflix in 2022]]></title>
-        <id>https://www.howtogeek.com/?p=708739</id>
-        <link href="https://www.howtogeek.com/708739/the-10-best-horror-movies-on-netflix/"/>
-        <updated>2022-06-18T13:00:00.000Z</updated>
-        <summary type="html"><![CDATA[From beloved classics to Netflix originals, from haunted houses to evil creatures, Netflix has something for every kind of horror fan. Here’s a look at the best horror movies streaming on Netflix.]]></summary>
-        <author>
-            <name>Josh Bell</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Quali sono i notebook più affidabili e le marche migliori]]></title>
-        <id>https://www.navigaweb.net/2013/11/guida-acquisto-per-il-portatile.html</id>
-        <link href="https://www.navigaweb.net/2013/11/guida-acquisto-per-il-portatile.html"/>
-        <updated>2022-06-18T12:51:00.000Z</updated>
-        <summary type="html"><![CDATA[Scegliere il nuovo computer portatile di questi tempi può essere difficile, vista la mole di modelli presenti. Il modo migliore per trovare il portatile adatto è quello di andare in un negozio di elettronica vicino e provarli dal vivo con le proprie mani e con i propri occhi.
-
- Come sapere qual è il produttore di notebook più affidabile, così da comprare un dispositivo che duri almeno 3 anni...
-
-
-Continua a leggere su Navigaweb.net (clicca sul titolo)]]></summary>
-        <author>
-            <name>Navigaweb.net</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Choose the Right Gaming Mouse]]></title>
-        <id>https://www.howtogeek.com/?p=296949</id>
-        <link href="https://www.howtogeek.com/296949/how-to-choose-the-right-gaming-mouse/"/>
-        <updated>2022-06-18T12:00:00.000Z</updated>
-        <summary type="html"><![CDATA[A good mouse can make a big difference when playing your favorite games. Here’s what you need to know about grip styles, types of gaming mice, technical specs, and more, before purchasing a new gaming mouse.]]></summary>
-        <author>
-            <name>Michael Crider</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Mold 1.3 High Speed Linker Released With LTO Improvements]]></title>
-        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=Mold-1.3-Released</id>
-        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Mold-1.3-Released"/>
-        <updated>2022-06-18T11:45:48.000Z</updated>
-        <summary type="html"><![CDATA[Mold 1.3 has been released today as the newest version of this high-speed linker that serves as an alternative to GNU Gold and LLVM's LLD...]]></summary>
-        <author>
-            <name>Phoronix</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Why is the kernel not being detected?]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vf4iw2/why_is_the_kernel_not_being_detected/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vf4iw2/why_is_the_kernel_not_being_detected/"/>
-        <updated>2022-06-18T11:45:13.000Z</updated>
-        <summary type="html"><![CDATA[https://imgur.com/a/Mao1nX0 
- https://imgur.com/a/Z4Inob3
- my systemd boot conf:
- title Arch Linux linux /vmlinuz-linux-zen initrd /amd-ucode.img initrd /initramfs-linux-zen.img options root=whatever the fuck my root drive is (promise its set correctly) (/dev/nvme0n1p3) 
- EDIT: Idk what I did but it now boots the kernel!!
-    submitted by    /u/ingn  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AOM AV1 v3.4 Encoder Brings Better Performance]]></title>
-        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=AOM-AV1-3.4-Released</id>
-        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=AOM-AV1-3.4-Released"/>
-        <updated>2022-06-18T11:36:00.000Z</updated>
-        <summary type="html"><![CDATA[Google engineers on Friday released AOM AV1 v3.4 as the newest version of this open-source AV1 CPU-based video encoder...]]></summary>
-        <author>
-            <name>Phoronix</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Bugs in i3 display]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vf4ckw/bugs_in_i3_display/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vf4ckw/bugs_in_i3_display/"/>
-        <updated>2022-06-18T11:34:09.000Z</updated>
-        <summary type="html"><![CDATA[I recently got a new laptop (Dell Inspiron 13 5310) and installed arch on it. I was more used to traditional desktop environments, so I wanted to try a tiling WM, and I went with i3. However, sometimes, out of nowhere, i3 will enter a weird state where whenever I switch workspaces, the screen shows random static or even another workspace's windows. I am using the picom compositor. Are there any bug fixes?
-    submitted by    /u/ETsBrother1  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[These Hidden Bandwidth Vampires Are Eating Up Your Data Cap at Home]]></title>
-        <id>https://www.howtogeek.com/?p=809619</id>
-        <link href="https://www.howtogeek.com/809619/these-hidden-bandwidth-vampires-are-eating-up-your-data/"/>
-        <updated>2022-06-18T11:00:55.000Z</updated>
-        <summary type="html"><![CDATA[If you’re laboring under the burden of an ISP-imposed data cap, tracking down the “bandwidth vampires” using up all your precious data will save you from overage fees and hassles. Here’s where to look.]]></summary>
-        <author>
-            <name>Jason Fitzpatrick</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How To Host a Serverless Website with AWS CloudFront and S3]]></title>
-        <id>https://www.howtogeek.com/?post_type=devops&amp;p=800752</id>
-        <link href="https://www.howtogeek.com/devops/how-to-host-a-serverless-website-with-aws-cloudfront-and-s3/"/>
-        <updated>2022-06-18T10:40:25.000Z</updated>
-        <summary type="html"><![CDATA[If you want to run a website on AWS, you may not even need a server! AWS’s CloudFront CDN can serve static web content directly from an S3 bucket, leaving you paying only for requests and data transferred (which might even be free).]]></summary>
-        <author>
-            <name>Anthony Heddings</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Arch-Based Manjaro Linux 21.3 Released]]></title>
-        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=Manjaro-21.3-Released</id>
-        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Manjaro-21.3-Released"/>
-        <updated>2022-06-18T10:16:04.000Z</updated>
-        <summary type="html"><![CDATA[For fans of the desktop-minded, easy-to-use Manjaro Linux distribution that is built atop Arch, the Manjaro 21.3 "Ruah" release was christened this weekend...]]></summary>
-        <author>
-            <name>Phoronix</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft Edge: live captions for online videos]]></title>
-        <id>https://www.ghacks.net/?p=179230</id>
-        <link href="https://www.ghacks.net/2022/06/18/microsoft-edge-live-captions-for-online-videos/"/>
-        <updated>2022-06-18T10:14:48.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft added live captions support for all online videos to Microsoft Edge Stable quietly. The new feature is available as a preview at the time of writing. Available in Microsoft Edge 102 […]
-Thank you for being a Ghacks reader. The post Microsoft Edge: live captions for online videos appeared first on gHacks Technology News.]]></summary>
-        <author>
-            <name>Martin Brinkmann</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Linux 5.20 To Support The XP-PEN Deco L Drawing Tablet]]></title>
-        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=Linux-5.20-XP-PEN-Deco-L</id>
-        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Linux-5.20-XP-PEN-Deco-L"/>
-        <updated>2022-06-18T09:45:24.000Z</updated>
-        <summary type="html"><![CDATA[The XP-PEN Deco L is a recently launched graphics drawing tablet with its Linux support backed by a user-space binary blob package. But thanks to some USB reverse engineering from a community developer and discovering the hardware's "magic data" needed for initialization, this drawing tablet will be supported by a proper kernel driver in the next Linux kernel cycle...]]></summary>
-        <author>
-            <name>Phoronix</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Running "journalctl -u sshd" always seem to give a truncated file warning, and I only get logs from about the past day. Why might this be?]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vf2pfh/running_journalctl_u_sshd_always_seem_to_give_a/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vf2pfh/running_journalctl_u_sshd_always_seem_to_give_a/"/>
-        <updated>2022-06-18T09:38:45.000Z</updated>
-        <summary type="html"><![CDATA[Background
- I have an SSH server set up at home, and I expose it publicly on a non-standard port.
- Only two users are allowed access - "main" and "share". The "main" user is restricted to being accessed from 192.168.x.x addresses and is accessed solely by a key, and the "share" user can be accessed publicly with a strong password but is limited to folder access intended for sharing files with my family (achieved using "ChrootDirectory", "X11Forwarding", "AllowTcpForwarding", "PermitTTY", "PermitTunnel" and "ForceCommand").
- Additionally, I have fail2ban which blocks an IP after 5 failed attempts.
- The SSH server side of things is working as intended.
- Problem
- I guess the non-standard port isn't enough of a way to hide the server, as my fail2ban jail is filling up quite a bit, from what I can see using "journalctl -u sshd" there are daily access attempts from random IPs (which are successfully blocked).
- The problem however is that running "journalctl -u sshd" will typically only show about the last day's worth of logs, and show the warning "Journal file /var/log/journal/[long ID]/user-[ID]@[another long ID].journal is truncated, ignoring file." Ideally I'd like to view the whole thing.
- I've looked at https://wiki.archlinux.org/title/Systemd/Journal and also tried Googling around, but I can find an obvious cause/solution. A lot of places mention "/var/log/auth.log" but this doesn't seem to exist on my Arch instance.
- Do you know what may be causing this?
- Thanks for any advice at all!
-    submitted by    /u/AlwynEvokedHippest  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How does one recover from a failed hibernation?]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vf2oy3/how_does_one_recover_from_a_failed_hibernation/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vf2oy3/how_does_one_recover_from_a_failed_hibernation/"/>
-        <updated>2022-06-18T09:37:40.000Z</updated>
-        <summary type="html"><![CDATA[I have SSH access to the laptop, which works, hibernation fails due to low swap space, which is okay I can clear the apps.
- The issue is the hibernation fails, and the desktop is stuck on the lockscreen, I'm trying to figure out a way around this, `loginctl unlock-session` doesn't work via SSH.
- What kind of methods can I apply here, the kernel recognizes new devices.
-    submitted by    /u/afro_coder  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MPEG-4 codec not installed]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vf2863/mpeg4_codec_not_installed/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vf2863/mpeg4_codec_not_installed/"/>
-        <updated>2022-06-18T09:03:08.000Z</updated>
-        <summary type="html"><![CDATA[Hi, I'm a beginner with Arch, but I have used other distros for years, but never encountered this problem.
- I know Arch is famous because it's fully customizable to your needs, and that is also one of the reasons I switched to it, but I have this problem. 
- Some videos on certain websites don't load, I can understand that this is a codec issue, so I googled how to install codecs on Arch and used this command to install the codecs
- sudo pacman -S exfat-utils fuse-exfat a52dec faac faad2 flac jasper lame libdca libdv gst-libav libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore gstreamer0.10-plugins flashplugin libdvdcss libdvdread libdvdnav gecko-mediaplayer dvd+rw-tools dvdauthor dvgrab
- However, after this some videos still don't play.
- I also tried with online tests to see what codec I was missing using this, and I can play all the videos except MPEG-4 Visual (In LibreWolf) . I only see "no video with supported format and MIME type found." In Tor Browser, I can't even play H.264 Baseline.
- Is this a browser issue? And how do I fix this?
-    submitted by    /u/lbr_crl  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[KDE Plasma 5.26 To Allow Crisper XWayland Apps With New Scaling Option]]></title>
-        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=Plasma-5.26-Crisper-XWayland</id>
-        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Plasma-5.26-Crisper-XWayland"/>
-        <updated>2022-06-18T08:49:16.000Z</updated>
-        <summary type="html"><![CDATA[While this week marked the release of KDE Plasma 5.25, already there is a big shiny feature queued up for Plasma 5.26 to benefit those running the KDE Plasma Wayland session and relying on XWayland for X11 app compatibility...]]></summary>
-        <author>
-            <name>Phoronix</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Refind showing penquin icon]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vf2105/refind_showing_penquin_icon/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vf2105/refind_showing_penquin_icon/"/>
-        <updated>2022-06-18T08:48:25.000Z</updated>
-        <summary type="html"><![CDATA[I've tried to change the penquin icon what my rEFInd show for some odd reason. I tried to change the /boot/refind.conf as the example at /boot/EFI/refind/refind.conf suggest (replaced the uuid with mine ofc): 
- https://pastebin.com/5rGLAEjF
- ​
- This caused a non-bootable os, so live usb was required to fix it back to old. How I could change the icon to the right one?
- ​
- My other question is, that how I can remove the grub2? It prints me: ':: removing grub breaks dependency 'grub' required by libguestfs' 
- And my guts tells me it will break everything if I delete libguestfs.
-    submitted by    /u/Lord_Schnitzel  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Brave's founder calls out DuckDuckGo's browser for not removing Microsoft's tracking parameters from URLs]]></title>
-        <id>https://www.ghacks.net/?p=179220</id>
-        <link href="https://www.ghacks.net/2022/06/18/duckduckgos-browser-microsoft-tracking-parameters-in-url/"/>
-        <updated>2022-06-18T08:29:02.000Z</updated>
-        <summary type="html"><![CDATA[Remember the recent controversy surrounding the DuckDuckGo Privacy Browser? It turns out that the app not only allows cookies from Microsoft's trackers, but also allows users to be tracked via URLs. When […]
-Thank you for being a Ghacks reader. The post Brave's founder calls out DuckDuckGo's browser for not removing Microsoft's tracking parameters from URLs appeared first on gHacks Technology News.]]></summary>
-        <author>
-            <name>Ashwin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows June 2022 updates break Wi-Fi Hotspot feature and Microsoft services on ARM]]></title>
-        <id>https://www.ghacks.net/?p=179227</id>
-        <link href="https://www.ghacks.net/2022/06/18/windows-june-2022-updates-break-wi-fi-hotspot-feature-microsoft-services-on-arm/"/>
-        <updated>2022-06-18T04:58:17.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft released security updates for all of its products on the June 2022 Patch Day. The released patches, among them KB5014699 for Windows 10 and KB5014697 for Windows 11, introduce new issues […]
-Thank you for being a Ghacks reader. The post Windows June 2022 updates break Wi-Fi Hotspot feature and Microsoft services on ARM appeared first on gHacks Technology News.]]></summary>
-        <author>
-            <name>Martin Brinkmann</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[efi system partition in arch installation]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vex7eo/efi_system_partition_in_arch_installation/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vex7eo/efi_system_partition_in_arch_installation/"/>
-        <updated>2022-06-18T03:22:36.000Z</updated>
-        <summary type="html"><![CDATA[I have windows and mint installed on my computer. So I have already the EFI system partition (dev/sda1). So should I mount /dev/sda1 for /mnt/boot or I have to create another efi system partition for arch? And do I have to install grub in arch too or I can use the grub boot loader of mint for booting into arch?
-    submitted by    /u/Wise_Consideration70  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Arch Won't boot after system update just give black screen]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vev48c/arch_wont_boot_after_system_update_just_give/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vev48c/arch_wont_boot_after_system_update_just_give/"/>
-        <updated>2022-06-18T01:20:21.000Z</updated>
-        <summary type="html"><![CDATA[I installed arch a few days ago everything was fine until i ran pacman -Syu then after reboot I couldn't get it to boot. Eventually I gave up and reinstalled arch, everything was fine again and the same thing happened after running -Syu. I looked at the pacman.log file and downgraded the kernel, it still won't boot. I have systemd-boot and arch.conf looks the same as when it was working fine. I've tried mkinitcpio -P and -p linux as well as pacman -S linux all in chroot nothing has changed. The only thing i can find that is strange is that uname -srm and neofetch show a different kernel version(5.18.1) than the one I have installed which is 5.18.3. I don't know if this means anything but I can't see anything else wrong. Also pacman -Syu installed 5.18.5 which i downgraded back to 5.18.3. I have an amd gpu and cpu as well.
-    submitted by    /u/knowoneunknown  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Arch installs fine on a vm but not on bare metal]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/veuqyd/arch_installs_fine_on_a_vm_but_not_on_bare_metal/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/veuqyd/arch_installs_fine_on_a_vm_but_not_on_bare_metal/"/>
-        <updated>2022-06-18T00:59:51.000Z</updated>
-        <summary type="html"><![CDATA[I decided to install arch and after a while it worked in a vm but then i tried to install it on bare metal i used the same commands and grub installed fine and configured correctly with no errors but the moment i reboot i got shot straight into bios with no error message or anything grub never showed up at all my boot order seems to be fine but nothing
- My hardware is 
- A 500gb wd sn550 
- A 2tb wd hard drive
- Msi H510M -A pro 
- I3-10100f 
- Rx6600xt 
- 16gb ddr4
-    submitted by    /u/OutsideNo1877  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Make Mouse Clicks Effortless With an Auto Clicker]]></title>
-        <id>https://admin.maketecheasier.com/?post_type=post-ideas&amp;p=428964</id>
-        <link href="https://feeds.maketecheasier.com/link/12555/15375657/auto-clicker-guide"/>
-        <updated>2022-06-18T00:25:00.000Z</updated>
-        <summary type="html"><![CDATA[Sometimes, even a task as simple as clicking can become monotonous. Luckily, you can use software known as auto clickers to automate the clicking process and achieve the same results with minimal error in a very short time. Let’s go over a few auto-clicking programs that can help you in your day-to-day tasks and see how to set them up.
-   
-
-Content
-
-What Is an Auto Clicker?
-Best Auto Clicker Apps
-How to Set Up an Auto Clicker
-On Windows
-On macOS 
-On Android
-Frequently Asked Questions
-
-.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   
-Also read:7 Chrome Extensions that Automate Boring Browsing Tasks
-    
-What Is an Auto Clicker?
-    
-An auto clicker is a program that allows you to configure and automate the click of a mouse on your computer screen. An auto clicker not only follows your cursor, but often has support for double and triple-clicking, hotkeys... Read more]]></summary>
-        <author>
-            <name>Ojash Yadav</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[KDE autostart (mostly) no longer working]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/ves6mh/kde_autostart_mostly_no_longer_working/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/ves6mh/kde_autostart_mostly_no_longer_working/"/>
-        <updated>2022-06-17T22:45:47.000Z</updated>
-        <summary type="html"><![CDATA[A week ago I installed Arch, and everything was working properly, but I woke up an hour ago to notice that the vast majority of my applications in .config/autostart failed to start when they did so just fine yesterday. This is my list of autostart apps: Discord, EasyEffects service, GWE, OpenRGB, Yakuake, qBittorrent and ProtonVPN. Out of all of those, the following worked initially or after I removed the entries and added them back in: EasyE, OpenRGB and Yakuake. The applications that failed to start work properly if I just run them from the application menu.
- I took a look at the journald log, and for all of the apps that failed to start, they showed something similar to this:
- /run/user/1000/systemd/generator.late/app-discord\x2dstable@autostart.service:18: WorkingDirectory= path is not absolute, ignoring: Starting Discord... app-discord\x2dstable@autostart.service: Main process exited, code=exited, status=1/FAILURE app-discord\x2dstable@autostart.service: Failed with result 'exit-code'. Failed to start Discord. 
- The ones that did start showed no such messages.
- I tried to modify those files under /run/user etc. but realized that they get altered on boot. I then tried to add a WorkingDirectory= line to the .config/autostart files in question with most of them pointing to /usr/bin but that didn't change anything either.
- I'm out of ideas and I need breakfast. Please help me out here.
-    submitted by    /u/Azsorlex26  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Questa settimana su TLI (18 giugno 2022)]]></title>
-        <id>3604|20220618000001</id>
-        <link href="https://turbolab.it/newsletter-turbolab.it-1349/questa-settimana-tli-18-giugno-2022-3604"/>
-        <updated>2022-06-17T22:00:01.000Z</updated>
-        <summary type="html"><![CDATA[Non hai tempo di leggerci tutti i giorni? nessun problema! ecco a te il riepilogo di quanto proposto da TurboLab.it nel corso della settimana in conclusione.
-›› Leggi tutto]]></summary>
-        <author>
-            <name>info@turbolab.it (TurboLab.it)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Steam crashes when accessing General Controller Settings menu]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/veqjjd/steam_crashes_when_accessing_general_controller/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/veqjjd/steam_crashes_when_accessing_general_controller/"/>
-        <updated>2022-06-17T21:26:58.000Z</updated>
-        <summary type="html"><![CDATA[I notices in some games, that my PS5 controller doesn't work anymore and after trying to access Settings -> Controller -> General Controller Settings it crashes with a Segmentation fault.
- /home/neutronst4r/.local/share/Steam/steam.sh: line 794: 7249 Segmentation fault core dumped) "$STEAMROOT/$STEAMEXEPATH" "$@" 
- Also Rimworld complains that it can't detect a running steam instance even though it is running. I started it from steam. I already tryed moving the ./local/share/steam folder and reinstalling steam, but it didn't help.
- Is anyone else experiencing this?
-    submitted by    /u/Neutronst4r  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[5 Ways to View Saved Wi-Fi Passwords in Windows]]></title>
-        <id>https://admin.maketecheasier.com/?post_type=pitch&amp;p=490004</id>
-        <link href="https://feeds.maketecheasier.com/link/12555/15375521/view-saved-wifi-passwords-windows"/>
-        <updated>2022-06-17T21:25:00.000Z</updated>
-        <summary type="html"><![CDATA[Remembering Wi-Fi passwords can be a struggle. Often, you have to track down technicians and sysadmins so you can access a network you’d connected to before. Fortunately, Windows gives you several options to view saved Wi-Fi passwords on your PC.
-    
-If you’ve drawn a blank when prompted to enter a password to access a Wi-Fi connection in Windows, these methods should come in handy.
-   
-
-Content
-
-1. Use Control Panel
-2. With Command Prompt
-3. Try PowerShell
-4. Use Wi-Fi Password Revealer
-5. Use WirelessKeyView
-Alternative: Check the Router 
-Frequently Asked Questions
-
-.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   
-Also read:How to Use Nearby Sharing to Share Files on Windows
-    
-1. Use Control Panel
-    
-One way to view saved Wi-Fi passwords on your PC is through the Control Panel. This method only works for active Wi-Fi networks.
-   ... Read more]]></summary>
-        <author>
-            <name>Richard Kanyoro</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Week in Ransomware - June 17th 2022 - Have I Been Ransomed?]]></title>
-        <id>https://www.bleepingcomputer.com/news/security/the-week-in-ransomware-june-17th-2022-have-i-been-ransomed/</id>
-        <link href="https://www.bleepingcomputer.com/news/security/the-week-in-ransomware-june-17th-2022-have-i-been-ransomed/"/>
-        <updated>2022-06-17T21:11:05.000Z</updated>
-        <summary type="html"><![CDATA[Ransomware operations are constantly evolving their tactics to pressure victims to pay. For example, this week, we saw a new extortion tactic come into play with the creation of dedicated websites to extort victims with searchable data. [...]]]></summary>
-        <author>
-            <name>Lawrence Abrams</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Flatpak missing symbols]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/veq4z2/flatpak_missing_symbols/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/veq4z2/flatpak_missing_symbols/"/>
-        <updated>2022-06-17T21:07:32.000Z</updated>
-        <summary type="html"><![CDATA[Im having problems with my flatpak installation, there are symbols missing and replaced with question marks
- 1. [?] com... Installing? ??? 13% 12.2?MB/s 00:26 
- [?] should be [-] otherwise its as expected any idea what could cause this?
-    submitted by    /u/rosen1000  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Why You Should Use Google Assistant Family Bell]]></title>
-        <id>https://www.howtogeek.com/?p=790961</id>
-        <link href="https://www.howtogeek.com/790961/why-you-should-use-google-assistant-family-bell/"/>
-        <updated>2022-06-17T21:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Google Assistant has many features that are perfect for families, especially those with smart speakers and displays. “Family Bell” allows you to schedule announcements to keep your house running smoothly. We’ll show you what it can do.]]></summary>
-        <author>
-            <name>Joe Fedewa</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Unexpected behavior after enabling bluetooth auto power on]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/veptr3/unexpected_behavior_after_enabling_bluetooth_auto/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/veptr3/unexpected_behavior_after_enabling_bluetooth_auto/"/>
-        <updated>2022-06-17T20:53:14.000Z</updated>
-        <summary type="html"><![CDATA[Running i3wm on Arch 5.18.5. I got a new bluetooth keyboard and followed here to enable bluetooth after power on/reboot. It worked and keyboard connects fine. The issue is that since i followed that wiki, touchpad is now inverted. I followed here to set the natural scrolling....
- Section "InputClass" Identifier "touchpad" MatchIsTouchpad "on" Driver "libinput" Option "Tapping" "on" Option "NaturalScrolling" "false" EndSection 
- On restart, sddm is unable to start. Following is from SDDM.....
- sddm[519]: Failed to read display number from pipe sddm[519]: Could not start Display server on vt 1 
- Read here sddm issue possibly due to .conf in xorg, so I removed the 30-touchpad.conf file. System booted no problem, but still, the inverted scrolling persisted. I reverted the main.conf bluetooth config and scrolling is normal, but have to connect bluetooth manually. Open to any suggestions or if someone can point me in the right direction to accomplish what I need or an explanation on why the bluetooth config would mess with my touchpad.
-    submitted by    /u/waldoeGeek  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What is the best way to install nvidia (proprietary) with dual GPU (and HDMI that is hardwired to my nvidia gpu) on wayland?]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vep3dn/what_is_the_best_way_to_install_nvidia/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vep3dn/what_is_the_best_way_to_install_nvidia/"/>
-        <updated>2022-06-17T20:18:21.000Z</updated>
-        <summary type="html"><![CDATA[Hello there, i have been searching a lot for a good guide/wiki page but i couldn't find an optimal setup. Does some guys of you have any good resource of this topic (even though i know that nvidia and wayland aren't the best match). The main problem is that i get a black screen on my external monitor if i install some proprietary nvidia package.
-    submitted by    /u/mathiasbolle  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Wine 7.11 Released With Zero-Copy Support For GStreamer]]></title>
-        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=Wine-7.11-Released</id>
-        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Wine-7.11-Released"/>
-        <updated>2022-06-17T20:17:35.000Z</updated>
-        <summary type="html"><![CDATA[Wine 7.11 is out as the newest version of this open-source software for enjoying Windows games and applications under Linux and other platforms...]]></summary>
-        <author>
-            <name>Phoronix</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Connect AirPods to Android]]></title>
-        <id>https://www.howtogeek.com/?p=784407</id>
-        <link href="https://www.howtogeek.com/784407/how-to-connect-airpods-to-android/"/>
-        <updated>2022-06-17T20:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Apple AirPods aren’t limited to Apple products; you can use your AirPods with your Android phone, too. There are a few limitations, though, as we’ll outline in addition to showing you how to pair your AirPods with your Android device.]]></summary>
-        <author>
-            <name>Mahesh Makvana</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Gnome not detecting monitors (laptop)]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/veom56/gnome_not_detecting_monitors_laptop/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/veom56/gnome_not_detecting_monitors_laptop/"/>
-        <updated>2022-06-17T19:56:50.000Z</updated>
-        <summary type="html"><![CDATA[Running gnome on a laptop with intel cpu and nvidia gpu. Have all the drivers and xorg installed, yet the monitors aren’t receiving any input.
-    submitted by    /u/HockeyGoalieSJS  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[Pipewire] Discord has no notification sound, and embed videos/sounds can't be played.]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/veo9av/pipewire_discord_has_no_notification_sound_and/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/veo9av/pipewire_discord_has_no_notification_sound_and/"/>
-        <updated>2022-06-17T19:40:01.000Z</updated>
-        <summary type="html"><![CDATA[Hey everyone!
- About 3 days ago, Discord lost the ability to play any embedded video/sound, and notification sounds (but voice chat and voice chat stream audio is fine). And for some godforsaken reason, my friends also started to have this issue (they are also Ryzen and Arch Linux users and use pipewire).
- I have tried the pipewire-pulse config fix (Link), and tried both native and flatpak versions of Discord, but the issue still remains.
- Here are some information/logs:
- I'm running pipewire-1:0.3.52-2, pipewire-pulse-1:0.3.52-2 with wireplumber-0.4.10-3.
- I'm currently using discord-0.0.18-1 with BetterDiscord 1.5.3.
- The current kernel I'm using is Linux 5.18.2-260-tkg-bmq.
- DMESG
- Pactl Info
- pw-top with discord voice chat + stream with audio
-    submitted by    /u/csanadlangos  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Get a 2021 Samsung Chromebook 4 for Under $130]]></title>
-        <id>https://admin.maketecheasier.com/?post_type=deal&amp;p=498196</id>
-        <link href="https://feeds.maketecheasier.com/link/12555/15375346/2021-samsung-chromebook-4"/>
-        <updated>2022-06-17T19:25:00.000Z</updated>
-        <summary type="html"><![CDATA[If you don’t need quite all the power of a larger PC, the 2021 Samsung Chromebook 4 would suit you well. It runs Chrome OS and has 32GB, a Celeron N3450 CPU, and 4GB RAM. Best yet, it’s currently 44% off.
-    
-You know you’re getting a quality product with the Samsung label. Light and compact, you can still do much of the same work and leisure activities you would want to do, especially with the long-lasting 12-hour battery.
-   
- 
-   
-The Samsung Chromebook 4 weighs un’der three pounds and is slim – yet also carries military-grade durability. Despite its size, it still includes a full-size keyboard and trackpad. It also has built-in virus protection with automatic updates to be sure you’re always protected against the latest malware.
-    
-Coordinate with others with the Google Suite and fly through your productivity with Google Docs, Google Drive, and Google Play Store. Quickly connect through a Gigabit Wi-Fi connection and download large huge files. Get more done using the Google Assistant voice assistant to carry out... Read more]]></summary>
-        <author>
-            <name>Laura Tucker</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[June Windows updates break Microsoft 365 sign-ins on Arm devices]]></title>
-        <id>https://www.bleepingcomputer.com/news/microsoft/june-windows-updates-break-microsoft-365-sign-ins-on-arm-devices/</id>
-        <link href="https://www.bleepingcomputer.com/news/microsoft/june-windows-updates-break-microsoft-365-sign-ins-on-arm-devices/"/>
-        <updated>2022-06-17T19:19:36.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft is investigating a new known issue causing Azure Active Directory and Microsoft 365 sign-in issues on Arm devices after deploying the June 2022 Windows updates. [...]]]></summary>
-        <author>
-            <name>Sergiu Gatlan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What Is Cardano’s Vasil Hard Fork?]]></title>
-        <id>https://www.howtogeek.com/?p=811173</id>
-        <link href="https://www.howtogeek.com/811173/what-is-cardanos-vasil-hard-fork/"/>
-        <updated>2022-06-17T19:00:00.000Z</updated>
-        <summary type="html"><![CDATA[One of the most popular smart contract blockchains will be receiving a much-needed upgrade. In early June 2022, Cardano’s founder, Charles Hoskinson, announced that the Cardano blockchain will undergo an upgrade dubbed the Vasil hard fork by late June 2022. Here’s what that means]]></summary>
-        <author>
-            <name>RJ Fulton</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fairphone's Subscription Plan Breaks Every Smartphone Norm]]></title>
-        <id>https://www.reviewgeek.com/121169/fairphones-subscription-plan-breaks-every-smartphone-norm/</id>
-        <link href="https://www.reviewgeek.com/121169/fairphones-subscription-plan-breaks-every-smartphone-norm/"/>
-        <updated>2022-06-17T18:33:40.000Z</updated>
-        <summary type="html"><![CDATA[Many smartphone companies and carriers offer subscriptions to get you a new phone. But they all have a few things in common. Sooner or later, those plans will go up in price, and the goal is to replace your phone often (two years or sooner!). Fairphone’s new subscription plan bucks both those trends.]]></summary>
-        <author>
-            <name>Josh Hendrickson</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[I deleted my shell, now I can't even login]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vemrsh/i_deleted_my_shell_now_i_cant_even_login/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vemrsh/i_deleted_my_shell_now_i_cant_even_login/"/>
-        <updated>2022-06-17T18:32:04.000Z</updated>
-        <summary type="html"><![CDATA[So basically I just got the fish shell, I encountered and error I seemed to not get rid of even if I rebooted, so I just did pacman - R fish, and now the terminal doesn't open anymore, and I can't even get past the login screen
-    submitted by    /u/MauroLoL1234  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[NVIDIA Vulkan Beta Driver Updated With Open-GPU-Kernel Support, DRM Format Modifiers]]></title>
-        <id>https://www.phoronix.com/scan.php?page=news_item&amp;px=NVIDIA-515.49.05-Linux-Beta</id>
-        <link href="https://www.phoronix.com/scan.php?page=news_item&amp;px=NVIDIA-515.49.05-Linux-Beta"/>
-        <updated>2022-06-17T18:30:00.000Z</updated>
-        <summary type="html"><![CDATA[NVIDIA today published the 515.49.05 beta driver as their first Vulkan beta driver update for Linux in one month and also their first re-base against the R515 series. As part of that re-base to the new series, this is the first Vulkan beta driver now supporting NVIDIA's new open-source GPU kernel driver...]]></summary>
-        <author>
-            <name>Phoronix</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Emulators (SDL1) segfaulting?]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vemkfa/emulators_sdl1_segfaulting/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vemkfa/emulators_sdl1_segfaulting/"/>
-        <updated>2022-06-17T18:22:41.000Z</updated>
-        <summary type="html"><![CDATA[I have encountered a very strange problem recently. I cannot run any SDL1 emulators. I have tried installing various SDL1 packages to no avail. Has anyone know the root of it?
-    submitted by    /u/1that__guy1  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Stop XP Pen driver autostart]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vembs4/stop_xp_pen_driver_autostart/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vembs4/stop_xp_pen_driver_autostart/"/>
-        <updated>2022-06-17T18:11:55.000Z</updated>
-        <summary type="html"><![CDATA[New Arch user here. have an XP-Pen 22r pro graphics tablet and installed the driver from the manufacturer website. Every time I log in, I get the device config screen come up and I don't know how to turn it off. 
- Checked online and tried the sudo rm -rf xppentablet.desktop command in /etc/xdg/autostart and no luck. 
- Any ideas? Appreciate any suggestions
-    submitted by    /u/Astatii_xo  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Download Photos From Google Photos]]></title>
-        <id>https://www.howtogeek.com/?p=805248</id>
-        <link href="https://www.howtogeek.com/805248/download-google-photos/"/>
-        <updated>2022-06-17T18:00:15.000Z</updated>
-        <summary type="html"><![CDATA[Google Photos makes it easy to download single or multiple photos from your account to your devices. You can also download all your photos and videos at once using Google’s Takeout service. We’ll show you how to use these options on your desktop and mobile.]]></summary>
-        <author>
-            <name>Mahesh Makvana</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Minecraft on Arch]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vem1fr/minecraft_on_arch/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vem1fr/minecraft_on_arch/"/>
-        <updated>2022-06-17T17:59:40.000Z</updated>
-        <summary type="html"><![CDATA[I have already installed the launcher and only require the jre to run it, though it is somehow not available?
- When using 'java --version', theres only the jdk coming up but the jre is nowhere to be seen, is there a manual way of installing other than installing it through pacman. Also when installing the package it's only a few kb large which doesn't match the size I'm seeing on some websites.
- Could also be a different issue by the launcher itself as I'm getting:
- "terminate called after throwing an instance of 'std::logic_error'
- what(): basic_string::_M_construct null not valid
- Aborted (core dumped)"
- But that is probably due to the jre missing.
-    submitted by    /u/KeksMember  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Bluetooth not working until I turn it off/on]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/velrq8/bluetooth_not_working_until_i_turn_it_offon/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/velrq8/bluetooth_not_working_until_i_turn_it_offon/"/>
-        <updated>2022-06-17T17:47:39.000Z</updated>
-        <summary type="html"><![CDATA[Hello kind people ! Today I got my first bluetooth keyboard and I have the following problem:
- Every time that the keyboard is disconnected from my computer (after startup/reboot/wake from sleep/after the keyboard goes into sleep due to inactivity) the computer won't connect to it untill I disable and reenable bluetooth.
- Did anyone have a similar problem and solve it ? How could I begin to debug this ?
- My system is:
- OS: Arch Linux Bluetooth USB dongle: Orico BTA-508 (RTL8761B) Keyboard: Keychron K5 
- I have configured the bluetooth to turn on as stated in the wiki .
- Edit: When this happens and the KB is not connecting to the computer the Bluetooth dongle is recognized by the lsusb:
- Bus 001 Device 003: ID 0bda:8771 Realtek Semiconductor Corp. Bluetooth Radio 
- Edit2: I do get 2 errors …]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[T-Mobile Unveils 25-Cent Gas Discounts and Free Flight Streaming]]></title>
-        <id>https://www.reviewgeek.com/121186/t-mobile-unveils-25-cent-gas-discounts-and-free-flight-streaming/</id>
-        <link href="https://www.reviewgeek.com/121186/t-mobile-unveils-25-cent-gas-discounts-and-free-flight-streaming/"/>
-        <updated>2022-06-17T17:43:22.000Z</updated>
-        <summary type="html"><![CDATA[T-Mobile is back with one of its signature Un-carrier deals it’s calling “Coverage Beyond,” offering a slew of discounts, perks, and customer benefits. Select T-Mobile users are about to get a discount of $0.25 per gallon of gas from Shell, free high-speed data worldwide, a free year of AAA, and more.]]></summary>
-        <author>
-            <name>Cory Gunther</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[audio issue]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vell81/audio_issue/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vell81/audio_issue/"/>
-        <updated>2022-06-17T17:39:41.000Z</updated>
-        <summary type="html"><![CDATA[Device: Lenovo idea pad Chromebook 3 with the Intel Gemini chipset
- OS: every arch based distro 
- Problem: both pulseaudio and pipewire not working on any kernel version besides 15.15. Everything I update the kernel to 18 or 19, sound just breaks completely. I tried installing and reinstalling pipewire and pulseaudio. I've also tried restarting with systemctl. I don't know if it's my hardware or something with the software. Works perfectly fine on 15.15. is support for the Gemini chip set broken on the newer versions of the kernel?
-    submitted by    /u/Peanut-Sea  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[If you experience high cpu usage with videos on Firefox (Youtube/Twitch), ungoogled chromium has far better performance in my experience and supports vaapi in wayland]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/veldj9/if_you_experience_high_cpu_usage_with_videos_on/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/veldj9/if_you_experience_high_cpu_usage_with_videos_on/"/>
-        <updated>2022-06-17T17:30:24.000Z</updated>
-        <summary type="html"><![CDATA[I followed the steps in this post from the forums
-  
-You can build Ungoogled Chromium from the AUR or get a binary through the OBS repository by following the steps here 
- 
-In ~/.config/chromium-flags.conf set these strings:
- 
- --disable-features=UseChromeOSDirectVideoDecoder
- --disable-gpu-memory-buffer-compositor-resources
- --disable-gpu-memory-buffer-video-frames
- --enable-hardware-overlays
-  
-In chrome://flags/, set these flags:
-  
-Hardware-accelerated video decode → enabled.
- Preferred Ozone platform → Auto. 
- If you need h264ify support, this extension can help you access the chrome web store
-    submitted by    /u/Margidoz  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Samsung Galaxy Z Flip 4: Everything We Know so Far]]></title>
-        <id>https://www.reviewgeek.com/121172/samsung-galaxy-z-flip-4/</id>
-        <link href="https://www.reviewgeek.com/121172/samsung-galaxy-z-flip-4/"/>
-        <updated>2022-06-17T17:26:33.000Z</updated>
-        <summary type="html"><![CDATA[We still aren’t satisfied with Samsung’s foldable phones. But last year’s Galaxy Z Flip 3 managed to score an 8/10 in our rigorous review—it wasn’t perfect, but it offered a compelling look in the future. And to our excitement, the upcoming Galaxy Z Flip 4 could give us a deeper look at what’s to come.]]></summary>
-        <author>
-            <name>Andrew Heinzman</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[gtklp from AUR...]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vel8qh/gtklp_from_aur/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vel8qh/gtklp_from_aur/"/>
-        <updated>2022-06-17T17:24:41.000Z</updated>
-        <summary type="html"><![CDATA[OMG! This has taken over an hour already!!! And I found out I don't even need it for my printer but I'm afraid of stopping it because I don't want to break anything...
-    submitted by    /u/Phydoux  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 11 indica le applicazioni che accedono al microfono e alla webcam]]></title>
-        <id>https://www.ilsoftware.it/articoli.asp?tag=Windows-11-indica-le-applicazioni-che-accedono-al-microfono-e-alla-webcam_24660</id>
-        <link href="https://www.ilsoftware.it/articoli.asp?tag=Windows-11-indica-le-applicazioni-che-accedono-al-microfono-e-alla-webcam_24660"/>
-        <updated>2022-06-17T17:20:00.000Z</updated>
-        <summary type="html"><![CDATA[Anche Windows 11 sia allinea a ciò che sta avvenendo sui dispositivi mobili. iOS già da tempo segnala quando un'applicazione sta usando microfono e/o fotocamera mentre Android 12 è la prima versione del sistema operativo Google che mostrerà una segnalazione molto simile nell'area delle notifiche.Ne abbiamo parlato nell'articolo in cui spieghiamo come sapere quali app Android utilizzano il microfono e la fotocamera.Aggiunta nelle versioni di anteprima di giugno 2022, Windows 11 presto mostrerà un avviso con l'indicazione delle applicazioni che si servono di microfono e fotocamera.Digitando privacy nella casella di ricerca di Windows 11 quindi selezionando Impostazioni di privacy, il sistema operativo Microsoft mostra la lista dei programmi che hanno di recente utilizzato il microfono, la webcam o entrambi i dispositivi.Al momento l'indicazione riporta solamente la data e l'ora in cui è avvenuto l'ultimo utilizzo.]]></summary>
-        <author>
-            <name>IlSoftware.it</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Cisco says it won’t fix zero-day RCE in end-of-life VPN routers]]></title>
-        <id>https://www.bleepingcomputer.com/news/security/cisco-says-it-won-t-fix-zero-day-rce-in-end-of-life-vpn-routers/</id>
-        <link href="https://www.bleepingcomputer.com/news/security/cisco-says-it-won-t-fix-zero-day-rce-in-end-of-life-vpn-routers/"/>
-        <updated>2022-06-17T17:13:08.000Z</updated>
-        <summary type="html"><![CDATA[Cisco advises owners of end-of-life Small Business RV routers to upgrade to newer models after disclosing a remote code execution vulnerability that will not be patched. [...]]]></summary>
-        <author>
-            <name>Bill Toulas</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Use the Spotify Web Player]]></title>
-        <id>https://www.howtogeek.com/?p=811415</id>
-        <link href="https://www.howtogeek.com/811415/how-to-use-the-spotify-web-player/"/>
-        <updated>2022-06-17T17:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Spotify is one of the most popular streaming music—and podcast—platforms around. A big part of that success is the ubiquity of the Spotify app. It’s available on every phone, tablet, and computer you can imagine, including web browsers.]]></summary>
-        <author>
-            <name>Joe Fedewa</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[LG's DualUp Monitor With a 16:18 Aspect Ratio Is Now Available]]></title>
-        <id>https://www.reviewgeek.com/121175/lgs-dualup-monitor-with-a-1618-aspect-ratio-is-now-available/</id>
-        <link href="https://www.reviewgeek.com/121175/lgs-dualup-monitor-with-a-1618-aspect-ratio-is-now-available/"/>
-        <updated>2022-06-17T16:47:49.000Z</updated>
-        <summary type="html"><![CDATA[If you’re a content creator or developer looking to get more done with a new type of computer screen, you’ll be happy to hear that LG’s DualUp monitor is finally available. Instead of your typical widescreen display, this one sits in portrait mode and is ultra-tall.]]></summary>
-        <author>
-            <name>Cory Gunther</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Updated icu and now nothing works]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vek11y/updated_icu_and_now_nothing_works/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vek11y/updated_icu_and_now_nothing_works/"/>
-        <updated>2022-06-17T16:32:10.000Z</updated>
-        <summary type="html"><![CDATA[I have no idea what happened I just updated icu and everything including my display manager broke
-    submitted by    /u/SoloNETHER  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New Windows 11 privacy feature lists apps that used your microphone, camera]]></title>
-        <id>https://www.bleepingcomputer.com/news/microsoft/new-windows-11-privacy-feature-lists-apps-that-used-your-microphone-camera/</id>
-        <link href="https://www.bleepingcomputer.com/news/microsoft/new-windows-11-privacy-feature-lists-apps-that-used-your-microphone-camera/"/>
-        <updated>2022-06-17T16:22:37.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft has recently added a new privacy feature that allows Windows 11 users to get a list of all the apps that have recently accessed their sensitive info and devices, including their camera, microphone, and contacts. [...]]]></summary>
-        <author>
-            <name>Sergiu Gatlan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Unità SSD o hard disk HDD: quali differenze e vantaggi?]]></title>
-        <id>https://www.navigaweb.net/2014/08/unita-ssd-o-hard-disk-hdd-quali.html</id>
-        <link href="https://www.navigaweb.net/2014/08/unita-ssd-o-hard-disk-hdd-quali.html"/>
-        <updated>2022-06-17T16:14:00.000Z</updated>
-        <summary type="html"><![CDATA[Fino a poco tempo fa era scontato che nel nuovo computer ci fosse un hard disk, ossia un disco che immagazzina una grande quantità di dati e permette di avviare il sistema operativo e i programmi in qualsiasi momento.
-
- Questi dischi sono diventati presto un collo di bottiglia rispetto alle performance delle altre componenti del PC (RAM e CPU), rallentando spesso e volentieri l'avvio delle...
-
-
-Continua a leggere su Navigaweb.net (clicca sul titolo)]]></summary>
-        <author>
-            <name>Navigaweb.net</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Incisore laser ATOMSTACK A5 Pro al prezzo più basso di sempre]]></title>
-        <id>https://www.ilsoftware.it/articoli.asp?tag=Incisore-laser-ATOMSTACK-A5-Pro-al-prezzo-piu-basso-di-sempre_24659</id>
-        <link href="https://www.ilsoftware.it/articoli.asp?tag=Incisore-laser-ATOMSTACK-A5-Pro-al-prezzo-piu-basso-di-sempre_24659"/>
-        <updated>2022-06-17T16:05:00.000Z</updated>
-        <summary type="html"><![CDATA[Delle macchine a incisione laser abbiamo parlato spesso nelle pagine de IlSoftware.it: si tratta di dispositivi che non soltanto permettono di incidere diversi materiali ma anche di tagliare molteplici supporti seguendo uno schema inviato da PC in formato GCode.ATOMSTACK A5 Pro 40W Laser Engraver è una macchina molto versatile che si mette subito in evidenza per la qualità costruttiva e la semplicità in fase di assemblaggio.Fino al prossimo 30 giugno, salvo esaurimento delle scorte di magazzino, ATOMSTACK A5 Pro viene proposta in offerta speciale a soli 189,73 euro con spedizione dalla Germania.In questo modo al momento della consegna non si dovrà affrontare alcun esborso aggiuntivo: è sufficiente verificare di aver selezionato Germany Warehouse.
-
-ATOMSTACK A5 Pro ha un'area di stampa che misura 41 x 40 cm, la testina laser può essere impostata per lavorare con una potenza in uscita di 5W circa e l'area di messa a fuoco del laser è stata portata 0,23 mm2.La macchina utilizza un'asta a vite integrale invece di un accoppiamento combinato.]]></summary>
-        <author>
-            <name>IlSoftware.it</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[What’s the Best Distance to Sit Away From Your Monitor?]]></title>
-        <id>https://www.howtogeek.com/?p=803507</id>
-        <link href="https://www.howtogeek.com/803507/best-distance-to-sit-from-monitor/"/>
-        <updated>2022-06-17T16:00:03.000Z</updated>
-        <summary type="html"><![CDATA[Do your eyes hurt, feel dry, or get tired after looking at your monitor for extended periods? If so, you might be sitting too close or far from your screen. Let’s discuss the best distance you should sit away from your monitor.]]></summary>
-        <author>
-            <name>Andy Nguyen</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Queer Singer/Songwriter Criibaby Finds Pride and Joy at the Intersection of Tech and Music]]></title>
-        <id>https://blog.mozilla.org/?p=69152</id>
-        <link href="https://blog.mozilla.org/en/internet-culture/queer-singer-songwriter-criibaby-finds-pride-and-joy-at-the-intersection-of-tech-and-music/"/>
-        <updated>2022-06-17T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Here at Mozilla, we are the first to admit the internet isn’t perfect, but we are also quick to point out that the internet is pretty darn magical. The internet opens up doors and opportunities, allows for people to connect with others, and lets everyone find where they belong — their corners of the internet. […]
-The post Queer Singer/Songwriter Criibaby Finds Pride and Joy at the Intersection of Tech and Music appeared first on The Mozilla Blog.]]></summary>
-        <author>
-            <name>Damiano</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[13-Inch MacBook Pro With M2 Is Now Available To Buy]]></title>
-        <id>https://www.howtogeek.com/?p=812296</id>
-        <link href="https://www.howtogeek.com/812296/13-inch-macbook-pro-with-m2-is-now-available-to-buy/"/>
-        <updated>2022-06-17T15:57:08.000Z</updated>
-        <summary type="html"><![CDATA[Apple revealed a few new devices earlier this month, including the first laptops with its M2 chips. One of them, the latest 13-inch MacBook Pro, is available for pre-order.]]></summary>
-        <author>
-            <name>Corbin Davenport</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[NetworkManager doesn't start automatically]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/veh8rp/networkmanager_doesnt_start_automatically/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/veh8rp/networkmanager_doesnt_start_automatically/"/>
-        <updated>2022-06-17T15:33:34.000Z</updated>
-        <summary type="html"><![CDATA[This is probably a noob question I'm still pretty new to linux
- I recently installed arch on my laptop and noticed the wifi didn't work. After some research I've found that it was because the NetworkManager wasn't starting automatically when the computer boots up. For now I'm starting it manually with "sudo systemctl start NetworkManager" but I'd like to know how to make the NetworkManager start automatically.
- Also I found that the same thing happens with iwd but I don't know if it's useful to run both at the same time. If it is though I'd like to fix that as well.
-    submitted by    /u/Ligmaster9000  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Which groups should I add my default user to?]]></title>
-        <id>https://www.reddit.com/r/archlinux/comments/vegqut/which_groups_should_i_add_my_default_user_to/</id>
-        <link href="https://www.reddit.com/r/archlinux/comments/vegqut/which_groups_should_i_add_my_default_user_to/"/>
-        <updated>2022-06-17T15:27:05.000Z</updated>
-        <summary type="html"><![CDATA[submitted by    /u/ZacS2  
- [link]   [comments]]]></summary>
-        <author>
-            <name>Arch Linux</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Automatically Forward Text Messages to Email or Cloud on Android]]></title>
-        <id>https://admin.maketecheasier.com/?post_type=pitch&amp;p=489434</id>
-        <link href="https://feeds.maketecheasier.com/link/12555/15374967/automatically-forward-android-sms-to-email-cloud"/>
-        <updated>2022-06-17T15:25:00.000Z</updated>
-        <summary type="html"><![CDATA[There are many texting apps to choose from but none are as indispensable as the humble SMS. Even if you don’t have your phone near you, you might still need access to these text messages to complete online transactions, for OTP verification, or to receive delivery notifications. Fortunately, it is possible to check your SMS messages from remote locations. We will show you how to auto-forward texts to email or cloud so you can check new incoming messages on another device.
-   
-
-Content
-
-How to Forward Texts to Email/Cloud Automatically
-1. With Auto Forward SMS to PC/Phone App 
-2. Using Forward SMS to Email or Cloud App
-3. Give IFTTT a Try
-4. With Zapier and ClickSend 
-5. Linking Your Android Phone to Windows
-Frequently Asked Questions
-
-.toc{background-color:#f3f4f6;font-size:16px;font-weight:500;padding:1em;}.toc h4{text-align:center;text-transform:uppercase;font-size:0.9375rem;margin-bottom:1rem;}.toc ul{margin:0;padding:0;font-size:15px;}.toc-content{overflow-y:auto;max-height:600px;}.toc-content li{list-style:none!important;margin-bottom:1em;}.toc-content a{color:rgba(74,85,104,var(--text-opacity));text-decoration:none;}.toc-content a:hover{color:#C72F29;}.toc-content li.active a{color:#C72F29;font-weight:bold;}@media (min-width:1340px){.toc-wrap{position:absolute;float:left;margin-left:-9rem;top:0;left:-90px;height:100%;width:200px;background-color:white;}.toc{position:sticky;top:50px;font-size:14px;padding:0.5em;}.toc-content li{margin-bottom:0.5em;}}   
-Also read:6 Ways to Easily Send Text Messages (SMS) from Your PC
- ... Read more]]></summary>
-        <author>
-            <name>Sayak Boral</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Roku's New Walmart Ads Encourage You to Shop from Your TV]]></title>
-        <id>https://www.reviewgeek.com/121168/rokus-new-walmart-ads-encourage-you-to-shop-from-your-tv/</id>
-        <link href="https://www.reviewgeek.com/121168/rokus-new-walmart-ads-encourage-you-to-shop-from-your-tv/"/>
-        <updated>2022-06-17T15:24:33.000Z</updated>
-        <summary type="html"><![CDATA[Roku announced today that it has teamed up with Walmart not only to put ads on TVs and streaming devices, but it’ll let you shop Walmart right from the couch. Viewers can easily find products from their TV and checkout using Roku’s easy payment platform.]]></summary>
-        <author>
-            <name>Cory Gunther</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Duolingo review: Free, fun, easy language learning practice]]></title>
-        <id>6781c4af-3ca9-49a5-b8db-1cc88a6d0784</id>
-        <link href="https://www.zdnet.com/article/duolingo-review/#ftag=RSSbaffb68"/>
-        <updated>2022-06-17T15:20:00.000Z</updated>
-        <summary type="html"><![CDATA[A valuable resource for language learning that enables you to expand your skillset, better relate to people, and broaden your horizons.]]></summary>
-        <author>
-            <name>Latest topics for ZDNet in Windows</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How to Use the FV Function in Excel]]></title>
-        <id>https://www.howtogeek.com/?p=807507</id>
-        <link href="https://www.howtogeek.com/807507/how-to-use-the-fv-function-in-excel/"/>
-        <updated>2022-06-17T15:00:00.000Z</updated>
-        <summary type="html"><![CDATA[If you use Microsoft Excel for keeping track of your money, you might use it for calculating loan amounts or budgeting your finances. To go along with these, you might track your investments too, which means using the FV function.]]></summary>
-        <author>
-            <name>Sandy Writtenhouse</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Score a $10 Amazon Gift Card With This Early Prime Day Promotion]]></title>
-        <id>https://www.reviewgeek.com/121164/score-a-10-amazon-gift-card-through-this-early-prime-day-promotion/</id>
-        <link href="https://www.reviewgeek.com/121164/score-a-10-amazon-gift-card-through-this-early-prime-day-promotion/"/>
-        <updated>2022-06-17T14:54:14.000Z</updated>
-        <summary type="html"><![CDATA[Prime Day 2022 begins July 12th, but Amazon is already running some early discounts and promotions. Most notably, Amazon will give you a free $10 gift card if you complete a few easy tasks. This $10 gift card can go toward your Prime Day purchases, or you can just save it for later.]]></summary>
-        <author>
-            <name>Andrew Heinzman</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Windows 11’s New “Search Highlights” Add Clutter From Bing]]></title>
-        <id>https://www.howtogeek.com/?p=812255</id>
-        <link href="https://www.howtogeek.com/812255/windows-11s-new-search-highlights-add-clutter-from-bing/"/>
-        <updated>2022-06-17T14:46:05.000Z</updated>
-        <summary type="html"><![CDATA[Google has created ‘Doodles‘ for many major holidays or events that appear on Google Search and the Google mobile apps, and now Microsoft is adding something similar to Windows 11.]]></summary>
-        <author>
-            <name>Corbin Davenport</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Usare l'impronta digitale per pagare con lo smartphone]]></title>
-        <id>https://www.navigaweb.net/2022/06/usare-limpronta-digitale-per-pagare-con.html</id>
-        <link href="https://www.navigaweb.net/2022/06/usare-limpronta-digitale-per-pagare-con.html"/>
-        <updated>2022-06-17T14:19:00.004Z</updated>
-        <summary type="html"><![CDATA[Ogni giorno utilizziamo il sensore d'impronte digitali sui nostri smartphone per la sua elevata comodità: con esso basta solo appoggiare la punta del dito sul tasto d'accensione, sul sensore dedicato o sulla zona dello schermo apposita (sui telefoni con lettore d'impronte sotto lo schermo) per sbloccare il telefono senza dover inserire ogni volta il codice di sblocco. 
-E se utilizzassimo questa...
-
-
-Continua a leggere su Navigaweb.net (clicca sul titolo)]]></summary>
-        <author>
-            <name>Navigaweb.net</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Microsoft Store: no astronomical pricing and paid open source or free copycat applications anymore]]></title>
-        <id>https://www.ghacks.net/?p=179224</id>
-        <link href="https://www.ghacks.net/2022/06/17/microsoft-store-no-astronomical-pricing-and-paid-open-source-or-free-copycat-applications-anymore/"/>
-        <updated>2022-06-17T14:18:13.000Z</updated>
-        <summary type="html"><![CDATA[Microsoft updated the Microsoft Store policies on June 16, 2022. One of the changes prohibits publishers from charging fees for software that is open source or generally available for free. Another that […]
-Thank you for being a Ghacks reader. The post Microsoft Store: no astronomical pricing and paid open source or free copycat applications anymore appeared first on gHacks Technology News.]]></summary>
-        <author>
-            <name>Martin Brinkmann</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Russian RSocks botnet disrupted after hacking millions of devices]]></title>
-        <id>https://www.bleepingcomputer.com/news/security/russian-rsocks-botnet-disrupted-after-hacking-millions-of-devices/</id>
-        <link href="https://www.bleepingcomputer.com/news/security/russian-rsocks-botnet-disrupted-after-hacking-millions-of-devices/"/>
-        <updated>2022-06-17T14:17:19.000Z</updated>
-        <summary type="html"><![CDATA[The U.S. Department of Justice has announced the disruption of the Russian RSocks malware botnet used to hijack millions of computers, Android smartphones, and IoT (Internet of Things) devices worldwide for use as proxy servers. [...]]]></summary>
+        <title type="html"><![CDATA[Wave of 'Matanbuchus' spam is infecting devices with Cobalt Strike]]></title>
+        <id>https://www.bleepingcomputer.com/news/security/wave-of-matanbuchus-spam-is-infecting-devices-with-cobalt-strike/</id>
+        <link href="https://www.bleepingcomputer.com/news/security/wave-of-matanbuchus-spam-is-infecting-devices-with-cobalt-strike/"/>
+        <updated>2022-06-18T14:06:03.000Z</updated>
+        <summary type="html"><![CDATA[Security researchers have noticed a new malicious spam campaign that delivers the 'Matanbuchus' malware to drop Cobalt Strike beacons on compromised machines. [...]]]></summary>
         <author>
             <name>Bill Toulas</name>
         </author>
